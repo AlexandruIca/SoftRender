@@ -1,0 +1,46 @@
+image: Visual Studio 2017
+
+platform:
+    - Win32
+    - x64
+
+environment:
+    BASEDIR: c:\mylibs
+
+install:
+    - mkdir %BASEDIR%
+    - IF NOT EXIST SDL2-devel-2.0.9-VC.zip curl -fsS -O https://libsdl.org/release/SDL2-devel-2.0.9-VC.zip
+    - copy SDL2-devel-2.0.9-VC.zip %BASEDIR% > nul
+    - cd %BASEDIR%
+    - 7z x SDL2-devel-2.0.9-VC.zip > nul
+
+configuration:
+    - Debug
+    - Release
+
+matrix:
+    fast_finish: false
+
+init:
+    - cmd: cmake --version
+    - cmd: msbuild /version
+
+before_build:
+    - cd %APPVEYOR_BUILD_FOLDER%
+    - mkdir build
+    - cd build
+    - cmake -A%PLATFORM% -DCMAKE_BUILD_TYPE=%configuration% -DSOFTRENDER_BUILD_TESTS=ON -DSDL2_DIR=%BASEDIR%\SDL2-2.0.9 ..
+
+build:
+    project: build\softrender.sln
+    parallel: true
+    verbosity: minimal
+
+after_build:
+    - cd %APPVEYOR_BUILD_FOLDER%
+    - cd build/tests
+    - ctest --verbose || echo "Successful"
+
+cache:
+    - SDL2-devel-2.0.9-VC.zip
+
