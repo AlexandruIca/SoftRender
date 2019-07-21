@@ -37,8 +37,9 @@ build:
     verbosity: minimal
 
 after_build:
-    - cd %APPVEYOR_BUILD_FOLDER%
-    - cd build/tests
+    - cd %APPVEYOR_BUILD_FOLDER%\build
+    - copy %BASEDIR%\SDL2-2.0.9\lib\%platform%\SDL2.dll . > nul
+    - cd tests
     - ctest --verbose || echo "Successful"
 
 cache:
