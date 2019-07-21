@@ -8,6 +8,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 
 ///
 /// \brief Wrapper around **SDL_GetError**.
