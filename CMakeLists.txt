@@ -63,3 +63,17 @@ if( ${SOFTRENDER_BUILD_DOCS} )
     endif()
 endif()
 
+option( SOFTRENDER_BUILD_DOCS_MCSS
+    "Build better looking documentation with doxygen-mcss"
+    OFF
+)
+
+if( ${SOFTRENDER_BUILD_DOCS_MCSS} )
+    add_custom_target( documentation_mcss ALL
+        COMMAND ${CMAKE_COMMAND} -E echo "Building documentation with doxygen-mcss..."
+        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/../m.css/documentation/doxygen.py ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile-mcss
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+        VERBATIM
+    )
+endif()
+

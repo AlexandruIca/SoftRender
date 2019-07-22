@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
+    <member refid="softrender_8hpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
+    <member refid="softrender_8cpp_1ae9850a581a421ca5b33e2a11afe9a3b3" kind="function"><name>sdl_error</name></member>
+    <member refid="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

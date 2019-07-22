@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="softrender_8hpp" kind="file" language="C++">
+    <compoundname>softrender.hpp</compoundname>
+    <includedby refid="softrender_8cpp" local="yes">src/softrender.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/softrender.cpp</label>
+        <link refid="softrender_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/softrender.hpp</label>
+        <link refid="softrender_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="softrender_8hpp_1ac8da963855e09bf929c085486f4a3b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="6" column="1" bodyfile="src/softrender.cpp" bodystart="22" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains a function that check if sdl was set up correctly. </para>    </detaileddescription>
+    <location file="src/include/softrender.hpp"/>
+  </compounddef>
+</doxygen>
