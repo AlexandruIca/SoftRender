@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="125" column="1" bodyfile="src/softrender.cpp" bodystart="125" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="126" column="1" bodyfile="src/softrender.cpp" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1surface__info_1a8141a9cc26982019990fd5389dc545c3" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="126" column="1" bodyfile="src/softrender.cpp" bodystart="126" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="127" column="1" bodyfile="src/softrender.cpp" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1surface__info_1a9641e2f78ea828c6d046d9b043f10a80" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="127" column="1" bodyfile="src/softrender.cpp" bodystart="127" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="128" column="1" bodyfile="src/softrender.cpp" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1surface__info_1aee63053262773d4bcb7f37c8cae70080" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
@@ -57,13 +57,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="128" column="1" bodyfile="src/softrender.cpp" bodystart="128" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="129" column="1" bodyfile="src/softrender.cpp" bodystart="129" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/softrender.cpp" line="122" column="1"/>
+    <location file="src/softrender.cpp" line="123" column="1"/>
   </compounddef>
 </doxygen>

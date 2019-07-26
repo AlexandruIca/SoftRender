@@ -75,10 +75,10 @@
         </inbodydescription>
         <location file="src/include/softrender.hpp" line="27" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1pixel__t_1a243f3f6c44e99be8ab9694fa5a7a4ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1pixel__t_1a3c4a1cdeab5b7ba31894a788ecf666df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::pixel_t::pixel_t</definition>
-        <argsstring>(int t_red, int t_green, int t_blue, int t_alpha) noexcept</argsstring>
+        <argsstring>(int t_red, int t_green, int t_blue, int t_alpha=255) noexcept</argsstring>
         <name>pixel_t</name>
         <param>
           <type>int</type>
@@ -95,6 +95,7 @@
         <param>
           <type>int</type>
           <declname>t_alpha</declname>
+          <defval>255</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -108,7 +109,7 @@
 </programlisting> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="46" column="1" bodyfile="src/softrender.cpp" bodystart="37" bodyend="42"/>
+        <location file="src/include/softrender.hpp" line="46" column="1" bodyfile="src/softrender.cpp" bodystart="37" bodyend="43"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -121,7 +122,7 @@
       <member refid="structsoftrender_1_1pixel__t_1a67fa111abc5d8c600004f53dd214a1df" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>b</name></member>
       <member refid="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>g</name></member>
       <member refid="structsoftrender_1_1pixel__t_1a06ac563a333b98a21c03c1bd94f29b2b" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>pixel_t</name></member>
-      <member refid="structsoftrender_1_1pixel__t_1a243f3f6c44e99be8ab9694fa5a7a4ba0" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>pixel_t</name></member>
+      <member refid="structsoftrender_1_1pixel__t_1a3c4a1cdeab5b7ba31894a788ecf666df" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>pixel_t</name></member>
       <member refid="structsoftrender_1_1pixel__t_1af65af3ceb86c6e4ece8589621b33f481" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>r</name></member>
     </listofallmembers>
   </compounddef>
