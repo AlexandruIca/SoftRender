@@ -9,4 +9,5 @@ function( build_test TEST_NAME TEST_FILE )
 endfunction()
 
 build_test( setup ${CMAKE_CURRENT_SOURCE_DIR}/setup.cpp )
+build_test( black_screen ${CMAKE_CURRENT_SOURCE_DIR}/black_screen.cpp )
 
