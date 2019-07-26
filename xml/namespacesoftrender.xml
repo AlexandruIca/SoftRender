@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacesoftrender" kind="namespace" language="C++">
+    <compoundname>softrender</compoundname>
+    <innerclass refid="structsoftrender_1_1pixel__t" prot="public">softrender::pixel_t</innerclass>
+    <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
+    <innernamespace refid="namespacesoftrender_1_1surface__info">softrender::surface_info</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesoftrender_1a87d9f28349af2201361e38fa449754de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softrender::error</definition>
+        <argsstring>(std::string const &amp;t_error)</argsstring>
+        <name>error</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="37" column="1" bodyfile="src/softrender.cpp" bodystart="37" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>All key functionality is in this namespace. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/softrender.cpp" line="35" column="1"/>
+  </compounddef>
+</doxygen>

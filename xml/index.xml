@@ -1,10 +1,45 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="structsoftrender_1_1pixel__t" kind="struct"><name>softrender::pixel_t</name>
+    <member refid="structsoftrender_1_1pixel__t_1af65af3ceb86c6e4ece8589621b33f481" kind="variable"><name>r</name></member>
+    <member refid="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" kind="variable"><name>g</name></member>
+    <member refid="structsoftrender_1_1pixel__t_1a67fa111abc5d8c600004f53dd214a1df" kind="variable"><name>b</name></member>
+    <member refid="structsoftrender_1_1pixel__t_1aa6a7a7f2034bbaf8f4dd562b1b8a7b96" kind="variable"><name>a</name></member>
+  </compound>
+  <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
+    <member refid="classsoftrender_1_1window__t_1a549973a71b40e61bc411a741469a3b1a" kind="variable"><name>m_canvas</name></member>
+    <member refid="classsoftrender_1_1window__t_1a4f367993c59ad9849a519eec914f4035" kind="variable"><name>m_width</name></member>
+    <member refid="classsoftrender_1_1window__t_1a4aa0cf682010f0a83e3b3946b25db760" kind="variable"><name>m_height</name></member>
+    <member refid="classsoftrender_1_1window__t_1a3b1172da8bd33ab3b6c418fc1a0e6281" kind="variable"><name>m_running</name></member>
+    <member refid="classsoftrender_1_1window__t_1a6042d51210c551ccb511798592580022" kind="variable"><name>m_window</name></member>
+    <member refid="classsoftrender_1_1window__t_1acd5773b6c80e51d32678f0360d7fe7ff" kind="variable"><name>m_renderer</name></member>
+    <member refid="classsoftrender_1_1window__t_1ab5da848ee6e182639651cd6baf50dbda" kind="variable"><name>m_texture</name></member>
+    <member refid="classsoftrender_1_1window__t_1a584e74ce129b322137baef1b9ae12d2d" kind="function"><name>construct_canvas</name></member>
+    <member refid="classsoftrender_1_1window__t_1a4195083bc30575095db12535a814bb67" kind="function"><name>initialize_sdl</name></member>
+    <member refid="classsoftrender_1_1window__t_1a578408fc92b352eeb7807b9883207223" kind="function"><name>window_t</name></member>
+    <member refid="classsoftrender_1_1window__t_1a305403fb8b923e8d4c2811000b43898f" kind="function"><name>window_t</name></member>
+    <member refid="classsoftrender_1_1window__t_1a57348c74e2f5f709364cce9d66dc8118" kind="function"><name>~window_t</name></member>
+    <member refid="classsoftrender_1_1window__t_1a484ea262a12ec122fb0554bac1cc5c3a" kind="function"><name>width</name></member>
+    <member refid="classsoftrender_1_1window__t_1a57d86dc99bea44e6739906814a4324cf" kind="function"><name>height</name></member>
+    <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
+    <member refid="classsoftrender_1_1window__t_1a8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
+    <member refid="classsoftrender_1_1window__t_1a596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
+    <member refid="classsoftrender_1_1window__t_1af85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
+    <member refid="namespacesoftrender_1a87d9f28349af2201361e38fa449754de" kind="function"><name>error</name></member>
+  </compound>
+  <compound refid="namespacesoftrender_1_1surface__info" kind="namespace"><name>softrender::surface_info</name>
+    <member refid="namespacesoftrender_1_1surface__info_1a1179dc25ddf3d4bbabcb16b41ce93f42" kind="variable"><name>rmask</name></member>
+    <member refid="namespacesoftrender_1_1surface__info_1a8141a9cc26982019990fd5389dc545c3" kind="variable"><name>gmask</name></member>
+    <member refid="namespacesoftrender_1_1surface__info_1a9641e2f78ea828c6d046d9b043f10a80" kind="variable"><name>bmask</name></member>
+    <member refid="namespacesoftrender_1_1surface__info_1aee63053262773d4bcb7f37c8cae70080" kind="variable"><name>amask</name></member>
+  </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
     <member refid="softrender_8hpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
   </compound>
   <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
-    <member refid="softrender_8cpp_1ae9850a581a421ca5b33e2a11afe9a3b3" kind="function"><name>sdl_error</name></member>
+    <member refid="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" kind="function"><name>sdl_error</name></member>
     <member refid="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
   </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
