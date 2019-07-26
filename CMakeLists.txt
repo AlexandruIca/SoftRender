@@ -25,6 +25,11 @@ target_include_directories( ${CMAKE_PROJECT_NAME}
     ${SDL2_INCLUDE_DIRS}
 )
 set_cxx_standard( ${CMAKE_PROJECT_NAME} 17 )
+target_compile_definitions( ${CMAKE_PROJECT_NAME}
+    PRIVATE
+    $<$<CONFIG:Debug>:SOFTRENDER_DEBUG>
+    $<$<CONFIG:Release>:SOFTRENDER_RELEASE>
+)
 target_compile_options( ${CMAKE_PROJECT_NAME}
     PRIVATE
     $<$<OR:$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>:
