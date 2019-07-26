@@ -47,6 +47,45 @@
           <span class="m-breadcrumb"><a href="namespacesoftrender.html">softrender</a>::<wbr/></span>pixel_t <span class="m-thin">struct</span>
         </h1>
         <p>Struct to represent an rgba value.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a243f3f6c44e99be8ab9694fa5a7a4ba0" class="m-doc">pixel_t</a>(</span><span class="m-doc-wrap">int t_red,
+              int t_green,
+              int t_blue,
+              int t_alpha) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a243f3f6c44e99be8ab9694fa5a7a4ba0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> softrender::<wbr />pixel_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a243f3f6c44e99be8ab9694fa5a7a4ba0" class="m-doc-self">pixel_t</a>(</span><span class="m-doc-wrap">int t_red,
+              int t_green,
+              int t_blue,
+              int t_alpha) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Constructor for an easy to use interface for the user. Without this the usage would be something like:</p><pre class="m-code"><span class="n">pixel_t</span> <span class="n">px</span><span class="p">;</span>
+<span class="n">px</span><span class="p">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">red_value</span><span class="p">};</span>
+<span class="n">px</span><span class="p">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">green_value</span><span class="p">};</span>
+<span class="n">px</span><span class="p">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">blue_value</span><span class="p">};</span>
+<span class="n">px</span><span class="p">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">alpha_value</span><span class="p">};</span></pre><p>With this the usage looks like this:</p><pre class="m-code"><span class="n">pixel_t</span> <span class="n">px</span><span class="p">{</span> <span class="n">red_value</span><span class="p">,</span> <span class="n">green_value</span><span class="p">,</span> <span class="n">alpha_value</span> <span class="p">};</span></pre>
+          </div></section>
+        </section>
       </div>
     </div>
   </div>

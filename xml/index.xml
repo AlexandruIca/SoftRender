@@ -5,6 +5,8 @@
     <member refid="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" kind="variable"><name>g</name></member>
     <member refid="structsoftrender_1_1pixel__t_1a67fa111abc5d8c600004f53dd214a1df" kind="variable"><name>b</name></member>
     <member refid="structsoftrender_1_1pixel__t_1aa6a7a7f2034bbaf8f4dd562b1b8a7b96" kind="variable"><name>a</name></member>
+    <member refid="structsoftrender_1_1pixel__t_1a06ac563a333b98a21c03c1bd94f29b2b" kind="function"><name>pixel_t</name></member>
+    <member refid="structsoftrender_1_1pixel__t_1a243f3f6c44e99be8ab9694fa5a7a4ba0" kind="function"><name>pixel_t</name></member>
   </compound>
   <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
     <member refid="classsoftrender_1_1window__t_1a549973a71b40e61bc411a741469a3b1a" kind="variable"><name>m_canvas</name></member>
