@@ -23,6 +23,27 @@ struct pixel_t
     std::byte g = std::byte{0};
     std::byte b = std::byte{0};
     std::byte a = std::byte{255};
+
+    pixel_t() noexcept = default;
+    ///
+    /// Constructor for an easy to use interface for the user.
+    /// Without this the usage would be something like:
+    ///
+    /// \code{.cpp}
+    ///     pixel_t px;
+    ///     px.r = std::byte{red_value};
+    ///     px.g = std::byte{green_value};
+    ///     px.b = std::byte{blue_value};
+    ///     px.a = std::byte{alpha_value};
+    /// \endcode
+    ///
+    /// With this the usage looks like this:
+    ///
+    /// \code{.cpp}
+    ///     pixel_t px{ red_value, green_value, alpha_value };
+    /// \endcode
+    ///
+    pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept;
 };
 
 ///

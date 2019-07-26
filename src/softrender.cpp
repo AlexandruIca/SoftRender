@@ -34,6 +34,13 @@ int test()
 
 namespace softrender {
 
+pixel_t::pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept
+    : r{std::byte(t_red)}
+    , g{std::byte(t_green)}
+    , b{std::byte(t_blue)}
+    , a{std::byte(t_alpha)}
+{}
+
 void error(std::string const& t_error)
 {
     sdl_error(t_error);
