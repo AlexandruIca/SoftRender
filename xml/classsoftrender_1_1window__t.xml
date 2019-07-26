@@ -250,11 +250,18 @@
 <parameterdescription>
 <para>The column on which the pixel will be put. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_pixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the point. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="110" column="1" bodyfile="src/softrender.cpp" bodystart="186" bodyend="189"/>
+        <location file="src/include/softrender.hpp" line="111" column="1" bodyfile="src/softrender.cpp" bodystart="186" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1a8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -268,7 +275,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="117" column="1" bodyfile="src/softrender.cpp" bodystart="191" bodyend="194"/>
+        <location file="src/include/softrender.hpp" line="118" column="1" bodyfile="src/softrender.cpp" bodystart="191" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1a596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> &amp;</type>
@@ -304,7 +311,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="125" column="1" bodyfile="src/softrender.cpp" bodystart="196" bodyend="205"/>
+        <location file="src/include/softrender.hpp" line="126" column="1" bodyfile="src/softrender.cpp" bodystart="196" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1af85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> const  &amp;</type>
@@ -340,7 +347,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="133" column="1" bodyfile="src/softrender.cpp" bodystart="207" bodyend="216"/>
+        <location file="src/include/softrender.hpp" line="134" column="1" bodyfile="src/softrender.cpp" bodystart="207" bodyend="216"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -348,7 +355,7 @@
     <detaileddescription>
 <para>This is just a wrapper around SDL to construct a surface from memory and blit it.</para><para><simplesect kind="note"><para>There is no separate renderer class to keep the code super simple. </para></simplesect>
 </para>    </detaileddescription>
-    <location file="src/include/softrender.hpp" line="58" column="1" bodyfile="src/include/softrender.hpp" bodystart="57" bodyend="134"/>
+    <location file="src/include/softrender.hpp" line="58" column="1" bodyfile="src/include/softrender.hpp" bodystart="57" bodyend="135"/>
     <listofallmembers>
       <member refid="classsoftrender_1_1window__t_1a8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>closed</name></member>
       <member refid="classsoftrender_1_1window__t_1a584e74ce129b322137baef1b9ae12d2d" prot="private" virt="non-virtual"><scope>softrender::window_t</scope><name>construct_canvas</name></member>

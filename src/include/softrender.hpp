@@ -106,6 +106,7 @@ public:
     ///
     /// \param t_i The line on which the pixel will be put.
     /// \param t_j The column on which the pixel will be put.
+    /// \param t_pixel The color of the point.
     ///
     void draw_point(int const t_i, int const t_j, pixel_t const& t_pixel);
 
