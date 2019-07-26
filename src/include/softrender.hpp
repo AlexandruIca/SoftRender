@@ -43,7 +43,7 @@ struct pixel_t
     ///     pixel_t px{ red_value, green_value, alpha_value };
     /// \endcode
     ///
-    pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept;
+    pixel_t(int t_red, int t_green, int t_blue, int t_alpha = 255) noexcept;
 };
 
 ///
@@ -100,6 +100,14 @@ public:
     ///       application exits.
     ///
     void draw();
+
+    ///
+    /// \brief Draws a point at a given coordinate.
+    ///
+    /// \param t_i The line on which the pixel will be put.
+    /// \param t_j The column on which the pixel will be put.
+    ///
+    void draw_point(int const t_i, int const t_j, pixel_t const& t_pixel);
 
     ///
     /// \brief Returns true if the window will close.

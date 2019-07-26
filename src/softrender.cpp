@@ -39,7 +39,8 @@ pixel_t::pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept
     , g{std::byte(t_green)}
     , b{std::byte(t_blue)}
     , a{std::byte(t_alpha)}
-{}
+{
+}
 
 void error(std::string const& t_error)
 {
@@ -180,6 +181,11 @@ void window_t::draw()
             break;
         }
     }
+}
+
+void window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
+{
+    this->operator()(t_i, t_j) = t_pixel;
 }
 
 bool window_t::closed() const noexcept
