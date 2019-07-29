@@ -34,6 +34,7 @@
       </node>
     </invincdepgraph>
     <innerclass refid="structsoftrender_1_1pixel__t" prot="public">softrender::pixel_t</innerclass>
+    <innerclass refid="structsoftrender_1_1point__t" prot="public">softrender::point_t</innerclass>
     <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>
       <sectiondef kind="func">
@@ -48,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="139" column="1" bodyfile="src/softrender.cpp" bodystart="21" bodyend="33"/>
+        <location file="src/include/softrender.hpp" line="157" column="1" bodyfile="src/softrender.cpp" bodystart="21" bodyend="33"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

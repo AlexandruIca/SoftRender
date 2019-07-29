@@ -3,6 +3,7 @@
   <compounddef id="namespacesoftrender" kind="namespace" language="C++">
     <compoundname>softrender</compoundname>
     <innerclass refid="structsoftrender_1_1pixel__t" prot="public">softrender::pixel_t</innerclass>
+    <innerclass refid="structsoftrender_1_1point__t" prot="public">softrender::point_t</innerclass>
     <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
     <innernamespace refid="namespacesoftrender_1_1surface__info">softrender::surface_info</innernamespace>
       <sectiondef kind="func">

@@ -8,6 +8,10 @@
     <member refid="structsoftrender_1_1pixel__t_1a06ac563a333b98a21c03c1bd94f29b2b" kind="function"><name>pixel_t</name></member>
     <member refid="structsoftrender_1_1pixel__t_1a3c4a1cdeab5b7ba31894a788ecf666df" kind="function"><name>pixel_t</name></member>
   </compound>
+  <compound refid="structsoftrender_1_1point__t" kind="struct"><name>softrender::point_t</name>
+    <member refid="structsoftrender_1_1point__t_1af3c2fa687d5b159abc87401f0e556260" kind="variable"><name>x</name></member>
+    <member refid="structsoftrender_1_1point__t_1a3cd7658d50120189ffb317a2d396df9a" kind="variable"><name>y</name></member>
+  </compound>
   <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
     <member refid="classsoftrender_1_1window__t_1a549973a71b40e61bc411a741469a3b1a" kind="variable"><name>m_canvas</name></member>
     <member refid="classsoftrender_1_1window__t_1a4f367993c59ad9849a519eec914f4035" kind="variable"><name>m_width</name></member>
@@ -25,6 +29,7 @@
     <member refid="classsoftrender_1_1window__t_1a57d86dc99bea44e6739906814a4324cf" kind="function"><name>height</name></member>
     <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
     <member refid="classsoftrender_1_1window__t_1aac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
+    <member refid="classsoftrender_1_1window__t_1a8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
     <member refid="classsoftrender_1_1window__t_1a8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
     <member refid="classsoftrender_1_1window__t_1a596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
     <member refid="classsoftrender_1_1window__t_1af85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
