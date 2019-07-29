@@ -188,6 +188,11 @@ void window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
     this->operator()(t_i, t_j) = t_pixel;
 }
 
+void window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
+{
+    this->operator()(t_point.y, t_point.x) = t_pixel;
+}
+
 bool window_t::closed() const noexcept
 {
     return !m_running;

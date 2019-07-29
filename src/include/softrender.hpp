@@ -47,6 +47,18 @@ struct pixel_t
 };
 
 ///
+/// \brief Simple structure for representing a point in 2D space.
+///
+/// (x=0, y=0) is in the top left corner.
+/// (x=0, y=$HEIGHT - 1) is in the bottom left corner.
+///
+struct point_t
+{
+    int x{0};
+    int y{0};
+};
+
+///
 /// \brief Use this to construct a window.
 ///
 /// This is just a wrapper around SDL to construct a surface from memory and
@@ -109,6 +121,12 @@ public:
     /// \param t_pixel The color of the point.
     ///
     void draw_point(int const t_i, int const t_j, pixel_t const& t_pixel);
+
+    ///
+    /// \brief Draws a point using a more traditional approach(x and y
+    ///        coordinates instead of lines and columns in a matrix).
+    ///
+    void draw_point(point_t const& t_point, pixel_t const& t_pixel);
 
     ///
     /// \brief Returns true if the window will close.
