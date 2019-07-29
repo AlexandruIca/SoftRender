@@ -11,5 +11,6 @@ endfunction()
 build_test( setup ${CMAKE_CURRENT_SOURCE_DIR}/setup.cpp )
 build_test( black_screen ${CMAKE_CURRENT_SOURCE_DIR}/black_screen.cpp )
 build_test( point ${CMAKE_CURRENT_SOURCE_DIR}/point.cpp )
+build_test( point_coord2D ${CMAKE_CURRENT_SOURCE_DIR}/point_coord2D.cpp )
 build_test( exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp )
 
