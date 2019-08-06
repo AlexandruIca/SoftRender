@@ -10,7 +10,10 @@ project( softrender LANGUAGES CXX )
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/" )
 include( SetCXXStandard )
 
-find_package( SDL2 REQUIRED )
+find_package( SDL2 CONFIG REQUIRED )
+find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
+
+message( "SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}" )
 
 add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/src/ )
 
@@ -35,7 +38,12 @@ target_compile_options( ${CMAKE_PROJECT_NAME}
     $<$<CXX_COMPILER_ID:MSVC>:
             /W4 /permissive- /analyze >
 )
-target_link_libraries( ${CMAKE_PROJECT_NAME} PRIVATE ${SDL2_LIBRARIES} )
+target_link_libraries(
+    ${CMAKE_PROJECT_NAME}
+    PRIVATE
+    SDL2::SDL2main
+    SDL2::SDL2-static
+)
 
 option( SOFTRENDER_BUILD_TESTS
     "Build all the tests that come with the library" OFF
