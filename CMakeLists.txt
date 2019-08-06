@@ -45,16 +45,20 @@ target_link_libraries(
     SDL2::SDL2-static
 )
 
-option( SOFTRENDER_BUILD_TESTS
-    "Build all the tests that come with the library" OFF
+option(
+    SOFTRENDER_BUILD_TESTS
+    "Build all the tests that come with the library"
+    OFF
 )
 
 if( ${SOFTRENDER_BUILD_TESTS} )
     add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/tests/ )
 endif()
 
-option( SOFTRENDER_BUILD_DOCS
-    "Build the documentation that comes with the library" OFF
+option(
+    SOFTRENDER_BUILD_DOCS
+    "Build the documentation that comes with the library"
+    OFF
 )
 
 if( ${SOFTRENDER_BUILD_DOCS} )
@@ -72,7 +76,8 @@ if( ${SOFTRENDER_BUILD_DOCS} )
     endif()
 endif()
 
-option( SOFTRENDER_BUILD_DOCS_MCSS
+option(
+    SOFTRENDER_BUILD_DOCS_MCSS
     "Build better looking documentation with doxygen-mcss"
     OFF
 )
