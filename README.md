@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/AlexandruIca/SoftRender.svg?branch=master)](https://travis-ci.org/AlexandruIca/SoftRender)
+[![Build status](https://ci.appveyor.com/api/projects/status/vg0dynfq737bbow6?svg=true)](https://ci.appveyor.com/project/AlexandruIca/softrender)
+------
 # Basic library for practising computer graphics.
 
 The single purpose of this library is to allow me to make a basic software
