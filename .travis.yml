@@ -1,0 +1,134 @@
+language: c++
+
+matrix:
+    include:
+        - os: linux
+          dist: xenial
+          env:
+              - BUILD_MODE=Debug
+              - MATRIX_EVAL="CC=gcc-8 && CXX=g++-8"
+              - CMAKE_EVAL="bash ../scripts/cmake.sh"
+              - VCPKG_EVAL=""
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-7"
+              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+          addons:
+              apt:
+                  update: true
+                  sources:
+                      - ubuntu-toolchain-r-test
+                      - llvm-toolchain-xenial-7
+                  packages:
+                      - make
+                      - cmake
+                      - g++-8
+                      - clang-7
+                      - clang-tidy-7
+                      - clang-format-7
+        - os: linux
+          dist: xenial
+          env:
+              - BUILD_MODE=Release
+              - MATRIX_EVAL="CC=gcc-8 && CXX=g++-8"
+              - CMAKE_EVAL="bash ../scripts/cmake.sh"
+              - VCPKG_EVAL=""
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-7"
+              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+          addons:
+              apt:
+                  update: true
+                  sources:
+                      - ubuntu-toolchain-r-test
+                      - llvm-toolchain-xenial-7
+                  packages:
+                      - make
+                      - cmake
+                      - g++-8
+                      - clang-7
+                      - clang-tidy-7
+                      - clang-format-7
+        - os: linux
+          dist: xenial
+          env:
+              - BUILD_MODE=Debug
+              - MATRIX_EVAL="CC=clang-7 && CXX=clang-7"
+              - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
+              - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-7"
+              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+          addons:
+              apt:
+                  update: true
+                  sources:
+                      - ubuntu-toolchain-r-test
+                      - llvm-toolchain-xenial-7
+                  packages:
+                      - make
+                      - cmake
+                      - g++-8
+                      - clang-7
+                      - clang-tidy-7
+                      - clang-format-7
+        - os: linux
+          dist: xenial
+          env:
+              - BUILD_MODE=Release
+              - MATRIX_EVAL="CC=clang-7 && CXX=clang-7"
+              - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
+              - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-7"
+              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+          addons:
+              apt:
+                  update: true
+                  sources:
+                      - ubuntu-toolchain-r-test
+                      - llvm-toolchain-xenial-7
+                  packages:
+                      - make
+                      - cmake
+                      - g++-8
+                      - clang-7
+                      - clang-tidy-7
+                      - clang-format-7
+#        - os: osx
+#          osx_image: xcode10.3
+#          env:
+#              - MATRIX_EVAL="CC=gcc-8 && CXX=g++-8"
+#              - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
+#              - CMAKE_EVAL="cmake -DCMAKE_BUILD_TYPE=Debug -DSOFTRENDER_BUILD_TESTS=ON -DCMAKE_TOOLCHAIN_FILE=${HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake .."
+#              - TIDY_EVAL=""
+#              - FORMAT_EVAL=""
+#              - OSX_EVAL="sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install"
+
+before_install:
+    - eval "${MATRIX_EVAL}"
+    - eval "${VCPKG_EVAL}"
+    - mkdir -p ${HOME}/vcpkg
+    - pushd ${HOME}/vcpkg
+    - git init
+    - git remote add origin "https://github.com/Microsoft/vcpkg.git"
+    - git fetch origin master
+    - git checkout -b master origin/master
+    - ./bootstrap-vcpkg.sh
+    - ./vcpkg install sdl2
+    - popd
+
+cache:
+    directories:
+        - ${HOME}/vcpkg/installed
+
+script:
+    - eval "${MATRIX_EVAL}"
+    - ${CXX} --version
+    - mkdir build
+    - cd build
+    - eval "${CMAKE_EVAL}"
+    - cmake --build .
+    - cd ..
+    - eval "${TIDY_EVAL}"
+    - eval "${FORMAT_EVAL}"
+
+notifications:
+    email:
+        on_success: never
+        on_failure: change
