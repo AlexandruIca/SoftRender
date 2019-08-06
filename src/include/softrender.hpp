@@ -19,10 +19,10 @@ namespace softrender {
 ///
 struct pixel_t
 {
-    std::byte r = std::byte{0};
-    std::byte g = std::byte{0};
-    std::byte b = std::byte{0};
-    std::byte a = std::byte{255};
+    std::byte r = std::byte{ 0 };
+    std::byte g = std::byte{ 0 };
+    std::byte b = std::byte{ 0 };
+    std::byte a = std::byte{ 255 };
 
     pixel_t() noexcept = default;
     ///
@@ -54,8 +54,8 @@ struct pixel_t
 ///
 struct point_t
 {
-    int x{0};
-    int y{0};
+    int x{ 0 };
+    int y{ 0 };
 };
 
 ///
@@ -73,11 +73,11 @@ private:
 
     int m_width;
     int m_height;
-    bool m_running{true};
+    bool m_running{ true };
 
-    SDL_Window* m_window{nullptr};
-    SDL_Renderer* m_renderer{nullptr};
-    SDL_Texture* m_texture{nullptr};
+    SDL_Window* m_window{ nullptr };
+    SDL_Renderer* m_renderer{ nullptr };
+    SDL_Texture* m_texture{ nullptr };
 
     void construct_canvas();
     void initialize_sdl();

@@ -9,7 +9,7 @@ int main()
         window_t window;
 
         while(!window.closed()) {
-            window.draw_point(1000, 1000, pixel_t{0, 0, 0, 0});
+            window.draw_point(1000, 1000, pixel_t{ 0, 0, 0, 0 });
             window.draw();
         }
     }

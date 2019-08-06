@@ -35,10 +35,10 @@ int test()
 namespace softrender {
 
 pixel_t::pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept
-    : r{std::byte(t_red)}
-    , g{std::byte(t_green)}
-    , b{std::byte(t_blue)}
-    , a{std::byte(t_alpha)}
+    : r{ std::byte(t_red) }
+    , g{ std::byte(t_green) }
+    , b{ std::byte(t_blue) }
+    , a{ std::byte(t_alpha) }
 {
 }
 
@@ -56,8 +56,11 @@ void window_t::initialize_sdl()
         error("Could not initialize sdl!");
     }
 
-    m_window = SDL_CreateWindow("SoftRender", SDL_WINDOWPOS_CENTERED,
-                                SDL_WINDOWPOS_CENTERED, m_width, m_height,
+    m_window = SDL_CreateWindow("SoftRender",
+                                SDL_WINDOWPOS_CENTERED,
+                                SDL_WINDOWPOS_CENTERED,
+                                m_width,
+                                m_height,
                                 SDL_WINDOW_SHOWN);
 
     if(m_window == nullptr) {
@@ -85,16 +88,16 @@ void window_t::construct_canvas()
 }
 
 window_t::window_t()
-    : m_width{640}
-    , m_height{480}
+    : m_width{ 640 }
+    , m_height{ 480 }
 {
     this->initialize_sdl();
     this->construct_canvas();
 }
 
 window_t::window_t(int const t_width, int const t_height)
-    : m_width{t_width}
-    , m_height{t_height}
+    : m_width{ t_width }
+    , m_height{ t_height }
 {
     this->initialize_sdl();
     this->construct_canvas();
@@ -144,9 +147,16 @@ void window_t::draw()
 
     using namespace surface_info;
 
-    SDL_Surface* surface = SDL_CreateRGBSurfaceFrom(
-        reinterpret_cast<void*>(m_canvas.data()), m_width, m_height, 32,
-        4 * m_width, rmask, gmask, bmask, amask);
+    SDL_Surface* surface =
+        SDL_CreateRGBSurfaceFrom(reinterpret_cast<void*>(m_canvas.data()),
+                                 m_width,
+                                 m_height,
+                                 32,
+                                 4 * m_width,
+                                 rmask,
+                                 gmask,
+                                 bmask,
+                                 amask);
 
     if(surface == nullptr) {
         error("Could not create surface to draw!");
