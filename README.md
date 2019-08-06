@@ -6,3 +6,6 @@
 The single purpose of this library is to allow me to make a basic software
 renderer to learn more about graphics programming.
 
+You can check the documentation [here](https://alexandruica.github.io/SoftRender/)
+though you won't see too much right now since the project is very young.
+
