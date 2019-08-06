@@ -231,4 +231,3 @@ pixel_t const& window_t::operator()(int const t_i, int const t_j) const
 }
 
 } // namespace softrender
-
