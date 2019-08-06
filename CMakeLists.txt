@@ -14,10 +14,6 @@ find_package( SDL2 REQUIRED )
 
 add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/src/ )
 
-message( "Hello: ${HELLO}" )
-message( "SoftRender INCLUDED DIRS: ${SOFTRENDER_INCLUDE_DIRS}" )
-message( "SoftRender SOURCES: ${SOFTRENDER_SRC_FILES}" )
-
 add_library( ${CMAKE_PROJECT_NAME} STATIC ${SOFTRENDER_SRC_FILES} )
 target_include_directories( ${CMAKE_PROJECT_NAME}
     PUBLIC
