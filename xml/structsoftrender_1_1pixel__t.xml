@@ -9,7 +9,7 @@
         <definition>std::byte softrender::pixel_t::r</definition>
         <argsstring></argsstring>
         <name>r</name>
-        <initializer>= std::byte{0}</initializer>
+        <initializer>= std::byte{ 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -23,7 +23,7 @@
         <definition>std::byte softrender::pixel_t::g</definition>
         <argsstring></argsstring>
         <name>g</name>
-        <initializer>= std::byte{0}</initializer>
+        <initializer>= std::byte{ 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -37,7 +37,7 @@
         <definition>std::byte softrender::pixel_t::b</definition>
         <argsstring></argsstring>
         <name>b</name>
-        <initializer>= std::byte{0}</initializer>
+        <initializer>= std::byte{ 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,7 +51,7 @@
         <definition>std::byte softrender::pixel_t::a</definition>
         <argsstring></argsstring>
         <name>a</name>
-        <initializer>= std::byte{255}</initializer>
+        <initializer>= std::byte{ 255 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

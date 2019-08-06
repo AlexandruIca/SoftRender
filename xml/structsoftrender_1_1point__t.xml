@@ -9,7 +9,7 @@
         <definition>int softrender::point_t::x</definition>
         <argsstring></argsstring>
         <name>x</name>
-        <initializer>{0}</initializer>
+        <initializer>{ 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -23,7 +23,7 @@
         <definition>int softrender::point_t::y</definition>
         <argsstring></argsstring>
         <name>y</name>
-        <initializer>{0}</initializer>
+        <initializer>{ 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -36,7 +36,7 @@
     <briefdescription>
 <para>Simple structure for representing a point in 2D space. </para>    </briefdescription>
     <detaileddescription>
-<para>(x=0, y=0) is in the top left corner. (x=0, y=$HEIGHT) is in the bottom left corner. </para>    </detaileddescription>
+<para>(x=0, y=0) is in the top left corner. (x=0, y=$HEIGHT - 1) is in the bottom left corner. </para>    </detaileddescription>
     <location file="src/include/softrender.hpp" line="56" column="1" bodyfile="src/include/softrender.hpp" bodystart="55" bodyend="59"/>
     <listofallmembers>
       <member refid="structsoftrender_1_1point__t_1af3c2fa687d5b159abc87401f0e556260" prot="public" virt="non-virtual"><scope>softrender::point_t</scope><name>x</name></member>
