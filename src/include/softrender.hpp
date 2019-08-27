@@ -113,11 +113,11 @@ public:
     ///
     /// \brief Get width of constructed window.
     ///
-    int width() const noexcept;
+    [[nodiscard]] int width() const noexcept;
     ///
     /// \brief Get height of constructed window.
     ///
-    int height() const noexcept;
+    [[nodiscard]] int height() const noexcept;
 
     ///
     /// \brief Draws everything to the screen and handles input.
@@ -155,7 +155,7 @@ public:
     ///
     /// \note If you press ESCAPE the application terminates.
     ///
-    bool closed() const noexcept;
+    [[nodiscard]] bool closed() const noexcept;
 
     ///
     /// \brief Access the rgba value at line=\p t_i and column=\p t_j.
@@ -165,7 +165,7 @@ public:
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
-    pixel_t& operator()(int const t_i, int const t_j);
+    [[nodiscard]] pixel_t& operator()(int const t_i, int const t_j);
     ///
     /// \brief Get a const reference to the rgba value at line=\p t_i and
     ///        column=\p t_j.
@@ -175,7 +175,7 @@ public:
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
-    pixel_t const& operator()(int const t_i, int const t_j) const;
+    [[nodiscard]] pixel_t const& operator()(int const t_i, int const t_j) const;
 
     ///
     /// \brief Returns corresponding position in the rgba matrix of a point
@@ -200,20 +200,21 @@ public:
     ///
     /// \ingroup canvas_manipulation
     ///
-    int from_coord2d_to_matrix(point_t const& t_point) const noexcept;
+    [[nodiscard]] int from_coord2d_to_matrix(point_t const& t_point) const
+        noexcept;
 
     ///
     /// \brief Returns the underlying canvas/matrix with rgba values.
     ///
     /// \ingroup canvas_manipulation
     ///
-    std::vector<pixel_t>& canvas() noexcept;
+    [[nodiscard]] std::vector<pixel_t>& canvas() noexcept;
     ///
     /// \brief Returns the underlying canvas/matrix with rgba values.
     ///
     /// \ingroup canvas_manipulation
     ///
-    std::vector<pixel_t> const& canvas() const noexcept;
+    [[nodiscard]] std::vector<pixel_t> const& canvas() const noexcept;
 };
 
 } // namespace softrender
