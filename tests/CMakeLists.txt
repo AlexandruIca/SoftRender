@@ -13,4 +13,4 @@ build_test( black_screen ${CMAKE_CURRENT_SOURCE_DIR}/black_screen.cpp )
 build_test( point ${CMAKE_CURRENT_SOURCE_DIR}/point.cpp )
 build_test( point_coord2D ${CMAKE_CURRENT_SOURCE_DIR}/point_coord2D.cpp )
 build_test( exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp )
-
+build_test( canvas_manipulation ${CMAKE_CURRENT_SOURCE_DIR}/canvas_manipulation.cpp )
