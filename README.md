@@ -8,3 +8,19 @@ renderer to learn more about graphics programming.
 
 You can check the documentation [here](https://alexandruica.github.io/SoftRender/)
 though you won't see too much right now since the project is very young.
+
+# Building
+
+First get [vcpkg](https://github.com/microsoft/vcpkg) and then install sdl2:
+```
+./vcpkg install sdl2
+```
+
+Then use CMake to build the library(choose what you want to turn ON/OFF):
+```
+cmake -DSOFTRENDER_BUILD_TESTS=ON\
+      -DSOFTRENDER_BUILD_DOCS=ON\
+      -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+
+cmake --build .
+```
