@@ -230,4 +230,19 @@ pixel_t const& window_t::operator()(int const t_i, int const t_j) const
     return m_canvas[t_i * m_width + t_j];
 }
 
+int window_t::from_coord2d_to_matrix(point_t const& t_point) const noexcept
+{
+    return t_point.y * m_width + t_point.x;
+}
+
+std::vector<pixel_t>& window_t::canvas() noexcept
+{
+    return m_canvas;
+}
+
+std::vector<pixel_t> const& window_t::canvas() const noexcept
+{
+    return m_canvas;
+}
+
 } // namespace softrender

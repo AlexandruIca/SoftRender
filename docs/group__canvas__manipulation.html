@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>softrender::point_t struct | SoftRender</title>
+  <title>Canvas manipulation module | SoftRender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -44,10 +44,48 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacesoftrender.html">softrender</a>::<wbr/></span>point_t <span class="m-thin">struct</span>
-        </h1>
-        <p>Simple structure for representing a point in 2D space.</p>
-<p>Examples:</p><ul><li>(x=0, y=0) is in the top left corner</li><li>(x=0, y=$HEIGHT - 1) is in the bottom left corner</li><li>(x=$WIDTH - 1, y=$HEIGHT - 1 is in the bottom right corner</li></ul>
+          Canvas manipulation <span class="m-thin">module</span></h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#func-members">Functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>These functions let you use the canvas directly but you shouldn&#x27;t really use them unless you absolutely have to.</p>
+        <section id="func-members">
+          <h2><a href="#func-members">Functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#gaf2073a517c81aec00df814271b6b5696" class="m-doc">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const -&gt; int <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>Returns corresponding position in the rgba matrix of a point <code>t_point</code> as if the canvas was a 2d matrix.</dd>
+            <dt id="ga8b326ad27b1240d66e5ddf5124a544ab">
+              <span class="m-doc-wrap-bumper">auto <a href="#ga8b326ad27b1240d66e5ddf5124a544ab" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) -&gt; std::vector&lt;pixel_t&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>Returns the underlying canvas/matrix with rgba values.</dd>
+            <dt id="ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4">
+              <span class="m-doc-wrap-bumper">auto <a href="#ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) const -&gt; std::vector&lt;pixel_t&gt; const &amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>Returns the underlying canvas/matrix with rgba values.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="gaf2073a517c81aec00df814271b6b5696"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">int </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaf2073a517c81aec00df814271b6b5696" class="m-doc-self">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <p>Returns corresponding position in the rgba matrix of a point <code>t_point</code> as if the canvas was a 2d matrix.</p>
+<p>With this you could say:</p><pre class="m-code"><span class="k">this</span><span class="o">-&gt;</span><span class="n">canvas</span><span class="p">()[</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">from_coord2d_to_matrix</span><span class="p">({</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">30</span>
+<span class="p">})];</span></pre><p>which is equivalent to this:</p><pre class="m-code"><span class="k">this</span><span class="o">-&gt;</span><span class="k">operator</span><span class="p">()(</span><span class="n">x</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">30</span><span class="p">);</span></pre><p>This will (hopefully) be useful for further optimizations for different algorithms(for example: draw_rect).</p>
+          </div></section>
+        </section>
       </div>
     </div>
   </div>

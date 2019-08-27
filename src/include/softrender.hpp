@@ -5,6 +5,20 @@
 #include <cstddef>
 #include <vector>
 
+///
+/// \defgroup unchecked_release No bound checking
+///
+/// \warning These are functions that will do no bound checking for you when you
+///          are running in release mode.
+///
+
+///
+/// \defgroup canvas_manipulation Canvas manipulation
+///
+/// These functions let you use the canvas directly but you shouldn't really use
+/// them unless you absolutely have to.
+///
+
 struct SDL_Window;
 struct SDL_Renderer;
 struct SDL_Texture;
@@ -49,8 +63,10 @@ struct pixel_t
 ///
 /// \brief Simple structure for representing a point in 2D space.
 ///
-/// (x=0, y=0) is in the top left corner.
-/// (x=0, y=$HEIGHT - 1) is in the bottom left corner.
+/// Examples:
+/// * (x=0, y=0) is in the top left corner
+/// * (x=0, y=$HEIGHT - 1) is in the bottom left corner
+/// * (x=$WIDTH - 1, y=$HEIGHT - 1 is in the bottom right corner
 ///
 struct point_t
 {
@@ -88,7 +104,7 @@ public:
     ///
     window_t();
     ///
-    /// \brief Constructs a window with \ref t_width width and t_height
+    /// \brief Constructs a window with \p t_width width and \p t_height
     ///        height.
     ///
     window_t(int const t_width, int const t_height);
@@ -114,7 +130,9 @@ public:
     void draw();
 
     ///
-    /// \brief Draws a point at a given coordinate.
+    /// \brief Draws a point at coordinate (x=\p t_j, y=\p t_i).
+    ///
+    /// \ingroup unchecked_release
     ///
     /// \param t_i The line on which the pixel will be put.
     /// \param t_j The column on which the pixel will be put.
@@ -126,30 +144,76 @@ public:
     /// \brief Draws a point using a more traditional approach(x and y
     ///        coordinates instead of lines and columns in a matrix).
     ///
+    /// \ingroup unchecked_release
+    ///
     void draw_point(point_t const& t_point, pixel_t const& t_pixel);
 
     ///
     /// \brief Returns true if the window will close.
+    ///
+    /// \ingroup unchecked_release
     ///
     /// \note If you press ESCAPE the application terminates.
     ///
     bool closed() const noexcept;
 
     ///
-    /// \brief Access the rgba value at [line](\ref t_i) and [column](\ref t_j).
+    /// \brief Access the rgba value at line=\p t_i and column=\p t_j.
+    ///
+    /// \ingroup unchecked_release
     ///
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
     pixel_t& operator()(int const t_i, int const t_j);
     ///
-    /// \brief Get a const reference to the rgba value at [line](\ref t_i) and
-    ///        [column](\ref t_j).
+    /// \brief Get a const reference to the rgba value at line=\p t_i and
+    ///        column=\p t_j.
+    ///
+    /// \ingroup unchecked_release
     ///
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
     pixel_t const& operator()(int const t_i, int const t_j) const;
+
+    ///
+    /// \brief Returns corresponding position in the rgba matrix of a point
+    ///        \p t_point as if the canvas was a 2d matrix.
+    ///
+    /// With this you could say:
+    ///
+    /// \code{.cpp}
+    ///     this->canvas()[this->from_coord2d_to_matrix({
+    ///         x=20, y=30
+    ///     })];
+    /// \endcode
+    ///
+    /// which is equivalent to this:
+    ///
+    /// \code{.cpp}
+    ///     this->operator()(x=20, y=30);
+    /// \endcode
+    ///
+    /// This will (hopefully) be useful for further optimizations for different
+    /// algorithms(for example: draw_rect).
+    ///
+    /// \ingroup canvas_manipulation
+    ///
+    int from_coord2d_to_matrix(point_t const& t_point) const noexcept;
+
+    ///
+    /// \brief Returns the underlying canvas/matrix with rgba values.
+    ///
+    /// \ingroup canvas_manipulation
+    ///
+    std::vector<pixel_t>& canvas() noexcept;
+    ///
+    /// \brief Returns the underlying canvas/matrix with rgba values.
+    ///
+    /// \ingroup canvas_manipulation
+    ///
+    std::vector<pixel_t> const& canvas() const noexcept;
 };
 
 } // namespace softrender

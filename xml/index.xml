@@ -28,11 +28,14 @@
     <member refid="classsoftrender_1_1window__t_1a484ea262a12ec122fb0554bac1cc5c3a" kind="function"><name>width</name></member>
     <member refid="classsoftrender_1_1window__t_1a57d86dc99bea44e6739906814a4324cf" kind="function"><name>height</name></member>
     <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
-    <member refid="classsoftrender_1_1window__t_1aac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
-    <member refid="classsoftrender_1_1window__t_1a8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
-    <member refid="classsoftrender_1_1window__t_1a8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
-    <member refid="classsoftrender_1_1window__t_1a596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
-    <member refid="classsoftrender_1_1window__t_1af85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
+    <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
+    <member refid="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" kind="function"><name>from_coord2d_to_matrix</name></member>
+    <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
+    <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
   </compound>
   <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
     <member refid="namespacesoftrender_1a87d9f28349af2201361e38fa449754de" kind="function"><name>error</name></member>
@@ -43,6 +46,8 @@
     <member refid="namespacesoftrender_1_1surface__info_1a9641e2f78ea828c6d046d9b043f10a80" kind="variable"><name>bmask</name></member>
     <member refid="namespacesoftrender_1_1surface__info_1aee63053262773d4bcb7f37c8cae70080" kind="variable"><name>amask</name></member>
   </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
     <member refid="softrender_8hpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
   </compound>
@@ -50,8 +55,22 @@
     <member refid="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" kind="function"><name>sdl_error</name></member>
     <member refid="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
   </compound>
+  <compound refid="group__unchecked__release" kind="group"><name>unchecked_release</name>
+    <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
+    <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="group__canvas__manipulation" kind="group"><name>canvas_manipulation</name>
+    <member refid="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" kind="function"><name>from_coord2d_to_matrix</name></member>
+    <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
+    <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
+  </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

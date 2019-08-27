@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SoftRender</title>
+  <title>Quickstart | SoftRender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -44,8 +44,33 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          SoftRender
+          Quickstart
         </h1>
+<p>This creates a blank screen and exits either when you close the window or when you press ESCAPE:</p><pre class="m-code"><span class="cp">#include</span> <span class="cpf">&quot;softrender.hpp&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">softrender</span><span class="o">::</span><span class="n">window_t</span> <span class="n">window</span><span class="p">{</span> <span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span> <span class="p">};</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">window</span><span class="p">.</span><span class="n">closed</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">window</span><span class="p">.</span><span class="n">draw</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre><p>To draw a red point in the middle of the screen:</p><pre class="m-code"><span class="cp">#include</span> <span class="cpf">&quot;softrender.hpp&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">softrender</span><span class="o">::</span><span class="n">window_t</span> <span class="n">window</span><span class="p">{</span> <span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span> <span class="p">};</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">window</span><span class="p">.</span><span class="n">closed</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">window</span><span class="p">.</span><span class="n">draw_point</span><span class="p">(</span>
+            <span class="n">softrender</span><span class="o">::</span><span class="n">point_t</span><span class="p">{</span>
+                <span class="cm">/*x=*/</span><span class="n">window</span><span class="p">.</span><span class="n">width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="cm">/*y=*/</span><span class="n">window</span><span class="p">.</span><span class="n">height</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span>
+            <span class="p">},</span>
+            <span class="n">softrender</span><span class="o">::</span><span class="n">pixel_t</span><span class="p">{</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">}</span>
+        <span class="p">);</span>
+        <span class="n">window</span><span class="p">.</span><span class="n">draw</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre>
       </div>
     </div>
   </div>
@@ -90,7 +115,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>SoftRender. Created with <a href="https://doxygen.org/">Doxygen</a> 0 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>SoftRender. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>
