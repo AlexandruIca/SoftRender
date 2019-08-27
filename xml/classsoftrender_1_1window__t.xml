@@ -402,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="210" column="1" bodyfile="src/softrender.cpp" bodystart="238" bodyend="241"/>
+        <location file="src/include/softrender.hpp" line="211" column="1" bodyfile="src/softrender.cpp" bodystart="238" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> &gt; const  &amp;</type>
@@ -415,7 +415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="216" column="1" bodyfile="src/softrender.cpp" bodystart="243" bodyend="246"/>
+        <location file="src/include/softrender.hpp" line="217" column="1" bodyfile="src/softrender.cpp" bodystart="243" bodyend="246"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -423,7 +423,7 @@
     <detaileddescription>
 <para>This is just a wrapper around SDL to construct a surface from memory and blit it.</para><para><simplesect kind="note"><para>There is no separate renderer class to keep the code super simple. </para></simplesect>
 </para>    </detaileddescription>
-    <location file="src/include/softrender.hpp" line="86" column="1" bodyfile="src/include/softrender.hpp" bodystart="85" bodyend="217"/>
+    <location file="src/include/softrender.hpp" line="86" column="1" bodyfile="src/include/softrender.hpp" bodystart="85" bodyend="218"/>
     <listofallmembers>
       <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>canvas</name></member>
       <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>canvas</name></member>

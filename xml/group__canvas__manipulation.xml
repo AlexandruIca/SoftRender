@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="210" column="1" bodyfile="src/softrender.cpp" bodystart="238" bodyend="241"/>
+        <location file="src/include/softrender.hpp" line="211" column="1" bodyfile="src/softrender.cpp" bodystart="238" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; pixel_t &gt; const  &amp;</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="216" column="1" bodyfile="src/softrender.cpp" bodystart="243" bodyend="246"/>
+        <location file="src/include/softrender.hpp" line="217" column="1" bodyfile="src/softrender.cpp" bodystart="243" bodyend="246"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
