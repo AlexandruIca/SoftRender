@@ -22,6 +22,8 @@ First get [vcpkg](https://github.com/microsoft/vcpkg) and then install sdl2:
 
 Then use CMake to build the library(choose what you want to turn ON/OFF):
 ```
+mkdir build && cd build
+
 cmake -DSOFTRENDER_BUILD_TESTS=ON\
       -DSOFTRENDER_BUILD_DOCS=ON\
       -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
