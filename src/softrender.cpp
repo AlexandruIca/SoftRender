@@ -9,10 +9,15 @@
 #include <stdexcept>
 #include <string>
 
-///
-/// \brief Wrapper around **SDL_GetError**.
-///
-static void sdl_error(std::string const& t_error)
+namespace softrender {
+
+void error(std::string const&);
+
+}
+
+namespace graphics_impl {
+
+void sdl_error(std::string const& t_error)
 {
     std::cout << "Error: " << t_error << "\n\t";
     std::cout << "SDL: " << SDL_GetError() << std::endl << std::endl;
@@ -30,6 +35,182 @@ int test()
     SDL_Quit();
 
     return EXIT_SUCCESS;
+}
+
+void initialize_sdl(SDL_Window*& t_window,
+                    SDL_Renderer*& t_renderer,
+                    int const t_width,
+                    int const t_height)
+{
+    using namespace softrender;
+
+    if(SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        error("Could not initialize sdl!");
+    }
+
+    t_window = SDL_CreateWindow("SoftRender",
+                                SDL_WINDOWPOS_CENTERED,
+                                SDL_WINDOWPOS_CENTERED,
+                                t_width,
+                                t_height,
+                                SDL_WINDOW_SHOWN);
+
+    if(t_window == nullptr) {
+        error("Could not create window!");
+    }
+
+    SDL_SetWindowResizable(t_window, SDL_FALSE);
+
+    t_renderer = SDL_CreateRenderer(t_window, -1, SDL_RENDERER_ACCELERATED);
+
+    if(t_renderer == nullptr) {
+        error("Could not create a renderer!");
+    }
+}
+
+void close_sdl(SDL_Window* t_window,
+               SDL_Renderer* t_renderer,
+               SDL_Texture* t_texture)
+{
+    if(t_texture != nullptr) {
+        SDL_DestroyTexture(t_texture);
+    }
+    SDL_DestroyRenderer(t_renderer);
+    SDL_DestroyWindow(t_window);
+    SDL_Quit();
+}
+
+namespace surface_info {
+
+#if SDL_BYTEORDER == SDL_BIG_ENDIAN
+constexpr Uint32 rmask = 0xff000000;
+constexpr Uint32 gmask = 0x00ff0000;
+constexpr Uint32 bmask = 0x0000ff00;
+constexpr Uint32 amask = 0x000000ff;
+#else
+constexpr Uint32 rmask = 0x000000ff;
+constexpr Uint32 gmask = 0x0000ff00;
+constexpr Uint32 bmask = 0x00ff0000;
+constexpr Uint32 amask = 0xff000000;
+#endif
+
+} // namespace surface_info
+
+void draw(SDL_Renderer*& t_renderer,
+          SDL_Texture*& t_texture,
+          std::vector<softrender::pixel_t>& t_canvas,
+          int const t_width,
+          int const t_height,
+          bool& t_running)
+{
+    if(t_texture != nullptr) {
+        SDL_DestroyTexture(t_texture);
+    }
+
+    using namespace surface_info;
+    using namespace softrender;
+
+    SDL_Surface* surface =
+        SDL_CreateRGBSurfaceFrom(reinterpret_cast<void*>(t_canvas.data()),
+                                 t_width,
+                                 t_height,
+                                 32,
+                                 4 * t_width,
+                                 rmask,
+                                 gmask,
+                                 bmask,
+                                 amask);
+
+    if(surface == nullptr) {
+        error("Could not create surface to draw!");
+    }
+
+    t_texture = SDL_CreateTextureFromSurface(t_renderer, surface);
+
+    SDL_Rect screen;
+    screen.x = 0;
+    screen.y = 0;
+    screen.w = t_width;
+    screen.h = t_height;
+
+    SDL_SetRenderDrawColor(t_renderer, 0, 0, 0, 255);
+    SDL_RenderClear(t_renderer);
+    SDL_RenderCopy(t_renderer, t_texture, nullptr, &screen);
+    SDL_RenderPresent(t_renderer);
+    SDL_FreeSurface(surface);
+
+    SDL_Event e;
+    while(SDL_PollEvent(&e)) {
+        switch(e.type) {
+        case SDL_QUIT:
+            t_running = false;
+            break;
+        case SDL_KEYDOWN:
+            if(e.key.keysym.sym == SDLK_ESCAPE) {
+                t_running = false;
+            }
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+} // namespace graphics_impl
+
+namespace dummy_impl {
+
+void sdl_error(std::string const&)
+{
+}
+
+int test()
+{
+    return EXIT_SUCCESS;
+}
+
+void initialize_sdl(SDL_Window*&, SDL_Renderer*&, int const, int const)
+{
+}
+
+void close_sdl(SDL_Window*&, SDL_Renderer*&, SDL_Texture*&)
+{
+}
+
+void draw(SDL_Renderer*,
+          SDL_Texture*,
+          std::vector<softrender::pixel_t>&,
+          int,
+          int,
+          bool& t_running)
+{
+    static int num_iterations{ 0 };
+    t_running = (++num_iterations < 1000);
+}
+
+} // namespace dummy_impl
+
+#ifdef SOFTRENDER_MOCKING
+
+namespace impl = dummy_impl;
+
+#else
+
+namespace impl = graphics_impl;
+
+#endif
+
+///
+/// \brief Wrapper around **SDL_GetError**.
+///
+static void sdl_error(std::string const& t_error)
+{
+    impl::sdl_error(t_error);
+}
+
+int test()
+{
+    return impl::test();
 }
 
 namespace softrender {
@@ -52,28 +233,7 @@ void error(std::string const& t_error)
 
 void window_t::initialize_sdl()
 {
-    if(SDL_Init(SDL_INIT_EVERYTHING) < 0) {
-        error("Could not initialize sdl!");
-    }
-
-    m_window = SDL_CreateWindow("SoftRender",
-                                SDL_WINDOWPOS_CENTERED,
-                                SDL_WINDOWPOS_CENTERED,
-                                m_width,
-                                m_height,
-                                SDL_WINDOW_SHOWN);
-
-    if(m_window == nullptr) {
-        error("Could not create window!");
-    }
-
-    SDL_SetWindowResizable(m_window, SDL_FALSE);
-
-    m_renderer = SDL_CreateRenderer(m_window, -1, SDL_RENDERER_ACCELERATED);
-
-    if(m_renderer == nullptr) {
-        error("Could not create a renderer!");
-    }
+    impl::initialize_sdl(m_window, m_renderer, m_width, m_height);
 }
 
 void window_t::construct_canvas()
@@ -105,12 +265,7 @@ window_t::window_t(int const t_width, int const t_height)
 
 window_t::~window_t() noexcept
 {
-    if(m_texture != nullptr) {
-        SDL_DestroyTexture(m_texture);
-    }
-    SDL_DestroyRenderer(m_renderer);
-    SDL_DestroyWindow(m_window);
-    SDL_Quit();
+    impl::close_sdl(m_window, m_renderer, m_texture);
 }
 
 int window_t::width() const noexcept
@@ -123,74 +278,9 @@ int window_t::height() const noexcept
     return m_height;
 }
 
-namespace surface_info {
-
-#if SDL_BYTEORDER == SDL_BIG_ENDIAN
-constexpr Uint32 rmask = 0xff000000;
-constexpr Uint32 gmask = 0x00ff0000;
-constexpr Uint32 bmask = 0x0000ff00;
-constexpr Uint32 amask = 0x000000ff;
-#else
-constexpr Uint32 rmask = 0x000000ff;
-constexpr Uint32 gmask = 0x0000ff00;
-constexpr Uint32 bmask = 0x00ff0000;
-constexpr Uint32 amask = 0xff000000;
-#endif
-
-} // namespace surface_info
-
 void window_t::draw()
 {
-    if(m_texture != nullptr) {
-        SDL_DestroyTexture(m_texture);
-    }
-
-    using namespace surface_info;
-
-    SDL_Surface* surface =
-        SDL_CreateRGBSurfaceFrom(reinterpret_cast<void*>(m_canvas.data()),
-                                 m_width,
-                                 m_height,
-                                 32,
-                                 4 * m_width,
-                                 rmask,
-                                 gmask,
-                                 bmask,
-                                 amask);
-
-    if(surface == nullptr) {
-        error("Could not create surface to draw!");
-    }
-
-    m_texture = SDL_CreateTextureFromSurface(m_renderer, surface);
-
-    SDL_Rect screen;
-    screen.x = 0;
-    screen.y = 0;
-    screen.w = m_width;
-    screen.h = m_height;
-
-    SDL_SetRenderDrawColor(m_renderer, 0, 0, 0, 255);
-    SDL_RenderClear(m_renderer);
-    SDL_RenderCopy(m_renderer, m_texture, nullptr, &screen);
-    SDL_RenderPresent(m_renderer);
-    SDL_FreeSurface(surface);
-
-    SDL_Event e;
-    while(SDL_PollEvent(&e)) {
-        switch(e.type) {
-        case SDL_QUIT:
-            m_running = false;
-            break;
-        case SDL_KEYDOWN:
-            if(e.key.keysym.sym == SDLK_ESCAPE) {
-                m_running = false;
-            }
-            break;
-        default:
-            break;
-        }
-    }
+    impl::draw(m_renderer, m_texture, m_canvas, m_width, m_height, m_running);
 }
 
 void window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
