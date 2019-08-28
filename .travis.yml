@@ -126,7 +126,7 @@ script:
     - cmake --build .
     - cd tests
     - ctest -V
-    - cd ..
+    - cd ../..
     - eval "${TIDY_EVAL}"
     - eval "${FORMAT_EVAL}"
 
