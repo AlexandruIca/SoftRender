@@ -8,7 +8,7 @@ matrix:
               - BUILD_MODE=Debug
               - MATRIX_EVAL="CC=gcc-8 && CXX=g++-8"
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
-              - CODECOV_EVAL="gcov --version && bash ../scripts/codecov-io.sh"
+              - CODECOV_EVAL="gcov-8 --version && bash ../scripts/codecov-io.sh"
               - CODECOV_TOKEN="c3ade3e3-5a6c-4f0a-814c-0538338d1116"
               - VCPKG_EVAL=""
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
