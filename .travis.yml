@@ -106,14 +106,8 @@ before_install:
     - eval "${MATRIX_EVAL}"
     - eval "${VCPKG_EVAL}"
     - mkdir -p ${HOME}/vcpkg
-    - pushd ${HOME}/vcpkg
-    - git init
-    - git remote add origin "https://github.com/Microsoft/vcpkg.git"
-    - git fetch origin master
-    - git checkout -b master origin/master
-    - ./bootstrap-vcpkg.sh
-    - ./vcpkg install sdl2
-    - popd
+    - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then bash ./scripts/vcpkg.sh; fi
+    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install sdl2; fi
 
 cache:
     directories:
