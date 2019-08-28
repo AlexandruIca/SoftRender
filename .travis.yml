@@ -1,14 +1,12 @@
 language: c++
 
-env:
-    - CLANG_VER=8
-    - GCC_VER=8
-
 matrix:
     include:
         - os: linux
           dist: xenial
           env:
+              - CLANG_VER=8
+              - GCC_VER=8
               - BUILD_MODE=Debug
               - MATRIX_EVAL="CC=gcc-${GCC_VER} && CXX=g++-${GCC_VER}"
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
@@ -31,6 +29,8 @@ matrix:
         - os: linux
           dist: xenial
           env:
+              - CLANG_VER=8
+              - GCC_VER=8
               - BUILD_MODE=Release
               - MATRIX_EVAL="CC=gcc-${GCC_VER} && CXX=g++-${GCC_VER}"
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
@@ -53,6 +53,8 @@ matrix:
         - os: linux
           dist: xenial
           env:
+              - CLANG_VER=8
+              - GCC_VER=8
               - BUILD_MODE=Debug
               - MATRIX_EVAL="CC=clang-${CLANG_VER} && CXX=clang++-${CLANG_VER}"
               - VCPKG_EVAL="CC=gcc-${GCC_VER} && CXX=g++-${GCC_VER}"
@@ -75,6 +77,8 @@ matrix:
         - os: linux
           dist: xenial
           env:
+              - CLANG_VER=8
+              - GCC_VER=8
               - BUILD_MODE=Release
               - MATRIX_EVAL="CC=clang-${CLANG_VER} && CXX=clang++-${CLANG_VER}"
               - VCPKG_EVAL="CC=gcc-${GCC_VER} && CXX=g++-${GCC_VER}"
