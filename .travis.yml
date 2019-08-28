@@ -92,15 +92,16 @@ matrix:
                       - clang-8
                       - clang-tidy-8
                       - clang-format-8
-#        - os: osx
-#          osx_image: xcode10.3
-#          env:
-#              - MATRIX_EVAL="CC=gcc-8 && CXX=g++-8"
-#              - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
-#              - CMAKE_EVAL="cmake -DCMAKE_BUILD_TYPE=Debug -DSOFTRENDER_BUILD_TESTS=ON -DCMAKE_TOOLCHAIN_FILE=${HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake .."
-#              - TIDY_EVAL=""
-#              - FORMAT_EVAL=""
-#              - OSX_EVAL="sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install"
+        - os: osx
+          osx_image: xcode11
+          env:
+              - BUILD_TYPE=Debug
+              - CMAKE_EVAL="bash ../scripts/cmake-osx.sh"
+        - os: osx
+          osx_image: xcode11
+          env:
+              - BUILD_TYPE=Release
+              - CMAKE_EVAL="bash ../scripts/cmake-osx.sh"
 
 before_install:
     - eval "${MATRIX_EVAL}"
