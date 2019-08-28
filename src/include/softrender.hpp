@@ -24,6 +24,15 @@ struct SDL_Renderer;
 struct SDL_Texture;
 
 ///
+/// \def SOFTRENDER_MOCKING
+///
+/// If it's defined then there will be no calls to SDL_* functions but to some
+/// dummy stubs instead so nothing is drawn on the screen.
+/// Defined if you passed -DSOFTRENDER_MOCKING=ON to cmake. Useful if you
+/// want to run sanitizers, get code coverage and for CI.
+///
+
+///
 /// \brief All key functionality is in this namespace.
 ///
 namespace softrender {
@@ -79,8 +88,6 @@ struct point_t
 ///
 /// This is just a wrapper around SDL to construct a surface from memory and
 /// blit it.
-///
-/// \note There is no separate renderer class to keep the code super simple.
 ///
 class window_t
 {
