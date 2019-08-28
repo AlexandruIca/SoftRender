@@ -18,30 +18,32 @@ I couldn't make vcpkg build on OSX so I have only tested it on windows and linux
 but if you can install vcpkg on a Mac then it should work.
 
 First get [vcpkg](https://github.com/microsoft/vcpkg) and then install sdl2:
-```
-./vcpkg install sdl2
+```sh
+$ ./vcpkg install sdl2
 ```
 
 Then use CMake to build the library(choose what you want to turn ON/OFF):
-```
-mkdir build && cd build
+```sh
+$ mkdir build && cd build
 
-cmake -DSOFTRENDER_BUILD_TESTS=ON\
-      -DSOFTRENDER_BUILD_DOCS=OFF\
-      -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+$ cmake -DSOFTRENDER_BUILD_TESTS=ON\
+        -DSOFTRENDER_BUILD_DOCS=OFF\
+        -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 
-cmake --build .
+$ cmake --build .
 ```
 
 ## MacOS
 
 If you, like me, can't install vcpkg on a Mac you can easily build this without
 it:
-```
-brew install sdl2
+```sh
+$ brew install sdl2
 
-cmake -DSOFTRENDER_BUILD_TESTS=ON\
-      -DSOFTRENDER_BUILD_DOCS=OFF ..
+$ mkdir build && cd build
 
-cmake --build .
+$ cmake -DSOFTRENDER_BUILD_TESTS=ON\
+        -DSOFTRENDER_BUILD_DOCS=OFF ..
+
+$ cmake --build .
 ```
