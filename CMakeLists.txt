@@ -10,6 +10,7 @@ project( softrender LANGUAGES CXX )
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/" )
 include( SetCXXStandard )
 include( Sanitizers )
+include( CodeCoverage )
 
 find_package( SDL2 CONFIG REQUIRED )
 find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
@@ -48,6 +49,7 @@ target_link_libraries(
     SDL2::SDL2main
     SDL2::SDL2-static
 )
+add_coverage( ${CMAKE_PROJECT_NAME} )
 
 option(
     SOFTRENDER_BUILD_TESTS
