@@ -11,6 +11,9 @@ though you won't see too much right now since the project is very young.
 
 # Building
 
+I couldn't make vcpkg build on OSX so I have only tested it on windows and linux
+but if you can install vcpkg on a Mac then it should work.
+
 First get [vcpkg](https://github.com/microsoft/vcpkg) and then install sdl2:
 ```
 ./vcpkg install sdl2
