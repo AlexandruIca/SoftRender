@@ -9,6 +9,7 @@ project( softrender LANGUAGES CXX )
 
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/" )
 include( SetCXXStandard )
+include( Sanitizers )
 
 find_package( SDL2 CONFIG REQUIRED )
 find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
@@ -16,6 +17,8 @@ find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
 message( "SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}" )
 
 add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/src/ )
+
+option( SOFTRENDER_MOCKING "Mock creating a window" OFF )
 
 add_library( ${CMAKE_PROJECT_NAME} STATIC ${SOFTRENDER_SRC_FILES} )
 target_include_directories( ${CMAKE_PROJECT_NAME}
@@ -28,6 +31,7 @@ target_compile_definitions( ${CMAKE_PROJECT_NAME}
     PRIVATE
     $<$<CONFIG:Debug>:SOFTRENDER_DEBUG>
     $<$<CONFIG:Release>:SOFTRENDER_RELEASE>
+    $<$<BOOL:${SOFTRENDER_MOCKING}>:SOFTRENDER_MOCKING>
 )
 target_compile_options( ${CMAKE_PROJECT_NAME}
     PRIVATE
