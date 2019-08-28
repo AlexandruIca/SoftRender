@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/AlexandruIca/SoftRender.svg?branch=master)](https://travis-ci.org/AlexandruIca/SoftRender)
 [![Build status](https://ci.appveyor.com/api/projects/status/vg0dynfq737bbow6?svg=true)](https://ci.appveyor.com/project/AlexandruIca/softrender)
+[![codecov](https://codecov.io/gh/AlexandruIca/SoftRender/branch/master/graph/badge.svg)](https://codecov.io/gh/AlexandruIca/SoftRender)
 ------
 # Basic library for practising computer graphics.
 
