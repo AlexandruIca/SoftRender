@@ -12,8 +12,13 @@ include( SetCXXStandard )
 include( Sanitizers )
 include( CodeCoverage )
 
-find_package( SDL2 CONFIG REQUIRED )
-find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
+if( NOT APPLE )
+    find_package( SDL2 CONFIG REQUIRED )
+    find_path( SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h )
+    set( SDL2_LIBRARIES SDL2::SDL2main SDL2::SDL2-static )
+else()
+    find_package( SDL2 REQUIRED )
+endif()
 
 message( "SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}" )
 
@@ -46,8 +51,7 @@ target_compile_options( ${CMAKE_PROJECT_NAME}
 target_link_libraries(
     ${CMAKE_PROJECT_NAME}
     PRIVATE
-    SDL2::SDL2main
-    SDL2::SDL2-static
+    ${SDL2_LIBRARIES}
 )
 add_coverage( ${CMAKE_PROJECT_NAME} )
 
