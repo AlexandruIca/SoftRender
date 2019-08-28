@@ -37,14 +37,28 @@
     <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
     <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
   </compound>
-  <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
-    <member refid="namespacesoftrender_1a87d9f28349af2201361e38fa449754de" kind="function"><name>error</name></member>
+  <compound refid="namespacedummy__impl" kind="namespace"><name>dummy_impl</name>
+    <member refid="namespacedummy__impl_1a274be1b1064befc6eaa0cb6733dac591" kind="function"><name>sdl_error</name></member>
+    <member refid="namespacedummy__impl_1a8f182468428accdcb5a6c700dfced31c" kind="function"><name>test</name></member>
+    <member refid="namespacedummy__impl_1a7aefb00f5f6cc6cf4d3a223a4e2e0bbc" kind="function"><name>initialize_sdl</name></member>
+    <member refid="namespacedummy__impl_1a0508d50b8c21ea2a74b04e16aa950990" kind="function"><name>close_sdl</name></member>
+    <member refid="namespacedummy__impl_1a1166c127dacf547b49aabf696dd63745" kind="function"><name>draw</name></member>
   </compound>
-  <compound refid="namespacesoftrender_1_1surface__info" kind="namespace"><name>softrender::surface_info</name>
-    <member refid="namespacesoftrender_1_1surface__info_1a1179dc25ddf3d4bbabcb16b41ce93f42" kind="variable"><name>rmask</name></member>
-    <member refid="namespacesoftrender_1_1surface__info_1a8141a9cc26982019990fd5389dc545c3" kind="variable"><name>gmask</name></member>
-    <member refid="namespacesoftrender_1_1surface__info_1a9641e2f78ea828c6d046d9b043f10a80" kind="variable"><name>bmask</name></member>
-    <member refid="namespacesoftrender_1_1surface__info_1aee63053262773d4bcb7f37c8cae70080" kind="variable"><name>amask</name></member>
+  <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
+    <member refid="namespacegraphics__impl_1a9146673080ae0cfd6f9d6d130eb61c29" kind="function"><name>sdl_error</name></member>
+    <member refid="namespacegraphics__impl_1a27fd0cc834d13144da7f4a5306a5b7e7" kind="function"><name>test</name></member>
+    <member refid="namespacegraphics__impl_1a98a7481d6589e6b5b54a6be84a9ebd8f" kind="function"><name>initialize_sdl</name></member>
+    <member refid="namespacegraphics__impl_1a071ae3dbf3544c4e382e74164862d311" kind="function"><name>close_sdl</name></member>
+    <member refid="namespacegraphics__impl_1aa6d7a3c11e9512b84b94de943630dc05" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="namespacegraphics__impl_1_1surface__info" kind="namespace"><name>graphics_impl::surface_info</name>
+    <member refid="namespacegraphics__impl_1_1surface__info_1a1a3307198e0347dffb6a28d95507943b" kind="variable"><name>rmask</name></member>
+    <member refid="namespacegraphics__impl_1_1surface__info_1a2ae79467b272af4d0066f9b1ae0751bb" kind="variable"><name>gmask</name></member>
+    <member refid="namespacegraphics__impl_1_1surface__info_1a930bfc5f6df08c71161b9501af9bfb0e" kind="variable"><name>bmask</name></member>
+    <member refid="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" kind="variable"><name>amask</name></member>
+  </compound>
+  <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
+    <member refid="namespacesoftrender_1aff2e71689ced1bd3278d68dd35323d72" kind="function"><name>error</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>

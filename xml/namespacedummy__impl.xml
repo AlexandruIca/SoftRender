@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacedummy__impl" kind="namespace" language="C++">
+    <compoundname>dummy_impl</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedummy__impl_1a274be1b1064befc6eaa0cb6733dac591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_impl::sdl_error</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>sdl_error</name>
+        <param>
+          <type>std::string const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="163" column="1" bodyfile="src/softrender.cpp" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedummy__impl_1a8f182468428accdcb5a6c700dfced31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dummy_impl::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="167" column="1" bodyfile="src/softrender.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedummy__impl_1a7aefb00f5f6cc6cf4d3a223a4e2e0bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_impl::initialize_sdl</definition>
+        <argsstring>(SDL_Window *&amp;, SDL_Renderer *&amp;, int const, int const)</argsstring>
+        <name>initialize_sdl</name>
+        <param>
+          <type>SDL_Window *&amp;</type>
+        </param>
+        <param>
+          <type>SDL_Renderer *&amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>const</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>const</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="172" column="1" bodyfile="src/softrender.cpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedummy__impl_1a0508d50b8c21ea2a74b04e16aa950990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_impl::close_sdl</definition>
+        <argsstring>(SDL_Window *&amp;, SDL_Renderer *&amp;, SDL_Texture *&amp;)</argsstring>
+        <name>close_sdl</name>
+        <param>
+          <type>SDL_Window *&amp;</type>
+        </param>
+        <param>
+          <type>SDL_Renderer *&amp;</type>
+        </param>
+        <param>
+          <type>SDL_Texture *&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="176" column="1" bodyfile="src/softrender.cpp" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedummy__impl_1a1166c127dacf547b49aabf696dd63745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dummy_impl::draw</definition>
+        <argsstring>(SDL_Renderer *, SDL_Texture *, std::vector&lt; softrender::pixel_t &gt; &amp;, int, int, bool &amp;t_running)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SDL_Renderer *</type>
+        </param>
+        <param>
+          <type>SDL_Texture *</type>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structsoftrender_1_1pixel__t" kindref="compound">softrender::pixel_t</ref> &gt; &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>t_running</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="180" column="1" bodyfile="src/softrender.cpp" bodystart="180" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/softrender.cpp" line="161" column="1"/>
+  </compounddef>
+</doxygen>

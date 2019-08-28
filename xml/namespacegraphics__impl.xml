@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegraphics__impl" kind="namespace" language="C++">
+    <compoundname>graphics_impl</compoundname>
+    <innernamespace refid="namespacegraphics__impl_1_1surface__info">graphics_impl::surface_info</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegraphics__impl_1a9146673080ae0cfd6f9d6d130eb61c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_impl::sdl_error</definition>
+        <argsstring>(std::string const &amp;t_error)</argsstring>
+        <name>sdl_error</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="20" column="1" bodyfile="src/softrender.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegraphics__impl_1a27fd0cc834d13144da7f4a5306a5b7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int graphics_impl::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="26" column="1" bodyfile="src/softrender.cpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegraphics__impl_1a98a7481d6589e6b5b54a6be84a9ebd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_impl::initialize_sdl</definition>
+        <argsstring>(SDL_Window *&amp;t_window, SDL_Renderer *&amp;t_renderer, int const t_width, int const t_height)</argsstring>
+        <name>initialize_sdl</name>
+        <param>
+          <type>SDL_Window *&amp;</type>
+          <declname>t_window</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *&amp;</type>
+          <declname>t_renderer</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_width</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="40" column="1" bodyfile="src/softrender.cpp" bodystart="40" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegraphics__impl_1a071ae3dbf3544c4e382e74164862d311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_impl::close_sdl</definition>
+        <argsstring>(SDL_Window *t_window, SDL_Renderer *t_renderer, SDL_Texture *t_texture)</argsstring>
+        <name>close_sdl</name>
+        <param>
+          <type>SDL_Window *</type>
+          <declname>t_window</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>t_renderer</declname>
+        </param>
+        <param>
+          <type>SDL_Texture *</type>
+          <declname>t_texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="71" column="1" bodyfile="src/softrender.cpp" bodystart="71" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegraphics__impl_1aa6d7a3c11e9512b84b94de943630dc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_impl::draw</definition>
+        <argsstring>(SDL_Renderer *&amp;t_renderer, SDL_Texture *&amp;t_texture, std::vector&lt; softrender::pixel_t &gt; &amp;t_canvas, int const t_width, int const t_height, bool &amp;t_running)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SDL_Renderer *&amp;</type>
+          <declname>t_renderer</declname>
+        </param>
+        <param>
+          <type>SDL_Texture *&amp;</type>
+          <declname>t_texture</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structsoftrender_1_1pixel__t" kindref="compound">softrender::pixel_t</ref> &gt; &amp;</type>
+          <declname>t_canvas</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_width</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_height</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>t_running</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="99" column="1" bodyfile="src/softrender.cpp" bodystart="99" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/softrender.cpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

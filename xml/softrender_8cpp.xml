@@ -18,6 +18,26 @@
       <node id="15">
         <label>string</label>
       </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>softrender.hpp</label>
+        <link refid="softrender_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cstdlib</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>cstddef</label>
+      </node>
       <node id="7">
         <label>src/softrender.cpp</label>
         <link refid="softrender_8cpp"/>
@@ -34,29 +54,11 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>softrender.hpp</label>
-        <link refid="softrender_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>vector</label>
-      </node>
-      <node id="12">
-        <label>cstdlib</label>
-      </node>
-      <node id="13">
-        <label>iostream</label>
-      </node>
-      <node id="9">
-        <label>cstddef</label>
-      </node>
     </incdepgraph>
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>
-    <innernamespace refid="namespacesoftrender_1_1surface__info">softrender::surface_info</innernamespace>
+    <innernamespace refid="namespacegraphics__impl">graphics_impl</innernamespace>
+    <innernamespace refid="namespacegraphics__impl_1_1surface__info">graphics_impl::surface_info</innernamespace>
+    <innernamespace refid="namespacedummy__impl">dummy_impl</innernamespace>
       <sectiondef kind="func">
       <memberdef kind="function" id="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -73,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="15" column="1" bodyfile="src/softrender.cpp" bodystart="15" bodyend="19"/>
+        <location file="src/softrender.cpp" line="206" column="1" bodyfile="src/softrender.cpp" bodystart="206" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -86,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="21" column="1" bodyfile="src/softrender.cpp" bodystart="21" bodyend="33"/>
+        <location file="src/softrender.cpp" line="211" column="1" bodyfile="src/softrender.cpp" bodystart="211" bodyend="214"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -49,7 +49,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="141" column="1" bodyfile="src/softrender.cpp" bodystart="196" bodyend="199"/>
+        <location file="src/include/softrender.hpp" line="141" column="1" bodyfile="src/softrender.cpp" bodystart="286" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="149" column="1" bodyfile="src/softrender.cpp" bodystart="201" bodyend="204"/>
+        <location file="src/include/softrender.hpp" line="149" column="1" bodyfile="src/softrender.cpp" bodystart="291" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -84,7 +84,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="158" column="1" bodyfile="src/softrender.cpp" bodystart="206" bodyend="209"/>
+        <location file="src/include/softrender.hpp" line="158" column="1" bodyfile="src/softrender.cpp" bodystart="296" bodyend="299"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t &amp;</type>
@@ -120,7 +120,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="168" column="1" bodyfile="src/softrender.cpp" bodystart="211" bodyend="220"/>
+        <location file="src/include/softrender.hpp" line="168" column="1" bodyfile="src/softrender.cpp" bodystart="301" bodyend="310"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t const  &amp;</type>
@@ -156,7 +156,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="178" column="1" bodyfile="src/softrender.cpp" bodystart="222" bodyend="231"/>
+        <location file="src/include/softrender.hpp" line="178" column="1" bodyfile="src/softrender.cpp" bodystart="312" bodyend="321"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
