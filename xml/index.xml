@@ -37,13 +37,6 @@
     <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
     <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
   </compound>
-  <compound refid="namespacedummy__impl" kind="namespace"><name>dummy_impl</name>
-    <member refid="namespacedummy__impl_1a274be1b1064befc6eaa0cb6733dac591" kind="function"><name>sdl_error</name></member>
-    <member refid="namespacedummy__impl_1a8f182468428accdcb5a6c700dfced31c" kind="function"><name>test</name></member>
-    <member refid="namespacedummy__impl_1a7aefb00f5f6cc6cf4d3a223a4e2e0bbc" kind="function"><name>initialize_sdl</name></member>
-    <member refid="namespacedummy__impl_1a0508d50b8c21ea2a74b04e16aa950990" kind="function"><name>close_sdl</name></member>
-    <member refid="namespacedummy__impl_1a1166c127dacf547b49aabf696dd63745" kind="function"><name>draw</name></member>
-  </compound>
   <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
     <member refid="namespacegraphics__impl_1a9146673080ae0cfd6f9d6d130eb61c29" kind="function"><name>sdl_error</name></member>
     <member refid="namespacegraphics__impl_1a27fd0cc834d13144da7f4a5306a5b7e7" kind="function"><name>test</name></member>

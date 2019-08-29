@@ -58,7 +58,6 @@
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>
     <innernamespace refid="namespacegraphics__impl">graphics_impl</innernamespace>
     <innernamespace refid="namespacegraphics__impl_1_1surface__info">graphics_impl::surface_info</innernamespace>
-    <innernamespace refid="namespacedummy__impl">dummy_impl</innernamespace>
       <sectiondef kind="func">
       <memberdef kind="function" id="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
