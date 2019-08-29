@@ -24,15 +24,6 @@ struct SDL_Renderer;
 struct SDL_Texture;
 
 ///
-/// \def SOFTRENDER_MOCKING
-///
-/// If it's defined then there will be no calls to SDL_* functions but to some
-/// dummy stubs instead so nothing is drawn on the screen.
-/// Defined if you passed -DSOFTRENDER_MOCKING=ON to cmake. Useful if you
-/// want to run sanitizers, get code coverage and for CI.
-///
-
-///
 /// \brief All key functionality is in this namespace.
 ///
 namespace softrender {
@@ -141,9 +132,9 @@ public:
     ///
     /// \ingroup unchecked_release
     ///
-    /// \param t_i The line on which the pixel will be put.
-    /// \param t_j The column on which the pixel will be put.
-    /// \param t_pixel The color of the point.
+    /// \param[in] t_i The line on which the pixel will be put.
+    /// \param[in] t_j The column on which the pixel will be put.
+    /// \param[in] t_pixel The color of the point.
     ///
     void draw_point(int const t_i, int const t_j, pixel_t const& t_pixel);
 
