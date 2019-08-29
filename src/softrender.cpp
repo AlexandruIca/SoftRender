@@ -15,6 +15,8 @@ void error(std::string const&);
 
 }
 
+#ifndef SOFTRENDER_MOCKING
+
 namespace graphics_impl {
 
 void sdl_error(std::string const& t_error)
@@ -158,6 +160,10 @@ void draw(SDL_Renderer*& t_renderer,
 
 } // namespace graphics_impl
 
+namespace impl = graphics_impl;
+
+#else
+
 namespace dummy_impl {
 
 void sdl_error(std::string const&)
@@ -190,13 +196,7 @@ void draw(SDL_Renderer*,
 
 } // namespace dummy_impl
 
-#ifdef SOFTRENDER_MOCKING
-
 namespace impl = dummy_impl;
-
-#else
-
-namespace impl = graphics_impl;
 
 #endif
 
