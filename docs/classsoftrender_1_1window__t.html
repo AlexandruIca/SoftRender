@@ -101,13 +101,6 @@
             </dt>
             <dd>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix).</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a3ad36b5e4f27e27af61040d46bb4cb65" class="m-doc">draw_rect</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point,
-              int const t_width,
-              int const t_height,
-              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel)</span>
-            </dt>
-            <dd>Draws a rectangle at coordinate (x=<code>t_point.x</code>, y=<code>t_point.y</code>) with width=<code>t_width</code> and height=<code>t_height</code>.</dd>
-            <dt>
               <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#ga8e9d90ce55a5fb4f1b7850424488b9f1" class="m-doc">closed</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd>Returns true if the window will close.</dd>
@@ -143,38 +136,6 @@
             </h3>
             <p>Draws everything to the screen and handles input.</p>
 <aside class="m-note m-info"><h4>Note</h4><p>There are no separate functions (yet) to retreive events to keep the code simple, but when the need arises they will be added to the class. Currently, if you press ESCAPE the application exits.</p></aside>
-          </div></section>
-          <section class="m-doc-details" id="a3ad36b5e4f27e27af61040d46bb4cb65"><div>
-            <h3>
-              <span class="m-doc-wrap-bumper">void softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3ad36b5e4f27e27af61040d46bb4cb65" class="m-doc-self">draw_rect</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point,
-              int const t_width,
-              int const t_height,
-              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel)</span></span>
-            </h3>
-            <p>Draws a rectangle at coordinate (x=<code>t_point.x</code>, y=<code>t_point.y</code>) with width=<code>t_width</code> and height=<code>t_height</code>.</p>
-            <table class="m-table m-fullwidth m-flat">
-              <thead>
-                <tr><th colspan="2">Parameters</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="width: 1%">t_point</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>t_width</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>t_height</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>t_pixel&nbsp;<span class="m-label m-flat m-info">in</span></td>
-                  <td>The color of the rectangle.</td>
-                </tr>
-              </tbody>
-            </table>
           </div></section>
         </section>
       </div>
