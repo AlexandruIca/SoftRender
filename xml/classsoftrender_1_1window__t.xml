@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="152" column="1" bodyfile="src/softrender.cpp" bodystart="296" bodyend="306"/>
+        <location file="src/include/softrender.hpp" line="152" column="1" bodyfile="src/softrender.cpp" bodystart="296" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -321,7 +321,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="163" column="1" bodyfile="src/softrender.cpp" bodystart="308" bodyend="311"/>
+        <location file="src/include/softrender.hpp" line="163" column="1" bodyfile="src/softrender.cpp" bodystart="323" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> &amp;</type>
@@ -357,7 +357,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="173" column="1" bodyfile="src/softrender.cpp" bodystart="313" bodyend="322"/>
+        <location file="src/include/softrender.hpp" line="173" column="1" bodyfile="src/softrender.cpp" bodystart="328" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> const  &amp;</type>
@@ -393,7 +393,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="183" column="1" bodyfile="src/softrender.cpp" bodystart="324" bodyend="333"/>
+        <location file="src/include/softrender.hpp" line="183" column="1" bodyfile="src/softrender.cpp" bodystart="339" bodyend="348"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -414,7 +414,7 @@
 </programlisting></para><para>This will (hopefully) be useful for further optimizations for different algorithms(for example: draw_rect). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="208" column="1" bodyfile="src/softrender.cpp" bodystart="335" bodyend="338"/>
+        <location file="src/include/softrender.hpp" line="208" column="1" bodyfile="src/softrender.cpp" bodystart="350" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> &gt; &amp;</type>
@@ -427,7 +427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="216" column="1" bodyfile="src/softrender.cpp" bodystart="340" bodyend="343"/>
+        <location file="src/include/softrender.hpp" line="216" column="1" bodyfile="src/softrender.cpp" bodystart="355" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> &gt; const  &amp;</type>
@@ -440,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="222" column="1" bodyfile="src/softrender.cpp" bodystart="345" bodyend="348"/>
+        <location file="src/include/softrender.hpp" line="222" column="1" bodyfile="src/softrender.cpp" bodystart="360" bodyend="363"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
