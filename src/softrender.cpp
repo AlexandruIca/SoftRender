@@ -297,10 +297,25 @@ void window_t::draw_line(point_t const& t_start,
                          point_t const& t_end,
                          pixel_t const& t_pixel)
 {
-    for(int c = 0; c < 100; c++) {
-        float t = c / 100.f;
-        int x = t_start.x + (t_end.x - t_start.x) * t;
-        int y = t_start.y + (t_end.y - t_start.y) * t;
+    //
+    // Equation of a line from (x0, y0) to (x1, y1) is:
+    //
+    // | x  y  1 |
+    // | x0 y0 1 | = 0
+    // | x1 y1 1 |
+    //
+    // which becomes:
+    //
+    // y = ((x - x0) / (x1 - x0)) * y1 + ((x1 - x) / (x1 - x0)) * y0
+    //
+    // and since 1 - (x - x0) / (x1 - x0) == (x1 - x) / (x1 - x0) we can say:
+    //
+    // t = (x - x0) / dx, where dx = x1 - x0
+    // y = t * y1 + (1 - t) * y0
+    //
+    for(int x = t_start.x; x <= t_end.x; ++x) {
+        float t = (x - t_start.x) / static_cast<float>(t_end.x - t_start.x);
+        int y = static_cast<int>(t_start.y * (1.f - t) + t_end.y * t);
         this->draw_point(point_t{ x, y }, t_pixel);
     }
 }
