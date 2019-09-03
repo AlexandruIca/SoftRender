@@ -18,4 +18,3 @@ int main(int, char*[])
         window.draw();
     }
 }
-
