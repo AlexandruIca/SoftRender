@@ -315,22 +315,30 @@ void window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
 
     int dx = t_end.x - t_start.x;
     int dy = t_end.y - t_start.y;
-    float derror = std::abs(static_cast<float>(dy) / dx);
-    float error = 0.f;
+    int derror2 = std::abs(dy) * 2;
+    int error2 = 0;
     int y = t_start.y;
 
-    for(int x = t_start.x; x <= t_end.x; ++x) {
-        if(steep) {
+    if(steep) {
+        for(int x = t_start.x; x <= t_end.x; ++x) {
             this->draw_point({ y, x }, t_pixel);
-        }
-        else {
-            this->draw_point({ x, y }, t_pixel);
-        }
 
-        error += derror;
-        if(error > 0.5f) {
-            y += (t_end.y > t_start.y ? 1 : -1);
-            error -= 1.f;
+            error2 += derror2;
+            if(error2 > dx) {
+                y += (t_end.y > t_start.y ? 1 : -1);
+                error2 -= 2 * dx;
+            }
+        }
+    }
+    else {
+        for(int x = t_start.x; x <= t_end.x; ++x) {
+            this->draw_point({ x, y }, t_pixel);
+
+            error2 += derror2;
+            if(error2 > dx) {
+                y += (t_end.y > t_start.y ? 1 : -1);
+                error2 -= 2 * dx;
+            }
         }
     }
 }
