@@ -23,6 +23,28 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="14" column="1" bodyfile="src/softrender.cpp" bodystart="226" bodyend="232"/>
       </memberdef>
+      <memberdef kind="function" id="namespacesoftrender_1a3df37af490fa48abf465256e8dbb2d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void softrender::swap</definition>
+        <argsstring>(point_t &amp;t_first, point_t &amp;t_second)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1point__t" kindref="compound">point_t</ref> &amp;</type>
+          <declname>t_first</declname>
+        </param>
+        <param>
+          <type><ref refid="structsoftrender_1_1point__t" kindref="compound">point_t</ref> &amp;</type>
+          <declname>t_second</declname>
+        </param>
+        <briefdescription>
+<para>Swaps <computeroutput>t_first</computeroutput> and <computeroutput>t_second</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Useful for draw_line and possibly for other future algorithms. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="234" column="1" bodyfile="src/softrender.cpp" bodystart="234" bodyend="239"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>All key functionality is in this namespace. </para>    </briefdescription>

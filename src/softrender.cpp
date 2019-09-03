@@ -231,6 +231,13 @@ void error(std::string const& t_error)
 #endif
 }
 
+void swap(point_t& t_first, point_t& t_second)
+{
+    point_t tmp = t_first;
+    t_first = t_second;
+    t_second = tmp;
+}
+
 void window_t::initialize_sdl()
 {
     impl::initialize_sdl(m_window, m_renderer, m_width, m_height);

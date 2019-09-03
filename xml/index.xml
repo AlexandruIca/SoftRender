@@ -53,6 +53,7 @@
   </compound>
   <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
     <member refid="namespacesoftrender_1aff2e71689ced1bd3278d68dd35323d72" kind="function"><name>error</name></member>
+    <member refid="namespacesoftrender_1a3df37af490fa48abf465256e8dbb2d12" kind="function"><name>swap</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>

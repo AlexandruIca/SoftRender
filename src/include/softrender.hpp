@@ -75,6 +75,13 @@ struct point_t
 };
 
 ///
+/// \brief Swaps \p t_first and \p t_second.
+///
+/// \note Useful for draw_line and possibly for other future algorithms.
+///
+void swap(point_t& t_first, point_t& t_second);
+
+///
 /// \brief Use this to construct a window.
 ///
 /// This is just a wrapper around SDL to construct a surface from memory and
