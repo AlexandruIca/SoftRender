@@ -4,10 +4,12 @@
 #include "softrender.hpp"
 #include "SDL.h"
 
+#include <cmath>
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <utility>
 
 namespace softrender {
 
@@ -231,11 +233,9 @@ void error(std::string const& t_error)
 #endif
 }
 
-void swap(point_t& t_first, point_t& t_second)
+void swap(point_t& t_point)
 {
-    point_t tmp = t_first;
-    t_first = t_second;
-    t_second = tmp;
+    std::swap(t_point.x, t_point.y);
 }
 
 void window_t::initialize_sdl()
@@ -300,30 +300,29 @@ void window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
     this->operator()(t_point.y, t_point.x) = t_pixel;
 }
 
-void window_t::draw_line(point_t const& t_start,
-                         point_t const& t_end,
-                         pixel_t const& t_pixel)
+void window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
 {
-    //
-    // Equation of a line from (x0, y0) to (x1, y1) is:
-    //
-    // | x  y  1 |
-    // | x0 y0 1 | = 0
-    // | x1 y1 1 |
-    //
-    // which becomes:
-    //
-    // y = ((x - x0) / (x1 - x0)) * y1 + ((x1 - x) / (x1 - x0)) * y0
-    //
-    // and since 1 - (x - x0) / (x1 - x0) == (x1 - x) / (x1 - x0) we can say:
-    //
-    // t = (x - x0) / dx, where dx = x1 - x0
-    // y = t * y1 + (1 - t) * y0
-    //
+    bool steep{ false };
+
+    if(std::abs(t_end.x - t_start.x) < std::abs(t_end.y - t_start.y)) {
+        swap(t_start);
+        swap(t_end);
+        steep = true;
+    }
+    if(t_start.x > t_end.x) {
+        std::swap(t_start, t_end);
+    }
+
     for(int x = t_start.x; x <= t_end.x; ++x) {
         float t = (x - t_start.x) / static_cast<float>(t_end.x - t_start.x);
-        int y = static_cast<int>(t_start.y * (1.f - t) + t_end.y * t);
-        this->draw_point(point_t{ x, y }, t_pixel);
+        int y = static_cast<int>((1.f - t) * t_start.y + t * t_end.y);
+
+        if(steep) {
+            this->draw_point({ y, x }, t_pixel);
+        }
+        else {
+            this->draw_point({ x, y }, t_pixel);
+        }
     }
 }
 

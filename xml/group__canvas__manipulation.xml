@@ -23,7 +23,7 @@
 </programlisting></para><para>This will (hopefully) be useful for further optimizations for different algorithms(for example: draw_rect). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="215" column="1" bodyfile="src/softrender.cpp" bodystart="357" bodyend="360"/>
+        <location file="src/include/softrender.hpp" line="213" column="1" bodyfile="src/softrender.cpp" bodystart="356" bodyend="359"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; pixel_t &gt; &amp;</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="223" column="1" bodyfile="src/softrender.cpp" bodystart="362" bodyend="365"/>
+        <location file="src/include/softrender.hpp" line="221" column="1" bodyfile="src/softrender.cpp" bodystart="361" bodyend="364"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; pixel_t &gt; const  &amp;</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="229" column="1" bodyfile="src/softrender.cpp" bodystart="367" bodyend="370"/>
+        <location file="src/include/softrender.hpp" line="227" column="1" bodyfile="src/softrender.cpp" bodystart="366" bodyend="369"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

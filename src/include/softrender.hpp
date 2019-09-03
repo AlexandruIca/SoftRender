@@ -75,11 +75,11 @@ struct point_t
 };
 
 ///
-/// \brief Swaps \p t_first and \p t_second.
+/// \brief Swaps \p t_point.x and \p t_point.y.
 ///
 /// \note Useful for draw_line and possibly for other future algorithms.
 ///
-void swap(point_t& t_first, point_t& t_second);
+void swap(point_t& t_point);
 
 ///
 /// \brief Use this to construct a window.
@@ -156,9 +156,7 @@ public:
     ///
     /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
     ///
-    void draw_line(point_t const& t_start,
-                   point_t const& t_end,
-                   pixel_t const& t_pixel);
+    void draw_line(point_t t_start, point_t t_end, pixel_t t_pixel);
 
     ///
     /// \brief Returns true if the window will close.
