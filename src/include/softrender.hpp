@@ -147,6 +147,13 @@ public:
     void draw_point(point_t const& t_point, pixel_t const& t_pixel);
 
     ///
+    /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
+    ///
+    void draw_line(point_t const& t_start,
+                   point_t const& t_end,
+                   pixel_t const& t_pixel);
+
+    ///
     /// \brief Returns true if the window will close.
     ///
     /// \ingroup unchecked_release

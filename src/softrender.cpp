@@ -293,6 +293,18 @@ void window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
     this->operator()(t_point.y, t_point.x) = t_pixel;
 }
 
+void window_t::draw_line(point_t const& t_start,
+                         point_t const& t_end,
+                         pixel_t const& t_pixel)
+{
+    for(int c = 0; c < 100; c++) {
+        float t = c / 100.f;
+        int x = t_start.x + (t_end.x - t_start.x) * t;
+        int y = t_start.y + (t_end.y - t_start.y) * t;
+        this->draw_point(point_t{ x, y }, t_pixel);
+    }
+}
+
 bool window_t::closed() const noexcept
 {
     return !m_running;
