@@ -30,6 +30,7 @@
     <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
     <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
     <member refid="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
+    <member refid="classsoftrender_1_1window__t_1a3ad3f3ffec25ae09a8472ed4f8b2f23f" kind="function"><name>draw_line</name></member>
     <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
     <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
     <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>

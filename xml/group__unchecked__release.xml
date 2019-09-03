@@ -84,7 +84,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="156" column="1" bodyfile="src/softrender.cpp" bodystart="296" bodyend="299"/>
+        <location file="src/include/softrender.hpp" line="163" column="1" bodyfile="src/softrender.cpp" bodystart="308" bodyend="311"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t &amp;</type>
@@ -120,7 +120,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="166" column="1" bodyfile="src/softrender.cpp" bodystart="301" bodyend="310"/>
+        <location file="src/include/softrender.hpp" line="173" column="1" bodyfile="src/softrender.cpp" bodystart="313" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t const  &amp;</type>
@@ -156,7 +156,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="176" column="1" bodyfile="src/softrender.cpp" bodystart="312" bodyend="321"/>
+        <location file="src/include/softrender.hpp" line="183" column="1" bodyfile="src/softrender.cpp" bodystart="324" bodyend="333"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
