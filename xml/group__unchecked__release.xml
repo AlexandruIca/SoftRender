@@ -49,12 +49,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="146" column="1" bodyfile="src/softrender.cpp" bodystart="293" bodyend="296"/>
+        <location file="src/include/softrender.hpp" line="172" column="1" bodyfile="src/softrender.cpp" bodystart="293" bodyend="296"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void softrender::window_t::draw_point</definition>
-        <argsstring>(point_t const &amp;t_point, pixel_t const &amp;t_pixel)</argsstring>
+        <argsstring>(point_t const &amp;t_point, pixel_t const &amp;t_pixel=pixel_t{})</argsstring>
         <name>draw_point</name>
         <param>
           <type>point_t const &amp;</type>
@@ -63,6 +63,7 @@
         <param>
           <type>pixel_t const &amp;</type>
           <declname>t_pixel</declname>
+          <defval>pixel_t{}</defval>
         </param>
         <briefdescription>
 <para>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix). </para>        </briefdescription>
@@ -70,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="154" column="1" bodyfile="src/softrender.cpp" bodystart="298" bodyend="301"/>
+        <location file="src/include/softrender.hpp" line="180" column="1" bodyfile="src/softrender.cpp" bodystart="298" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -84,7 +85,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="168" column="1" bodyfile="src/softrender.cpp" bodystart="346" bodyend="349"/>
+        <location file="src/include/softrender.hpp" line="194" column="1" bodyfile="src/softrender.cpp" bodystart="346" bodyend="349"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t &amp;</type>
@@ -120,7 +121,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="178" column="1" bodyfile="src/softrender.cpp" bodystart="351" bodyend="360"/>
+        <location file="src/include/softrender.hpp" line="204" column="1" bodyfile="src/softrender.cpp" bodystart="351" bodyend="360"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>pixel_t const  &amp;</type>
@@ -156,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="188" column="1" bodyfile="src/softrender.cpp" bodystart="362" bodyend="371"/>
+        <location file="src/include/softrender.hpp" line="214" column="1" bodyfile="src/softrender.cpp" bodystart="362" bodyend="371"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

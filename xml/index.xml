@@ -29,8 +29,8 @@
     <member refid="classsoftrender_1_1window__t_1a57d86dc99bea44e6739906814a4324cf" kind="function"><name>height</name></member>
     <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
     <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
-    <member refid="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
-    <member refid="classsoftrender_1_1window__t_1ad4aaa4d293a18a60974587c366bca853" kind="function"><name>draw_line</name></member>
+    <member refid="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" kind="function"><name>draw_point</name></member>
+    <member refid="classsoftrender_1_1window__t_1a566e3900b5fc229dd5459ec3ba922ff0" kind="function"><name>draw_line</name></member>
     <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
     <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
     <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
@@ -55,6 +55,24 @@
     <member refid="namespacesoftrender_1aff2e71689ced1bd3278d68dd35323d72" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a32542e6568421051b463e9bd41a69f71" kind="function"><name>swap</name></member>
   </compound>
+  <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
+    <member refid="namespacesoftrender_1_1colors_1afab94f496015d118ead87ee74605259a" kind="variable"><name>black</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af5b2846dcc546807c6bacd38a1630d31" kind="variable"><name>white</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5fb421730af4c2664a9af293fa9c0e4b" kind="variable"><name>red</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a7a19ec963dc1686ad9f2740cc342769f" kind="variable"><name>green</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a846ca7b3b602d95d4ae435eb42f6ddd2" kind="variable"><name>blue</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a7490530dc327e6a91109aa67d21afe00" kind="variable"><name>cyan</name></member>
+    <member refid="namespacesoftrender_1_1colors_1abe6b1de683d4f0906078166bc25a2367" kind="variable"><name>yellow</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a218c58e1a1d4cf54d424edf522d289eb" kind="variable"><name>lime</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a35e034557586c8ff57d826ba63e1b135" kind="variable"><name>teal</name></member>
+    <member refid="namespacesoftrender_1_1colors_1adb3b12eeb9dcf0fd8bb1d1775603b47f" kind="variable"><name>purple</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a0b5b7dc693f77f108fbc7c1be63da3b3" kind="variable"><name>pink</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af9fa6e2185380a0191fb1c3f4d5090de" kind="variable"><name>indigo</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a9a94e94d0e6af1f8b27d9aa156e73975" kind="variable"><name>amber</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a81511496a5d68ede5fadb17335933a29" kind="variable"><name>orange</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6f71390f48d91e820b2c0e5a2d8b4845" kind="variable"><name>brown</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a0abce51fff6bbb2c4fc8eeccd58dd209" kind="variable"><name>grey</name></member>
+  </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
@@ -66,7 +84,7 @@
   </compound>
   <compound refid="group__unchecked__release" kind="group"><name>unchecked_release</name>
     <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
-    <member refid="group__unchecked__release_1ga8faaf71a333a866b4239f4f70a30748d" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" kind="function"><name>draw_point</name></member>
     <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
     <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
     <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
