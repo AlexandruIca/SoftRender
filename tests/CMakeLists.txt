@@ -15,6 +15,7 @@ build_test( point ${CMAKE_CURRENT_SOURCE_DIR}/point.cpp )
 build_test( point_coord2D ${CMAKE_CURRENT_SOURCE_DIR}/point_coord2D.cpp )
 build_test( canvas_manipulation ${CMAKE_CURRENT_SOURCE_DIR}/canvas_manipulation.cpp )
 build_test( line ${CMAKE_CURRENT_SOURCE_DIR}/line.cpp )
+build_test( colors ${CMAKE_CURRENT_SOURCE_DIR}/colors.cpp )
 
 if( "${CMAKE_BUILD_TYPE}" STREQUAL "Debug" )
     build_test( exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp )
