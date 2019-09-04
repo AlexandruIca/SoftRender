@@ -61,6 +61,32 @@ struct pixel_t
 };
 
 ///
+/// \brief Namespace that contains a few useful predefined colors so that you
+///        don't always have to put some random numbers in \ref pixel_t
+///        constructor.
+///
+inline namespace colors {
+
+pixel_t const black{ 0, 0, 0 };       ///< Material black color.
+pixel_t const white{ 255, 255, 255 }; ///< Material white color.
+pixel_t const red{ 255, 0, 0 };       ///< Material red color.
+pixel_t const green{ 0, 255, 0 };     ///< Material green color.
+pixel_t const blue{ 0, 0, 255 };      ///< Material blue color.
+pixel_t const cyan{ 0, 188, 212 };    ///< Material cyan color.
+pixel_t const yellow{ 255, 235, 59 }; ///< Material yellow color.
+pixel_t const lime{ 205, 220, 57 };   ///< Material lime color.
+pixel_t const teal{ 0, 150, 136 };    ///< Material teal color.
+pixel_t const purple{ 156, 39, 176 }; ///< Material purple color.
+pixel_t const pink{ 236, 64, 122 };   ///< Material pink color.
+pixel_t const indigo{ 63, 81, 181 };  ///< Material indigo color.
+pixel_t const amber{ 255, 193, 7 };   ///< Material amber color.
+pixel_t const orange{ 255, 152, 0 };  ///< Material orange color.
+pixel_t const brown{ 121, 85, 72 };   ///< Material brown color.
+pixel_t const grey{ 158, 158, 158 };  ///< Material grey color.
+
+} // namespace colors
+
+///
 /// \brief Simple structure for representing a point in 2D space.
 ///
 /// Examples:
@@ -151,12 +177,12 @@ public:
     ///
     /// \ingroup unchecked_release
     ///
-    void draw_point(point_t const& t_point, pixel_t const& t_pixel);
+    void draw_point(point_t const& t_point, pixel_t const& t_pixel = pixel_t{});
 
     ///
     /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
     ///
-    void draw_line(point_t t_start, point_t t_end, pixel_t t_pixel);
+    void draw_line(point_t t_start, point_t t_end, pixel_t t_pixel = pixel_t{});
 
     ///
     /// \brief Returns true if the window will close.
