@@ -54,6 +54,7 @@ target_link_libraries(
     ${SDL2_LIBRARIES}
 )
 add_coverage( ${CMAKE_PROJECT_NAME} )
+add_sanitizers( ${CMAKE_PROJECT_NAME} )
 
 option(
     SOFTRENDER_BUILD_TESTS
