@@ -61,39 +61,39 @@
           <h2><a href="#func-members">Functions</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#gaac82df2f52fc4910a4edd434299d41aa" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
+              <span class="m-doc-wrap-bumper">auto <a href="#gaf22433a4542aaf2b02276a6d25aaedf1" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
               int const t_j,
-              pixel_t const&amp; t_pixel)</span>
+              pixel_t const&amp; t_pixel) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws a point at coordinate (x=<code>t_j</code>, y=<code>t_i</code>).</dd>
-            <dt id="ga1c83f89ba02a8f9c8470ffb42ae8568a">
-              <span class="m-doc-wrap-bumper">void <a href="#ga1c83f89ba02a8f9c8470ffb42ae8568a" class="m-doc-self">draw_point</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point,
-              pixel_t const&amp; t_pixel = pixel_t{})</span>
+            <dt id="gaae8983a3ab7afde5a377b9678792609e">
+              <span class="m-doc-wrap-bumper">auto <a href="#gaae8983a3ab7afde5a377b9678792609e" class="m-doc-self">draw_point</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point,
+              pixel_t const&amp; t_pixel = pixel_t{}) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix).</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ga8e9d90ce55a5fb4f1b7850424488b9f1" class="m-doc">closed</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ga10483a01c01a3ab63b9fbc78ddb05f60" class="m-doc">closed</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; bool -&gt; auto</span>
             </dt>
             <dd>Returns true if the window will close.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ga596f8c68a7658af6e6507cf2e53b48a4" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j) -&gt; pixel_t&amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#gaa689741a240fbc6a257b63ed24350dcc" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) -&gt; pixel_t &amp; -&gt; auto</span>
             </dt>
             <dd>Access the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#gaf85611ce1212eb525f069b8abf219728" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j) const -&gt; pixel_t const &amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ga84f3a1118e6eeb9b4aaff801ccc8874f" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) const -&gt; pixel_t const &amp; -&gt; auto</span>
             </dt>
             <dd>Get a const reference to the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</dd>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="gaac82df2f52fc4910a4edd434299d41aa"><div>
+          <section class="m-doc-details" id="gaf22433a4542aaf2b02276a6d25aaedf1"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaac82df2f52fc4910a4edd434299d41aa" class="m-doc-self">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
+              <span class="m-doc-wrap-bumper">auto </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaf22433a4542aaf2b02276a6d25aaedf1" class="m-doc-self">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
               int const t_j,
-              pixel_t const&amp; t_pixel)</span></span>
+              pixel_t const&amp; t_pixel) -&gt; void</span></span>
             </h3>
             <p>Draws a point at coordinate (x=<code>t_j</code>, y=<code>t_i</code>).</p>
             <table class="m-table m-fullwidth m-flat">
@@ -116,17 +116,17 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="ga8e9d90ce55a5fb4f1b7850424488b9f1"><div>
+          <section class="m-doc-details" id="ga10483a01c01a3ab63b9fbc78ddb05f60"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ga8e9d90ce55a5fb4f1b7850424488b9f1" class="m-doc-self">closed</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">auto </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ga10483a01c01a3ab63b9fbc78ddb05f60" class="m-doc-self">closed</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; bool</span></span>
             </h3>
             <p>Returns true if the window will close.</p>
 <aside class="m-note m-info"><h4>Note</h4><p>If you press ESCAPE the application terminates.</p></aside>
           </div></section>
-          <section class="m-doc-details" id="ga596f8c68a7658af6e6507cf2e53b48a4"><div>
+          <section class="m-doc-details" id="gaa689741a240fbc6a257b63ed24350dcc"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">pixel_t&amp; </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ga596f8c68a7658af6e6507cf2e53b48a4" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j)</span></span>
+              <span class="m-doc-wrap-bumper">auto </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaa689741a240fbc6a257b63ed24350dcc" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) -&gt; pixel_t &amp;</span></span>
             </h3>
             <p>Access the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</p>
             <table class="m-table m-fullwidth m-flat">
@@ -145,10 +145,10 @@
               </tbody>
             </table>
           </div></section>
-          <section class="m-doc-details" id="gaf85611ce1212eb525f069b8abf219728"><div>
+          <section class="m-doc-details" id="ga84f3a1118e6eeb9b4aaff801ccc8874f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">pixel_t const &amp; </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaf85611ce1212eb525f069b8abf219728" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j) const</span></span>
+              <span class="m-doc-wrap-bumper">auto </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ga84f3a1118e6eeb9b4aaff801ccc8874f" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) const -&gt; pixel_t const &amp;</span></span>
             </h3>
             <p>Get a const reference to the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</p>
             <table class="m-table m-fullwidth m-flat">

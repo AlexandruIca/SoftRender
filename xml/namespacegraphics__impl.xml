@@ -4,10 +4,10 @@
     <compoundname>graphics_impl</compoundname>
     <innernamespace refid="namespacegraphics__impl_1_1surface__info">graphics_impl::surface_info</innernamespace>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespacegraphics__impl_1a9146673080ae0cfd6f9d6d130eb61c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void graphics_impl::sdl_error</definition>
-        <argsstring>(std::string const &amp;t_error)</argsstring>
+      <memberdef kind="function" id="namespacegraphics__impl_1a2221cb277b7503f71ec5b7f9d7a737b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::sdl_error</definition>
+        <argsstring>(std::string const &amp;t_error) -&gt; void</argsstring>
         <name>sdl_error</name>
         <param>
           <type>std::string const &amp;</type>
@@ -21,10 +21,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="24" column="1" bodyfile="src/softrender.cpp" bodystart="24" bodyend="28"/>
       </memberdef>
-      <memberdef kind="function" id="namespacegraphics__impl_1a27fd0cc834d13144da7f4a5306a5b7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int graphics_impl::test</definition>
-        <argsstring>()</argsstring>
+      <memberdef kind="function" id="namespacegraphics__impl_1a2ed84f96942d3659ae0a3f18f5d4e1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::test</definition>
+        <argsstring>() -&gt; int</argsstring>
         <name>test</name>
         <briefdescription>
         </briefdescription>
@@ -34,10 +34,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="30" column="1" bodyfile="src/softrender.cpp" bodystart="30" bodyend="42"/>
       </memberdef>
-      <memberdef kind="function" id="namespacegraphics__impl_1a98a7481d6589e6b5b54a6be84a9ebd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void graphics_impl::initialize_sdl</definition>
-        <argsstring>(SDL_Window *&amp;t_window, SDL_Renderer *&amp;t_renderer, int const t_width, int const t_height)</argsstring>
+      <memberdef kind="function" id="namespacegraphics__impl_1a2c74949c0acaffc432171b85bd6a7f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::initialize_sdl</definition>
+        <argsstring>(SDL_Window *&amp;t_window, SDL_Renderer *&amp;t_renderer, int const t_width, int const t_height) -&gt; void</argsstring>
         <name>initialize_sdl</name>
         <param>
           <type>SDL_Window *&amp;</type>
@@ -63,10 +63,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="44" column="1" bodyfile="src/softrender.cpp" bodystart="44" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="namespacegraphics__impl_1a071ae3dbf3544c4e382e74164862d311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void graphics_impl::close_sdl</definition>
-        <argsstring>(SDL_Window *t_window, SDL_Renderer *t_renderer, SDL_Texture *t_texture)</argsstring>
+      <memberdef kind="function" id="namespacegraphics__impl_1a0bc2e5b6a0b4ea30f548643817151cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::close_sdl</definition>
+        <argsstring>(SDL_Window *t_window, SDL_Renderer *t_renderer, SDL_Texture *t_texture) -&gt; void</argsstring>
         <name>close_sdl</name>
         <param>
           <type>SDL_Window *</type>
@@ -88,10 +88,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="75" column="1" bodyfile="src/softrender.cpp" bodystart="75" bodyend="85"/>
       </memberdef>
-      <memberdef kind="function" id="namespacegraphics__impl_1aa6d7a3c11e9512b84b94de943630dc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void graphics_impl::draw</definition>
-        <argsstring>(SDL_Renderer *&amp;t_renderer, SDL_Texture *&amp;t_texture, std::vector&lt; softrender::pixel_t &gt; &amp;t_canvas, int const t_width, int const t_height, bool &amp;t_running)</argsstring>
+      <memberdef kind="function" id="namespacegraphics__impl_1ae9b52bd376fd055f7ed460446ec7345c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::draw</definition>
+        <argsstring>(SDL_Renderer *&amp;t_renderer, SDL_Texture *&amp;t_texture, std::vector&lt; softrender::pixel_t &gt; &amp;t_canvas, int const t_width, int const t_height, bool &amp;t_running) -&gt; void</argsstring>
         <name>draw</name>
         <param>
           <type>SDL_Renderer *&amp;</type>

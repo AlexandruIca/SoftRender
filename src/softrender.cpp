@@ -13,7 +13,7 @@
 
 namespace softrender {
 
-void error(std::string const&);
+auto error(std::string const&) -> void;
 
 }
 
@@ -21,13 +21,13 @@ void error(std::string const&);
 
 namespace graphics_impl {
 
-void sdl_error(std::string const& t_error)
+auto sdl_error(std::string const& t_error) -> void
 {
     std::cout << "Error: " << t_error << "\n\t";
     std::cout << "SDL: " << SDL_GetError() << std::endl << std::endl;
 }
 
-int test()
+auto test() -> int
 {
     if(SDL_Init(SDL_INIT_VIDEO) < 0) {
         sdl_error("sdl could not be initialized");
@@ -41,10 +41,10 @@ int test()
     return EXIT_SUCCESS;
 }
 
-void initialize_sdl(SDL_Window*& t_window,
+auto initialize_sdl(SDL_Window*& t_window,
                     SDL_Renderer*& t_renderer,
                     int const t_width,
-                    int const t_height)
+                    int const t_height) -> void
 {
     using namespace softrender;
 
@@ -72,9 +72,9 @@ void initialize_sdl(SDL_Window*& t_window,
     }
 }
 
-void close_sdl(SDL_Window* t_window,
+auto close_sdl(SDL_Window* t_window,
                SDL_Renderer* t_renderer,
-               SDL_Texture* t_texture)
+               SDL_Texture* t_texture) -> void
 {
     if(t_texture != nullptr) {
         SDL_DestroyTexture(t_texture);
@@ -100,12 +100,12 @@ constexpr Uint32 amask = 0xff000000;
 
 } // namespace surface_info
 
-void draw(SDL_Renderer*& t_renderer,
+auto draw(SDL_Renderer*& t_renderer,
           SDL_Texture*& t_texture,
           std::vector<softrender::pixel_t>& t_canvas,
           int const t_width,
           int const t_height,
-          bool& t_running)
+          bool& t_running) -> void
 {
     if(t_texture != nullptr) {
         SDL_DestroyTexture(t_texture);
@@ -168,29 +168,29 @@ namespace impl = graphics_impl;
 
 namespace dummy_impl {
 
-void sdl_error(std::string const&)
+auto sdl_error(std::string const&) -> void
 {
 }
 
-int test()
+auto test() -> int
 {
     return EXIT_SUCCESS;
 }
 
-void initialize_sdl(SDL_Window*&, SDL_Renderer*&, int const, int const)
+auto initialize_sdl(SDL_Window*&, SDL_Renderer*&, int const, int const) -> void
 {
 }
 
-void close_sdl(SDL_Window*&, SDL_Renderer*&, SDL_Texture*&)
+auto close_sdl(SDL_Window*&, SDL_Renderer*&, SDL_Texture*&) -> void
 {
 }
 
-void draw(SDL_Renderer*,
+auto draw(SDL_Renderer*,
           SDL_Texture*,
           std::vector<softrender::pixel_t>&,
           int,
           int,
-          bool& t_running)
+          bool& t_running) -> void
 {
     static int num_iterations{ 0 };
     t_running = (++num_iterations < 1000);
@@ -205,12 +205,12 @@ namespace impl = dummy_impl;
 ///
 /// \brief Wrapper around **SDL_GetError**.
 ///
-static void sdl_error(std::string const& t_error)
+static auto sdl_error(std::string const& t_error) -> void
 {
     impl::sdl_error(t_error);
 }
 
-int test()
+auto test() -> int
 {
     return impl::test();
 }
@@ -225,7 +225,7 @@ pixel_t::pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept
 {
 }
 
-void error(std::string const& t_error)
+auto error(std::string const& t_error) -> void
 {
     sdl_error(t_error);
 #ifdef SOFTRENDER_DEBUG
@@ -233,17 +233,17 @@ void error(std::string const& t_error)
 #endif
 }
 
-void swap(point_t& t_point)
+auto swap(point_t& t_point) -> void
 {
     std::swap(t_point.x, t_point.y);
 }
 
-void window_t::initialize_sdl()
+auto window_t::initialize_sdl() -> void
 {
     impl::initialize_sdl(m_window, m_renderer, m_width, m_height);
 }
 
-void window_t::construct_canvas()
+auto window_t::construct_canvas() -> void
 {
     m_canvas.resize(m_width * m_height);
 
@@ -275,32 +275,35 @@ window_t::~window_t() noexcept
     impl::close_sdl(m_window, m_renderer, m_texture);
 }
 
-int window_t::width() const noexcept
+auto window_t::width() const noexcept -> int
 {
     return m_width;
 }
 
-int window_t::height() const noexcept
+auto window_t::height() const noexcept -> int
 {
     return m_height;
 }
 
-void window_t::draw()
+auto window_t::draw() -> void
 {
     impl::draw(m_renderer, m_texture, m_canvas, m_width, m_height, m_running);
 }
 
-void window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
+auto window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
+    -> void
 {
     this->operator()(t_i, t_j) = t_pixel;
 }
 
-void window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
+auto window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
+    -> void
 {
     this->operator()(t_point.y, t_point.x) = t_pixel;
 }
 
-void window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
+auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
+    -> void
 {
     bool steep{ false };
 
@@ -343,12 +346,12 @@ void window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
     }
 }
 
-bool window_t::closed() const noexcept
+auto window_t::closed() const noexcept -> bool
 {
     return !m_running;
 }
 
-pixel_t& window_t::operator()(int const t_i, int const t_j)
+auto window_t::operator()(int const t_i, int const t_j) -> pixel_t&
 {
 #ifdef SOFTRENDER_DEBUG
     if(t_i * m_width + t_j >= m_width * m_height) {
@@ -359,7 +362,7 @@ pixel_t& window_t::operator()(int const t_i, int const t_j)
     return m_canvas[t_i * m_width + t_j];
 }
 
-pixel_t const& window_t::operator()(int const t_i, int const t_j) const
+auto window_t::operator()(int const t_i, int const t_j) const -> pixel_t const&
 {
 #ifdef SOFTRENDER_DEBUG
     if(t_i * m_width + t_j >= m_width * m_height) {
@@ -370,17 +373,18 @@ pixel_t const& window_t::operator()(int const t_i, int const t_j) const
     return m_canvas[t_i * m_width + t_j];
 }
 
-int window_t::from_coord2d_to_matrix(point_t const& t_point) const noexcept
+auto window_t::from_coord2d_to_matrix(point_t const& t_point) const noexcept
+    -> int
 {
     return t_point.y * m_width + t_point.x;
 }
 
-std::vector<pixel_t>& window_t::canvas() noexcept
+auto window_t::canvas() noexcept -> std::vector<pixel_t>&
 {
     return m_canvas;
 }
 
-std::vector<pixel_t> const& window_t::canvas() const noexcept
+auto window_t::canvas() const noexcept -> std::vector<pixel_t> const&
 {
     return m_canvas;
 }

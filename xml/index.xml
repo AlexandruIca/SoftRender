@@ -20,30 +20,30 @@
     <member refid="classsoftrender_1_1window__t_1a6042d51210c551ccb511798592580022" kind="variable"><name>m_window</name></member>
     <member refid="classsoftrender_1_1window__t_1acd5773b6c80e51d32678f0360d7fe7ff" kind="variable"><name>m_renderer</name></member>
     <member refid="classsoftrender_1_1window__t_1ab5da848ee6e182639651cd6baf50dbda" kind="variable"><name>m_texture</name></member>
-    <member refid="classsoftrender_1_1window__t_1a584e74ce129b322137baef1b9ae12d2d" kind="function"><name>construct_canvas</name></member>
-    <member refid="classsoftrender_1_1window__t_1a4195083bc30575095db12535a814bb67" kind="function"><name>initialize_sdl</name></member>
+    <member refid="classsoftrender_1_1window__t_1a89a1bea93f209217fb4c54e4d5e5df9f" kind="function"><name>construct_canvas</name></member>
+    <member refid="classsoftrender_1_1window__t_1a8e2d06a2b85458ee0b8b9156ff0a2c85" kind="function"><name>initialize_sdl</name></member>
     <member refid="classsoftrender_1_1window__t_1a578408fc92b352eeb7807b9883207223" kind="function"><name>window_t</name></member>
     <member refid="classsoftrender_1_1window__t_1a305403fb8b923e8d4c2811000b43898f" kind="function"><name>window_t</name></member>
     <member refid="classsoftrender_1_1window__t_1a57348c74e2f5f709364cce9d66dc8118" kind="function"><name>~window_t</name></member>
-    <member refid="classsoftrender_1_1window__t_1a484ea262a12ec122fb0554bac1cc5c3a" kind="function"><name>width</name></member>
-    <member refid="classsoftrender_1_1window__t_1a57d86dc99bea44e6739906814a4324cf" kind="function"><name>height</name></member>
-    <member refid="classsoftrender_1_1window__t_1ac497299341c58212a213bb9c42d673d8" kind="function"><name>draw</name></member>
-    <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
-    <member refid="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" kind="function"><name>draw_point</name></member>
-    <member refid="classsoftrender_1_1window__t_1a566e3900b5fc229dd5459ec3ba922ff0" kind="function"><name>draw_line</name></member>
-    <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
-    <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
-    <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
-    <member refid="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" kind="function"><name>from_coord2d_to_matrix</name></member>
-    <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
-    <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
+    <member refid="classsoftrender_1_1window__t_1a58c57ba4bb09cd70a7441e5c63b0f413" kind="function"><name>width</name></member>
+    <member refid="classsoftrender_1_1window__t_1a7d6fa3a7946bbdb8f10ea9b95c1c047f" kind="function"><name>height</name></member>
+    <member refid="classsoftrender_1_1window__t_1a41a3c4738f536b849927565cc3a0ee21" kind="function"><name>draw</name></member>
+    <member refid="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" kind="function"><name>draw_point</name></member>
+    <member refid="classsoftrender_1_1window__t_1a5665f32012ce474875fd36173b05ecab" kind="function"><name>draw_line</name></member>
+    <member refid="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" kind="function"><name>closed</name></member>
+    <member refid="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" kind="function"><name>operator()</name></member>
+    <member refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" kind="function"><name>from_coord2d_to_matrix</name></member>
+    <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kind="function"><name>canvas</name></member>
+    <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
   </compound>
   <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
-    <member refid="namespacegraphics__impl_1a9146673080ae0cfd6f9d6d130eb61c29" kind="function"><name>sdl_error</name></member>
-    <member refid="namespacegraphics__impl_1a27fd0cc834d13144da7f4a5306a5b7e7" kind="function"><name>test</name></member>
-    <member refid="namespacegraphics__impl_1a98a7481d6589e6b5b54a6be84a9ebd8f" kind="function"><name>initialize_sdl</name></member>
-    <member refid="namespacegraphics__impl_1a071ae3dbf3544c4e382e74164862d311" kind="function"><name>close_sdl</name></member>
-    <member refid="namespacegraphics__impl_1aa6d7a3c11e9512b84b94de943630dc05" kind="function"><name>draw</name></member>
+    <member refid="namespacegraphics__impl_1a2221cb277b7503f71ec5b7f9d7a737b9" kind="function"><name>sdl_error</name></member>
+    <member refid="namespacegraphics__impl_1a2ed84f96942d3659ae0a3f18f5d4e1d0" kind="function"><name>test</name></member>
+    <member refid="namespacegraphics__impl_1a2c74949c0acaffc432171b85bd6a7f9e" kind="function"><name>initialize_sdl</name></member>
+    <member refid="namespacegraphics__impl_1a0bc2e5b6a0b4ea30f548643817151cf2" kind="function"><name>close_sdl</name></member>
+    <member refid="namespacegraphics__impl_1ae9b52bd376fd055f7ed460446ec7345c" kind="function"><name>draw</name></member>
   </compound>
   <compound refid="namespacegraphics__impl_1_1surface__info" kind="namespace"><name>graphics_impl::surface_info</name>
     <member refid="namespacegraphics__impl_1_1surface__info_1a1a3307198e0347dffb6a28d95507943b" kind="variable"><name>rmask</name></member>
@@ -52,8 +52,8 @@
     <member refid="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" kind="variable"><name>amask</name></member>
   </compound>
   <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
-    <member refid="namespacesoftrender_1aff2e71689ced1bd3278d68dd35323d72" kind="function"><name>error</name></member>
-    <member refid="namespacesoftrender_1a32542e6568421051b463e9bd41a69f71" kind="function"><name>swap</name></member>
+    <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
+    <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
   </compound>
   <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
     <member refid="namespacesoftrender_1_1colors_1afab94f496015d118ead87ee74605259a" kind="variable"><name>black</name></member>
@@ -76,23 +76,23 @@
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
-    <member refid="softrender_8hpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
+    <member refid="softrender_8hpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
   </compound>
   <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
-    <member refid="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" kind="function"><name>sdl_error</name></member>
-    <member refid="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" kind="function"><name>test</name></member>
+    <member refid="softrender_8cpp_1aa85102d398c1f2048bc0a1ba0bdf5185" kind="function"><name>sdl_error</name></member>
+    <member refid="softrender_8cpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
   </compound>
   <compound refid="group__unchecked__release" kind="group"><name>unchecked_release</name>
-    <member refid="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" kind="function"><name>draw_point</name></member>
-    <member refid="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" kind="function"><name>draw_point</name></member>
-    <member refid="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" kind="function"><name>closed</name></member>
-    <member refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kind="function"><name>operator()</name></member>
-    <member refid="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" kind="function"><name>draw_point</name></member>
+    <member refid="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" kind="function"><name>closed</name></member>
+    <member refid="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" kind="function"><name>operator()</name></member>
+    <member refid="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="group__canvas__manipulation" kind="group"><name>canvas_manipulation</name>
-    <member refid="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" kind="function"><name>from_coord2d_to_matrix</name></member>
-    <member refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kind="function"><name>canvas</name></member>
-    <member refid="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" kind="function"><name>canvas</name></member>
+    <member refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" kind="function"><name>from_coord2d_to_matrix</name></member>
+    <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kind="function"><name>canvas</name></member>
+    <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
   </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
   </compound>

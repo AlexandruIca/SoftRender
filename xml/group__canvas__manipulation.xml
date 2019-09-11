@@ -4,10 +4,10 @@
     <compoundname>canvas_manipulation</compoundname>
     <title>Canvas manipulation</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int softrender::window_t::from_coord2d_to_matrix</definition>
-        <argsstring>(point_t const &amp;t_point) const noexcept</argsstring>
+      <memberdef kind="function" id="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::from_coord2d_to_matrix</definition>
+        <argsstring>(point_t const &amp;t_point) const noexcept -&gt; int</argsstring>
         <name>from_coord2d_to_matrix</name>
         <param>
           <type>point_t const &amp;</type>
@@ -16,19 +16,19 @@
         <briefdescription>
 <para>Returns corresponding position in the rgba matrix of a point <computeroutput>t_point</computeroutput> as if the canvas was a 2d matrix. </para>        </briefdescription>
         <detaileddescription>
-<para>With this you could say:</para><para><programlisting><codeline><highlight class="normal">this-&gt;<ref refid="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" kindref="member">canvas</ref>()[this-&gt;<ref refid="group__canvas__manipulation_1gaf2073a517c81aec00df814271b6b5696" kindref="member">from_coord2d_to_matrix</ref>({</highlight></codeline>
+<para>With this you could say:</para><para><programlisting><codeline><highlight class="normal">this-&gt;<ref refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kindref="member">canvas</ref>()[this-&gt;<ref refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" kindref="member">from_coord2d_to_matrix</ref>({</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>x=20,<sp/>y=30</highlight></codeline>
 <codeline><highlight class="normal">})];</highlight></codeline>
-</programlisting></para><para>which is equivalent to this:</para><para><programlisting><codeline><highlight class="normal">this-&gt;<ref refid="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" kindref="member">operator()</ref>(x=20,<sp/>y=30);</highlight></codeline>
+</programlisting></para><para>which is equivalent to this:</para><para><programlisting><codeline><highlight class="normal">this-&gt;<ref refid="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" kindref="member">operator()</ref>(x=20,<sp/>y=30);</highlight></codeline>
 </programlisting></para><para>This will (hopefully) be useful for further optimizations for different algorithms(for example: draw_rect). </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="239" column="1" bodyfile="src/softrender.cpp" bodystart="373" bodyend="376"/>
+        <location file="src/include/softrender.hpp" line="243" column="1" bodyfile="src/softrender.cpp" bodystart="376" bodyend="380"/>
       </memberdef>
-      <memberdef kind="function" id="group__canvas__manipulation_1ga8b326ad27b1240d66e5ddf5124a544ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; pixel_t &gt; &amp;</type>
-        <definition>std::vector&lt; pixel_t &gt; &amp; softrender::window_t::canvas</definition>
-        <argsstring>() noexcept</argsstring>
+      <memberdef kind="function" id="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::canvas</definition>
+        <argsstring>() noexcept -&gt; std::vector&lt; pixel_t &gt; &amp;</argsstring>
         <name>canvas</name>
         <briefdescription>
 <para>Returns the underlying canvas/matrix with rgba values. </para>        </briefdescription>
@@ -36,12 +36,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="247" column="1" bodyfile="src/softrender.cpp" bodystart="378" bodyend="381"/>
+        <location file="src/include/softrender.hpp" line="251" column="1" bodyfile="src/softrender.cpp" bodystart="382" bodyend="385"/>
       </memberdef>
-      <memberdef kind="function" id="group__canvas__manipulation_1ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; pixel_t &gt; const  &amp;</type>
-        <definition>std::vector&lt; pixel_t &gt; const  &amp; softrender::window_t::canvas</definition>
-        <argsstring>() const noexcept</argsstring>
+      <memberdef kind="function" id="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::canvas</definition>
+        <argsstring>() const noexcept -&gt; std::vector&lt; pixel_t &gt; const &amp;</argsstring>
         <name>canvas</name>
         <briefdescription>
 <para>Returns the underlying canvas/matrix with rgba values. </para>        </briefdescription>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="253" column="1" bodyfile="src/softrender.cpp" bodystart="383" bodyend="386"/>
+        <location file="src/include/softrender.hpp" line="257" column="1" bodyfile="src/softrender.cpp" bodystart="387" bodyend="390"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

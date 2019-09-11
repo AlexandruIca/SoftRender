@@ -4,10 +4,10 @@
     <compoundname>unchecked_release</compoundname>
     <title>No bound checking</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__unchecked__release_1gaac82df2f52fc4910a4edd434299d41aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void softrender::window_t::draw_point</definition>
-        <argsstring>(int const t_i, int const t_j, pixel_t const &amp;t_pixel)</argsstring>
+      <memberdef kind="function" id="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::draw_point</definition>
+        <argsstring>(int const t_i, int const t_j, pixel_t const &amp;t_pixel) -&gt; void</argsstring>
         <name>draw_point</name>
         <param>
           <type>int const</type>
@@ -49,12 +49,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="172" column="1" bodyfile="src/softrender.cpp" bodystart="293" bodyend="296"/>
+        <location file="src/include/softrender.hpp" line="172" column="1" bodyfile="src/softrender.cpp" bodystart="293" bodyend="297"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1ga1c83f89ba02a8f9c8470ffb42ae8568a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void softrender::window_t::draw_point</definition>
-        <argsstring>(point_t const &amp;t_point, pixel_t const &amp;t_pixel=pixel_t{})</argsstring>
+      <memberdef kind="function" id="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::draw_point</definition>
+        <argsstring>(point_t const &amp;t_point, pixel_t const &amp;t_pixel=pixel_t{}) -&gt; void</argsstring>
         <name>draw_point</name>
         <param>
           <type>point_t const &amp;</type>
@@ -71,12 +71,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="180" column="1" bodyfile="src/softrender.cpp" bodystart="298" bodyend="301"/>
+        <location file="src/include/softrender.hpp" line="181" column="1" bodyfile="src/softrender.cpp" bodystart="299" bodyend="303"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1ga8e9d90ce55a5fb4f1b7850424488b9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool softrender::window_t::closed</definition>
-        <argsstring>() const noexcept</argsstring>
+      <memberdef kind="function" id="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::closed</definition>
+        <argsstring>() const noexcept -&gt; bool</argsstring>
         <name>closed</name>
         <briefdescription>
 <para>Returns true if the window will close. </para>        </briefdescription>
@@ -85,12 +85,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="194" column="1" bodyfile="src/softrender.cpp" bodystart="346" bodyend="349"/>
+        <location file="src/include/softrender.hpp" line="197" column="1" bodyfile="src/softrender.cpp" bodystart="349" bodyend="352"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1ga596f8c68a7658af6e6507cf2e53b48a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>pixel_t &amp;</type>
-        <definition>pixel_t &amp; softrender::window_t::operator()</definition>
-        <argsstring>(int const t_i, int const t_j)</argsstring>
+      <memberdef kind="function" id="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::operator()</definition>
+        <argsstring>(int const t_i, int const t_j) -&gt; pixel_t &amp;</argsstring>
         <name>operator()</name>
         <param>
           <type>int const</type>
@@ -121,12 +121,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="204" column="1" bodyfile="src/softrender.cpp" bodystart="351" bodyend="360"/>
+        <location file="src/include/softrender.hpp" line="207" column="1" bodyfile="src/softrender.cpp" bodystart="354" bodyend="363"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1gaf85611ce1212eb525f069b8abf219728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>pixel_t const  &amp;</type>
-        <definition>pixel_t const  &amp; softrender::window_t::operator()</definition>
-        <argsstring>(int const t_i, int const t_j) const</argsstring>
+      <memberdef kind="function" id="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::operator()</definition>
+        <argsstring>(int const t_i, int const t_j) const -&gt; pixel_t const &amp;</argsstring>
         <name>operator()</name>
         <param>
           <type>int const</type>
@@ -157,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="214" column="1" bodyfile="src/softrender.cpp" bodystart="362" bodyend="371"/>
+        <location file="src/include/softrender.hpp" line="217" column="1" bodyfile="src/softrender.cpp" bodystart="365" bodyend="374"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

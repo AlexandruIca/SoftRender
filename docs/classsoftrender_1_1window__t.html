@@ -77,68 +77,68 @@
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
-            <dt id="a484ea262a12ec122fb0554bac1cc5c3a">
-              <span class="m-doc-wrap-bumper">auto <a href="#a484ea262a12ec122fb0554bac1cc5c3a" class="m-doc-self">width</a>(</span><span class="m-doc-wrap">) const -&gt; int <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt id="a58c57ba4bb09cd70a7441e5c63b0f413">
+              <span class="m-doc-wrap-bumper">auto <a href="#a58c57ba4bb09cd70a7441e5c63b0f413" class="m-doc-self">width</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int -&gt; auto</span>
             </dt>
             <dd>Get width of constructed window.</dd>
-            <dt id="a57d86dc99bea44e6739906814a4324cf">
-              <span class="m-doc-wrap-bumper">auto <a href="#a57d86dc99bea44e6739906814a4324cf" class="m-doc-self">height</a>(</span><span class="m-doc-wrap">) const -&gt; int <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt id="a7d6fa3a7946bbdb8f10ea9b95c1c047f">
+              <span class="m-doc-wrap-bumper">auto <a href="#a7d6fa3a7946bbdb8f10ea9b95c1c047f" class="m-doc-self">height</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int -&gt; auto</span>
             </dt>
             <dd>Get height of constructed window.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#ac497299341c58212a213bb9c42d673d8" class="m-doc">draw</a>(</span><span class="m-doc-wrap">)</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a41a3c4738f536b849927565cc3a0ee21" class="m-doc">draw</a>(</span><span class="m-doc-wrap">) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws everything to the screen and handles input.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="group__unchecked__release.html#gaac82df2f52fc4910a4edd434299d41aa" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
+              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#gaf22433a4542aaf2b02276a6d25aaedf1" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap">int const t_i,
               int const t_j,
-              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel)</span>
+              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws a point at coordinate (x=<code>t_j</code>, y=<code>t_i</code>).</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="group__unchecked__release.html#ga1c83f89ba02a8f9c8470ffb42ae8568a" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point,
-              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel = <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>{})</span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#gaae8983a3ab7afde5a377b9678792609e" class="m-doc">draw_point</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point,
+              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const&amp; t_pixel = <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>{}) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix).</dd>
-            <dt id="a566e3900b5fc229dd5459ec3ba922ff0">
-              <span class="m-doc-wrap-bumper">void <a href="#a566e3900b5fc229dd5459ec3ba922ff0" class="m-doc-self">draw_line</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> t_start,
+            <dt id="a5665f32012ce474875fd36173b05ecab">
+              <span class="m-doc-wrap-bumper">auto <a href="#a5665f32012ce474875fd36173b05ecab" class="m-doc-self">draw_line</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> t_start,
               <a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> t_end,
-              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> t_pixel = <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>{})</span>
+              <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> t_pixel = <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>{}) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Draws a line from <code>t_start</code> to <code>t_end</code> with color <code>t_pixel</code>.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#ga8e9d90ce55a5fb4f1b7850424488b9f1" class="m-doc">closed</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#ga10483a01c01a3ab63b9fbc78ddb05f60" class="m-doc">closed</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; bool -&gt; auto</span>
             </dt>
             <dd>Returns true if the window will close.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#ga596f8c68a7658af6e6507cf2e53b48a4" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j) -&gt; <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>&amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#gaa689741a240fbc6a257b63ed24350dcc" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) -&gt; pixel_t &amp; -&gt; auto</span>
             </dt>
             <dd>Access the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#gaf85611ce1212eb525f069b8abf219728" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
-              int const t_j) const -&gt; <a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a> const &amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__unchecked__release.html#ga84f3a1118e6eeb9b4aaff801ccc8874f" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">int const t_i,
+              int const t_j) const -&gt; pixel_t const &amp; -&gt; auto</span>
             </dt>
             <dd>Get a const reference to the rgba value at line=<code>t_i</code> and column=<code>t_j</code>.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#gaf2073a517c81aec00df814271b6b5696" class="m-doc">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point) const -&gt; int <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#ga5f2be04888560de972a8faf3257c361e" class="m-doc">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap"><a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> const&amp; t_point) const noexcept -&gt; int -&gt; auto</span>
             </dt>
             <dd>Returns corresponding position in the rgba matrix of a point <code>t_point</code> as if the canvas was a 2d matrix.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#ga8b326ad27b1240d66e5ddf5124a544ab" class="m-doc">canvas</a>(</span><span class="m-doc-wrap">) -&gt; std::vector&lt;<a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#ga11392099f8c0ae8d55ffdd9f8306dbe4" class="m-doc">canvas</a>(</span><span class="m-doc-wrap">) noexcept -&gt; std::vector&lt; pixel_t &gt; &amp; -&gt; auto</span>
             </dt>
             <dd>Returns the underlying canvas/matrix with rgba values.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" class="m-doc">canvas</a>(</span><span class="m-doc-wrap">) const -&gt; std::vector&lt;<a href="structsoftrender_1_1pixel__t.html" class="m-doc">pixel_<wbr />t</a>&gt; const &amp; <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="group__canvas__manipulation.html#ga7bd4008d77748aeb3ecf8715224b79b4" class="m-doc">canvas</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; std::vector&lt; pixel_t &gt; const &amp; -&gt; auto</span>
             </dt>
             <dd>Returns the underlying canvas/matrix with rgba values.</dd>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ac497299341c58212a213bb9c42d673d8"><div>
+          <section class="m-doc-details" id="a41a3c4738f536b849927565cc3a0ee21"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac497299341c58212a213bb9c42d673d8" class="m-doc-self">draw</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41a3c4738f536b849927565cc3a0ee21" class="m-doc-self">draw</a>(</span><span class="m-doc-wrap">) -&gt; void</span></span>
             </h3>
             <p>Draws everything to the screen and handles input.</p>
 <aside class="m-note m-info"><h4>Note</h4><p>There are no separate functions (yet) to retreive events to keep the code simple, but when the need arises they will be added to the class. Currently, if you press ESCAPE the application exits.</p></aside>

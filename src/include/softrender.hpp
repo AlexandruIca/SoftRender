@@ -105,7 +105,7 @@ struct point_t
 ///
 /// \note Useful for draw_line and possibly for other future algorithms.
 ///
-void swap(point_t& t_point);
+auto swap(point_t& t_point) -> void;
 
 ///
 /// \brief Use this to construct a window.
@@ -126,8 +126,8 @@ private:
     SDL_Renderer* m_renderer{ nullptr };
     SDL_Texture* m_texture{ nullptr };
 
-    void construct_canvas();
-    void initialize_sdl();
+    auto construct_canvas() -> void;
+    auto initialize_sdl() -> void;
 
 public:
     ///
@@ -144,11 +144,11 @@ public:
     ///
     /// \brief Get width of constructed window.
     ///
-    [[nodiscard]] int width() const noexcept;
+    [[nodiscard]] auto width() const noexcept -> int;
     ///
     /// \brief Get height of constructed window.
     ///
-    [[nodiscard]] int height() const noexcept;
+    [[nodiscard]] auto height() const noexcept -> int;
 
     ///
     /// \brief Draws everything to the screen and handles input.
@@ -158,7 +158,7 @@ public:
     ///       be added to the class. Currently, if you press ESCAPE the
     ///       application exits.
     ///
-    void draw();
+    auto draw() -> void;
 
     ///
     /// \brief Draws a point at coordinate (x=\p t_j, y=\p t_i).
@@ -169,7 +169,8 @@ public:
     /// \param[in] t_j The column on which the pixel will be put.
     /// \param[in] t_pixel The color of the point.
     ///
-    void draw_point(int const t_i, int const t_j, pixel_t const& t_pixel);
+    auto draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
+        -> void;
 
     ///
     /// \brief Draws a point using a more traditional approach(x and y
@@ -177,12 +178,14 @@ public:
     ///
     /// \ingroup unchecked_release
     ///
-    void draw_point(point_t const& t_point, pixel_t const& t_pixel = pixel_t{});
+    auto draw_point(point_t const& t_point, pixel_t const& t_pixel = pixel_t{})
+        -> void;
 
     ///
     /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
     ///
-    void draw_line(point_t t_start, point_t t_end, pixel_t t_pixel = pixel_t{});
+    auto draw_line(point_t t_start, point_t t_end, pixel_t t_pixel = pixel_t{})
+        -> void;
 
     ///
     /// \brief Returns true if the window will close.
@@ -191,7 +194,7 @@ public:
     ///
     /// \note If you press ESCAPE the application terminates.
     ///
-    [[nodiscard]] bool closed() const noexcept;
+    [[nodiscard]] auto closed() const noexcept -> bool;
 
     ///
     /// \brief Access the rgba value at line=\p t_i and column=\p t_j.
@@ -201,7 +204,7 @@ public:
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
-    [[nodiscard]] pixel_t& operator()(int const t_i, int const t_j);
+    [[nodiscard]] auto operator()(int const t_i, int const t_j) -> pixel_t&;
     ///
     /// \brief Get a const reference to the rgba value at line=\p t_i and
     ///        column=\p t_j.
@@ -211,7 +214,8 @@ public:
     /// \param t_i Line of the inner rgba matrix.
     /// \param t_j Column of the inner rgba matrix.
     ///
-    [[nodiscard]] pixel_t const& operator()(int const t_i, int const t_j) const;
+    [[nodiscard]] auto operator()(int const t_i, int const t_j) const
+        -> pixel_t const&;
 
     ///
     /// \brief Returns corresponding position in the rgba matrix of a point
@@ -236,23 +240,23 @@ public:
     ///
     /// \ingroup canvas_manipulation
     ///
-    [[nodiscard]] int from_coord2d_to_matrix(point_t const& t_point) const
-        noexcept;
+    [[nodiscard]] auto from_coord2d_to_matrix(point_t const& t_point) const
+        noexcept -> int;
 
     ///
     /// \brief Returns the underlying canvas/matrix with rgba values.
     ///
     /// \ingroup canvas_manipulation
     ///
-    [[nodiscard]] std::vector<pixel_t>& canvas() noexcept;
+    [[nodiscard]] auto canvas() noexcept -> std::vector<pixel_t>&;
     ///
     /// \brief Returns the underlying canvas/matrix with rgba values.
     ///
     /// \ingroup canvas_manipulation
     ///
-    [[nodiscard]] std::vector<pixel_t> const& canvas() const noexcept;
+    [[nodiscard]] auto canvas() const noexcept -> std::vector<pixel_t> const&;
 };
 
 } // namespace softrender
 
-int test();
+auto test() -> int;

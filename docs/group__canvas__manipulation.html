@@ -61,24 +61,24 @@
           <h2><a href="#func-members">Functions</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#gaf2073a517c81aec00df814271b6b5696" class="m-doc">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const -&gt; int <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ga5f2be04888560de972a8faf3257c361e" class="m-doc">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const noexcept -&gt; int -&gt; auto</span>
             </dt>
             <dd>Returns corresponding position in the rgba matrix of a point <code>t_point</code> as if the canvas was a 2d matrix.</dd>
-            <dt id="ga8b326ad27b1240d66e5ddf5124a544ab">
-              <span class="m-doc-wrap-bumper">auto <a href="#ga8b326ad27b1240d66e5ddf5124a544ab" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) -&gt; std::vector&lt;pixel_t&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt id="ga11392099f8c0ae8d55ffdd9f8306dbe4">
+              <span class="m-doc-wrap-bumper">auto <a href="#ga11392099f8c0ae8d55ffdd9f8306dbe4" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) noexcept -&gt; std::vector&lt; pixel_t &gt; &amp; -&gt; auto</span>
             </dt>
             <dd>Returns the underlying canvas/matrix with rgba values.</dd>
-            <dt id="ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4">
-              <span class="m-doc-wrap-bumper">auto <a href="#ga8d1cbb1d16eccd6fddfc9ff7e0b3adc4" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) const -&gt; std::vector&lt;pixel_t&gt; const &amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt id="ga7bd4008d77748aeb3ecf8715224b79b4">
+              <span class="m-doc-wrap-bumper">auto <a href="#ga7bd4008d77748aeb3ecf8715224b79b4" class="m-doc-self">canvas</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; std::vector&lt; pixel_t &gt; const &amp; -&gt; auto</span>
             </dt>
             <dd>Returns the underlying canvas/matrix with rgba values.</dd>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="gaf2073a517c81aec00df814271b6b5696"><div>
+          <section class="m-doc-details" id="ga5f2be04888560de972a8faf3257c361e"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">int </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#gaf2073a517c81aec00df814271b6b5696" class="m-doc-self">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper">auto </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ga5f2be04888560de972a8faf3257c361e" class="m-doc-self">from_coord2d_to_matrix</a>(</span><span class="m-doc-wrap">point_t const&amp; t_point) const noexcept -&gt; int</span></span>
             </h3>
             <p>Returns corresponding position in the rgba matrix of a point <code>t_point</code> as if the canvas was a 2d matrix.</p>
 <p>With this you could say:</p><pre class="m-code"><span class="k">this</span><span class="o">-&gt;</span><span class="n">canvas</span><span class="p">()[</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">from_coord2d_to_matrix</span><span class="p">({</span>

@@ -71,10 +71,10 @@
     <innernamespace refid="namespacegraphics__impl">graphics_impl</innernamespace>
     <innernamespace refid="namespacegraphics__impl_1_1surface__info">graphics_impl::surface_info</innernamespace>
       <sectiondef kind="func">
-      <memberdef kind="function" id="softrender_8cpp_1abd1d5cac7fd4f394a87632b6d1c76fda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>static void sdl_error</definition>
-        <argsstring>(std::string const &amp;t_error)</argsstring>
+      <memberdef kind="function" id="softrender_8cpp_1aa85102d398c1f2048bc0a1ba0bdf5185" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto sdl_error</definition>
+        <argsstring>(std::string const &amp;t_error) -&gt; void</argsstring>
         <name>sdl_error</name>
         <param>
           <type>std::string const &amp;</type>
@@ -88,10 +88,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="208" column="1" bodyfile="src/softrender.cpp" bodystart="208" bodyend="211"/>
       </memberdef>
-      <memberdef kind="function" id="softrender_8cpp_1ac8da963855e09bf929c085486f4a3b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int test</definition>
-        <argsstring>()</argsstring>
+      <memberdef kind="function" id="softrender_8cpp_1a9940a07ef709bf9d89dcdff767ec0a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto test</definition>
+        <argsstring>() -&gt; int</argsstring>
         <name>test</name>
         <briefdescription>
         </briefdescription>

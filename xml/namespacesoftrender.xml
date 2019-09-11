@@ -7,10 +7,10 @@
     <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
     <innernamespace refid="namespacesoftrender_1_1colors">softrender::colors</innernamespace>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespacesoftrender_1aff2e71689ced1bd3278d68dd35323d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void softrender::error</definition>
-        <argsstring>(std::string const &amp;)</argsstring>
+      <memberdef kind="function" id="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::error</definition>
+        <argsstring>(std::string const &amp;) -&gt; void</argsstring>
         <name>error</name>
         <param>
           <type>std::string const &amp;</type>
@@ -24,10 +24,10 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="16" column="1" bodyfile="src/softrender.cpp" bodystart="228" bodyend="234"/>
       </memberdef>
-      <memberdef kind="function" id="namespacesoftrender_1a32542e6568421051b463e9bd41a69f71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void softrender::swap</definition>
-        <argsstring>(point_t &amp;t_point)</argsstring>
+      <memberdef kind="function" id="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::swap</definition>
+        <argsstring>(point_t &amp;t_point) -&gt; void</argsstring>
         <name>swap</name>
         <param>
           <type><ref refid="structsoftrender_1_1point__t" kindref="compound">point_t</ref> &amp;</type>
