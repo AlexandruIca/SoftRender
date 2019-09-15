@@ -192,7 +192,7 @@ public:
         return x * t_other.x + y * t_other.y + z * t_other.z;
     }
 
-    auto norm() const noexcept -> T
+    [[nodiscard]] auto norm() const noexcept -> T
     {
         return std::sqrt(x * x + y * y + z * z);
     }
