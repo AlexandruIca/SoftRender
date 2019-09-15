@@ -17,7 +17,4 @@ int main()
         std::cout << "Exception caught!" << std::endl << '\t';
         std::cout << e.what() << std::endl;
     }
-    catch(...) {
-        std::cout << "Uncaught exception!!!" << std::endl;
-    }
 }
