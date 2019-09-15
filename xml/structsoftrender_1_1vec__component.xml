@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structsoftrender_1_1vec__component" kind="struct" language="C++" prot="public">
+    <compoundname>softrender::vec_component</compoundname>
+    <includes local="no">vec.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structsoftrender_1_1vec__component_1a2b4c980cec3687d3df38dac3ea1de608" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* softrender::vec_component&lt; T &gt;::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="197" column="1" bodyfile="src/include/vec.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a1177d3d6521e41dcd5adc834d21cb427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::vec_component</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>vec_component</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a831149d9d5a4ae0cad509ac8476dc324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::vec_component</definition>
+        <argsstring>(T *t_data) noexcept</argsstring>
+        <name>vec_component</name>
+        <param>
+          <type>T *</type>
+          <declname>t_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="201" column="1" bodyfile="src/include/vec.hpp" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a3a4b94b8509f7b81dbd1078bbdb014f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::vec_component</definition>
+        <argsstring>(vec_component const &amp;) noexcept=default</argsstring>
+        <name>vec_component</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec__component" kindref="compound">vec_component</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a44a601550ab03e1011f5df2ac0090fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::vec_component</definition>
+        <argsstring>(vec_component &amp;&amp;) noexcept=default</argsstring>
+        <name>vec_component</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec__component" kindref="compound">vec_component</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a3695f0278712635245ce91d7a1070200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::~vec_component</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~vec_component</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a2b67b3707b2199bfa37b2ad660c6cbe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::operator=</definition>
+        <argsstring>(vec_component const &amp;t_other) noexcept -&gt; vec_component &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec__component" kindref="compound">vec_component</ref> const &amp;</type>
+          <declname>t_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="209" column="1" bodyfile="src/include/vec.hpp" bodystart="209" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1ae23d76f4159bc6a967ab57aa2d5c50b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::operator=</definition>
+        <argsstring>(vec_component &amp;&amp;t_other) noexcept -&gt; vec_component &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec__component" kindref="compound">vec_component</ref> &amp;&amp;</type>
+          <declname>t_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="214" column="1" bodyfile="src/include/vec.hpp" bodystart="214" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1ad0581b644f354b6400223f2d0b775a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::operator=</definition>
+        <argsstring>(T const &amp;t_val) noexcept -&gt; vec_component &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>t_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="220" column="1" bodyfile="src/include/vec.hpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a6d2a554c4716578412e4a720e6911d45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>softrender::vec_component&lt; T &gt;::operator T</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>operator T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="226" column="1" bodyfile="src/include/vec.hpp" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1a469d3687a608582b6b6da4941cb0c331" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::value</definition>
+        <argsstring>() const noexcept -&gt; T const &amp;</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="231" column="1" bodyfile="src/include/vec.hpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1af0b61df61c0e19a9bc012cbaa6de4364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::value</definition>
+        <argsstring>() noexcept -&gt; T &amp;</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="236" column="1" bodyfile="src/include/vec.hpp" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec__component_1ad6ebb93382b77c239001a93372d26a78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec_component&lt; T &gt;::ptr</definition>
+        <argsstring>() const noexcept -&gt; T *</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="241" column="1" bodyfile="src/include/vec.hpp" bodystart="241" bodyend="244"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/vec.hpp" line="195" column="1" bodyfile="src/include/vec.hpp" bodystart="194" bodyend="245"/>
+    <listofallmembers>
+      <member refid="structsoftrender_1_1vec__component_1a2b4c980cec3687d3df38dac3ea1de608" prot="private" virt="non-virtual"><scope>softrender::vec_component</scope><name>m_data</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a6d2a554c4716578412e4a720e6911d45" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>operator T</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a2b67b3707b2199bfa37b2ad660c6cbe2" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>operator=</name></member>
+      <member refid="structsoftrender_1_1vec__component_1ae23d76f4159bc6a967ab57aa2d5c50b4" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>operator=</name></member>
+      <member refid="structsoftrender_1_1vec__component_1ad0581b644f354b6400223f2d0b775a54" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>operator=</name></member>
+      <member refid="structsoftrender_1_1vec__component_1ad6ebb93382b77c239001a93372d26a78" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>ptr</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a469d3687a608582b6b6da4941cb0c331" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>value</name></member>
+      <member refid="structsoftrender_1_1vec__component_1af0b61df61c0e19a9bc012cbaa6de4364" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>value</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a1177d3d6521e41dcd5adc834d21cb427" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>vec_component</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a831149d9d5a4ae0cad509ac8476dc324" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>vec_component</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a3a4b94b8509f7b81dbd1078bbdb014f0" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>vec_component</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a44a601550ab03e1011f5df2ac0090fea" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>vec_component</name></member>
+      <member refid="structsoftrender_1_1vec__component_1a3695f0278712635245ce91d7a1070200" prot="public" virt="non-virtual"><scope>softrender::vec_component</scope><name>~vec_component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -4,8 +4,90 @@
     <compoundname>softrender</compoundname>
     <innerclass refid="structsoftrender_1_1pixel__t" prot="public">softrender::pixel_t</innerclass>
     <innerclass refid="structsoftrender_1_1point__t" prot="public">softrender::point_t</innerclass>
+    <innerclass refid="structsoftrender_1_1vec2" prot="public">softrender::vec2</innerclass>
+    <innerclass refid="structsoftrender_1_1vec3" prot="public">softrender::vec3</innerclass>
     <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
     <innernamespace refid="namespacesoftrender_1_1colors">softrender::colors</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacesoftrender_1af4daf194eae9f26cced450f41039a44e" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec2" kindref="compound">vec2</ref>&lt; int &gt;</type>
+        <definition>using softrender::vec2i = typedef vec2&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec2i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="207" column="1" bodyfile="src/include/vec.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesoftrender_1a3024b719fa7d071e9ea46e7fe7771f37" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec2" kindref="compound">vec2</ref>&lt; float &gt;</type>
+        <definition>using softrender::vec2f = typedef vec2&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec2f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="208" column="1" bodyfile="src/include/vec.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesoftrender_1ac1e0bf91bbda4c419af787b565190159" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec2" kindref="compound">vec2</ref>&lt; double &gt;</type>
+        <definition>using softrender::vec2d = typedef vec2&lt;double&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec2d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="209" column="1" bodyfile="src/include/vec.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesoftrender_1a0f4ff27fc129e76f00dea07755b7099a" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; int &gt;</type>
+        <definition>using softrender::vec3i = typedef vec3&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="211" column="1" bodyfile="src/include/vec.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesoftrender_1a9c075f6f6c3f4c5b00b7ba2def706d9a" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; float &gt;</type>
+        <definition>using softrender::vec3f = typedef vec3&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="212" column="1" bodyfile="src/include/vec.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesoftrender_1a43d665a942e0b309fc1656eb173aa937" prot="public" static="no">
+        <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; double &gt;</type>
+        <definition>using softrender::vec3d = typedef vec3&lt;double&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="213" column="1" bodyfile="src/include/vec.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>

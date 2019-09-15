@@ -12,6 +12,50 @@
     <member refid="structsoftrender_1_1point__t_1af3c2fa687d5b159abc87401f0e556260" kind="variable"><name>x</name></member>
     <member refid="structsoftrender_1_1point__t_1a3cd7658d50120189ffb317a2d396df9a" kind="variable"><name>y</name></member>
   </compound>
+  <compound refid="structsoftrender_1_1vec2" kind="struct"><name>softrender::vec2</name>
+    <member refid="structsoftrender_1_1vec2_1ab1ddb0ff29c296fc29187d7a63c0c0ac" kind="variable"><name>m_default_value</name></member>
+    <member refid="structsoftrender_1_1vec2_1af8a033c064d4b90206dcc17dd08710f9" kind="variable"><name>x</name></member>
+    <member refid="structsoftrender_1_1vec2_1a1943ea1df10a8d72a44128b09e225647" kind="variable"><name>y</name></member>
+    <member refid="structsoftrender_1_1vec2_1ad1c4a3f2f351f672324f00d6d5425ff9" kind="function"><name>vec2</name></member>
+    <member refid="structsoftrender_1_1vec2_1ad68f4ca290e10ce7de64f9ffeb857d31" kind="function"><name>vec2</name></member>
+    <member refid="structsoftrender_1_1vec2_1aba71a4cca32bb02c8b97efd7a5c14230" kind="function"><name>vec2</name></member>
+    <member refid="structsoftrender_1_1vec2_1aa261d6fa7b423e62e49912d6995be51f" kind="function"><name>vec2</name></member>
+    <member refid="structsoftrender_1_1vec2_1ac7fbd388196b53895b5e8990335da7c2" kind="function"><name>~vec2</name></member>
+    <member refid="structsoftrender_1_1vec2_1a2b81ec1fea6f672be69ccdc7e14402aa" kind="function"><name>operator=</name></member>
+    <member refid="structsoftrender_1_1vec2_1ad86ffe0a246fad49269c9b83167e651a" kind="function"><name>operator=</name></member>
+    <member refid="structsoftrender_1_1vec2_1a1bd942a76b4fab4eb0f39e671d131928" kind="function"><name>operator==</name></member>
+    <member refid="structsoftrender_1_1vec2_1abbf2d392ea6fdff67294d0b1b132af69" kind="function"><name>operator!=</name></member>
+    <member refid="structsoftrender_1_1vec2_1a6084974f0a7a62584769cbf3df274532" kind="function"><name>operator[]</name></member>
+    <member refid="structsoftrender_1_1vec2_1a041e15284411147337d01ad49b4eb5b0" kind="function"><name>operator[]</name></member>
+    <member refid="structsoftrender_1_1vec2_1a2142556c569e3a8d05d76ca4edff33a4" kind="function"><name>operator+</name></member>
+    <member refid="structsoftrender_1_1vec2_1a3a7a943bca0b410cd2febd4f9b1f3e18" kind="function"><name>operator-</name></member>
+    <member refid="structsoftrender_1_1vec2_1aa7b2ad37a646ee477e4859c798c7127b" kind="function"><name>operator*</name></member>
+    <member refid="structsoftrender_1_1vec2_1a5d41e586ff0859ed52bc4ebe684c4cdc" kind="function"><name>operator*</name></member>
+    <member refid="structsoftrender_1_1vec2_1a0e769656be6b21dbcc17468b03b9ae5e" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="structsoftrender_1_1vec3" kind="struct"><name>softrender::vec3</name>
+    <member refid="structsoftrender_1_1vec3_1ae6481c5bce00a58fab70eec51de1ec0b" kind="variable"><name>m_default_value</name></member>
+    <member refid="structsoftrender_1_1vec3_1a0e6f271155a387e75c8f73595e956886" kind="variable"><name>x</name></member>
+    <member refid="structsoftrender_1_1vec3_1a07595c9988f6bc4161b25f7a63acb887" kind="variable"><name>y</name></member>
+    <member refid="structsoftrender_1_1vec3_1a6ab9c9c0296e8c39d22b77beb5323dec" kind="variable"><name>z</name></member>
+    <member refid="structsoftrender_1_1vec3_1ac312e1083287807ac021148594255a6e" kind="function"><name>vec3</name></member>
+    <member refid="structsoftrender_1_1vec3_1aaea9d75e58223f6979fc35ca05173248" kind="function"><name>vec3</name></member>
+    <member refid="structsoftrender_1_1vec3_1a02884fc24a6ed5b1a6cbd961438966bf" kind="function"><name>vec3</name></member>
+    <member refid="structsoftrender_1_1vec3_1aa3fd0bfb8a07edfc893eee1f23cacdda" kind="function"><name>vec3</name></member>
+    <member refid="structsoftrender_1_1vec3_1a5153cea5aac2756c50f1c3dccd536c8e" kind="function"><name>~vec3</name></member>
+    <member refid="structsoftrender_1_1vec3_1a440de8ba7a0c9d50692a56fd4385c917" kind="function"><name>operator=</name></member>
+    <member refid="structsoftrender_1_1vec3_1acabe3722ca02395214c239dd8bce325e" kind="function"><name>operator=</name></member>
+    <member refid="structsoftrender_1_1vec3_1a520e3ea50aea62609c70e75170e20c29" kind="function"><name>operator==</name></member>
+    <member refid="structsoftrender_1_1vec3_1aa803de864382eaea769e7ab8b5729900" kind="function"><name>operator!=</name></member>
+    <member refid="structsoftrender_1_1vec3_1a3771a7c2bc4d385c03f20b54b57a436c" kind="function"><name>operator[]</name></member>
+    <member refid="structsoftrender_1_1vec3_1a82ed2c0f5c2dfcfaca6107b963a77249" kind="function"><name>operator[]</name></member>
+    <member refid="structsoftrender_1_1vec3_1a15eb1bbe90720339adf1d481a52531fa" kind="function"><name>operator+</name></member>
+    <member refid="structsoftrender_1_1vec3_1af4937c33bac5e0124017f0aaa6d2c3b1" kind="function"><name>operator-</name></member>
+    <member refid="structsoftrender_1_1vec3_1a216bd39c7e762be0333980274b41ef37" kind="function"><name>operator*</name></member>
+    <member refid="structsoftrender_1_1vec3_1ae43be1e4607134fc91ed120a52040ccd" kind="function"><name>operator*</name></member>
+    <member refid="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" kind="function"><name>norm</name></member>
+    <member refid="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" kind="function"><name>normalize</name></member>
+  </compound>
   <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
     <member refid="classsoftrender_1_1window__t_1a549973a71b40e61bc411a741469a3b1a" kind="variable"><name>m_canvas</name></member>
     <member refid="classsoftrender_1_1window__t_1a4f367993c59ad9849a519eec914f4035" kind="variable"><name>m_width</name></member>
@@ -52,6 +96,12 @@
     <member refid="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" kind="variable"><name>amask</name></member>
   </compound>
   <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
+    <member refid="namespacesoftrender_1af4daf194eae9f26cced450f41039a44e" kind="typedef"><name>vec2i</name></member>
+    <member refid="namespacesoftrender_1a3024b719fa7d071e9ea46e7fe7771f37" kind="typedef"><name>vec2f</name></member>
+    <member refid="namespacesoftrender_1ac1e0bf91bbda4c419af787b565190159" kind="typedef"><name>vec2d</name></member>
+    <member refid="namespacesoftrender_1a0f4ff27fc129e76f00dea07755b7099a" kind="typedef"><name>vec3i</name></member>
+    <member refid="namespacesoftrender_1a9c075f6f6c3f4c5b00b7ba2def706d9a" kind="typedef"><name>vec3f</name></member>
+    <member refid="namespacesoftrender_1a43d665a942e0b309fc1656eb173aa937" kind="typedef"><name>vec3d</name></member>
     <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
   </compound>
@@ -77,6 +127,8 @@
   </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
     <member refid="softrender_8hpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="vec_8hpp" kind="file"><name>vec.hpp</name>
   </compound>
   <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
     <member refid="softrender_8cpp_1aa85102d398c1f2048bc0a1ba0bdf5185" kind="function"><name>sdl_error</name></member>
