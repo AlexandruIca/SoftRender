@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="105" column="1" bodyfile="src/include/vec.hpp" bodystart="105" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="111" column="1" bodyfile="src/include/vec.hpp" bodystart="111" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="108" column="1" bodyfile="src/include/vec.hpp" bodystart="108" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="114" column="1" bodyfile="src/include/vec.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1vec3_1a07595c9988f6bc4161b25f7a63acb887" prot="public" static="no" mutable="no">
         <type>T</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="109" column="1" bodyfile="src/include/vec.hpp" bodystart="109" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="115" column="1" bodyfile="src/include/vec.hpp" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1vec3_1a6ab9c9c0296e8c39d22b77beb5323dec" prot="public" static="no" mutable="no">
         <type>T</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="110" column="1" bodyfile="src/include/vec.hpp" bodystart="110" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="116" column="1" bodyfile="src/include/vec.hpp" bodystart="116" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="113" column="1"/>
+        <location file="src/include/vec.hpp" line="119" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1aaea9d75e58223f6979fc35ca05173248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="114" column="1" bodyfile="src/include/vec.hpp" bodystart="114" bodyend="119"/>
+        <location file="src/include/vec.hpp" line="120" column="1" bodyfile="src/include/vec.hpp" bodystart="120" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a02884fc24a6ed5b1a6cbd961438966bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="120" column="1"/>
+        <location file="src/include/vec.hpp" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1aa3fd0bfb8a07edfc893eee1f23cacdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="121" column="1"/>
+        <location file="src/include/vec.hpp" line="127" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a5153cea5aac2756c50f1c3dccd536c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="122" column="1"/>
+        <location file="src/include/vec.hpp" line="128" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a440de8ba7a0c9d50692a56fd4385c917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="124" column="1"/>
+        <location file="src/include/vec.hpp" line="130" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1acabe3722ca02395214c239dd8bce325e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="125" column="1"/>
+        <location file="src/include/vec.hpp" line="131" column="1"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a520e3ea50aea62609c70e75170e20c29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="127" column="1" bodyfile="src/include/vec.hpp" bodystart="127" bodyend="130"/>
+        <location file="src/include/vec.hpp" line="133" column="1" bodyfile="src/include/vec.hpp" bodystart="133" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1aa803de864382eaea769e7ab8b5729900" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="131" column="1" bodyfile="src/include/vec.hpp" bodystart="131" bodyend="134"/>
+        <location file="src/include/vec.hpp" line="137" column="1" bodyfile="src/include/vec.hpp" bodystart="137" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a3771a7c2bc4d385c03f20b54b57a436c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -233,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="136" column="1" bodyfile="src/include/vec.hpp" bodystart="136" bodyend="154"/>
+        <location file="src/include/vec.hpp" line="142" column="1" bodyfile="src/include/vec.hpp" bodystart="142" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a82ed2c0f5c2dfcfaca6107b963a77249" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -250,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="155" column="1" bodyfile="src/include/vec.hpp" bodystart="155" bodyend="173"/>
+        <location file="src/include/vec.hpp" line="161" column="1" bodyfile="src/include/vec.hpp" bodystart="161" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a15eb1bbe90720339adf1d481a52531fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="175" column="1" bodyfile="src/include/vec.hpp" bodystart="175" bodyend="178"/>
+        <location file="src/include/vec.hpp" line="181" column="1" bodyfile="src/include/vec.hpp" bodystart="181" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1af4937c33bac5e0124017f0aaa6d2c3b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="179" column="1" bodyfile="src/include/vec.hpp" bodystart="179" bodyend="182"/>
+        <location file="src/include/vec.hpp" line="185" column="1" bodyfile="src/include/vec.hpp" bodystart="185" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a216bd39c7e762be0333980274b41ef37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -301,7 +301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="184" column="1" bodyfile="src/include/vec.hpp" bodystart="184" bodyend="189"/>
+        <location file="src/include/vec.hpp" line="190" column="1" bodyfile="src/include/vec.hpp" bodystart="190" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1ae43be1e4607134fc91ed120a52040ccd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="190" column="1" bodyfile="src/include/vec.hpp" bodystart="190" bodyend="193"/>
+        <location file="src/include/vec.hpp" line="196" column="1" bodyfile="src/include/vec.hpp" bodystart="196" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -328,10 +328,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para><formula id="0">$\sqrt{x^2 + y^2 + z^2}$</formula> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="195" column="1" bodyfile="src/include/vec.hpp" bodystart="195" bodyend="198"/>
+        <location file="src/include/vec.hpp" line="204" column="1" bodyfile="src/include/vec.hpp" bodystart="204" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -346,17 +347,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Multiplies the vector with <formula id="1">$\frac{1}{\sqrt{x^2 + y^2 + z^2}}$</formula> by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify it to multiply by <formula id="2">$\frac{t\_l}{\sqrt{x^2 + y^2 + z^2}}$</formula> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="200" column="1" bodyfile="src/include/vec.hpp" bodystart="200" bodyend="204"/>
+        <location file="src/include/vec.hpp" line="216" column="1" bodyfile="src/include/vec.hpp" bodystart="216" bodyend="220"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Vector with coordinates <computeroutput>x</computeroutput>, <computeroutput>y</computeroutput> and <computeroutput>z</computeroutput>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/include/vec.hpp" line="103" column="1" bodyfile="src/include/vec.hpp" bodystart="102" bodyend="205"/>
+    <location file="src/include/vec.hpp" line="109" column="1" bodyfile="src/include/vec.hpp" bodystart="108" bodyend="221"/>
     <listofallmembers>
       <member refid="structsoftrender_1_1vec3_1ae6481c5bce00a58fab70eec51de1ec0b" prot="private" virt="non-virtual"><scope>softrender::vec3</scope><name>m_default_value</name></member>
       <member refid="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>norm</name></member>

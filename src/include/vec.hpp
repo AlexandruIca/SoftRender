@@ -6,6 +6,9 @@
 
 namespace softrender {
 
+///
+/// \brief Vector with coordinates \p x and \p y.
+///
 template<typename T>
 struct vec2
 {
@@ -98,6 +101,9 @@ public:
     }
 };
 
+///
+/// \brief Vector with coordinates \p x, \p y and \p z.
+///
 template<typename T>
 struct vec3
 {
@@ -192,11 +198,21 @@ public:
         return x * t_other.x + y * t_other.y + z * t_other.z;
     }
 
+    ///
+    /// \returns \f$\sqrt{x^2 + y^2 + z^2}\f$
+    ///
     [[nodiscard]] auto norm() const noexcept -> T
     {
         return std::sqrt(x * x + y * y + z * z);
     }
 
+    ///
+    /// Multiplies the vector with \f$\frac{1}{\sqrt{x^2 + y^2 + z^2}}\f$ by
+    /// default.
+    ///
+    /// \param t_l Specify it to multiply by \f$\frac{t\_l}{\sqrt{x^2 + y^2 +
+    ///            z^2}}\f$
+    ///
     auto normalize(T const t_l = 1) noexcept -> vec3&
     {
         *this = (*this) * (t_l / this->norm());
