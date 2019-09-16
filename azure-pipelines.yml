@@ -186,3 +186,54 @@ jobs:
           del C:\ProgramData\Chocolatey\bin\cpack.exe
           cpack -G ZIP
         displayName: Package for windows
+    - job: MacOS_Debug
+      pool:
+          vmImage: 'macOS-latest'
+      steps:
+      - script: |
+          set -e
+          brew install gcc
+          pushd ~
+          git clone "https://github.com/microsoft/vcpkg"
+          cd vcpkg/
+          ./bootstrap-vcpkg.sh
+          ./vcpkg install sdl2
+          popd
+        displayName: Install vcpkg
+      - script: |
+          set -e
+          mkdir build && cd build/
+          cmake -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DUSE_VCPKG_ON_MACOS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+          cmake --build . --config Debug
+        displayName: Build SoftRender and it's tests
+    - job: MacOS_Release
+      pool:
+          vmImage: 'macOS-latest'
+      steps:
+      - script: |
+          set -e
+          brew install gcc
+          pushd ~
+          git clone "https://github.com/microsoft/vcpkg"
+          cd vcpkg/
+          ./bootstrap-vcpkg.sh
+          ./vcpkg install sdl2
+          popd
+        displayName: Install vcpkg
+      - script: |
+          set -e
+          mkdir build && cd build/
+          cmake -DCMAKE_BUILD_TYPE=Release \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DUSE_VCPKG_ON_MACOS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+          cmake --build . --config Release
+        displayName: Build SoftRender and it's tests
+      - script: |
+          set -e
+          cpack --help
+          cpack -G TGZ
+        displayName: Package for MacOS
