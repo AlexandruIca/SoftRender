@@ -2,7 +2,7 @@
 
 #include "softrender.hpp"
 
-int main()
+auto main(int, char*[]) -> int
 {
     try {
         using namespace softrender;

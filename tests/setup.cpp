@@ -1,6 +1,6 @@
 #include "softrender.hpp"
 
-int main(int, char*[])
+auto main(int, char*[]) -> int
 {
     return test();
 }

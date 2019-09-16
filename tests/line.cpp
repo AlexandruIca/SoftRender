@@ -1,6 +1,6 @@
 #include "softrender.hpp"
 
-int main(int, char*[])
+auto main(int, char*[]) -> int
 {
     using namespace softrender;
     window_t window{ 1280, 720 };
