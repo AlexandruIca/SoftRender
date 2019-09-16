@@ -26,7 +26,7 @@ jobs:
           mkdir build && cd build
           export CC=gcc-9
           export CXX=g++-9
-          echo $VCPKG_ROOT
+          find ~ -name "vcpkg\.cmake"
           # Turn off undefined sanitizer because of ubuntu-16.04 bug
           #cmake -DCMAKE_BUILD_TYPE=Debug \
           #      -DCODE_COVERAGE=ON \
