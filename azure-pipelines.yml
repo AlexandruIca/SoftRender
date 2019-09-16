@@ -151,3 +151,37 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
+    - job: Windows_Debug_VS2019_x64
+      pool:
+          vmImage: 'windows-2019'
+      steps:
+      - script: |
+          vcpkg install sdl2:x64-windows
+        displayName: Install SDL2
+      - script: |
+          mkdir build && cd build
+          cmake -Ax64 \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
+          cmake --build . --config Debug
+        displayName: Build SoftRender and it's tests
+    - job: Windows_Release_VS2019_x64
+      pool:
+          vmImage: 'windows-2019'
+      steps:
+      - script: |
+          vcpkg install sdl2:x64-windows
+        displayName: Install SDL2
+      - script: |
+          mkdir build && cd build
+          cmake -Ax64 \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
+          cmake --build . --config Release
+        displayName: Build SoftRender and it's tests
+      - script: |
+          cd build\
+          cpack -G ZIP
+        displayName: Package for windows
