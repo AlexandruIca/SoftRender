@@ -183,6 +183,6 @@ jobs:
         displayName: Build SoftRender and it's tests
       - script: |
           cd build\
-          #cpack -G ZIP
-          where choco.exe
+          del C:\ProgramData\Chocolatey\bin\cpack.exe
+          cpack -G ZIP
         displayName: Package for windows
