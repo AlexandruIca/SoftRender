@@ -12,7 +12,10 @@ include(SetCXXStandard)
 include(Sanitizers)
 include(CodeCoverage)
 
-if(NOT APPLE)
+option(USE_VCPKG_ON_MACOS "Set this to ON if you have vcpkg installed on MacOS"
+       OFF)
+
+if(NOT APPLE OR ${USE_VCPKG_ON_MACOS})
   find_package(SDL2 CONFIG REQUIRED)
   find_path(SDL2_INCLUDE_DIRS NAMES SDL2/SDL.h)
   set(SDL2_LIBRARIES SDL2::SDL2main SDL2::SDL2-static)
