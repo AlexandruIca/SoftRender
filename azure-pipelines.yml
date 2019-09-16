@@ -151,8 +151,3 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
-      - script: |
-          set -e
-          cd build/tests/
-          ctest -V
-        displayName: Run the tests
