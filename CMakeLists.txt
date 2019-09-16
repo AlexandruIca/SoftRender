@@ -5,7 +5,7 @@ if(APPLE AND POLICY CMP0004)
   cmake_policy(SET CMP0004 OLD)
 endif()
 
-project(softrender LANGUAGES CXX)
+project(SoftRender LANGUAGES CXX VERSION 0.1)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 include(SetCXXStandard)
@@ -22,40 +22,9 @@ endif()
 
 message("SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}")
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/)
-
 option(SOFTRENDER_MOCKING "Mock creating a window" OFF)
 
-add_library(${CMAKE_PROJECT_NAME} STATIC ${SOFTRENDER_SRC_FILES})
-target_include_directories(${CMAKE_PROJECT_NAME}
-                           PUBLIC ${SOFTRENDER_INCLUDE_DIRS}
-                                  ${SDL2_INCLUDE_DIRS})
-set_cxx_standard(${CMAKE_PROJECT_NAME} 17)
-target_compile_definitions(${CMAKE_PROJECT_NAME}
-                           PRIVATE
-                           $<$<CONFIG:Debug>:SOFTRENDER_DEBUG>
-                           $<$<CONFIG:Release>:SOFTRENDER_RELEASE>
-                           $<$<BOOL:${SOFTRENDER_MOCKING}>:SOFTRENDER_MOCKING>)
-target_compile_options(
-  ${CMAKE_PROJECT_NAME}
-  PRIVATE $<$<OR:$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>:
-          -Wall
-          -Wextra
-          -Wpedantic
-          >
-          $<$<CXX_COMPILER_ID:GNU>:
-          -Wall
-          -pedantic
-          -pedantic-errors
-          >
-          $<$<CXX_COMPILER_ID:MSVC>:
-          /W4
-          /permissive-
-          /analyze
-          >)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${SDL2_LIBRARIES})
-add_coverage(${CMAKE_PROJECT_NAME})
-add_sanitizers(${CMAKE_PROJECT_NAME})
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 option(SOFTRENDER_BUILD_TESTS "Build all the tests that come with the library"
        OFF)
@@ -100,3 +69,7 @@ if(${SOFTRENDER_BUILD_DOCS_MCSS})
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     VERBATIM)
 endif()
+
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alexandru Ica Gabriel")
+
+include(CPack)
