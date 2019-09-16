@@ -301,7 +301,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="190" column="1" bodyfile="src/include/vec.hpp" bodystart="190" bodyend="195"/>
+        <location file="src/include/vec.hpp" line="190" column="1" bodyfile="src/include/vec.hpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="structsoftrender_1_1vec3_1aed1252aeb7510f15c9414c6dbc848272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::vec3&lt; T &gt;::operator*</definition>
+        <argsstring>(double const t_factor) const noexcept -&gt; vec3</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double const</type>
+          <declname>t_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="194" column="1" bodyfile="src/include/vec.hpp" bodystart="194" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1ae43be1e4607134fc91ed120a52040ccd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -318,12 +335,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="196" column="1" bodyfile="src/include/vec.hpp" bodystart="196" bodyend="199"/>
+        <location file="src/include/vec.hpp" line="200" column="1" bodyfile="src/include/vec.hpp" bodystart="200" bodyend="203"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec3_1a7f2a1065f0bf99d3cd66d9e2c9d60c2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec3&lt; T &gt;::norm</definition>
-        <argsstring>() const noexcept -&gt; T</argsstring>
+        <argsstring>() const noexcept -&gt; double</argsstring>
         <name>norm</name>
         <briefdescription>
         </briefdescription>
@@ -332,7 +349,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="204" column="1" bodyfile="src/include/vec.hpp" bodystart="204" bodyend="207"/>
+        <location file="src/include/vec.hpp" line="208" column="1" bodyfile="src/include/vec.hpp" bodystart="208" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -358,20 +375,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="216" column="1" bodyfile="src/include/vec.hpp" bodystart="216" bodyend="220"/>
+        <location file="src/include/vec.hpp" line="220" column="1" bodyfile="src/include/vec.hpp" bodystart="220" bodyend="224"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Vector with coordinates <computeroutput>x</computeroutput>, <computeroutput>y</computeroutput> and <computeroutput>z</computeroutput>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/include/vec.hpp" line="109" column="1" bodyfile="src/include/vec.hpp" bodystart="108" bodyend="221"/>
+    <location file="src/include/vec.hpp" line="109" column="1" bodyfile="src/include/vec.hpp" bodystart="108" bodyend="225"/>
     <listofallmembers>
       <member refid="structsoftrender_1_1vec3_1ae6481c5bce00a58fab70eec51de1ec0b" prot="private" virt="non-virtual"><scope>softrender::vec3</scope><name>m_default_value</name></member>
-      <member refid="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>norm</name></member>
+      <member refid="structsoftrender_1_1vec3_1a7f2a1065f0bf99d3cd66d9e2c9d60c2c" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>norm</name></member>
       <member refid="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>normalize</name></member>
       <member refid="structsoftrender_1_1vec3_1aa803de864382eaea769e7ab8b5729900" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator!=</name></member>
       <member refid="structsoftrender_1_1vec3_1a216bd39c7e762be0333980274b41ef37" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator*</name></member>
+      <member refid="structsoftrender_1_1vec3_1aed1252aeb7510f15c9414c6dbc848272" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator*</name></member>
       <member refid="structsoftrender_1_1vec3_1ae43be1e4607134fc91ed120a52040ccd" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator*</name></member>
       <member refid="structsoftrender_1_1vec3_1a15eb1bbe90720339adf1d481a52531fa" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator+</name></member>
       <member refid="structsoftrender_1_1vec3_1af4937c33bac5e0124017f0aaa6d2c3b1" prot="public" virt="non-virtual"><scope>softrender::vec3</scope><name>operator-</name></member>

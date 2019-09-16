@@ -189,6 +189,10 @@ public:
 
     auto operator*(float const t_factor) const noexcept -> vec3
     {
+        return this->operator*(static_cast<double>(t_factor));
+    }
+    auto operator*(double const t_factor) const noexcept -> vec3
+    {
         return vec3{ static_cast<T>(x * t_factor),
                      static_cast<T>(y * t_factor),
                      static_cast<T>(z * t_factor) };

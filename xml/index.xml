@@ -52,8 +52,9 @@
     <member refid="structsoftrender_1_1vec3_1a15eb1bbe90720339adf1d481a52531fa" kind="function"><name>operator+</name></member>
     <member refid="structsoftrender_1_1vec3_1af4937c33bac5e0124017f0aaa6d2c3b1" kind="function"><name>operator-</name></member>
     <member refid="structsoftrender_1_1vec3_1a216bd39c7e762be0333980274b41ef37" kind="function"><name>operator*</name></member>
+    <member refid="structsoftrender_1_1vec3_1aed1252aeb7510f15c9414c6dbc848272" kind="function"><name>operator*</name></member>
     <member refid="structsoftrender_1_1vec3_1ae43be1e4607134fc91ed120a52040ccd" kind="function"><name>operator*</name></member>
-    <member refid="structsoftrender_1_1vec3_1a6ce07ad0e14a1f0a1e03d79283e48983" kind="function"><name>norm</name></member>
+    <member refid="structsoftrender_1_1vec3_1a7f2a1065f0bf99d3cd66d9e2c9d60c2c" kind="function"><name>norm</name></member>
     <member refid="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" kind="function"><name>normalize</name></member>
   </compound>
   <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
