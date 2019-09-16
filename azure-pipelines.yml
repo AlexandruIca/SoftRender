@@ -80,6 +80,15 @@ jobs:
           cd build/
           cpack -G TGZ
         displayName: Package for linux.
+      - task: GithubRelease@0
+        displayName: Push to Github Release
+        inputs:
+            githubConnection: AlexandruIca
+            repositoryName: AlexandruIca/SoftRender
+            action: edit
+            tag: $(SOFTRENDER_VERSION)
+            assets: build/*.gz
+            assetUploadMode: 'replace'
     - job: Linux_Debug_Clang9
       pool:
           vmImage: 'ubuntu-16.04'
@@ -181,11 +190,20 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
-      - powershell: |
+      - script: |
           cd build\
           del C:\ProgramData\Chocolatey\bin\cpack.exe
           cpack -G ZIP
         displayName: Package for windows
+      - task: GithubRelease@0
+        displayName: Push to Github Release
+        inputs:
+            githubConnection: AlexandruIca
+            repositoryName: AlexandruIca/SoftRender
+            action: edit
+            tag: $(SOFTRENDER_VERSION)
+            assets: build/*.zip
+            assetUploadMode: 'replace'
     - job: MacOS_Debug
       pool:
           vmImage: 'macOS-latest'
@@ -238,3 +256,12 @@ jobs:
           cpack --help
           cpack -G TGZ
         displayName: Package for MacOS
+      - task: GithubRelease@0
+        displayName: Push to Github Release
+        inputs:
+            githubConnection: AlexandruIca
+            repositoryName: AlexandruIca/SoftRender
+            action: edit
+            tag: $(SOFTRENDER_VERSION)
+            assets: build/*.gz
+            assetUploadMode: 'replace'
