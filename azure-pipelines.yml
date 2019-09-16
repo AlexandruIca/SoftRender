@@ -1,0 +1,37 @@
+trigger:
+    tags:
+        include:
+        - v*
+    branches:
+        include:
+        - master
+        - development
+
+variables:
+    SOFTRENDER_VERSION: nightly
+
+jobs:
+    - job: Linux_Debug_GCC9
+      pool:
+          vmImage: 'ubuntu-16.04'
+      steps:
+      - script: |
+          set -e
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt update
+          sudo apt install -y gcc-9 g++-9
+        displayName: Install gcc-9
+      - script: |
+          set -e
+          mkdir build && cd build
+          export CC=gcc-9
+          export CXX=g++-9
+          whereis vcpkg
+          # Turn off undefined sanitizer because of ubuntu-16.04 bug
+          #cmake -DCMAKE_BUILD_TYPE=Debug \
+          #      -DCODE_COVERAGE=ON \
+          #      -DSOFTRENDER_BUILD_TESTS=ON \
+          #      -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
+          #      -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
+          #      -DSOFTRENDER_USE_UNDEFINED_SANITIZER=OFF \
+          #      -DCMAKE_TOOLCHAIN_FILE= ..
