@@ -181,7 +181,7 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
-      - script: |
+      - powershell: |
           cd build\
           del C:\ProgramData\Chocolatey\bin\cpack.exe
           cpack -G ZIP
