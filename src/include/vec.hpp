@@ -201,7 +201,7 @@ public:
     ///
     /// \returns \f$\sqrt{x^2 + y^2 + z^2}\f$
     ///
-    [[nodiscard]] auto norm() const noexcept -> T
+    [[nodiscard]] auto norm() const noexcept -> double
     {
         return std::sqrt(x * x + y * y + z * z);
     }
