@@ -51,3 +51,31 @@ jobs:
           cd build/
           ../scripts/codecov-io-azure.sh
         displayName: Publish code coverage
+    - job: Linux_Release_GCC9
+      pool:
+          vmImage: 'ubuntu-16.04'
+      steps:
+      - script: |
+          set -e
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt update
+          sudo apt install -y gcc-9 g++-9
+        displayName: Install gcc-9
+      - script: |
+          vcpkg install sdl2
+        displayName: Install SDL2
+      - script: |
+          set -e
+          mkdir build && cd build
+          export CC=gcc-9
+          export CXX=g++-9
+          cmake -DCMAKE_BUILD_TYPE=Release \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+          cmake --build . --config Release
+        displayName: Build SoftRender and it's tests
+      - script: |
+          set -e
+          cd build/
+          cpack -G TGZ
+        displayName: Package for linux.
