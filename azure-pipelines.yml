@@ -27,6 +27,7 @@ jobs:
           export CC=gcc-9
           export CXX=g++-9
           whereis vcpkg
+          ls -A /usr/bin/local/
           # Turn off undefined sanitizer because of ubuntu-16.04 bug
           #cmake -DCMAKE_BUILD_TYPE=Debug \
           #      -DCODE_COVERAGE=ON \
@@ -35,3 +36,4 @@ jobs:
           #      -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
           #      -DSOFTRENDER_USE_UNDEFINED_SANITIZER=OFF \
           #      -DCMAKE_TOOLCHAIN_FILE= ..
+        displayName: See where vcpkg is
