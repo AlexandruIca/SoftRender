@@ -26,13 +26,23 @@ jobs:
           mkdir build && cd build
           export CC=gcc-9
           export CXX=g++-9
-          vcpkg integrate install
           # Turn off undefined sanitizer because of ubuntu-16.04 bug
-          #cmake -DCMAKE_BUILD_TYPE=Debug \
-          #      -DCODE_COVERAGE=ON \
-          #      -DSOFTRENDER_BUILD_TESTS=ON \
-          #      -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
-          #      -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
-          #      -DSOFTRENDER_USE_UNDEFINED_SANITIZER=OFF \
-          #      -DCMAKE_TOOLCHAIN_FILE= ..
-        displayName: See where vcpkg is
+          cmake -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_COVERAGE=ON \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_MOCKING=ON \
+                -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
+                -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
+                -DSOFTRENDER_USE_UNDEFINED_SANITIZER=OFF \
+                -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+          cmake --build . --config Debug
+        displayName: Build SoftRender and it's tests
+      - script: |
+          set -e
+          cd build/tests/
+          ctest -V
+        displayName: Run the tests
+      - script: |
+          cd build/
+          ../scripts/codecov-io.sh
+        displayName: Publish code coverage
