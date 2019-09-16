@@ -234,6 +234,7 @@ jobs:
         displayName: Build SoftRender and it's tests
       - script: |
           set -e
+          cd build/
           cpack --help
           cpack -G TGZ
         displayName: Package for MacOS
