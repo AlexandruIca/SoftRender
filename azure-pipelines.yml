@@ -174,9 +174,6 @@ jobs:
           vcpkg install sdl2:x64-windows
         displayName: Install SDL2
       - script: |
-          choco install cmake
-        displayName: Get rid of name conflict
-      - script: |
           mkdir build && cd build
           cmake -Ax64 ^
                 -DCMAKE_BUILD_TYPE=Release ^
