@@ -46,3 +46,7 @@ add_sanitizers(${CMAKE_PROJECT_NAME})
 install(TARGETS ${CMAKE_PROJECT_NAME} DESTINATION lib)
 install(TARGETS ${CMAKE_PROJECT_NAME}-shared DESTINATION lib)
 install(FILES ${SOFTRENDER_HEADERS} DESTINATION include)
+
+set(CPACK_DEBIAN_PACKAGE_MANTAINER "Alexandru Ica Gabriel")
+
+include(CPack)
