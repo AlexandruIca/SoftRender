@@ -186,5 +186,6 @@ jobs:
         displayName: Build SoftRender and it's tests
       - script: |
           cd build\
-          cpack -G ZIP
+          #cpack -G ZIP
+          where choco.exe
         displayName: Package for windows
