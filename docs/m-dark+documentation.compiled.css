@@ -391,23 +391,6 @@ hr {
 blockquote, hr {
   border-color: #405363;
 }
-pre {
-  font-family: 'Source Code Pro', monospace, monospace, monospace;
-  font-size: 0.9em;
-  padding: 0.5rem 1rem;
-  color: #e6e6e6;
-  background-color: #282e36;
-  border-radius: 0.2rem;
-  overflow-x: auto;
-  margin-top: 0;
-}
-pre.m-console-wrap {
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-pre.m-console {
-  background-color: #161616;
-}
 strong, .m-text.m-strong { font-weight: bold; }
 em, .m-text.m-em { font-style: italic; }
 s, .m-text.m-s { text-decoration: line-through; }
@@ -439,15 +422,28 @@ mark {
   background-color: #c7cf2f;
   color: #2f83cc;
 }
-code {
+pre, code {
   font-family: 'Source Code Pro', monospace, monospace, monospace;
   font-size: 0.9em;
-  padding: 0.125rem;
   color: #e6e6e6;
   background-color: #282e36;
 }
-code.m-console {
+pre.m-console, code.m-console {
+  color: #e6e6e6;
   background-color: #161616;
+}
+pre {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  overflow-x: auto;
+  margin-top: 0;
+}
+pre.m-console-wrap {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+code {
+  padding: 0.125rem;
 }
 *:focus { outline-color: #5b9dd9; }
 div.m-scroll {
@@ -780,6 +776,9 @@ img.m-image, svg.m-image, div.m-image img, div.m-image svg {
 }
 div.m-image.m-fullwidth img, div.m-image.m-fullwidth svg {
   width: 100%;
+}
+img.m-image.m-badge, div.m-image.m-badge img {
+  border-radius: 50%;
 }
 figure.m-figure {
   max-width: 100%;
@@ -1139,18 +1138,18 @@ pre.m-code span.hll {
   margin-right: -1.0rem;
   padding-left: 1.0rem;
 }
-.m-code.m-inverted {
-  color: rgba(230, 230, 230, 0.33);
-}
-.m-code.m-inverted > span {
+.m-code.m-inverted > span, .m-console.m-inverted > span {
   opacity: 0.3333;
 }
-.m-code.m-inverted > span.hll {
-  color: #dcdcdc;
+.m-code.m-inverted > span.hll, .m-console.m-inverted > span.hll {
   opacity: 1;
   background-color: transparent;
   border-color: transparent;
 }
+.m-code.m-inverted { color: rgba(230, 230, 230, 0.33); }
+.m-console.m-inverted { color: rgba(230, 230, 230, 0.33); }
+.m-code.m-inverted > span.hll { color: #e6e6e6; }
+.m-cosole.m-inverted > span.hll { color: #e6e6e6; }
 .m-code-color {
   display: inline-block;
   width: 0.75rem;
@@ -1832,6 +1831,12 @@ body > header > nav #m-navbar-brand, body > header > nav a#m-navbar-show, body >
 }
 body > header > nav a#m-navbar-brand, body > header > nav #m-navbar-brand a {
   text-transform: uppercase;
+}
+body > header > nav a#m-navbar-brand img, body > header > nav #m-navbar-brand a img {
+  width: 1.75rem;
+  height: 1.75rem;
+  vertical-align: -22.5%;
+  margin-right: 0.5rem;
 }
 body > header > nav #m-navbar-brand a {
   padding-left: 0;
