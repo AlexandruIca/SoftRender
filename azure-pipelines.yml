@@ -8,7 +8,7 @@ trigger:
         - development
 
 variables:
-    SOFTRENDER_VERSION: nightly
+    SOFTRENDER_VERSION: v0.1
 
 jobs:
     - job: Linux_Debug_GCC9
@@ -87,6 +87,8 @@ jobs:
             repositoryName: AlexandruIca/SoftRender
             action: edit
             tag: $(SOFTRENDER_VERSION)
+            releaseNotesSource: 'file'
+            releaseNotesFile: './CHANGELOG.md'
             assets: build/*.gz
             assetUploadMode: 'replace'
     - job: Linux_Debug_Clang9
