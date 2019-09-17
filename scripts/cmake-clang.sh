@@ -6,6 +6,7 @@ cmake -DCMAKE_CXX_FLAGS="-stdlib=libstdc++ -lstdc++"\
     -DUSE_LEAK_SANITIZER=ON\
     -DUSE_UNDEFINED_SANITIZER=ON\
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON\
+    -DNOT_USING_TRAVIS=OFF\
     -DCMAKE_TOOLCHAIN_FILE=${HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 
 mv compile_commands.json ..

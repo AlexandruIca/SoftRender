@@ -1,3 +1,5 @@
+option(NOT_USING_TRAVIS "Travis doesn't like -Werror" ON)
+
 set(SOFTRENDER_SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/softrender.cpp
                          ${CMAKE_CURRENT_SOURCE_DIR}/wavefront_reader.cpp)
 
@@ -25,7 +27,7 @@ target_compile_options(
   ${CMAKE_PROJECT_NAME}
   PRIVATE $<$<OR:$<CXX_COMPILER_ID:Clang>,$<CXX_COMPILER_ID:AppleClang>>:
           -Wall
-          -Werror
+          $<$<BOOL:${NOT_USING_TRAVIS}>:-Werror>
           -Wextra
           -Wpedantic
           $<$<CONFIG:Debug>:-O0>
