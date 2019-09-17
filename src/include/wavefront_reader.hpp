@@ -36,20 +36,20 @@ public:
     ///
     /// \returns Number of vertices in the specified .obj file.
     ///
-    auto nverts() const noexcept -> int;
+    [[nodiscard]] auto nverts() const noexcept -> int;
     ///
     /// \returns Number of faces.
     ///
-    auto nfaces() const noexcept -> int;
+    [[nodiscard]] auto nfaces() const noexcept -> int;
     ///
     /// \returns The vertex at index \p t_index.
     ///
-    auto vert(int const t_index) noexcept -> vec3f;
+    [[nodiscard]] auto vert(int const t_index) noexcept -> vec3f;
     ///
     /// \returns The indexes of the vertices that make the face at index \p
     ///          t_index.
     ///
-    auto face(int const t_index) -> std::vector<int>;
+    [[nodiscard]] auto face(int const t_index) -> std::vector<int>;
 };
 
 } // namespace softrender
