@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SoftRender</title>
+  <title>Download &amp; Setup | SoftRender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -24,7 +24,7 @@
       <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
         <div class="m-row">
           <ol class="m-col-t-6 m-col-m-none">
-            <li><a href="pages.html" id="m-navbar-current">Pages</a></li>
+            <li><a href="pages.html">Pages</a></li>
             <li><a href="namespaces.html">Namespaces</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="3">
@@ -43,26 +43,13 @@
   <div class="m-container m-container-inflatable">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <h1>Pages</h2>
-        <ul class="m-doc">
-          <li><a href="download_and_setup.html" class="m-doc">Download &amp; Setup</a> <span class="m-doc"></span></li>
-        </ul>
-        <script>
-        function toggle(e) {
-            e.parentElement.className = e.parentElement.className == 'm-doc-collapsible' ?
-                'm-doc-expansible' : 'm-doc-collapsible';
-            return false;
-        }
-        /* Collapse all nodes marked as such. Doing it via JS instead of
-           directly in markup so disabling it doesn't harm usability. The list
-           is somehow regenerated on every iteration and shrinks as I change
-           the classes. It's not documented anywhere and I'm not sure if this
-           is the same across browsers, so I am going backwards in that list to
-           be sure. */
-        var collapsed = document.getElementsByClassName("collapsed");
-        for(var i = collapsed.length - 1; i >= 0; --i)
-            collapsed[i].className = 'm-doc-expansible';
-        </script>
+        <h1>
+          Download &amp; Setup
+        </h1>
+<p>To get started using the library you first have to download it for your platform( <a href="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Darwin.tar.gz">MacOS</a>, <a href="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-win64.zip">Windows</a>, or <a href="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Linux.tar.gz">Linux</a>). After that you have to add the <code>include</code> folder to your compiler&#x27;s path and the <code>lib</code> folder to your compiler&#x27;s link path and link with either the static or shared version, whatever you choose. If you use CMake:</p><pre class="m-code"><span class="n">add_executable</span><span class="p">(</span> <span class="n">my_exec</span> <span class="err">$</span><span class="p">{</span><span class="n">YOUR_SOURCES</span><span class="p">}</span> <span class="p">)</span>
+<span class="n">target_include_directories</span><span class="p">(</span> <span class="n">my_exec</span> <span class="n">PRIVATE</span> <span class="err">$</span><span class="p">{</span><span class="n">PATH_TO_SOFTRENDER</span><span class="p">}</span><span class="o">/</span><span class="n">include</span><span class="o">/</span> <span class="p">)</span>
+<span class="n">link_directories</span><span class="p">(</span> <span class="err">$</span><span class="p">{</span><span class="n">PATH_TO_SOFTRENDER</span><span class="p">}</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span> <span class="p">)</span>
+<span class="n">target_link_libraries</span><span class="p">(</span> <span class="n">my_exec</span> <span class="n">PRIVATE</span> <span class="n">SoftRender</span> <span class="p">)</span> <span class="err">#</span> <span class="n">Or</span> <span class="n">SoftRender</span><span class="o">-</span><span class="n">shared</span></pre>
       </div>
     </div>
   </div>

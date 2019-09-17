@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="download_and_setup" kind="page">
+    <compoundname>download_and_setup</compoundname>
+    <title>Download &amp; Setup</title>
+    <detaileddescription>
+<para>To get started using the library you first have to download it for your platform( <ulink url="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Darwin.tar.gz">MacOS</ulink>, <ulink url="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-win64.zip">Windows</ulink>, or <ulink url="https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Linux.tar.gz">Linux</ulink>). After that you have to add the <computeroutput>include</computeroutput> folder to your compiler&apos;s path and the <computeroutput>lib</computeroutput> folder to your compiler&apos;s link path and link with either the static or shared version, whatever you choose. If you use CMake: <programlisting><codeline><highlight class="normal">add_executable(<sp/>my_exec<sp/>${YOUR_SOURCES}<sp/>)</highlight></codeline>
+<codeline><highlight class="normal">target_include_directories(<sp/>my_exec<sp/>PRIVATE<sp/>${PATH_TO_SOFTRENDER}/include/<sp/>)</highlight></codeline>
+<codeline><highlight class="normal">link_directories(<sp/>${PATH_TO_SOFTRENDER}/lib/<sp/>)</highlight></codeline>
+<codeline><highlight class="normal">target_link_libraries(<sp/>my_exec<sp/>PRIVATE<sp/>SoftRender<sp/>)<sp/>#<sp/>Or<sp/>SoftRender-shared</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

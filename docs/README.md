@@ -1,3 +1,7 @@
+# Download & Setup
+
+See [this page](\ref download_and_setup) to get started.
+
 # Quickstart
 
 This creates a blank screen and exits either when you close the window or when

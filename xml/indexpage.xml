@@ -2,9 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="indexpage" kind="page">
     <compoundname>index</compoundname>
-    <title>Quickstart</title>
+    <title>Download &amp; Setup</title>
     <detaileddescription>
-<para>This creates a blank screen and exits either when you close the window or when you press ESCAPE: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="softrender_8hpp" kindref="compound">softrender.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<para>See <ref refid="download_and_setup" kindref="compound">this page</ref> to get started.</para><para><heading level="1">Quickstart</heading>
+</para><para>This creates a blank screen and exits either when you close the window or when you press ESCAPE: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="softrender_8hpp" kindref="compound">softrender.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
