@@ -1,19 +1,38 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="vec_8hpp" kind="file" language="C++">
     <compoundname>vec.hpp</compoundname>
     <includes local="no">cmath</includes>
+    <includedby refid="wavefront__reader_8hpp" local="yes">src/include/wavefront_reader.hpp</includedby>
     <incdepgraph>
-      <node id="10">
+      <node id="2">
         <label>cmath</label>
       </node>
-      <node id="9">
+      <node id="1">
         <label>src/include/vec.hpp</label>
         <link refid="vec_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/include/wavefront_reader.hpp</label>
+        <link refid="wavefront__reader_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/include/vec.hpp</label>
+        <link refid="vec_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/wavefront_reader.cpp</label>
+        <link refid="wavefront__reader_8cpp"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="structsoftrender_1_1vec2" prot="public">softrender::vec2</innerclass>
     <innerclass refid="structsoftrender_1_1vec3" prot="public">softrender::vec3</innerclass>
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>

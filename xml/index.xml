@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
   <compound refid="structsoftrender_1_1pixel__t" kind="struct"><name>softrender::pixel_t</name>
     <member refid="structsoftrender_1_1pixel__t_1af65af3ceb86c6e4ece8589621b33f481" kind="variable"><name>r</name></member>
     <member refid="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" kind="variable"><name>g</name></member>
@@ -57,6 +57,20 @@
     <member refid="structsoftrender_1_1vec3_1a7f2a1065f0bf99d3cd66d9e2c9d60c2c" kind="function"><name>norm</name></member>
     <member refid="structsoftrender_1_1vec3_1a9695c595ab7438df1a9a9485cd9514b7" kind="function"><name>normalize</name></member>
   </compound>
+  <compound refid="classsoftrender_1_1wavefront__model__t" kind="class"><name>softrender::wavefront_model_t</name>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a3e615f5e89d7a969011e199566669fe0" kind="variable"><name>m_verts</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1addf81ca8fff08d886437ec64347e26de" kind="variable"><name>m_faces</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1ab334c2b63f8e6c8abf30fac75834c9e8" kind="function"><name>read_model</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a723186fbd05b197cc1a3c1913bb555d4" kind="function"><name>wavefront_model_t</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1aefcd48050362972344222caa440f71b3" kind="function"><name>wavefront_model_t</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1ad6957d30e92ed0b99c5e8f4682f9cb19" kind="function"><name>wavefront_model_t</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a4b1d3b9edbec1b26ce0640e0d14b516b" kind="function"><name>wavefront_model_t</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1ae12818fb91f8360e515946a34369fb3f" kind="function"><name>~wavefront_model_t</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a08540ea6dcc56afe6a4c7d64c1aed312" kind="function"><name>nverts</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1ad9dbeb5164b7d3d4beaa2b70ac90707f" kind="function"><name>nfaces</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a13d2d73f8c1aa9c83e1b6bc93f3d75af" kind="function"><name>vert</name></member>
+    <member refid="classsoftrender_1_1wavefront__model__t_1a60f70045dfd1135435764bff55448778" kind="function"><name>face</name></member>
+  </compound>
   <compound refid="classsoftrender_1_1window__t" kind="class"><name>softrender::window_t</name>
     <member refid="classsoftrender_1_1window__t_1a549973a71b40e61bc411a741469a3b1a" kind="variable"><name>m_canvas</name></member>
     <member refid="classsoftrender_1_1window__t_1a4f367993c59ad9849a519eec914f4035" kind="variable"><name>m_width</name></member>
@@ -103,26 +117,42 @@
     <member refid="namespacesoftrender_1a0f4ff27fc129e76f00dea07755b7099a" kind="typedef"><name>vec3i</name></member>
     <member refid="namespacesoftrender_1a9c075f6f6c3f4c5b00b7ba2def706d9a" kind="typedef"><name>vec3f</name></member>
     <member refid="namespacesoftrender_1a43d665a942e0b309fc1656eb173aa937" kind="typedef"><name>vec3d</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" kind="variable"><name>white</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" kind="variable"><name>red</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" kind="variable"><name>green</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" kind="variable"><name>blue</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" kind="variable"><name>cyan</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" kind="variable"><name>yellow</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" kind="variable"><name>lime</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" kind="variable"><name>teal</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" kind="variable"><name>purple</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" kind="variable"><name>pink</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" kind="variable"><name>indigo</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" kind="variable"><name>amber</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" kind="variable"><name>orange</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" kind="variable"><name>brown</name></member>
+    <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
     <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
   </compound>
   <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
-    <member refid="namespacesoftrender_1_1colors_1afab94f496015d118ead87ee74605259a" kind="variable"><name>black</name></member>
-    <member refid="namespacesoftrender_1_1colors_1af5b2846dcc546807c6bacd38a1630d31" kind="variable"><name>white</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a5fb421730af4c2664a9af293fa9c0e4b" kind="variable"><name>red</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a7a19ec963dc1686ad9f2740cc342769f" kind="variable"><name>green</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a846ca7b3b602d95d4ae435eb42f6ddd2" kind="variable"><name>blue</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a7490530dc327e6a91109aa67d21afe00" kind="variable"><name>cyan</name></member>
-    <member refid="namespacesoftrender_1_1colors_1abe6b1de683d4f0906078166bc25a2367" kind="variable"><name>yellow</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a218c58e1a1d4cf54d424edf522d289eb" kind="variable"><name>lime</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a35e034557586c8ff57d826ba63e1b135" kind="variable"><name>teal</name></member>
-    <member refid="namespacesoftrender_1_1colors_1adb3b12eeb9dcf0fd8bb1d1775603b47f" kind="variable"><name>purple</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a0b5b7dc693f77f108fbc7c1be63da3b3" kind="variable"><name>pink</name></member>
-    <member refid="namespacesoftrender_1_1colors_1af9fa6e2185380a0191fb1c3f4d5090de" kind="variable"><name>indigo</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a9a94e94d0e6af1f8b27d9aa156e73975" kind="variable"><name>amber</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a81511496a5d68ede5fadb17335933a29" kind="variable"><name>orange</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6f71390f48d91e820b2c0e5a2d8b4845" kind="variable"><name>brown</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a0abce51fff6bbb2c4fc8eeccd58dd209" kind="variable"><name>grey</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" kind="variable"><name>white</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" kind="variable"><name>red</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" kind="variable"><name>green</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" kind="variable"><name>blue</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" kind="variable"><name>cyan</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" kind="variable"><name>yellow</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" kind="variable"><name>lime</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" kind="variable"><name>teal</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" kind="variable"><name>purple</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" kind="variable"><name>pink</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" kind="variable"><name>indigo</name></member>
+    <member refid="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" kind="variable"><name>amber</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" kind="variable"><name>orange</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" kind="variable"><name>brown</name></member>
+    <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
@@ -133,9 +163,13 @@
   </compound>
   <compound refid="vec_8hpp" kind="file"><name>vec.hpp</name>
   </compound>
+  <compound refid="wavefront__reader_8hpp" kind="file"><name>wavefront_reader.hpp</name>
+  </compound>
   <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
     <member refid="softrender_8cpp_1aa85102d398c1f2048bc0a1ba0bdf5185" kind="function"><name>sdl_error</name></member>
     <member refid="softrender_8cpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="wavefront__reader_8cpp" kind="file"><name>wavefront_reader.cpp</name>
   </compound>
   <compound refid="group__unchecked__release" kind="group"><name>unchecked_release</name>
     <member refid="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" kind="function"><name>draw_point</name></member>
@@ -150,6 +184,8 @@
     <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
   </compound>
   <compound refid="download_and_setup" kind="page"><name>download_and_setup</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
   </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
   </compound>

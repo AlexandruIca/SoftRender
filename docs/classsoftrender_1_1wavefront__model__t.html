@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>softrender::pixel_t struct | SoftRender</title>
+  <title>softrender::wavefront_model_t class | SoftRender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="favicon-dark.png" type="image/png" />
@@ -44,9 +44,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacesoftrender.html">softrender</a>::<wbr/></span>pixel_t <span class="m-thin">struct</span>
+          <span class="m-breadcrumb"><a href="namespacesoftrender.html">softrender</a>::<wbr/></span>wavefront_model_t <span class="m-thin">class</span>
         </h1>
-        <p>Struct to represent an rgba value.</p>
+        <p>Helper for reading wavefront.obj models.</p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -54,6 +54,7 @@
               Reference
               <ul>
                 <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
               </ul>
             </li>
           </ul>
@@ -62,28 +63,101 @@
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper"><a href="#a3c4a1cdeab5b7ba31894a788ecf666df" class="m-doc">pixel_t</a>(</span><span class="m-doc-wrap">int t_red,
-              int t_green,
-              int t_blue,
-              int t_alpha = 255) <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper"><a href="#aefcd48050362972344222caa440f71b3" class="m-doc">wavefront_model_t</a>(</span><span class="m-doc-wrap">std::string const t_file_path)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a08540ea6dcc56afe6a4c7d64c1aed312" class="m-doc">nverts</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int -&gt; auto</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad9dbeb5164b7d3d4beaa2b70ac90707f" class="m-doc">nfaces</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int -&gt; auto</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a13d2d73f8c1aa9c83e1b6bc93f3d75af" class="m-doc">vert</a>(</span><span class="m-doc-wrap">int const t_index) noexcept -&gt; vec3f -&gt; auto</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a60f70045dfd1135435764bff55448778" class="m-doc">face</a>(</span><span class="m-doc-wrap">int const t_index) -&gt; std::vector&lt; int &gt; -&gt; auto</span>
             </dt>
             <dd></dd>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a3c4a1cdeab5b7ba31894a788ecf666df"><div>
+          <section class="m-doc-details" id="aefcd48050362972344222caa440f71b3"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> softrender::<wbr />pixel_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3c4a1cdeab5b7ba31894a788ecf666df" class="m-doc-self">pixel_t</a>(</span><span class="m-doc-wrap">int t_red,
-              int t_green,
-              int t_blue,
-              int t_alpha = 255) <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper"> softrender::<wbr />wavefront_model_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aefcd48050362972344222caa440f71b3" class="m-doc-self">wavefront_model_t</a>(</span><span class="m-doc-wrap">std::string const t_file_path)</span></span>
             </h3>
-<p>Constructor for an easy to use interface for the user. Without this the usage would be something like:</p><pre class="m-code"><span class="n">pixel_t</span> <span class="n">px</span><span class="p">;</span>
-<span class="n">px</span><span class="p">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">red_value</span><span class="p">};</span>
-<span class="n">px</span><span class="p">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">green_value</span><span class="p">};</span>
-<span class="n">px</span><span class="p">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">blue_value</span><span class="p">};</span>
-<span class="n">px</span><span class="p">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="p">{</span><span class="n">alpha_value</span><span class="p">};</span></pre><p>With this the usage looks like this:</p><pre class="m-code"><span class="n">pixel_t</span> <span class="n">px</span><span class="p">{</span> <span class="n">red_value</span><span class="p">,</span> <span class="n">green_value</span><span class="p">,</span> <span class="n">alpha_value</span> <span class="p">};</span></pre>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">t_file_path</td>
+                  <td>A path to the &#x27;.obj&#x27; model. If the file is not found or the file is not valid a message will be shown on the screen.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a08540ea6dcc56afe6a4c7d64c1aed312"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />wavefront_model_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a08540ea6dcc56afe6a4c7d64c1aed312" class="m-doc-self">nverts</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Number of vertices in the specified .obj file.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ad9dbeb5164b7d3d4beaa2b70ac90707f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />wavefront_model_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad9dbeb5164b7d3d4beaa2b70ac90707f" class="m-doc-self">nfaces</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; int</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Number of faces.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a13d2d73f8c1aa9c83e1b6bc93f3d75af"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />wavefront_model_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a13d2d73f8c1aa9c83e1b6bc93f3d75af" class="m-doc-self">vert</a>(</span><span class="m-doc-wrap">int const t_index) noexcept -&gt; vec3f</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The vertex at index <code>t_index</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a60f70045dfd1135435764bff55448778"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />wavefront_model_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a60f70045dfd1135435764bff55448778" class="m-doc-self">face</a>(</span><span class="m-doc-wrap">int const t_index) -&gt; std::vector&lt; int &gt;</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The indexes of the vertices that make the face at index <code>t_index</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
           </div></section>
         </section>
       </div>

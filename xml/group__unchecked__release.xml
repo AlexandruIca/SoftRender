@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="group__unchecked__release" kind="group">
     <compoundname>unchecked_release</compoundname>
     <title>No bound checking</title>
@@ -22,34 +22,39 @@
           <declname>t_pixel</declname>
         </param>
         <briefdescription>
-<para>Draws a point at coordinate (x=<computeroutput>t_j</computeroutput>, y=<computeroutput>t_i</computeroutput>). </para>        </briefdescription>
+<para>Draws a point at coordinate (x=<computeroutput>t_j</computeroutput>, y=<computeroutput>t_i</computeroutput>). </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">t_i</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The line on which the pixel will be put. </para></parameterdescription>
+<para>The line on which the pixel will be put. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">t_j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The column on which the pixel will be put. </para></parameterdescription>
+<para>The column on which the pixel will be put. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">t_pixel</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The color of the point. </para></parameterdescription>
+<para>The color of the point. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="172" column="1" bodyfile="src/softrender.cpp" bodystart="293" bodyend="297"/>
+        <location file="src/include/softrender.hpp" line="173" column="10" bodyfile="src/softrender.cpp" bodystart="293" bodyend="297"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -66,26 +71,30 @@
           <defval>pixel_t{}</defval>
         </param>
         <briefdescription>
-<para>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix). </para>        </briefdescription>
+<para>Draws a point using a more traditional approach(x and y coordinates instead of lines and columns in a matrix). </para>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="181" column="1" bodyfile="src/softrender.cpp" bodystart="299" bodyend="303"/>
+        <location file="src/include/softrender.hpp" line="182" column="10" bodyfile="src/softrender.cpp" bodystart="299" bodyend="303"/>
       </memberdef>
-      <memberdef kind="function" id="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::window_t::closed</definition>
         <argsstring>() const noexcept -&gt; bool</argsstring>
         <name>closed</name>
         <briefdescription>
-<para>Returns true if the window will close. </para>        </briefdescription>
+<para>Returns true if the window will close. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>If you press ESCAPE the application terminates. </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="note"><para>If you press ESCAPE the application terminates. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="197" column="1" bodyfile="src/softrender.cpp" bodystart="349" bodyend="352"/>
+        <location file="src/include/softrender.hpp" line="198" column="11" bodyfile="src/softrender.cpp" bodystart="349" bodyend="352"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -101,27 +110,31 @@
           <declname>t_j</declname>
         </param>
         <briefdescription>
-<para>Access the rgba value at line=<computeroutput>t_i</computeroutput> and column=<computeroutput>t_j</computeroutput>. </para>        </briefdescription>
+<para>Access the rgba value at line=<computeroutput>t_i</computeroutput> and column=<computeroutput>t_j</computeroutput>. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>t_i</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Line of the inner rgba matrix. </para></parameterdescription>
+<para>Line of the inner rgba matrix. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>t_j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Column of the inner rgba matrix. </para></parameterdescription>
+<para>Column of the inner rgba matrix. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="207" column="1" bodyfile="src/softrender.cpp" bodystart="354" bodyend="363"/>
+        <location file="src/include/softrender.hpp" line="208" column="11" bodyfile="src/softrender.cpp" bodystart="354" bodyend="363"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -137,33 +150,39 @@
           <declname>t_j</declname>
         </param>
         <briefdescription>
-<para>Get a const reference to the rgba value at line=<computeroutput>t_i</computeroutput> and column=<computeroutput>t_j</computeroutput>. </para>        </briefdescription>
+<para>Get a const reference to the rgba value at line=<computeroutput>t_i</computeroutput> and column=<computeroutput>t_j</computeroutput>. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>t_i</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Line of the inner rgba matrix. </para></parameterdescription>
+<para>Line of the inner rgba matrix. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>t_j</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Column of the inner rgba matrix. </para></parameterdescription>
+<para>Column of the inner rgba matrix. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="217" column="1" bodyfile="src/softrender.cpp" bodystart="365" bodyend="374"/>
+        <location file="src/include/softrender.hpp" line="218" column="11" bodyfile="src/softrender.cpp" bodystart="365" bodyend="374"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="warning"><para>These are functions that will do no bound checking for you when you are running in release mode. </para></simplesect>
-</para>    </detaileddescription>
+<para><simplesect kind="warning"><para>These are functions that will do no bound checking for you when you are running in release mode. In debug mode they will throw a runtime error. </para>
+</simplesect>
+</para>
+    </detaileddescription>
   </compounddef>
 </doxygen>
