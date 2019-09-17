@@ -9,7 +9,8 @@
 /// \defgroup unchecked_release No bound checking
 ///
 /// \warning These are functions that will do no bound checking for you when you
-///          are running in release mode.
+///          are running in release mode. In debug mode they will throw a
+///          runtime error.
 ///
 
 ///
