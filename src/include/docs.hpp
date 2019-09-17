@@ -9,11 +9,11 @@
 ///
 /// To get started using the library you first have to download it for your
 /// platform(
-/// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Darwin.tar.gz
+/// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/v0.1/SoftRender-0.1-Darwin.tar.gz
 /// ),
-/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-win64.zip
+/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/v0.1/SoftRender-0.1-win64.zip
 /// ), or
-/// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.1-Linux.tar.gz
+/// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/v0.1/SoftRender-0.1-Linux.tar.gz
 /// )).
 /// After that you have to add the \p include folder to your compiler's path and
 /// the \p lib folder to your compiler's link path and link with either the
