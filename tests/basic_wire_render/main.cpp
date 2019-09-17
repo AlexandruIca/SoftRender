@@ -25,8 +25,7 @@ auto main(int, char*[]) -> int
                     static_cast<int>((1.f - v1.y) * window.height() / 2.f)
                 };
 
-                auto shrink_if_gt_800 = [](int& n) noexcept->void
-                {
+                auto shrink_if_gt_800 = [](int& n) noexcept -> void {
                     if(n >= 800) {
                         n = 799;
                     }
