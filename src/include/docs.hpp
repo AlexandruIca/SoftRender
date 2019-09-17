@@ -19,9 +19,9 @@
 /// the \p lib folder to your compiler's link path and link with either the
 /// static or shared version, whatever you choose. If you use CMake:
 /// ```cmake
+/// link_directories( ${PATH_TO_SOFTRENDER}/lib/ )
 /// add_executable( my_exec ${YOUR_SOURCES} )
 /// target_include_directories( my_exec PRIVATE ${PATH_TO_SOFTRENDER}/include/ )
-/// link_directories( ${PATH_TO_SOFTRENDER}/lib/ )
 /// target_link_libraries( my_exec PRIVATE SoftRender ) # Or SoftRender-shared
 /// ```
 ///
