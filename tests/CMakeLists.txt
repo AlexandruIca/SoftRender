@@ -5,9 +5,9 @@ function(build_test TEST_NAME TEST_FILE)
   set_cxx_standard(${TEST_NAME} 17)
   add_coverage(${TEST_NAME})
   add_sanitizers(${TEST_NAME})
-  target_compile_definitions(${CMAKE_PROJECT_NAME} PUBLIC
+  target_compile_definitions(${TEST_NAME} PUBLIC
                              $<$<CONFIG:Debug>:SOFTRENDER_DEBUG>)
-  target_include_directories(${CMAKE_PROJECT_NAME}
+  target_include_directories(${TEST_NAME}
                              PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/test_helpers/)
   target_link_libraries(${TEST_NAME} PRIVATE ${CMAKE_PROJECT_NAME})
   add_test(${TEST_NAME} ${TEST_NAME})
@@ -27,3 +27,5 @@ build_test(vec ${CMAKE_CURRENT_SOURCE_DIR}/vec.cpp)
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
   build_test(exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp)
 endif()
+
+add_subdirectory(basic_wire_render/)
