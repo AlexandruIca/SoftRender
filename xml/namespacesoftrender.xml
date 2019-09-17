@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="227" column="1" bodyfile="src/include/vec.hpp" bodystart="227" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="228" column="1" bodyfile="src/include/vec.hpp" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacesoftrender_1a3024b719fa7d071e9ea46e7fe7771f37" prot="public" static="no">
         <type><ref refid="structsoftrender_1_1vec2" kindref="compound">vec2</ref>&lt; float &gt;</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="228" column="1" bodyfile="src/include/vec.hpp" bodystart="228" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="229" column="1" bodyfile="src/include/vec.hpp" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacesoftrender_1ac1e0bf91bbda4c419af787b565190159" prot="public" static="no">
         <type><ref refid="structsoftrender_1_1vec2" kindref="compound">vec2</ref>&lt; double &gt;</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="229" column="1" bodyfile="src/include/vec.hpp" bodystart="229" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="230" column="1" bodyfile="src/include/vec.hpp" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacesoftrender_1a0f4ff27fc129e76f00dea07755b7099a" prot="public" static="no">
         <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; int &gt;</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="231" column="1" bodyfile="src/include/vec.hpp" bodystart="231" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="232" column="1" bodyfile="src/include/vec.hpp" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacesoftrender_1a9c075f6f6c3f4c5b00b7ba2def706d9a" prot="public" static="no">
         <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; float &gt;</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="232" column="1" bodyfile="src/include/vec.hpp" bodystart="232" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="233" column="1" bodyfile="src/include/vec.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacesoftrender_1a43d665a942e0b309fc1656eb173aa937" prot="public" static="no">
         <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; double &gt;</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="233" column="1" bodyfile="src/include/vec.hpp" bodystart="233" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="234" column="1" bodyfile="src/include/vec.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">

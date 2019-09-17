@@ -154,8 +154,9 @@ public:
         default:
 #ifdef SOFTRENDER_DEBUG
             throw "vec3 index out of range.";
-#endif
+#else
             return x;
+#endif
         }
     }
     auto operator[](int const t_index) const -> T const&
