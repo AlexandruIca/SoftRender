@@ -5,7 +5,7 @@ if(APPLE AND POLICY CMP0004)
   cmake_policy(SET CMP0004 OLD)
 endif()
 
-project(SoftRender LANGUAGES CXX VERSION 0.1)
+project(SoftRender LANGUAGES CXX VERSION 0.2)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 include(SetCXXStandard)
