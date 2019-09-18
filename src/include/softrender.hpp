@@ -1,9 +1,15 @@
+#ifndef SOFTRENDER_HPP
+#define SOFTRENDER_HPP
+#pragma once
+
 ///
 /// \file
 ///
 
 #include <cstddef>
 #include <vector>
+
+#include "vec.hpp"
 
 ///
 /// \defgroup unchecked_release No bound checking
@@ -16,8 +22,8 @@
 ///
 /// \defgroup canvas_manipulation Canvas manipulation
 ///
-/// These functions let you use the canvas directly but you shouldn't really use
-/// them unless you absolutely have to.
+/// These functions let you use the canvas directly but you shouldn't really
+/// use them unless you absolutely have to.
 ///
 
 struct SDL_Window;
@@ -185,8 +191,17 @@ public:
     ///
     /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
     ///
-    auto draw_line(point_t t_start, point_t t_end, pixel_t t_pixel = pixel_t{})
-        -> void;
+    auto draw_line(point_t t_start,
+                   point_t t_end,
+                   pixel_t const& t_pixel = pixel_t{}) -> void;
+
+    ///
+    /// \brief Draws a triangle with given coordinates.
+    ///
+    auto draw_triangle(vec2i t_a,
+                       vec2i t_b,
+                       vec2i t_c,
+                       pixel_t const& t_pixel = pixel_t{}) -> void;
 
     ///
     /// \brief Returns true if the window will close.
@@ -261,3 +276,5 @@ public:
 } // namespace softrender
 
 auto test() -> int;
+
+#endif // !SOFTRENDER_HPP

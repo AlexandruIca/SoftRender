@@ -4,6 +4,7 @@
 #include "softrender.hpp"
 #include "SDL.h"
 
+#include <algorithm>
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
@@ -215,6 +216,51 @@ auto test() -> int
     return impl::test();
 }
 
+namespace {
+
+[[nodiscard]] auto point_inside_triangle(softrender::vec3f const& t_point,
+                                         softrender::vec3f const& t_v0,
+                                         softrender::vec3f const& t_v1,
+                                         softrender::vec3f const& t_v2) noexcept
+    -> bool
+{
+    auto normal = softrender::cross(t_v1 - t_v0, t_v2 - t_v0);
+    auto main_triangle_area = normal.norm();
+
+    // Barycentric coordinates.
+    // Find u, v, w (real numbers) so that u + v + w = 1, 0 <= u, v, w <= 1.
+    // Let A = t_v0, B = t_v1, C = t_v2, P = t_point.
+    // Then u is Area(CAP) / Area(ABC), v is Area(ABP) / Area(ABC), w=1-u-v
+    // If any of u,v,w is > 1 or < 0 return false, otherwise true.
+    // The area of a triangle is calculated using the cross product(normally it
+    // is the length of the cross product <b>divided by 2</b> but we are not
+    // dividing by 2 here because the area of the main triangle is also
+    // divided by 2 and it simplifies.
+    auto tmpvec = softrender::cross(t_v1 - t_v0, t_point - t_v0);
+    auto u = tmpvec.norm() / main_triangle_area;
+
+    if(normal * tmpvec < 0) {
+        return false;
+    }
+
+    tmpvec = softrender::cross(t_v2 - t_v1, t_point - t_v1);
+    auto v = tmpvec.norm() / main_triangle_area;
+
+    if(normal * tmpvec < 0) {
+        return false;
+    }
+
+    auto w = 1 - u - v;
+
+    if(w < 0 || w > 1) {
+        return false;
+    }
+
+    return true;
+}
+
+} // namespace
+
 namespace softrender {
 
 pixel_t::pixel_t(int t_red, int t_green, int t_blue, int t_alpha) noexcept
@@ -302,7 +348,7 @@ auto window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
     this->operator()(t_point.y, t_point.x) = t_pixel;
 }
 
-auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
+auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t const& t_pixel)
     -> void
 {
     bool steep{ false };
@@ -342,6 +388,36 @@ auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
                 y += (t_end.y > t_start.y ? 1 : -1);
                 error2 -= 2 * dx;
             }
+        }
+    }
+}
+
+auto window_t::draw_triangle(vec2i t_a,
+                             vec2i t_b,
+                             vec2i t_c,
+                             pixel_t const& t_pixel) -> void
+{
+    vec2i bbox_min{ this->width() - 1, this->height() - 1 };
+    vec2i bbox_max{ 0, 0 };
+
+    bbox_min.x = std::max(0, std::min({ bbox_min.x, t_a.x, t_b.x, t_c.x }));
+    bbox_min.y = std::max(0, std::min({ bbox_min.y, t_a.y, t_b.y, t_c.y }));
+    bbox_max.x = std::min(this->width() - 1,
+                          std::max({ bbox_max.x, t_a.x, t_b.x, t_c.x }));
+    bbox_max.y = std::min(this->height() - 1,
+                          std::max({ bbox_max.y, t_a.y, t_b.y, t_c.y }));
+
+    vec2i point{ 0, 0 };
+
+    for(point.x = bbox_min.x; point.x <= bbox_max.x; ++point.x) {
+        for(point.y = bbox_min.y; point.y <= bbox_max.y; ++point.y) {
+            if(!point_inside_triangle(vec3f(point.x, point.y, 1.f),
+                                      vec3f(t_a.x, t_a.y, 1.f),
+                                      vec3f(t_b.x, t_b.y, 1.f),
+                                      vec3f(t_c.x, t_c.y, 1.f))) {
+                continue;
+            }
+            this->draw_point(point_t{ point.x, point.y }, t_pixel);
         }
     }
 }
