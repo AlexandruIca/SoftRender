@@ -138,7 +138,7 @@
     <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
     <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
-    <member refid="namespacesoftrender_1ab169ab5d9616d758626eef9df266f084" kind="function"><name>cross</name></member>
+    <member refid="namespacesoftrender_1a6cabb6b879b38a5518539aca7537b0ba" kind="function"><name>cross</name></member>
   </compound>
   <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
     <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>

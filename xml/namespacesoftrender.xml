@@ -370,7 +370,7 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="282" column="6" bodyfile="src/softrender.cpp" bodystart="282" bodyend="285" declfile="src/include/softrender.hpp" declline="115" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacesoftrender_1ab169ab5d9616d758626eef9df266f084" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacesoftrender_1a6cabb6b879b38a5518539aca7537b0ba" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -378,14 +378,14 @@
         </templateparamlist>
         <type>auto</type>
         <definition>auto softrender::cross</definition>
-        <argsstring>(vec3&lt; T &gt; const &amp;t_a, vec3&lt; T &gt; const &amp;t_b) noexcept -&gt; vec3&lt; T &gt;</argsstring>
+        <argsstring>(vec3&lt; T &gt; const t_a, vec3&lt; T &gt; const t_b) noexcept -&gt; vec3&lt; T &gt;</argsstring>
         <name>cross</name>
         <param>
-          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const &amp;</type>
+          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const</type>
           <declname>t_a</declname>
         </param>
         <param>
-          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const &amp;</type>
+          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const</type>
           <declname>t_b</declname>
         </param>
         <briefdescription>

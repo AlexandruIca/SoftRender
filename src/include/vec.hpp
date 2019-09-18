@@ -254,7 +254,7 @@ using vec3d = vec3<double>;
  * \returns The cross product of \p t_a and \p t_b.
  */
 template<typename T>
-[[nodiscard]] auto cross(vec3<T> const& t_a, vec3<T> const& t_b) noexcept
+[[nodiscard]] auto cross(vec3<T> const t_a, vec3<T> const t_b) noexcept
     -> vec3<T>
 {
     return vec3<T>{ t_a.y * t_b.z - t_b.y * t_a.z,
