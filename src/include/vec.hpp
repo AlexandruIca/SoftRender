@@ -233,6 +233,35 @@ using vec3i = vec3<int>;
 using vec3f = vec3<float>;
 using vec3d = vec3<double>;
 
+/**
+ * \f[
+ * A \times B =
+ * \begin{vmatrix}
+ *     x_A & y_A & z_A \\
+ *     x_B & y_B & z_B \\
+ *     i   & j   & k
+ * \end{vmatrix} =
+ * (y_A z_B - y_B z_A)\overrightarrow{i} -
+ * (z_B x_A - x_B z_A)\overrightarrow{j} +
+ * (x_A y_B - y_A x_B)\overrightarrow{k} =
+ * V(
+ *  y_A z_B - y_B z_A,
+ *  x_B z_A - z_B x_A,
+ *  x_A y_B - y_A x_B
+ * )
+ * \f]
+ *
+ * \returns The cross product of \p t_a and \p t_b.
+ */
+template<typename T>
+[[nodiscard]] auto cross(vec3<T> const& t_a, vec3<T> const& t_b) noexcept
+    -> vec3<T>
+{
+    return vec3<T>{ t_a.y * t_b.z - t_b.y * t_a.z,
+                    t_b.x * t_a.z - t_b.z * t_a.x,
+                    t_a.x * t_b.y - t_a.y * t_b.x };
+}
+
 } // namespace softrender
 
 #endif
