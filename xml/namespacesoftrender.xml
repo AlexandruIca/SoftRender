@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="71" column="15" bodyfile="src/include/softrender.hpp" bodystart="71" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="77" column="15" bodyfile="src/include/softrender.hpp" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="72" column="15" bodyfile="src/include/softrender.hpp" bodystart="72" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="78" column="15" bodyfile="src/include/softrender.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="73" column="15" bodyfile="src/include/softrender.hpp" bodystart="73" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="79" column="15" bodyfile="src/include/softrender.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="74" column="15" bodyfile="src/include/softrender.hpp" bodystart="74" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="80" column="15" bodyfile="src/include/softrender.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="75" column="15" bodyfile="src/include/softrender.hpp" bodystart="75" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="81" column="15" bodyfile="src/include/softrender.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="76" column="15" bodyfile="src/include/softrender.hpp" bodystart="76" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="82" column="15" bodyfile="src/include/softrender.hpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="77" column="15" bodyfile="src/include/softrender.hpp" bodystart="77" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="83" column="15" bodyfile="src/include/softrender.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="78" column="15" bodyfile="src/include/softrender.hpp" bodystart="78" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="84" column="15" bodyfile="src/include/softrender.hpp" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="79" column="15" bodyfile="src/include/softrender.hpp" bodystart="79" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="85" column="15" bodyfile="src/include/softrender.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="80" column="15" bodyfile="src/include/softrender.hpp" bodystart="80" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="86" column="15" bodyfile="src/include/softrender.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="81" column="15" bodyfile="src/include/softrender.hpp" bodystart="81" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="87" column="15" bodyfile="src/include/softrender.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="82" column="15" bodyfile="src/include/softrender.hpp" bodystart="82" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="88" column="15" bodyfile="src/include/softrender.hpp" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="83" column="15" bodyfile="src/include/softrender.hpp" bodystart="83" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="89" column="15" bodyfile="src/include/softrender.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="84" column="15" bodyfile="src/include/softrender.hpp" bodystart="84" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="90" column="15" bodyfile="src/include/softrender.hpp" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="85" column="15" bodyfile="src/include/softrender.hpp" bodystart="85" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="91" column="15" bodyfile="src/include/softrender.hpp" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" prot="public" static="no" mutable="no">
         <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="86" column="15" bodyfile="src/include/softrender.hpp" bodystart="86" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="92" column="15" bodyfile="src/include/softrender.hpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="228" column="6" bodyfile="src/softrender.cpp" bodystart="228" bodyend="234" declfile="src/softrender.cpp" declline="16" declcolumn="6"/>
+        <location file="src/softrender.cpp" line="274" column="6" bodyfile="src/softrender.cpp" bodystart="274" bodyend="280" declfile="src/softrender.cpp" declline="17" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -368,7 +368,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="236" column="6" bodyfile="src/softrender.cpp" bodystart="236" bodyend="239" declfile="src/include/softrender.hpp" declline="109" declcolumn="6"/>
+        <location file="src/softrender.cpp" line="282" column="6" bodyfile="src/softrender.cpp" bodystart="282" bodyend="285" declfile="src/include/softrender.hpp" declline="115" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesoftrender_1ab169ab5d9616d758626eef9df266f084" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto softrender::cross</definition>
+        <argsstring>(vec3&lt; T &gt; const &amp;t_a, vec3&lt; T &gt; const &amp;t_b) noexcept -&gt; vec3&lt; T &gt;</argsstring>
+        <name>cross</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const &amp;</type>
+          <declname>t_a</declname>
+        </param>
+        <param>
+          <type><ref refid="structsoftrender_1_1vec3" kindref="compound">vec3</ref>&lt; T &gt; const &amp;</type>
+          <declname>t_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><formula id="0">\[ A \times B = \begin{vmatrix} x_A &amp; y_A &amp; z_A \\ x_B &amp; y_B &amp; z_B \\ i &amp; j &amp; k \end{vmatrix} = (y_A z_B - y_B z_A)\overrightarrow{i} - (z_B x_A - x_B z_A)\overrightarrow{j} + (x_A y_B - y_A x_B)\overrightarrow{k} = V( y_A z_B - y_B z_A, x_B z_A - z_B x_A, x_A y_B - y_A x_B ) \]</formula></para>
+<para><simplesect kind="return"><para>The cross product of <computeroutput>t_a</computeroutput> and <computeroutput>t_b</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/vec.hpp" line="257" column="7" bodyfile="src/include/vec.hpp" bodystart="257" bodyend="263"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -376,6 +406,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/softrender.cpp" line="14" column="20"/>
+    <location file="src/softrender.cpp" line="15" column="20"/>
   </compounddef>
 </doxygen>

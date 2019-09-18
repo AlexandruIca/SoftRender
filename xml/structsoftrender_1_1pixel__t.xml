@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="37" column="15" bodyfile="src/include/softrender.hpp" bodystart="37" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="43" column="15" bodyfile="src/include/softrender.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" prot="public" static="no" mutable="no">
         <type>std::byte</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="38" column="15" bodyfile="src/include/softrender.hpp" bodystart="38" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="44" column="15" bodyfile="src/include/softrender.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1pixel__t_1a67fa111abc5d8c600004f53dd214a1df" prot="public" static="no" mutable="no">
         <type>std::byte</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="39" column="15" bodyfile="src/include/softrender.hpp" bodystart="39" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="45" column="15" bodyfile="src/include/softrender.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1pixel__t_1aa6a7a7f2034bbaf8f4dd562b1b8a7b96" prot="public" static="no" mutable="no">
         <type>std::byte</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="40" column="15" bodyfile="src/include/softrender.hpp" bodystart="40" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="46" column="15" bodyfile="src/include/softrender.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="42" column="5"/>
+        <location file="src/include/softrender.hpp" line="48" column="5"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1pixel__t_1a3c4a1cdeab5b7ba31894a788ecf666df" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="61" column="5" bodyfile="src/softrender.cpp" bodystart="220" bodyend="226"/>
+        <location file="src/include/softrender.hpp" line="67" column="5" bodyfile="src/softrender.cpp" bodystart="266" bodyend="272"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -121,7 +121,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/include/softrender.hpp" line="36" column="1" bodyfile="src/include/softrender.hpp" bodystart="35" bodyend="62"/>
+    <location file="src/include/softrender.hpp" line="42" column="1" bodyfile="src/include/softrender.hpp" bodystart="41" bodyend="68"/>
     <listofallmembers>
       <member refid="structsoftrender_1_1pixel__t_1aa6a7a7f2034bbaf8f4dd562b1b8a7b96" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>a</name></member>
       <member refid="structsoftrender_1_1pixel__t_1a67fa111abc5d8c600004f53dd214a1df" prot="public" virt="non-virtual"><scope>softrender::pixel_t</scope><name>b</name></member>

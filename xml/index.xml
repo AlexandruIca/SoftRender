@@ -89,13 +89,16 @@
     <member refid="classsoftrender_1_1window__t_1a41a3c4738f536b849927565cc3a0ee21" kind="function"><name>draw</name></member>
     <member refid="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" kind="function"><name>draw_point</name></member>
     <member refid="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" kind="function"><name>draw_point</name></member>
-    <member refid="classsoftrender_1_1window__t_1a5665f32012ce474875fd36173b05ecab" kind="function"><name>draw_line</name></member>
+    <member refid="classsoftrender_1_1window__t_1abddb4a5d68408821b74b3e82224e1519" kind="function"><name>draw_line</name></member>
+    <member refid="classsoftrender_1_1window__t_1a3b4cc1e3d4e1679f2990c17d4ef24dc0" kind="function"><name>draw_triangle</name></member>
     <member refid="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" kind="function"><name>closed</name></member>
     <member refid="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" kind="function"><name>operator()</name></member>
     <member refid="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" kind="function"><name>operator()</name></member>
     <member refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" kind="function"><name>from_coord2d_to_matrix</name></member>
     <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kind="function"><name>canvas</name></member>
     <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
+  </compound>
+  <compound refid="namespace_0d0" kind="namespace"><name>@0</name>
   </compound>
   <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
     <member refid="namespacegraphics__impl_1a2221cb277b7503f71ec5b7f9d7a737b9" kind="function"><name>sdl_error</name></member>
@@ -135,6 +138,7 @@
     <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
     <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
+    <member refid="namespacesoftrender_1ab169ab5d9616d758626eef9df266f084" kind="function"><name>cross</name></member>
   </compound>
   <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
     <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>

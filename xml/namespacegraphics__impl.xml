@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="24" column="6" bodyfile="src/softrender.cpp" bodystart="24" bodyend="28"/>
+        <location file="src/softrender.cpp" line="25" column="6" bodyfile="src/softrender.cpp" bodystart="25" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="namespacegraphics__impl_1a2ed84f96942d3659ae0a3f18f5d4e1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="30" column="6" bodyfile="src/softrender.cpp" bodystart="30" bodyend="42"/>
+        <location file="src/softrender.cpp" line="31" column="6" bodyfile="src/softrender.cpp" bodystart="31" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="namespacegraphics__impl_1a2c74949c0acaffc432171b85bd6a7f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="44" column="6" bodyfile="src/softrender.cpp" bodystart="44" bodyend="73"/>
+        <location file="src/softrender.cpp" line="45" column="6" bodyfile="src/softrender.cpp" bodystart="45" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="namespacegraphics__impl_1a0bc2e5b6a0b4ea30f548643817151cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="75" column="6" bodyfile="src/softrender.cpp" bodystart="75" bodyend="85"/>
+        <location file="src/softrender.cpp" line="76" column="6" bodyfile="src/softrender.cpp" bodystart="76" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="namespacegraphics__impl_1ae9b52bd376fd055f7ed460446ec7345c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -123,13 +123,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="103" column="6" bodyfile="src/softrender.cpp" bodystart="103" bodyend="161"/>
+        <location file="src/softrender.cpp" line="104" column="6" bodyfile="src/softrender.cpp" bodystart="104" bodyend="162"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/softrender.cpp" line="22" column="23"/>
+    <location file="src/softrender.cpp" line="23" column="23"/>
   </compounddef>
 </doxygen>
