@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="201" column="10" bodyfile="src/softrender.cpp" bodystart="395" bodyend="423"/>
+        <location file="src/include/softrender.hpp" line="201" column="10" bodyfile="src/softrender.cpp" bodystart="395" bodyend="431"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="213" column="11" bodyfile="src/softrender.cpp" bodystart="425" bodyend="428"/>
+        <location file="src/include/softrender.hpp" line="213" column="11" bodyfile="src/softrender.cpp" bodystart="433" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -411,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="223" column="11" bodyfile="src/softrender.cpp" bodystart="430" bodyend="439"/>
+        <location file="src/include/softrender.hpp" line="223" column="11" bodyfile="src/softrender.cpp" bodystart="438" bodyend="447"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -451,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="233" column="11" bodyfile="src/softrender.cpp" bodystart="441" bodyend="450"/>
+        <location file="src/include/softrender.hpp" line="233" column="11" bodyfile="src/softrender.cpp" bodystart="449" bodyend="458"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -478,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="259" column="11" bodyfile="src/softrender.cpp" bodystart="452" bodyend="456"/>
+        <location file="src/include/softrender.hpp" line="259" column="11" bodyfile="src/softrender.cpp" bodystart="460" bodyend="464"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -492,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="267" column="11" bodyfile="src/softrender.cpp" bodystart="458" bodyend="461"/>
+        <location file="src/include/softrender.hpp" line="267" column="11" bodyfile="src/softrender.cpp" bodystart="466" bodyend="469"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -506,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="273" column="11" bodyfile="src/softrender.cpp" bodystart="463" bodyend="466"/>
+        <location file="src/include/softrender.hpp" line="273" column="11" bodyfile="src/softrender.cpp" bodystart="471" bodyend="474"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
