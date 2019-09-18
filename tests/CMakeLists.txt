@@ -11,7 +11,6 @@ function(build_test TEST_NAME TEST_FILE)
                              PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/test_helpers/)
   target_link_libraries(${TEST_NAME} PRIVATE ${CMAKE_PROJECT_NAME})
   add_test(${TEST_NAME} ${TEST_NAME})
-  set_tests_properties(${TEST_NAME} PROPERTIES TIMEOUT 2)
 endfunction()
 
 build_test(setup ${CMAKE_CURRENT_SOURCE_DIR}/setup.cpp)
