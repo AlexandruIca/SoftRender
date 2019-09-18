@@ -194,7 +194,7 @@ auto draw(SDL_Renderer*,
           bool& t_running) -> void
 {
     static int num_iterations{ 0 };
-    t_running = (++num_iterations < 1000);
+    t_running = (++num_iterations < 50);
 }
 
 } // namespace dummy_impl
@@ -392,9 +392,9 @@ auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t const& t_pixel)
     }
 }
 
-auto window_t::draw_triangle(vec2i t_a,
-                             vec2i t_b,
-                             vec2i t_c,
+auto window_t::draw_triangle(vec2i const& t_a,
+                             vec2i const& t_b,
+                             vec2i const& t_c,
                              pixel_t const& t_pixel) -> void
 {
     vec2i bbox_min{ this->width() - 1, this->height() - 1 };

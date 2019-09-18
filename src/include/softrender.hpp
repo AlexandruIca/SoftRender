@@ -198,9 +198,9 @@ public:
     ///
     /// \brief Draws a triangle with given coordinates.
     ///
-    auto draw_triangle(vec2i t_a,
-                       vec2i t_b,
-                       vec2i t_c,
+    auto draw_triangle(vec2i const& t_a,
+                       vec2i const& t_b,
+                       vec2i const& t_c,
                        pixel_t const& t_pixel = pixel_t{}) -> void;
 
     ///
