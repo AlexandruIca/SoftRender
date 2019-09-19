@@ -45,7 +45,7 @@ jobs:
       - script: |
           set -e
           cd build/tests/
-          ctest -V
+          ctest -V -j$(nproc)
         displayName: Run the tests
       - script: |
           cd build/
@@ -124,7 +124,7 @@ jobs:
       - script: |
           set -e
           cd build/tests/
-          ctest -V
+          ctest -V -j$(nproc)
         displayName: Run the tests
       - script: |
           set -e
