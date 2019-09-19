@@ -12,16 +12,19 @@
     <includes local="no">string</includes>
     <includes local="no">utility</includes>
     <incdepgraph>
-      <node id="7">
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="9">
         <label>SDL.h</label>
       </node>
-      <node id="6">
+      <node id="8">
         <label>cmath</label>
       </node>
-      <node id="11">
+      <node id="13">
         <label>stdexcept</label>
       </node>
-      <node id="12">
+      <node id="14">
         <label>string</label>
       </node>
       <node id="1">
@@ -29,15 +32,11 @@
         <link refid="softrender_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
@@ -45,17 +44,21 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>vector</label>
       </node>
-      <node id="13">
+      <node id="15">
         <label>utility</label>
       </node>
-      <node id="9">
+      <node id="11">
         <label>cstdlib</label>
       </node>
-      <node id="10">
+      <node id="12">
         <label>iostream</label>
       </node>
       <node id="3">
@@ -70,15 +73,23 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="5">
-        <label>vec.hpp</label>
-        <link refid="vec_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="7">
+        <label>vec.hpp</label>
+        <link refid="vec_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>algorithm</label>
+      </node>
+      <node id="6">
+        <label>keys.hpp</label>
+        <link refid="keys_8hpp"/>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>
@@ -101,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="209" column="13" bodyfile="src/softrender.cpp" bodystart="209" bodyend="212"/>
+        <location file="src/softrender.cpp" line="217" column="13" bodyfile="src/softrender.cpp" bodystart="217" bodyend="220"/>
       </memberdef>
       <memberdef kind="function" id="softrender_8cpp_1a9940a07ef709bf9d89dcdff767ec0a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -114,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="214" column="6" bodyfile="src/softrender.cpp" bodystart="214" bodyend="217"/>
+        <location file="src/softrender.cpp" line="222" column="6" bodyfile="src/softrender.cpp" bodystart="222" bodyend="225"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

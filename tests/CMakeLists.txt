@@ -23,6 +23,7 @@ build_test(line ${CMAKE_CURRENT_SOURCE_DIR}/line.cpp)
 build_test(colors ${CMAKE_CURRENT_SOURCE_DIR}/colors.cpp)
 build_test(vec ${CMAKE_CURRENT_SOURCE_DIR}/vec.cpp)
 build_test(triangle ${CMAKE_CURRENT_SOURCE_DIR}/triangle.cpp)
+build_test(key_callback ${CMAKE_CURRENT_SOURCE_DIR}/key_callback.cpp)
 
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
   build_test(exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp)

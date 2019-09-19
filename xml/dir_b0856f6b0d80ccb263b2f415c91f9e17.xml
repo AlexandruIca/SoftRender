@@ -3,6 +3,8 @@
   <compounddef id="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir">
     <compoundname>src/include</compoundname>
     <innerfile refid="docs_8hpp">docs.hpp</innerfile>
+    <innerfile refid="keys_8hpp">keys.hpp</innerfile>
+    <innerfile refid="parse_8py">parse.py</innerfile>
     <innerfile refid="softrender_8hpp">softrender.hpp</innerfile>
     <innerfile refid="vec_8hpp">vec.hpp</innerfile>
     <innerfile refid="wavefront__reader_8hpp">wavefront_reader.hpp</innerfile>
