@@ -7,9 +7,9 @@
 auto main(int, char*[]) -> int
 {
     auto random_color = []() -> softrender::pixel_t {
-        std::random_device rdev{};
-        std::mt19937 rng{ rdev() };
-        std::uniform_int_distribution<int> dist{ 0, 255 };
+        static std::random_device rdev{};
+        static std::mt19937 rng{ rdev() };
+        static std::uniform_int_distribution<int> dist{ 0, 255 };
 
         return softrender::pixel_t{ dist(rng), dist(rng), dist(rng) };
     };
