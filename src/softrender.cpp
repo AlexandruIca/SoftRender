@@ -411,18 +411,17 @@ auto window_t::draw_triangle(vec2i const& t_a,
 
     for(point.x = bbox_min.x; point.x <= bbox_max.x; ++point.x) {
         for(point.y = bbox_min.y; point.y <= bbox_max.y; ++point.y) {
-            if(!point_inside_triangle(vec3f(static_cast<float>(point.x),
-                                            static_cast<float>(point.y),
-                                            1.f),
-                                      vec3f(static_cast<float>(t_a.x),
-                                            static_cast<float>(t_a.y),
-                                            1.f),
-                                      vec3f(static_cast<float>(t_b.x),
-                                            static_cast<float>(t_b.y),
-                                            1.f),
-                                      vec3f(static_cast<float>(t_c.x),
-                                            static_cast<float>(t_c.y),
-                                            1.f))) {
+            bool not_inside = !point_inside_triangle(
+                vec3f(static_cast<float>(point.x),
+                      static_cast<float>(point.y),
+                      1.f),
+                vec3f(
+                    static_cast<float>(t_a.x), static_cast<float>(t_a.y), 1.f),
+                vec3f(
+                    static_cast<float>(t_b.x), static_cast<float>(t_b.y), 1.f),
+                vec3f(
+                    static_cast<float>(t_c.x), static_cast<float>(t_c.y), 1.f));
+            if(not_inside) {
                 continue;
             }
             this->draw_point(point_t{ point.x, point.y }, t_pixel);
