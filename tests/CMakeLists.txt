@@ -29,3 +29,4 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 endif()
 
 add_subdirectory(basic_wire_render/)
+add_subdirectory(basic_flat_shading_render/)
