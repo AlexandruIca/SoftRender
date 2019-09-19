@@ -16,7 +16,7 @@ namespace softrender {
 
 auto error(std::string const&) -> void;
 
-}
+} // namespace softrender
 
 #ifndef SOFTRENDER_MOCKING
 
@@ -106,7 +106,9 @@ auto draw(SDL_Renderer*& t_renderer,
           std::vector<softrender::pixel_t>& t_canvas,
           int const t_width,
           int const t_height,
-          bool& t_running) -> void
+          bool& t_running,
+          std::function<void(softrender::key_event_t const&)>& t_key_callback)
+    -> void
 {
     if(t_texture != nullptr) {
         SDL_DestroyTexture(t_texture);
@@ -154,6 +156,11 @@ auto draw(SDL_Renderer*& t_renderer,
             if(e.key.keysym.sym == SDLK_ESCAPE) {
                 t_running = false;
             }
+            t_key_callback(
+                key_event_t{ e.key.keysym.sym, e.key.repeat != 0, false });
+            break;
+        case SDL_KEYUP:
+            t_key_callback(key_event_t{ e.key.keysym.sym, false, true });
             break;
         default:
             break;
@@ -191,7 +198,8 @@ auto draw(SDL_Renderer*,
           std::vector<softrender::pixel_t>&,
           int,
           int,
-          bool& t_running) -> void
+          bool& t_running,
+          std::function<void(key_event_t const&)>&) -> void
 {
     static int num_iterations{ 0 };
     t_running = (++num_iterations < 50);
@@ -333,7 +341,13 @@ auto window_t::height() const noexcept -> int
 
 auto window_t::draw() -> void
 {
-    impl::draw(m_renderer, m_texture, m_canvas, m_width, m_height, m_running);
+    impl::draw(m_renderer,
+               m_texture,
+               m_canvas,
+               m_width,
+               m_height,
+               m_running,
+               m_key_callback);
 }
 
 auto window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)

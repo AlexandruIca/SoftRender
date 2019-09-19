@@ -1,12 +1,14 @@
 option(NOT_USING_TRAVIS "Travis doesn't like -Werror" ON)
 
 set(SOFTRENDER_SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/softrender.cpp
-                         ${CMAKE_CURRENT_SOURCE_DIR}/wavefront_reader.cpp)
+                         ${CMAKE_CURRENT_SOURCE_DIR}/wavefront_reader.cpp
+                         ${CMAKE_CURRENT_SOURCE_DIR}/keys.cpp)
 
 set(SOFTRENDER_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include/)
 set(SOFTRENDER_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/softrender.hpp
                        ${CMAKE_CURRENT_SOURCE_DIR}/include/vec.hpp
-                       ${CMAKE_CURRENT_SOURCE_DIR}/include/wavefront_reader.hpp)
+                       ${CMAKE_CURRENT_SOURCE_DIR}/include/wavefront_reader.hpp
+                       ${CMAKE_CURRENT_SOURCE_DIR}/include/keys.hpp)
 
 add_library(${CMAKE_PROJECT_NAME} STATIC ${SOFTRENDER_SRC_FILES})
 add_library(${CMAKE_PROJECT_NAME}-shared SHARED ${SOFTRENDER_SRC_FILES})

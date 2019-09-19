@@ -7,8 +7,10 @@
 ///
 
 #include <cstddef>
+#include <functional>
 #include <vector>
 
+#include "keys.hpp"
 #include "vec.hpp"
 
 ///
@@ -115,6 +117,18 @@ struct point_t
 auto swap(point_t& t_point) -> void;
 
 ///
+/// \brief Describes what a key event contains.
+///
+struct key_event_t
+{
+    int key{
+        0
+    }; ///< The actual key. Every key is an enum that starts with \p SDLK_.
+    bool repeat{ false };   ///< True if the key is being held.
+    bool released{ false }; ///< True if the key is being released.
+};
+
+///
 /// \brief Use this to construct a window.
 ///
 /// This is just a wrapper around SDL to construct a surface from memory and
@@ -132,6 +146,9 @@ private:
     SDL_Window* m_window{ nullptr };
     SDL_Renderer* m_renderer{ nullptr };
     SDL_Texture* m_texture{ nullptr };
+
+    std::function<void(key_event_t const& t_key_event)> m_key_callback =
+        [](key_event_t const&) noexcept->void{};
 
     auto construct_canvas() -> void;
     auto initialize_sdl() -> void;
@@ -271,6 +288,18 @@ public:
     /// \ingroup canvas_manipulation
     ///
     [[nodiscard]] auto canvas() const noexcept -> std::vector<pixel_t> const&;
+
+    ///
+    /// \brief Provide a function that will be called on each key press.
+    ///
+    /// \param t_function Must be a function accepting a const \ref key_event_t
+    ///                   &.
+    ///
+    template<typename F>
+    auto set_on_key_press_callback(F t_function) -> void
+    {
+        m_key_callback = t_function;
+    }
 };
 
 } // namespace softrender
