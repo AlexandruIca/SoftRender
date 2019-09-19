@@ -218,12 +218,6 @@
     <member refid="namespacegraphics__impl_1_1surface__info_1a930bfc5f6df08c71161b9501af9bfb0e" kind="variable"><name>bmask</name></member>
     <member refid="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" kind="variable"><name>amask</name></member>
   </compound>
-  <compound refid="namespaceparse" kind="namespace"><name>parse</name>
-    <member refid="namespaceparse_1a294945c496517d93e7ce0ae151dde699" kind="variable"><name>declaration_file</name></member>
-    <member refid="namespaceparse_1ad0e8bdb37a6fa0bdd024b0fe10a15eb3" kind="variable"><name>definition_file</name></member>
-    <member refid="namespaceparse_1ae4b2134c8d09a044a089ebb179156c41" kind="variable"><name>sdl_key_name</name></member>
-    <member refid="namespaceparse_1abe59c6cf88924433f2a522a08100dbbd" kind="variable"><name>str</name></member>
-  </compound>
   <compound refid="namespacesoftrender" kind="namespace"><name>softrender</name>
     <member refid="namespacesoftrender_1af4daf194eae9f26cced450f41039a44e" kind="typedef"><name>vec2i</name></member>
     <member refid="namespacesoftrender_1a3024b719fa7d071e9ea46e7fe7771f37" kind="typedef"><name>vec2f</name></member>
@@ -274,8 +268,6 @@
   <compound refid="docs_8hpp" kind="file"><name>docs.hpp</name>
   </compound>
   <compound refid="keys_8hpp" kind="file"><name>keys.hpp</name>
-  </compound>
-  <compound refid="parse_8py" kind="file"><name>parse.py</name>
   </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
     <member refid="softrender_8hpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
