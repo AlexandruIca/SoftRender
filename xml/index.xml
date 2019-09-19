@@ -99,7 +99,7 @@
     <member refid="structsoftrender_1_1key_1ab085aab5970648444aad7960efd13a1b" kind="variable"><name>vk_up</name></member>
   </compound>
   <compound refid="structsoftrender_1_1key__event__t" kind="struct"><name>softrender::key_event_t</name>
-    <member refid="structsoftrender_1_1key__event__t_1a3cf81adca65fea8c3c6a8e9696c9fce3" kind="variable"><name>key</name></member>
+    <member refid="structsoftrender_1_1key__event__t_1a82218beaf12d87004f5eaabad866b63b" kind="variable"><name>keyc</name></member>
     <member refid="structsoftrender_1_1key__event__t_1a9dc06a5be881769a51d6d3239c13ecb2" kind="variable"><name>repeat</name></member>
     <member refid="structsoftrender_1_1key__event__t_1a26128d37608791d48ffa3e56b3a05cf5" kind="variable"><name>released</name></member>
   </compound>

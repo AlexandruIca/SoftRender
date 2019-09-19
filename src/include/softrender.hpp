@@ -121,9 +121,7 @@ auto swap(point_t& t_point) -> void;
 ///
 struct key_event_t
 {
-    int key{
-        0
-    }; ///< The actual key. Every key is an enum that starts with \p SDLK_.
+    int keyc{ 0 };          ///< The actual [key](\ref key).
     bool repeat{ false };   ///< True if the key is being held.
     bool released{ false }; ///< True if the key is being released.
 };

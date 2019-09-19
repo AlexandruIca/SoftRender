@@ -4,6 +4,14 @@
 
 namespace softrender {
 
+///
+/// \brief Contains key codes that map directly to the underlying \p SDLK_
+///        equivalents.
+///
+/// The reason this is a struct that contains only static variables instead
+/// of being an enum is to get rid of the \p SDL.h include that would be
+/// necessary.
+///
 struct key
 {
     static int const vk_unknown;
