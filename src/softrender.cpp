@@ -4,6 +4,7 @@
 #include "softrender.hpp"
 #include "SDL.h"
 
+#include <algorithm>
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
@@ -15,7 +16,7 @@ namespace softrender {
 
 auto error(std::string const&) -> void;
 
-}
+} // namespace softrender
 
 #ifndef SOFTRENDER_MOCKING
 
@@ -100,12 +101,18 @@ constexpr Uint32 amask = 0xff000000;
 
 } // namespace surface_info
 
-auto draw(SDL_Renderer*& t_renderer,
-          SDL_Texture*& t_texture,
-          std::vector<softrender::pixel_t>& t_canvas,
-          int const t_width,
-          int const t_height,
-          bool& t_running) -> void
+auto get_mouse_position() noexcept -> softrender::point_t;
+
+auto draw(
+    SDL_Renderer*& t_renderer,
+    SDL_Texture*& t_texture,
+    std::vector<softrender::pixel_t>& t_canvas,
+    int const t_width,
+    int const t_height,
+    bool& t_running,
+    std::function<void(softrender::key_event_t const&)>& t_key_callback,
+    std::function<void(softrender::mouse_event_t const&)>& t_mouse_callback)
+    -> void
 {
     if(t_texture != nullptr) {
         SDL_DestroyTexture(t_texture);
@@ -153,11 +160,31 @@ auto draw(SDL_Renderer*& t_renderer,
             if(e.key.keysym.sym == SDLK_ESCAPE) {
                 t_running = false;
             }
+            t_key_callback(
+                key_event_t{ e.key.keysym.sym, e.key.repeat != 0, false });
+            break;
+        case SDL_KEYUP:
+            t_key_callback(key_event_t{ e.key.keysym.sym, false, true });
+            break;
+        case SDL_MOUSEBUTTONDOWN:
+            t_mouse_callback(
+                mouse_event_t{ get_mouse_position(), e.button.button, true });
+            break;
+        case SDL_MOUSEBUTTONUP:
+            t_mouse_callback(
+                mouse_event_t{ get_mouse_position(), e.button.button, false });
             break;
         default:
             break;
         }
     }
+}
+
+auto get_mouse_position() noexcept -> softrender::point_t
+{
+    softrender::point_t pos{ 0, 0 };
+    SDL_GetMouseState(&pos.x, &pos.y);
+    return pos;
 }
 
 } // namespace graphics_impl
@@ -190,10 +217,17 @@ auto draw(SDL_Renderer*,
           std::vector<softrender::pixel_t>&,
           int,
           int,
-          bool& t_running) -> void
+          bool& t_running,
+          std::function<void(softrender::key_event_t const&)>&,
+          std::function<void(softrender::mouse_event_t const&)>&) -> void
 {
     static int num_iterations{ 0 };
-    t_running = (++num_iterations < 1000);
+    t_running = (++num_iterations < 50);
+}
+
+auto get_mouse_position() noexcept -> softrender::point_t
+{
+    return { 0, 0 };
 }
 
 } // namespace dummy_impl
@@ -214,6 +248,51 @@ auto test() -> int
 {
     return impl::test();
 }
+
+namespace {
+
+[[nodiscard]] auto point_inside_triangle(softrender::vec3f const& t_point,
+                                         softrender::vec3f const& t_v0,
+                                         softrender::vec3f const& t_v1,
+                                         softrender::vec3f const& t_v2) noexcept
+    -> bool
+{
+    auto normal = softrender::cross(t_v1 - t_v0, t_v2 - t_v0);
+    auto main_triangle_area = normal.norm();
+
+    // Barycentric coordinates.
+    // Find u, v, w (real numbers) so that u + v + w = 1, 0 <= u, v, w <= 1.
+    // Let A = t_v0, B = t_v1, C = t_v2, P = t_point.
+    // Then u is Area(CAP) / Area(ABC), v is Area(ABP) / Area(ABC), w=1-u-v
+    // If any of u,v,w is > 1 or < 0 return false, otherwise true.
+    // The area of a triangle is calculated using the cross product(normally it
+    // is the length of the cross product <b>divided by 2</b> but we are not
+    // dividing by 2 here because the area of the main triangle is also
+    // divided by 2 and it simplifies.
+    auto tmpvec = softrender::cross(t_v1 - t_v0, t_point - t_v0);
+    auto u = tmpvec.norm() / main_triangle_area;
+
+    if(normal * tmpvec < 0) {
+        return false;
+    }
+
+    tmpvec = softrender::cross(t_v2 - t_v1, t_point - t_v1);
+    auto v = tmpvec.norm() / main_triangle_area;
+
+    if(normal * tmpvec < 0) {
+        return false;
+    }
+
+    auto w = 1 - u - v;
+
+    if(w < 0 || w > 1) {
+        return false;
+    }
+
+    return true;
+}
+
+} // namespace
 
 namespace softrender {
 
@@ -287,7 +366,14 @@ auto window_t::height() const noexcept -> int
 
 auto window_t::draw() -> void
 {
-    impl::draw(m_renderer, m_texture, m_canvas, m_width, m_height, m_running);
+    impl::draw(m_renderer,
+               m_texture,
+               m_canvas,
+               m_width,
+               m_height,
+               m_running,
+               m_key_callback,
+               m_mouse_callback);
 }
 
 auto window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
@@ -302,7 +388,7 @@ auto window_t::draw_point(point_t const& t_point, pixel_t const& t_pixel)
     this->operator()(t_point.y, t_point.x) = t_pixel;
 }
 
-auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
+auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t const& t_pixel)
     -> void
 {
     bool steep{ false };
@@ -342,6 +428,43 @@ auto window_t::draw_line(point_t t_start, point_t t_end, pixel_t t_pixel)
                 y += (t_end.y > t_start.y ? 1 : -1);
                 error2 -= 2 * dx;
             }
+        }
+    }
+}
+
+auto window_t::draw_triangle(vec2i const& t_a,
+                             vec2i const& t_b,
+                             vec2i const& t_c,
+                             pixel_t const& t_pixel) -> void
+{
+    vec2i bbox_min{ this->width() - 1, this->height() - 1 };
+    vec2i bbox_max{ 0, 0 };
+
+    bbox_min.x = std::max(0, std::min({ bbox_min.x, t_a.x, t_b.x, t_c.x }));
+    bbox_min.y = std::max(0, std::min({ bbox_min.y, t_a.y, t_b.y, t_c.y }));
+    bbox_max.x = std::min(this->width() - 1,
+                          std::max({ bbox_max.x, t_a.x, t_b.x, t_c.x }));
+    bbox_max.y = std::min(this->height() - 1,
+                          std::max({ bbox_max.y, t_a.y, t_b.y, t_c.y }));
+
+    vec2i point{ 0, 0 };
+
+    for(point.x = bbox_min.x; point.x <= bbox_max.x; ++point.x) {
+        for(point.y = bbox_min.y; point.y <= bbox_max.y; ++point.y) {
+            bool not_inside = !point_inside_triangle(
+                vec3f(static_cast<float>(point.x),
+                      static_cast<float>(point.y),
+                      1.f),
+                vec3f(
+                    static_cast<float>(t_a.x), static_cast<float>(t_a.y), 1.f),
+                vec3f(
+                    static_cast<float>(t_b.x), static_cast<float>(t_b.y), 1.f),
+                vec3f(
+                    static_cast<float>(t_c.x), static_cast<float>(t_c.y), 1.f));
+            if(not_inside) {
+                continue;
+            }
+            this->draw_point(point_t{ point.x, point.y }, t_pixel);
         }
     }
 }
@@ -387,6 +510,11 @@ auto window_t::canvas() noexcept -> std::vector<pixel_t>&
 auto window_t::canvas() const noexcept -> std::vector<pixel_t> const&
 {
     return m_canvas;
+}
+
+auto window_t::get_mouse_position() const noexcept -> softrender::point_t
+{
+    return impl::get_mouse_position();
 }
 
 } // namespace softrender

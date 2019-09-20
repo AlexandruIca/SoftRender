@@ -1,7 +1,15 @@
-Currently the library can:
-* Draw points
-* Draw lines
-* Read wavefront .obj files
-* Do basic operations with vectors
+## API changes
 
-Next to come is rasterizing triangles.
+* Now the library can draw triangles.
+* Added function to get mouse position.
+* Added possibility to provide a callback for handling key and mouse events.
+
+## Tests
+
+* Added test that draws a wavefront .obj model with lighting.
+* Added tests for event handling.
+
+## Next
+
+Make an examples/ directory that utilises the library to create various
+applications, most likely small games.

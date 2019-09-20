@@ -11,7 +11,6 @@ function(build_test TEST_NAME TEST_FILE)
                              PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/test_helpers/)
   target_link_libraries(${TEST_NAME} PRIVATE ${CMAKE_PROJECT_NAME})
   add_test(${TEST_NAME} ${TEST_NAME})
-  set_tests_properties(${TEST_NAME} PROPERTIES TIMEOUT 2)
 endfunction()
 
 build_test(setup ${CMAKE_CURRENT_SOURCE_DIR}/setup.cpp)
@@ -23,9 +22,14 @@ build_test(canvas_manipulation
 build_test(line ${CMAKE_CURRENT_SOURCE_DIR}/line.cpp)
 build_test(colors ${CMAKE_CURRENT_SOURCE_DIR}/colors.cpp)
 build_test(vec ${CMAKE_CURRENT_SOURCE_DIR}/vec.cpp)
+build_test(triangle ${CMAKE_CURRENT_SOURCE_DIR}/triangle.cpp)
+build_test(key_callback ${CMAKE_CURRENT_SOURCE_DIR}/key_callback.cpp)
+build_test(mouse_position ${CMAKE_CURRENT_SOURCE_DIR}/mouse_position.cpp)
+build_test(mouse_button ${CMAKE_CURRENT_SOURCE_DIR}/mouse_button.cpp)
 
 if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
   build_test(exception ${CMAKE_CURRENT_SOURCE_DIR}/exception.cpp)
 endif()
 
 add_subdirectory(basic_wire_render/)
+add_subdirectory(basic_flat_shading_render/)

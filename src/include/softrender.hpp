@@ -1,9 +1,18 @@
+#ifndef SOFTRENDER_HPP
+#define SOFTRENDER_HPP
+#pragma once
+
 ///
 /// \file
 ///
 
 #include <cstddef>
+#include <functional>
 #include <vector>
+
+#include "keys.hpp"
+#include "mouse_button.hpp"
+#include "vec.hpp"
 
 ///
 /// \defgroup unchecked_release No bound checking
@@ -16,8 +25,8 @@
 ///
 /// \defgroup canvas_manipulation Canvas manipulation
 ///
-/// These functions let you use the canvas directly but you shouldn't really use
-/// them unless you absolutely have to.
+/// These functions let you use the canvas directly but you shouldn't really
+/// use them unless you absolutely have to.
 ///
 
 struct SDL_Window;
@@ -109,6 +118,30 @@ struct point_t
 auto swap(point_t& t_point) -> void;
 
 ///
+/// \brief Describes what a key event contains.
+///
+struct key_event_t
+{
+    int keyc{ key::vk_unknown }; ///< The actual [key](\ref key).
+    bool repeat{ false };        ///< True if the key is being held.
+    bool released{ false };      ///< True if the key is being released.
+};
+
+///
+/// \brief Describes what a mouse event contains.
+///
+struct mouse_event_t
+{
+    point_t position{ 0, 0 }; ///< Position of the mouse relative to window.
+    int button{
+        0
+    }; ///< The button which has been pressed/release, one of \ref mouse_button.
+    bool pressed{
+        true
+    }; ///< True if the button is pressed, false if it's released.
+};
+
+///
 /// \brief Use this to construct a window.
 ///
 /// This is just a wrapper around SDL to construct a surface from memory and
@@ -126,6 +159,11 @@ private:
     SDL_Window* m_window{ nullptr };
     SDL_Renderer* m_renderer{ nullptr };
     SDL_Texture* m_texture{ nullptr };
+
+    std::function<void(key_event_t const& t_key_event)> m_key_callback =
+        [](key_event_t const&) noexcept -> void {};
+    std::function<void(mouse_event_t const& t_mouse_event)> m_mouse_callback =
+        [](mouse_event_t const&) noexcept -> void {};
 
     auto construct_canvas() -> void;
     auto initialize_sdl() -> void;
@@ -154,10 +192,7 @@ public:
     ///
     /// \brief Draws everything to the screen and handles input.
     ///
-    /// \note There are no separate functions (yet) to retreive events
-    ///       to keep the code simple, but when the need arises they will
-    ///       be added to the class. Currently, if you press ESCAPE the
-    ///       application exits.
+    /// \note If you press \ref key::vk_escape the application exits.
     ///
     auto draw() -> void;
 
@@ -185,8 +220,17 @@ public:
     ///
     /// \brief Draws a line from \p t_start to \p t_end with color \p t_pixel.
     ///
-    auto draw_line(point_t t_start, point_t t_end, pixel_t t_pixel = pixel_t{})
-        -> void;
+    auto draw_line(point_t t_start,
+                   point_t t_end,
+                   pixel_t const& t_pixel = pixel_t{}) -> void;
+
+    ///
+    /// \brief Draws a triangle with given coordinates.
+    ///
+    auto draw_triangle(vec2i const& t_a,
+                       vec2i const& t_b,
+                       vec2i const& t_c,
+                       pixel_t const& t_pixel = pixel_t{}) -> void;
 
     ///
     /// \brief Returns true if the window will close.
@@ -256,8 +300,41 @@ public:
     /// \ingroup canvas_manipulation
     ///
     [[nodiscard]] auto canvas() const noexcept -> std::vector<pixel_t> const&;
+
+    ///
+    /// \brief Provide a function that will be called on each key press.
+    ///
+    /// \param t_function Must be a function accepting a const \ref key_event_t
+    ///                   &.
+    ///
+    template<typename F>
+    auto set_on_key_press_callback(F t_function) -> void
+    {
+        m_key_callback = t_function;
+    }
+
+    ///
+    /// \brief Provide a function that will be called on each mouse button
+    ///        press/release.
+    ///
+    /// \param t_function Must be a function accepting a const \ref
+    ///                   mouse_event_t &.
+    ///
+    template<typename F>
+    auto set_on_mouse_callback(F t_function) -> void
+    {
+        m_mouse_callback = t_function;
+    }
+
+    ///
+    /// \returns A \ref point_t with the current mouse position relative to the
+    ///          window.
+    ///
+    [[nodiscard]] auto get_mouse_position() const noexcept -> point_t;
 };
 
 } // namespace softrender
 
 auto test() -> int;
+
+#endif // !SOFTRENDER_HPP

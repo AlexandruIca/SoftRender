@@ -345,7 +345,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><formula id="0">$\sqrt{x^2 + y^2 + z^2}$</formula> </para>
+<para><simplesect kind="return"><para><formula id="1">$\sqrt{x^2 + y^2 + z^2}$</formula> </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -366,13 +366,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Multiplies the vector with <formula id="1">$\frac{1}{\sqrt{x^2 + y^2 + z^2}}$</formula> by default.</para>
+<para>Multiplies the vector with <formula id="2">$\frac{1}{\sqrt{x^2 + y^2 + z^2}}$</formula> by default.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>t_l</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Specify it to multiply by <formula id="2">$\frac{t\_l}{\sqrt{x^2 + y^2 + z^2}}$</formula> </para>
+<para>Specify it to multiply by <formula id="3">$\frac{t\_l}{\sqrt{x^2 + y^2 + z^2}}$</formula> </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgraphics__impl_1_1key__event__t" kind="struct" language="C++" prot="public">
+    <compoundname>graphics_impl::key_event_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgraphics__impl_1_1key__event__t_1a41928b272a0cda95df5c3e1057de3bd8" prot="public" static="no" mutable="no">
+        <type>SDL_Keycode</type>
+        <definition>SDL_Keycode graphics_impl::key_event_t::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <initializer>{
+        SDLK_UNKNOWN
+    }</initializer>
+        <briefdescription>
+<para>The actual key. Every key is an enum that starts with <computeroutput>SDLK_</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="109" column="17" bodyfile="src/softrender.cpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgraphics__impl_1_1key__event__t_1a690c19f9ffcf9a3e48858811bd7fdd50" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool graphics_impl::key_event_t::repeat</definition>
+        <argsstring></argsstring>
+        <name>repeat</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>True if the key is being held. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="112" column="10" bodyfile="src/softrender.cpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgraphics__impl_1_1key__event__t_1a08078c0546ce35a980eefcfd44b7d0a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool graphics_impl::key_event_t::released</definition>
+        <argsstring></argsstring>
+        <name>released</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>True if the key is being released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="113" column="10" bodyfile="src/softrender.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes what a key event contains. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/softrender.cpp" line="108" column="1" bodyfile="src/softrender.cpp" bodystart="107" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structgraphics__impl_1_1key__event__t_1a41928b272a0cda95df5c3e1057de3bd8" prot="public" virt="non-virtual"><scope>graphics_impl::key_event_t</scope><name>key</name></member>
+      <member refid="structgraphics__impl_1_1key__event__t_1a08078c0546ce35a980eefcfd44b7d0a5" prot="public" virt="non-virtual"><scope>graphics_impl::key_event_t</scope><name>released</name></member>
+      <member refid="structgraphics__impl_1_1key__event__t_1a690c19f9ffcf9a3e48858811bd7fdd50" prot="public" virt="non-virtual"><scope>graphics_impl::key_event_t</scope><name>repeat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

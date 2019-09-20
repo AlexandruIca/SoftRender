@@ -8,7 +8,7 @@ trigger:
         - development
 
 variables:
-    SOFTRENDER_VERSION: v0.1
+    SOFTRENDER_VERSION: v0.2
 
 jobs:
     - job: Linux_Debug_GCC9
