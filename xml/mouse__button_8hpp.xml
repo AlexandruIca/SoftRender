@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="mouse__button_8hpp" kind="file" language="C++">
+    <compoundname>mouse_button.hpp</compoundname>
+    <includedby refid="mouse__button_8cpp" local="yes">src/mouse_button.cpp</includedby>
+    <includedby refid="softrender_8hpp" local="yes">src/include/softrender.hpp</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>src/softrender.cpp</label>
+        <link refid="softrender_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/mouse_button.cpp</label>
+        <link refid="mouse__button_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/include/mouse_button.hpp</label>
+        <link refid="mouse__button_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/include/softrender.hpp</label>
+        <link refid="softrender_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsoftrender_1_1mouse__button" prot="public">softrender::mouse_button</innerclass>
+    <innernamespace refid="namespacesoftrender">softrender</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/mouse_button.hpp"/>
+  </compounddef>
+</doxygen>

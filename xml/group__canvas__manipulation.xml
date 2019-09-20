@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="274" column="11" bodyfile="src/softrender.cpp" bodystart="473" bodyend="477"/>
+        <location file="src/include/softrender.hpp" line="288" column="11" bodyfile="src/softrender.cpp" bodystart="499" bodyend="503"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="282" column="11" bodyfile="src/softrender.cpp" bodystart="479" bodyend="482"/>
+        <location file="src/include/softrender.hpp" line="296" column="11" bodyfile="src/softrender.cpp" bodystart="505" bodyend="508"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="288" column="11" bodyfile="src/softrender.cpp" bodystart="484" bodyend="487"/>
+        <location file="src/include/softrender.hpp" line="302" column="11" bodyfile="src/softrender.cpp" bodystart="510" bodyend="513"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

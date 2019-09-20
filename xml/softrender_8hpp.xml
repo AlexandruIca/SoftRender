@@ -6,17 +6,22 @@
     <includes local="no">functional</includes>
     <includes local="no">vector</includes>
     <includes refid="keys_8hpp" local="yes">keys.hpp</includes>
+    <includes refid="mouse__button_8hpp" local="yes">mouse_button.hpp</includes>
     <includes refid="vec_8hpp" local="yes">vec.hpp</includes>
     <includedby refid="softrender_8cpp" local="yes">src/softrender.cpp</includedby>
     <incdepgraph>
       <node id="3">
         <label>functional</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>cmath</label>
       </node>
       <node id="4">
         <label>vector</label>
+      </node>
+      <node id="6">
+        <label>mouse_button.hpp</label>
+        <link refid="mouse__button_8hpp"/>
       </node>
       <node id="2">
         <label>cstddef</label>
@@ -34,11 +39,13 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>vec.hpp</label>
         <link refid="vec_8hpp"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -61,6 +68,7 @@
     <innerclass refid="structsoftrender_1_1pixel__t" prot="public">softrender::pixel_t</innerclass>
     <innerclass refid="structsoftrender_1_1point__t" prot="public">softrender::point_t</innerclass>
     <innerclass refid="structsoftrender_1_1key__event__t" prot="public">softrender::key_event_t</innerclass>
+    <innerclass refid="structsoftrender_1_1mouse__event__t" prot="public">softrender::mouse_event_t</innerclass>
     <innerclass refid="classsoftrender_1_1window__t" prot="public">softrender::window_t</innerclass>
     <innernamespace refid="namespacesoftrender">softrender</innernamespace>
     <innernamespace refid="namespacesoftrender_1_1colors">softrender::colors</innernamespace>
@@ -76,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="305" column="6" bodyfile="src/softrender.cpp" bodystart="31" bodyend="43" declfile="src/include/softrender.hpp" declline="305" declcolumn="6"/>
+        <location file="src/include/softrender.hpp" line="338" column="6" bodyfile="src/softrender.cpp" bodystart="31" bodyend="43" declfile="src/include/softrender.hpp" declline="338" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

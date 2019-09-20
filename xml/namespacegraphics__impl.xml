@@ -88,10 +88,23 @@
         </inbodydescription>
         <location file="src/softrender.cpp" line="76" column="6" bodyfile="src/softrender.cpp" bodystart="76" bodyend="86"/>
       </memberdef>
-      <memberdef kind="function" id="namespacegraphics__impl_1ab2b9eacd01e2c0f665489698b134e7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespacegraphics__impl_1a8a19a5e8b6008744a9d1f4d1f9ed80d5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto graphics_impl::get_mouse_position</definition>
+        <argsstring>() noexcept -&gt; softrender::point_t</argsstring>
+        <name>get_mouse_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/softrender.cpp" line="183" column="6" bodyfile="src/softrender.cpp" bodystart="183" bodyend="188" declfile="src/softrender.cpp" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegraphics__impl_1a1a444045887d4791399a7c5548b4bcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto graphics_impl::draw</definition>
-        <argsstring>(SDL_Renderer *&amp;t_renderer, SDL_Texture *&amp;t_texture, std::vector&lt; softrender::pixel_t &gt; &amp;t_canvas, int const t_width, int const t_height, bool &amp;t_running, std::function&lt; void(softrender::key_event_t const &amp;)&gt; &amp;t_key_callback) -&gt; void</argsstring>
+        <argsstring>(SDL_Renderer *&amp;t_renderer, SDL_Texture *&amp;t_texture, std::vector&lt; softrender::pixel_t &gt; &amp;t_canvas, int const t_width, int const t_height, bool &amp;t_running, std::function&lt; void(softrender::key_event_t const &amp;)&gt; &amp;t_key_callback, std::function&lt; void(softrender::mouse_event_t const &amp;)&gt; &amp;t_mouse_callback) -&gt; void</argsstring>
         <name>draw</name>
         <param>
           <type>SDL_Renderer *&amp;</type>
@@ -121,13 +134,17 @@
           <type>std::function&lt; void(<ref refid="structsoftrender_1_1key__event__t" kindref="compound">softrender::key_event_t</ref> const &amp;)&gt; &amp;</type>
           <declname>t_key_callback</declname>
         </param>
+        <param>
+          <type>std::function&lt; void(<ref refid="structsoftrender_1_1mouse__event__t" kindref="compound">softrender::mouse_event_t</ref> const &amp;)&gt; &amp;</type>
+          <declname>t_mouse_callback</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="104" column="6" bodyfile="src/softrender.cpp" bodystart="104" bodyend="169"/>
+        <location file="src/softrender.cpp" line="106" column="6" bodyfile="src/softrender.cpp" bodystart="106" bodyend="181"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -103,6 +103,16 @@
     <member refid="structsoftrender_1_1key__event__t_1a9dc06a5be881769a51d6d3239c13ecb2" kind="variable"><name>repeat</name></member>
     <member refid="structsoftrender_1_1key__event__t_1a26128d37608791d48ffa3e56b3a05cf5" kind="variable"><name>released</name></member>
   </compound>
+  <compound refid="structsoftrender_1_1mouse__button" kind="struct"><name>softrender::mouse_button</name>
+    <member refid="structsoftrender_1_1mouse__button_1aed7faa1174be5c7afc375ed6399fc9fa" kind="variable"><name>left</name></member>
+    <member refid="structsoftrender_1_1mouse__button_1a1dfb6771e5dd4d29856e6d1811d42f39" kind="variable"><name>right</name></member>
+    <member refid="structsoftrender_1_1mouse__button_1ae549e893682ba7a7c24e5f7597eb4c10" kind="variable"><name>middle</name></member>
+  </compound>
+  <compound refid="structsoftrender_1_1mouse__event__t" kind="struct"><name>softrender::mouse_event_t</name>
+    <member refid="structsoftrender_1_1mouse__event__t_1a1914cc544d5ebf05600432377bbfbc23" kind="variable"><name>position</name></member>
+    <member refid="structsoftrender_1_1mouse__event__t_1a03276f9e194d01c2ae07e98e3a7b0120" kind="variable"><name>button</name></member>
+    <member refid="structsoftrender_1_1mouse__event__t_1a2dd63377cb30895b7cf27b7b2bb77e41" kind="variable"><name>pressed</name></member>
+  </compound>
   <compound refid="structsoftrender_1_1pixel__t" kind="struct"><name>softrender::pixel_t</name>
     <member refid="structsoftrender_1_1pixel__t_1af65af3ceb86c6e4ece8589621b33f481" kind="variable"><name>r</name></member>
     <member refid="structsoftrender_1_1pixel__t_1af6c9c20d3bbe5b6211c82c6d97a1f86e" kind="variable"><name>g</name></member>
@@ -183,6 +193,7 @@
     <member refid="classsoftrender_1_1window__t_1acd5773b6c80e51d32678f0360d7fe7ff" kind="variable"><name>m_renderer</name></member>
     <member refid="classsoftrender_1_1window__t_1ab5da848ee6e182639651cd6baf50dbda" kind="variable"><name>m_texture</name></member>
     <member refid="classsoftrender_1_1window__t_1a622149ad16d73507ce4ba05a217dbebe" kind="variable"><name>m_key_callback</name></member>
+    <member refid="classsoftrender_1_1window__t_1a12a231535131dde13a7b75170e5cc902" kind="variable"><name>m_mouse_callback</name></member>
     <member refid="classsoftrender_1_1window__t_1a89a1bea93f209217fb4c54e4d5e5df9f" kind="function"><name>construct_canvas</name></member>
     <member refid="classsoftrender_1_1window__t_1a8e2d06a2b85458ee0b8b9156ff0a2c85" kind="function"><name>initialize_sdl</name></member>
     <member refid="classsoftrender_1_1window__t_1a578408fc92b352eeb7807b9883207223" kind="function"><name>window_t</name></member>
@@ -202,15 +213,18 @@
     <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kind="function"><name>canvas</name></member>
     <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
     <member refid="classsoftrender_1_1window__t_1a3a27eae5aa7c31b9ce7b091714176e9a" kind="function"><name>set_on_key_press_callback</name></member>
+    <member refid="classsoftrender_1_1window__t_1a85ca28d29f0631c042b186a4a67f0edf" kind="function"><name>set_on_mouse_callback</name></member>
+    <member refid="classsoftrender_1_1window__t_1abc44f15fabc28d3c8f98c4bee966ee9f" kind="function"><name>get_mouse_position</name></member>
   </compound>
-  <compound refid="namespace_0d1" kind="namespace"><name>@1</name>
+  <compound refid="namespace_0d2" kind="namespace"><name>@2</name>
   </compound>
   <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
     <member refid="namespacegraphics__impl_1a2221cb277b7503f71ec5b7f9d7a737b9" kind="function"><name>sdl_error</name></member>
     <member refid="namespacegraphics__impl_1a2ed84f96942d3659ae0a3f18f5d4e1d0" kind="function"><name>test</name></member>
     <member refid="namespacegraphics__impl_1a2c74949c0acaffc432171b85bd6a7f9e" kind="function"><name>initialize_sdl</name></member>
     <member refid="namespacegraphics__impl_1a0bc2e5b6a0b4ea30f548643817151cf2" kind="function"><name>close_sdl</name></member>
-    <member refid="namespacegraphics__impl_1ab2b9eacd01e2c0f665489698b134e7ed" kind="function"><name>draw</name></member>
+    <member refid="namespacegraphics__impl_1a8a19a5e8b6008744a9d1f4d1f9ed80d5" kind="function"><name>get_mouse_position</name></member>
+    <member refid="namespacegraphics__impl_1a1a444045887d4791399a7c5548b4bcaa" kind="function"><name>draw</name></member>
   </compound>
   <compound refid="namespacegraphics__impl_1_1surface__info" kind="namespace"><name>graphics_impl::surface_info</name>
     <member refid="namespacegraphics__impl_1_1surface__info_1a1a3307198e0347dffb6a28d95507943b" kind="variable"><name>rmask</name></member>
@@ -269,6 +283,8 @@
   </compound>
   <compound refid="keys_8hpp" kind="file"><name>keys.hpp</name>
   </compound>
+  <compound refid="mouse__button_8hpp" kind="file"><name>mouse_button.hpp</name>
+  </compound>
   <compound refid="softrender_8hpp" kind="file"><name>softrender.hpp</name>
     <member refid="softrender_8hpp_1a9940a07ef709bf9d89dcdff767ec0a25" kind="function"><name>test</name></member>
   </compound>
@@ -277,6 +293,8 @@
   <compound refid="wavefront__reader_8hpp" kind="file"><name>wavefront_reader.hpp</name>
   </compound>
   <compound refid="keys_8cpp" kind="file"><name>keys.cpp</name>
+  </compound>
+  <compound refid="mouse__button_8cpp" kind="file"><name>mouse_button.cpp</name>
   </compound>
   <compound refid="softrender_8cpp" kind="file"><name>softrender.cpp</name>
     <member refid="softrender_8cpp_1aa85102d398c1f2048bc0a1ba0bdf5185" kind="function"><name>sdl_error</name></member>

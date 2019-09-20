@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="namespace_0d1" kind="namespace" language="C++">
-    <compoundname>@1</compoundname>
+  <compounddef id="namespace_0d2" kind="namespace" language="C++">
+    <compoundname>@2</compoundname>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/softrender.cpp" line="239" column="11"/>
+    <location file="src/softrender.cpp" line="252" column="11"/>
   </compounddef>
 </doxygen>

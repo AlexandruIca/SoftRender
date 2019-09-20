@@ -144,6 +144,15 @@
               <span class="m-doc-wrap-bumper">auto <a href="#a3a27eae5aa7c31b9ce7b091714176e9a" class="m-doc">set_on_key_press_callback</a>(</span><span class="m-doc-wrap">F t_function) -&gt; void -&gt; auto</span>
             </dt>
             <dd>Provide a function that will be called on each key press.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename F&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a85ca28d29f0631c042b186a4a67f0edf" class="m-doc">set_on_mouse_callback</a>(</span><span class="m-doc-wrap">F t_function) -&gt; void -&gt; auto</span>
+            </dt>
+            <dd>Provide a function that will be called on each mouse button press/release.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abc44f15fabc28d3c8f98c4bee966ee9f" class="m-doc">get_mouse_position</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; point_t -&gt; auto</span>
+            </dt>
+            <dd></dd>
           </dl>
         </section>
         <section>
@@ -153,7 +162,7 @@
               <span class="m-doc-wrap-bumper">auto softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41a3c4738f536b849927565cc3a0ee21" class="m-doc-self">draw</a>(</span><span class="m-doc-wrap">) -&gt; void</span></span>
             </h3>
             <p>Draws everything to the screen and handles input.</p>
-<aside class="m-note m-info"><h4>Note</h4><p>There are no separate functions (yet) to retreive events to keep the code simple, but when the need arises they will be added to the class. Currently, if you press ESCAPE the application exits.</p></aside>
+<aside class="m-note m-info"><h4>Note</h4><p>If you press <a href="structsoftrender_1_1key.html#a01dc95b5ba1439c755a39990efb39dee" class="m-doc">key::<wbr />vk_escape</a> the application exits.</p></aside>
           </div></section>
           <section class="m-doc-details" id="a3a27eae5aa7c31b9ce7b091714176e9a"><div>
             <h3>
@@ -173,6 +182,39 @@
                   <td>Must be a function accepting a const <a href="structsoftrender_1_1key__event__t.html" class="m-doc">key_<wbr />event_<wbr />t</a> &amp;.</td>
                 </tr>
               </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a85ca28d29f0631c042b186a4a67f0edf"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename F&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a85ca28d29f0631c042b186a4a67f0edf" class="m-doc-self">set_on_mouse_callback</a>(</span><span class="m-doc-wrap">F t_function) -&gt; void</span></span>
+            </h3>
+            <p>Provide a function that will be called on each mouse button press/release.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">t_function</td>
+                  <td>Must be a function accepting a const <a href="structsoftrender_1_1mouse__event__t.html" class="m-doc">mouse_<wbr />event_<wbr />t</a> &amp;.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="abc44f15fabc28d3c8f98c4bee966ee9f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto softrender::<wbr />window_t::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abc44f15fabc28d3c8f98c4bee966ee9f" class="m-doc-self">get_mouse_position</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; point_t</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A <a href="structsoftrender_1_1point__t.html" class="m-doc">point_<wbr />t</a> with the current mouse position relative to the window.</td>
+                </tr>
+              </tfoot>
             </table>
           </div></section>
         </section>
