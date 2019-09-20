@@ -30,7 +30,6 @@ matrix:
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
               - VCPKG_EVAL=""
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
