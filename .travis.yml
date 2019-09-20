@@ -10,7 +10,6 @@ matrix:
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
               - VCPKG_EVAL=""
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
@@ -23,7 +22,6 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: linux
           dist: xenial
           env:
@@ -45,7 +43,6 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: linux
           dist: xenial
           env:
@@ -54,7 +51,6 @@ matrix:
               - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
               - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
@@ -67,7 +63,6 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: linux
           dist: xenial
           env:
@@ -76,7 +71,6 @@ matrix:
               - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
               - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
@@ -89,7 +83,6 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: osx
           osx_image: xcode11
           env:
