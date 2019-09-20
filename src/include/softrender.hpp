@@ -11,6 +11,7 @@
 #include <vector>
 
 #include "keys.hpp"
+#include "mouse_button.hpp"
 #include "vec.hpp"
 
 ///
@@ -121,9 +122,23 @@ auto swap(point_t& t_point) -> void;
 ///
 struct key_event_t
 {
-    int keyc{ 0 };          ///< The actual [key](\ref key).
-    bool repeat{ false };   ///< True if the key is being held.
-    bool released{ false }; ///< True if the key is being released.
+    int keyc{ key::vk_unknown }; ///< The actual [key](\ref key).
+    bool repeat{ false };        ///< True if the key is being held.
+    bool released{ false };      ///< True if the key is being released.
+};
+
+///
+/// \brief Describes what a mouse event contains.
+///
+struct mouse_event_t
+{
+    point_t position{ 0, 0 }; ///< Position of the mouse relative to window.
+    int button{
+        0
+    }; ///< The button which has been pressed/release, one of \ref mouse_button.
+    bool pressed{
+        true
+    }; ///< True if the button is pressed, false if it's released.
 };
 
 ///
@@ -147,6 +162,8 @@ private:
 
     std::function<void(key_event_t const& t_key_event)> m_key_callback =
         [](key_event_t const&) noexcept->void{};
+    std::function<void(mouse_event_t const& t_mouse_event)> m_mouse_callback =
+        [](mouse_event_t const&) noexcept->void{};
 
     auto construct_canvas() -> void;
     auto initialize_sdl() -> void;
@@ -175,10 +192,7 @@ public:
     ///
     /// \brief Draws everything to the screen and handles input.
     ///
-    /// \note There are no separate functions (yet) to retreive events
-    ///       to keep the code simple, but when the need arises they will
-    ///       be added to the class. Currently, if you press ESCAPE the
-    ///       application exits.
+    /// \note If you press \ref key::vk_escape the application exits.
     ///
     auto draw() -> void;
 
@@ -298,6 +312,25 @@ public:
     {
         m_key_callback = t_function;
     }
+
+    ///
+    /// \brief Provide a function that will be called on each mouse button
+    ///        press/release.
+    ///
+    /// \param t_function Must be a function accepting a const \ref
+    ///                   mouse_event_t &.
+    ///
+    template<typename F>
+    auto set_on_mouse_callback(F t_function) -> void
+    {
+        m_mouse_callback = t_function;
+    }
+
+    ///
+    /// \returns A \ref point_t with the current mouse position relative to the
+    ///          window.
+    ///
+    [[nodiscard]] auto get_mouse_position() const noexcept -> point_t;
 };
 
 } // namespace softrender

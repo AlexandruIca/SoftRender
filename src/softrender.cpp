@@ -101,13 +101,17 @@ constexpr Uint32 amask = 0xff000000;
 
 } // namespace surface_info
 
-auto draw(SDL_Renderer*& t_renderer,
-          SDL_Texture*& t_texture,
-          std::vector<softrender::pixel_t>& t_canvas,
-          int const t_width,
-          int const t_height,
-          bool& t_running,
-          std::function<void(softrender::key_event_t const&)>& t_key_callback)
+auto get_mouse_position() noexcept -> softrender::point_t;
+
+auto draw(
+    SDL_Renderer*& t_renderer,
+    SDL_Texture*& t_texture,
+    std::vector<softrender::pixel_t>& t_canvas,
+    int const t_width,
+    int const t_height,
+    bool& t_running,
+    std::function<void(softrender::key_event_t const&)>& t_key_callback,
+    std::function<void(softrender::mouse_event_t const&)>& t_mouse_callback)
     -> void
 {
     if(t_texture != nullptr) {
@@ -162,10 +166,25 @@ auto draw(SDL_Renderer*& t_renderer,
         case SDL_KEYUP:
             t_key_callback(key_event_t{ e.key.keysym.sym, false, true });
             break;
+        case SDL_MOUSEBUTTONDOWN:
+            t_mouse_callback(
+                mouse_event_t{ get_mouse_position(), e.button.button, true });
+            break;
+        case SDL_MOUSEBUTTONUP:
+            t_mouse_callback(
+                mouse_event_t{ get_mouse_position(), e.button.button, false });
+            break;
         default:
             break;
         }
     }
+}
+
+auto get_mouse_position() noexcept -> softrender::point_t
+{
+    softrender::point_t pos{ 0, 0 };
+    SDL_GetMouseState(&pos.x, &pos.y);
+    return pos;
 }
 
 } // namespace graphics_impl
@@ -199,10 +218,16 @@ auto draw(SDL_Renderer*,
           int,
           int,
           bool& t_running,
-          std::function<void(key_event_t const&)>&) -> void
+          std::function<void(softrender::key_event_t const&)>&,
+          std::function<void(softrender::mouse_event_t const&)>&) -> void
 {
     static int num_iterations{ 0 };
     t_running = (++num_iterations < 50);
+}
+
+auto get_mouse_position() noexcept -> softrender::point_t
+{
+    return { 0, 0 };
 }
 
 } // namespace dummy_impl
@@ -347,7 +372,8 @@ auto window_t::draw() -> void
                m_width,
                m_height,
                m_running,
-               m_key_callback);
+               m_key_callback,
+               m_mouse_callback);
 }
 
 auto window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
@@ -484,6 +510,11 @@ auto window_t::canvas() noexcept -> std::vector<pixel_t>&
 auto window_t::canvas() const noexcept -> std::vector<pixel_t> const&
 {
     return m_canvas;
+}
+
+auto window_t::get_mouse_position() const noexcept -> softrender::point_t
+{
+    return impl::get_mouse_position();
 }
 
 } // namespace softrender
