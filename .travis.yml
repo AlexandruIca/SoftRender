@@ -10,7 +10,6 @@ matrix:
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
               - VCPKG_EVAL=""
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
@@ -23,7 +22,6 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: linux
           dist: xenial
           env:
@@ -32,7 +30,6 @@ matrix:
               - CMAKE_EVAL="bash ../scripts/cmake.sh"
               - VCPKG_EVAL=""
               - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
           addons:
               apt:
                   update: true
@@ -45,51 +42,48 @@ matrix:
                       - g++-8
                       - clang-8
                       - clang-tidy-8
-                      - clang-format-8
         - os: linux
           dist: xenial
           env:
               - BUILD_MODE=Debug
-              - MATRIX_EVAL="CC=clang-8 && CXX=clang++-8"
+              - MATRIX_EVAL="CC=clang-9 && CXX=clang++-9"
               - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
               - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
-              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9"
+              - FORMAT_EVAL="./scripts/run-clang-format.py --clang-format-executable=/usr/bin/clang-format-9 -r src/ tests/"
           addons:
               apt:
                   update: true
                   sources:
                       - ubuntu-toolchain-r-test
-                      - llvm-toolchain-xenial-8
+                      - llvm-toolchain-xenial-9
                   packages:
                       - make
                       - cmake
                       - g++-8
-                      - clang-8
-                      - clang-tidy-8
-                      - clang-format-8
+                      - clang-9
+                      - clang-tidy-9
+                      - clang-format-9
         - os: linux
           dist: xenial
           env:
               - BUILD_MODE=Release
-              - MATRIX_EVAL="CC=clang-8 && CXX=clang++-8"
+              - MATRIX_EVAL="CC=clang-9 && CXX=clang++-9"
               - VCPKG_EVAL="CC=gcc-8 && CXX=g++-8"
               - CMAKE_EVAL="bash ../scripts/cmake-clang.sh"
-              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-8"
-              - FORMAT_EVAL="./scripts/run-clang-format.py -r src/"
+              - TIDY_EVAL="./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9"
           addons:
               apt:
                   update: true
                   sources:
                       - ubuntu-toolchain-r-test
-                      - llvm-toolchain-xenial-8
+                      - llvm-toolchain-xenial-9
                   packages:
                       - make
                       - cmake
                       - g++-8
-                      - clang-8
-                      - clang-tidy-8
-                      - clang-format-8
+                      - clang-9
+                      - clang-tidy-9
         - os: osx
           osx_image: xcode11
           env:
