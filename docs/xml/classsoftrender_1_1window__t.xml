@@ -105,7 +105,7 @@
         <argsstring></argsstring>
         <name>m_key_callback</name>
         <initializer>=
-        [](<ref refid="structsoftrender_1_1key__event__t" kindref="compound">key_event_t</ref> const&amp;) noexcept-&gt;void{}</initializer>
+        [](<ref refid="structsoftrender_1_1key__event__t" kindref="compound">key_event_t</ref> const&amp;) noexcept -&gt; void {}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -120,7 +120,7 @@
         <argsstring></argsstring>
         <name>m_mouse_callback</name>
         <initializer>=
-        [](<ref refid="structsoftrender_1_1mouse__event__t" kindref="compound">mouse_event_t</ref> const&amp;) noexcept-&gt;void{}</initializer>
+        [](<ref refid="structsoftrender_1_1mouse__event__t" kindref="compound">mouse_event_t</ref> const&amp;) noexcept -&gt; void {}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
