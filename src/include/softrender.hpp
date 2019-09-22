@@ -161,9 +161,9 @@ private:
     SDL_Texture* m_texture{ nullptr };
 
     std::function<void(key_event_t const& t_key_event)> m_key_callback =
-        [](key_event_t const&) noexcept -> void {};
+        [](key_event_t const&) noexcept->void{};
     std::function<void(mouse_event_t const& t_mouse_event)> m_mouse_callback =
-        [](mouse_event_t const&) noexcept -> void {};
+        [](mouse_event_t const&) noexcept->void{};
 
     auto construct_canvas() -> void;
     auto initialize_sdl() -> void;
@@ -231,6 +231,15 @@ public:
                        vec2i const& t_b,
                        vec2i const& t_c,
                        pixel_t const& t_pixel = pixel_t{}) -> void;
+
+    ///
+    /// \brief Draws a rectangle starting at (\p t_pos.x, \p t_pos.y) with
+    ///        width=\p t_width and height=\p t_height.
+    ///
+    auto draw_rectangle(point_t const& t_pos,
+                        int const t_width,
+                        int const t_height,
+                        pixel_t const& t_pixel = pixel_t{}) -> void;
 
     ///
     /// \brief Returns true if the window will close.

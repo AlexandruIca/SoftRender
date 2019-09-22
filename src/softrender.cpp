@@ -469,6 +469,23 @@ auto window_t::draw_triangle(vec2i const& t_a,
     }
 }
 
+auto window_t::draw_rectangle(point_t const& t_pos,
+                              int const t_width,
+                              int const t_height,
+                              pixel_t const& t_pixel) -> void
+{
+    int const startx = std::max(0, std::min(t_pos.x, this->width()));
+    int const starty = std::max(0, std::min(t_pos.y, this->height()));
+    int const endx = std::min(this->width(), startx + t_width);
+    int const endy = std::min(this->height(), starty + t_height);
+
+    for(int x = startx; x <= endx; ++x) {
+        for(int y = starty; y <= endy; ++y) {
+            m_canvas[this->from_coord2d_to_matrix({ x, y })] = t_pixel;
+        }
+    }
+}
+
 auto window_t::closed() const noexcept -> bool
 {
     return !m_running;
