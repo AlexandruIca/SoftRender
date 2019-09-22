@@ -36,6 +36,13 @@ if(${SOFTRENDER_BUILD_TESTS})
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tests/)
 endif()
 
+option(SOFTRENDER_BUILD_EXAMPLES "Build the examples that come with the library"
+       OFF)
+
+if(${SOFTRENDER_BUILD_EXAMPLES})
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/examples/)
+endif()
+
 option(SOFTRENDER_BUILD_DOCS
        "Build the documentation that comes with the library" OFF)
 
