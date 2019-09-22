@@ -161,9 +161,9 @@ private:
     SDL_Texture* m_texture{ nullptr };
 
     std::function<void(key_event_t const& t_key_event)> m_key_callback =
-        [](key_event_t const&) noexcept->void{};
+        [](key_event_t const&) noexcept -> void {};
     std::function<void(mouse_event_t const& t_mouse_event)> m_mouse_callback =
-        [](mouse_event_t const&) noexcept->void{};
+        [](mouse_event_t const&) noexcept -> void {};
 
     auto construct_canvas() -> void;
     auto initialize_sdl() -> void;
