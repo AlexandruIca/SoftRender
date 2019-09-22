@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structsoftrender_1_1key__event__t" kind="struct" language="C++" prot="public">
+    <compoundname>softrender::key_event_t</compoundname>
+    <includes local="no">softrender.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsoftrender_1_1key__event__t_1a82218beaf12d87004f5eaabad866b63b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int softrender::key_event_t::keyc</definition>
+        <argsstring></argsstring>
+        <name>keyc</name>
+        <initializer>{ <ref refid="structsoftrender_1_1key_1afba18acb98f0d4eb20fbe2f3a9e68a24" kindref="member">key::vk_unknown</ref> }</initializer>
+        <briefdescription>
+<para>The actual <ref refid="structsoftrender_1_1key" kindref="compound">key</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="125" column="9" bodyfile="src/include/softrender.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsoftrender_1_1key__event__t_1a9dc06a5be881769a51d6d3239c13ecb2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool softrender::key_event_t::repeat</definition>
+        <argsstring></argsstring>
+        <name>repeat</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>True if the key is being held. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="126" column="10" bodyfile="src/include/softrender.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsoftrender_1_1key__event__t_1a26128d37608791d48ffa3e56b3a05cf5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool softrender::key_event_t::released</definition>
+        <argsstring></argsstring>
+        <name>released</name>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+<para>True if the key is being released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="127" column="10" bodyfile="src/include/softrender.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes what a key event contains. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/softrender.hpp" line="124" column="1" bodyfile="src/include/softrender.hpp" bodystart="123" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structsoftrender_1_1key__event__t_1a82218beaf12d87004f5eaabad866b63b" prot="public" virt="non-virtual"><scope>softrender::key_event_t</scope><name>keyc</name></member>
+      <member refid="structsoftrender_1_1key__event__t_1a26128d37608791d48ffa3e56b3a05cf5" prot="public" virt="non-virtual"><scope>softrender::key_event_t</scope><name>released</name></member>
+      <member refid="structsoftrender_1_1key__event__t_1a9dc06a5be881769a51d6d3239c13ecb2" prot="public" virt="non-virtual"><scope>softrender::key_event_t</scope><name>repeat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

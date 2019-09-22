@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacesoftrender_1_1colors" kind="namespace" language="C++">
+    <compoundname>softrender::colors</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::black</definition>
+        <argsstring></argsstring>
+        <name>black</name>
+        <initializer>{ 0, 0, 0 }</initializer>
+        <briefdescription>
+<para>Material black color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="80" column="15" bodyfile="src/include/softrender.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::white</definition>
+        <argsstring></argsstring>
+        <name>white</name>
+        <initializer>{ 255, 255, 255 }</initializer>
+        <briefdescription>
+<para>Material white color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="81" column="15" bodyfile="src/include/softrender.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <initializer>{ 255, 0, 0 }</initializer>
+        <briefdescription>
+<para>Material red color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="82" column="15" bodyfile="src/include/softrender.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <initializer>{ 0, 255, 0 }</initializer>
+        <briefdescription>
+<para>Material green color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="83" column="15" bodyfile="src/include/softrender.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <initializer>{ 0, 0, 255 }</initializer>
+        <briefdescription>
+<para>Material blue color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="84" column="15" bodyfile="src/include/softrender.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::cyan</definition>
+        <argsstring></argsstring>
+        <name>cyan</name>
+        <initializer>{ 0, 188, 212 }</initializer>
+        <briefdescription>
+<para>Material cyan color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="85" column="15" bodyfile="src/include/softrender.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <initializer>{ 255, 235, 59 }</initializer>
+        <briefdescription>
+<para>Material yellow color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="86" column="15" bodyfile="src/include/softrender.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::lime</definition>
+        <argsstring></argsstring>
+        <name>lime</name>
+        <initializer>{ 205, 220, 57 }</initializer>
+        <briefdescription>
+<para>Material lime color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="87" column="15" bodyfile="src/include/softrender.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::teal</definition>
+        <argsstring></argsstring>
+        <name>teal</name>
+        <initializer>{ 0, 150, 136 }</initializer>
+        <briefdescription>
+<para>Material teal color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="88" column="15" bodyfile="src/include/softrender.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::purple</definition>
+        <argsstring></argsstring>
+        <name>purple</name>
+        <initializer>{ 156, 39, 176 }</initializer>
+        <briefdescription>
+<para>Material purple color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="89" column="15" bodyfile="src/include/softrender.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::pink</definition>
+        <argsstring></argsstring>
+        <name>pink</name>
+        <initializer>{ 236, 64, 122 }</initializer>
+        <briefdescription>
+<para>Material pink color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="90" column="15" bodyfile="src/include/softrender.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::indigo</definition>
+        <argsstring></argsstring>
+        <name>indigo</name>
+        <initializer>{ 63, 81, 181 }</initializer>
+        <briefdescription>
+<para>Material indigo color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="91" column="15" bodyfile="src/include/softrender.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::amber</definition>
+        <argsstring></argsstring>
+        <name>amber</name>
+        <initializer>{ 255, 193, 7 }</initializer>
+        <briefdescription>
+<para>Material amber color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="92" column="15" bodyfile="src/include/softrender.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::orange</definition>
+        <argsstring></argsstring>
+        <name>orange</name>
+        <initializer>{ 255, 152, 0 }</initializer>
+        <briefdescription>
+<para>Material orange color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="93" column="15" bodyfile="src/include/softrender.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::brown</definition>
+        <argsstring></argsstring>
+        <name>brown</name>
+        <initializer>{ 121, 85, 72 }</initializer>
+        <briefdescription>
+<para>Material brown color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="94" column="15" bodyfile="src/include/softrender.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref></type>
+        <definition>const pixel_t softrender::colors::grey</definition>
+        <argsstring></argsstring>
+        <name>grey</name>
+        <initializer>{ 158, 158, 158 }</initializer>
+        <briefdescription>
+<para>Material grey color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="95" column="15" bodyfile="src/include/softrender.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Namespace that contains a few useful predefined colors so that you don&apos;t always have to put some random numbers in <ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> constructor. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/include/softrender.hpp" line="78" column="23"/>
+  </compounddef>
+</doxygen>
