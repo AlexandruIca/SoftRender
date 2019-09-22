@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="338" column="6" bodyfile="src/softrender.cpp" bodystart="31" bodyend="43" declfile="src/include/softrender.hpp" declline="338" declcolumn="6"/>
+        <location file="src/include/softrender.hpp" line="347" column="6" bodyfile="src/softrender.cpp" bodystart="31" bodyend="43" declfile="src/include/softrender.hpp" declline="347" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -105,7 +105,7 @@
         <argsstring></argsstring>
         <name>m_key_callback</name>
         <initializer>=
-        [](<ref refid="structsoftrender_1_1key__event__t" kindref="compound">key_event_t</ref> const&amp;) noexcept -&gt; void {}</initializer>
+        [](<ref refid="structsoftrender_1_1key__event__t" kindref="compound">key_event_t</ref> const&amp;) noexcept-&gt;void{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -120,7 +120,7 @@
         <argsstring></argsstring>
         <name>m_mouse_callback</name>
         <initializer>=
-        [](<ref refid="structsoftrender_1_1mouse__event__t" kindref="compound">mouse_event_t</ref> const&amp;) noexcept -&gt; void {}</initializer>
+        [](<ref refid="structsoftrender_1_1mouse__event__t" kindref="compound">mouse_event_t</ref> const&amp;) noexcept-&gt;void{}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -386,6 +386,37 @@
         </inbodydescription>
         <location file="src/include/softrender.hpp" line="230" column="10" bodyfile="src/softrender.cpp" bodystart="435" bodyend="470"/>
       </memberdef>
+      <memberdef kind="function" id="classsoftrender_1_1window__t_1a167b8035b5acbfd780abe1dac0f6a039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto softrender::window_t::draw_rectangle</definition>
+        <argsstring>(point_t const &amp;t_pos, int const t_width, int const t_height, pixel_t const &amp;t_pixel=pixel_t{}) -&gt; void</argsstring>
+        <name>draw_rectangle</name>
+        <param>
+          <type><ref refid="structsoftrender_1_1point__t" kindref="compound">point_t</ref> const &amp;</type>
+          <declname>t_pos</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_width</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>t_height</declname>
+        </param>
+        <param>
+          <type><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref> const &amp;</type>
+          <declname>t_pixel</declname>
+          <defval><ref refid="structsoftrender_1_1pixel__t" kindref="compound">pixel_t</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Draws a rectangle starting at (<computeroutput>t_pos.x</computeroutput>, <computeroutput>t_pos.y</computeroutput>) with width=<computeroutput>t_width</computeroutput> and height=<computeroutput>t_height</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/include/softrender.hpp" line="239" column="10" bodyfile="src/softrender.cpp" bodystart="472" bodyend="487"/>
+      </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::window_t::closed</definition>
@@ -401,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="242" column="11" bodyfile="src/softrender.cpp" bodystart="472" bodyend="475"/>
+        <location file="src/include/softrender.hpp" line="251" column="11" bodyfile="src/softrender.cpp" bodystart="489" bodyend="492"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -441,7 +472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="252" column="11" bodyfile="src/softrender.cpp" bodystart="477" bodyend="486"/>
+        <location file="src/include/softrender.hpp" line="261" column="11" bodyfile="src/softrender.cpp" bodystart="494" bodyend="503"/>
       </memberdef>
       <memberdef kind="function" id="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -481,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="262" column="11" bodyfile="src/softrender.cpp" bodystart="488" bodyend="497"/>
+        <location file="src/include/softrender.hpp" line="271" column="11" bodyfile="src/softrender.cpp" bodystart="505" bodyend="514"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -508,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="288" column="11" bodyfile="src/softrender.cpp" bodystart="499" bodyend="503"/>
+        <location file="src/include/softrender.hpp" line="297" column="11" bodyfile="src/softrender.cpp" bodystart="516" bodyend="520"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -522,7 +553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="296" column="11" bodyfile="src/softrender.cpp" bodystart="505" bodyend="508"/>
+        <location file="src/include/softrender.hpp" line="305" column="11" bodyfile="src/softrender.cpp" bodystart="522" bodyend="525"/>
       </memberdef>
       <memberdef kind="function" id="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -536,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="302" column="11" bodyfile="src/softrender.cpp" bodystart="510" bodyend="513"/>
+        <location file="src/include/softrender.hpp" line="311" column="11" bodyfile="src/softrender.cpp" bodystart="527" bodyend="530"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1a3a27eae5aa7c31b9ce7b091714176e9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -569,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="311" column="10" bodyfile="src/include/softrender.hpp" bodystart="311" bodyend="314"/>
+        <location file="src/include/softrender.hpp" line="320" column="10" bodyfile="src/include/softrender.hpp" bodystart="320" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1a85ca28d29f0631c042b186a4a67f0edf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -602,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="324" column="10" bodyfile="src/include/softrender.hpp" bodystart="324" bodyend="327"/>
+        <location file="src/include/softrender.hpp" line="333" column="10" bodyfile="src/include/softrender.hpp" bodystart="333" bodyend="336"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1window__t_1abc44f15fabc28d3c8f98c4bee966ee9f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>auto</type>
@@ -618,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="333" column="11" bodyfile="src/softrender.cpp" bodystart="515" bodyend="518"/>
+        <location file="src/include/softrender.hpp" line="342" column="11" bodyfile="src/softrender.cpp" bodystart="532" bodyend="535"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -627,7 +658,7 @@
     <detaileddescription>
 <para>This is just a wrapper around SDL to construct a surface from memory and blit it. </para>
     </detaileddescription>
-    <location file="src/include/softrender.hpp" line="151" column="1" bodyfile="src/include/softrender.hpp" bodystart="150" bodyend="334"/>
+    <location file="src/include/softrender.hpp" line="151" column="1" bodyfile="src/include/softrender.hpp" bodystart="150" bodyend="343"/>
     <listofallmembers>
       <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>canvas</name></member>
       <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>canvas</name></member>
@@ -637,6 +668,7 @@
       <member refid="classsoftrender_1_1window__t_1abddb4a5d68408821b74b3e82224e1519" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>draw_line</name></member>
       <member refid="group__unchecked__release_1gaf22433a4542aaf2b02276a6d25aaedf1" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>draw_point</name></member>
       <member refid="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>draw_point</name></member>
+      <member refid="classsoftrender_1_1window__t_1a167b8035b5acbfd780abe1dac0f6a039" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>draw_rectangle</name></member>
       <member refid="classsoftrender_1_1window__t_1af2db0ac4c66c549d1c45d0fabb82687b" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>draw_triangle</name></member>
       <member refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>from_coord2d_to_matrix</name></member>
       <member refid="classsoftrender_1_1window__t_1abc44f15fabc28d3c8f98c4bee966ee9f" prot="public" virt="non-virtual"><scope>softrender::window_t</scope><name>get_mouse_position</name></member>

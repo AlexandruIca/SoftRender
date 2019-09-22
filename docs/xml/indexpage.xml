@@ -52,6 +52,12 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.draw();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> To draw a rectangle: <programlisting filename=".cpp"><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesoftrender" kindref="compound">softrender</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">window.draw_rectangle({<sp/>20,<sp/>30<sp/>},<sp/>200,<sp/>300,<sp/>{<sp/>255,<sp/>255,<sp/>255<sp/>});</highlight></codeline>
+</programlisting> And to draw the most important primitive, the backbone of the library: <programlisting filename=".cpp"><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesoftrender" kindref="compound">softrender</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">window.draw_triangle({<sp/>200,<sp/>200<sp/>},<sp/>{<sp/>100,<sp/>100<sp/>},<sp/>{<sp/>600,<sp/>600<sp/>},<sp/>{<sp/>255,<sp/>255,<sp/>255<sp/>});</highlight></codeline>
 </programlisting></para>
 <para>You can also not specify a color for drawing if you don&apos;t want to, the default will be white: <programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="softrender_8hpp" kindref="compound">softrender.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
@@ -67,8 +73,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.draw();</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
-</programlisting></para>
-<para>You can also use a prederined color(see more in the &apos;namespace&apos; documentation): <programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="softrender_8hpp" kindref="compound">softrender.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+</programlisting> You can also use a prederined color(see more in the &apos;namespace&apos; documentation): <programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&quot;<ref refid="softrender_8hpp" kindref="compound">softrender.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
 <codeline><highlight class="normal">{</highlight></codeline>
