@@ -38,8 +38,8 @@ auto follow_mouse(rect_t& t_rect,
         return;
     }
 
-    t_rect.pos.x += velocity * elapsed * dx / distance;
-    t_rect.pos.y += velocity * elapsed * dy / distance;
+    t_rect.pos.x += static_cast<int>(velocity * elapsed * dx / distance);
+    t_rect.pos.y += static_cast<int>(velocity * elapsed * dy / distance);
 }
 
 auto main(int, char*[]) -> int
