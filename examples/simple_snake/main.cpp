@@ -11,13 +11,15 @@ namespace {
 
 constexpr int g_window_width = 800;
 constexpr int g_window_height = 800;
+constexpr int g_default_delay = 150; // milliseconds
+constexpr int g_small_delay = 50;    // milliseconds
 
 } // namespace
 
 namespace game_grid {
 
-constexpr int width = 10;
-constexpr int height = 10;
+constexpr int width = 20;
+constexpr int height = 20;
 
 } // namespace game_grid
 
@@ -50,7 +52,7 @@ struct game_state_t
     std::array<std::array<grid_cell_state, game_grid::height>, game_grid::width>
         grid;
     move_direction current_direction{ move_direction::up };
-    int move_delay{ 150 }; // milliseconds
+    int move_delay{ g_default_delay }; // milliseconds
     int score{ 0 };
 };
 
@@ -223,6 +225,59 @@ auto move_snake(game_state_t& t_state) noexcept -> bool
     }
 }
 
+auto handle_key_press(game_state_t& t_state,
+                      softrender::key_event_t const& t_ev) noexcept -> void
+{
+    using namespace softrender;
+
+    auto is_arrow = [&t_state](int const t_key) -> bool {
+        return t_key == key::vk_up || t_key == key::vk_down ||
+               t_key == key::vk_left || t_key == key::vk_right;
+    };
+
+    if(!is_arrow(t_ev.keyc)) {
+        return;
+    }
+
+    if(t_ev.released) {
+        t_state.move_delay = g_default_delay;
+        return;
+    }
+
+    if(t_ev.keyc == key::vk_up &&
+       t_state.current_direction != move_direction::down) {
+        t_state.current_direction = move_direction::up;
+
+        if(t_ev.repeat) {
+            t_state.move_delay = g_small_delay;
+        }
+    }
+    else if(t_ev.keyc == key::vk_down &&
+            t_state.current_direction != move_direction::up) {
+        t_state.current_direction = move_direction::down;
+
+        if(t_ev.repeat) {
+            t_state.move_delay = g_small_delay;
+        }
+    }
+    else if(t_ev.keyc == key::vk_left &&
+            t_state.current_direction != move_direction::right) {
+        t_state.current_direction = move_direction::left;
+
+        if(t_ev.repeat) {
+            t_state.move_delay = g_small_delay;
+        }
+    }
+    else if(t_ev.keyc == key::vk_right &&
+            t_state.current_direction != move_direction::left) {
+        t_state.current_direction = move_direction::right;
+
+        if(t_ev.repeat) {
+            t_state.move_delay = g_small_delay;
+        }
+    }
+}
+
 auto main(int, char*[]) -> int
 {
     using namespace softrender;
@@ -233,8 +288,12 @@ auto main(int, char*[]) -> int
 
     init_game(state);
 
-    auto start = now();
+    window.set_on_key_press_callback([&state](key_event_t const& t_ev) -> void {
+        handle_key_press(state, t_ev);
+    });
+
     microsecond_t elapsed{ 0 };
+    auto start = now();
 
     while(!window.closed() && running) {
         elapsed += get_elapsed_since(start);
