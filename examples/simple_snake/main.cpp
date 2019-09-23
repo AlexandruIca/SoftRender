@@ -2,6 +2,7 @@
 #include <array>
 #include <chrono>
 #include <deque>
+#include <iostream>
 #include <random>
 
 #include "softrender.hpp"
@@ -52,6 +53,25 @@ struct game_state_t
     int move_delay{ 150 }; // milliseconds
     int score{ 0 };
 };
+
+using microsecond_t =
+    decltype(std::chrono::duration_cast<std::chrono::microseconds>(
+                 std::chrono::seconds(1))
+                 .count());
+
+inline auto now()
+{
+    return std::chrono::high_resolution_clock::now();
+}
+
+inline auto get_elapsed_since(
+    std::chrono::time_point<std::chrono::high_resolution_clock>& t_time_point)
+    -> microsecond_t
+{
+    return std::chrono::duration_cast<std::chrono::microseconds>(
+               std::chrono::high_resolution_clock::now() - t_time_point)
+        .count();
+}
 
 auto generate_random_position(game_state_t& t_state) noexcept
     -> softrender::point_t
@@ -213,18 +233,12 @@ auto main(int, char*[]) -> int
 
     init_game(state);
 
-    using microsecond_t =
-        decltype(std::chrono::duration_cast<std::chrono::microseconds>(
-                     std::chrono::seconds(1))
-                     .count());
-    auto start = std::chrono::high_resolution_clock::now();
+    auto start = now();
     microsecond_t elapsed{ 0 };
 
     while(!window.closed() && running) {
-        elapsed += std::chrono::duration_cast<std::chrono::microseconds>(
-                       std::chrono::high_resolution_clock::now() - start)
-                       .count();
-        start = std::chrono::high_resolution_clock::now();
+        elapsed += get_elapsed_since(start);
+        start = now();
 
         while((elapsed / double{ 1000 }) >= state.move_delay) {
             running = move_snake(state);
@@ -234,6 +248,8 @@ auto main(int, char*[]) -> int
         draw_game_state(window, state);
         window.draw();
     }
+
+    std::cout << "Score: " << state.score << '!' << std::endl;
 
     return 0;
 }
