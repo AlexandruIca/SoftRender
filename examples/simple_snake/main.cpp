@@ -1,7 +1,8 @@
 #include <algorithm>
 #include <array>
+#include <chrono>
+#include <deque>
 #include <random>
-#include <vector>
 
 #include "softrender.hpp"
 
@@ -33,12 +34,23 @@ enum class grid_cell_state
     snake
 };
 
+enum class move_direction
+{
+    up = 0,
+    down,
+    left,
+    right
+};
+
 struct game_state_t
 {
     softrender::point_t fruit_position{ 0, 0 };
-    std::vector<softrender::point_t> snake_position;
+    std::deque<softrender::point_t> snake_position;
     std::array<std::array<grid_cell_state, game_grid::height>, game_grid::width>
         grid;
+    move_direction current_direction{ move_direction::up };
+    int move_delay{ 150 }; // milliseconds
+    int score{ 0 };
 };
 
 auto generate_random_position(game_state_t& t_state) noexcept
@@ -137,16 +149,88 @@ auto draw_game_state(softrender::window_t& t_window,
     }
 }
 
+auto move_snake(game_state_t& t_state) noexcept -> bool
+{
+    constexpr std::array<softrender::point_t, 4> move_snake = { {
+        { 0, -1 }, // up
+        { 0, 1 },  // down
+        { -1, 0 }, // left
+        { 1, 0 }   // right
+    } };
+
+    auto const [sheadx, sheady] = t_state.snake_position.front();
+    auto const nextx =
+        sheadx + move_snake[static_cast<int>(t_state.current_direction)].x;
+    auto const nexty =
+        sheady + move_snake[static_cast<int>(t_state.current_direction)].y;
+
+    if(nextx < 0 || nextx >= game_grid::width) {
+        return false;
+    }
+    if(nexty < 0 || nexty >= game_grid::height) {
+        return false;
+    }
+
+    auto const next = t_state.grid[nextx][nexty];
+
+    switch(next) {
+    case grid_cell_state::snake: {
+        return false;
+    }
+    case grid_cell_state::fruit: {
+        t_state.snake_position.push_front(softrender::point_t{ nextx, nexty });
+        t_state.grid[nextx][nexty] = grid_cell_state::snake;
+
+        ++t_state.score;
+
+        auto const [fruitx, fruity] = generate_random_position(t_state);
+        t_state.fruit_position = softrender::point_t{ fruitx, fruity };
+        t_state.grid[fruitx][fruity] = grid_cell_state::fruit;
+
+        return true;
+    }
+    default: {
+        t_state.snake_position.push_front(softrender::point_t{ nextx, nexty });
+        t_state.grid[nextx][nexty] = grid_cell_state::snake;
+
+        auto const [tailx, taily] = t_state.snake_position.back();
+
+        t_state.snake_position.pop_back();
+        t_state.grid[tailx][taily] = grid_cell_state::empty;
+
+        return true;
+    }
+    }
+}
+
 auto main(int, char*[]) -> int
 {
     using namespace softrender;
     window_t window{ g_window_width, g_window_height };
 
     game_state_t state;
+    bool running{ true };
 
     init_game(state);
 
-    while(!window.closed()) {
+    using microsecond_t =
+        decltype(std::chrono::duration_cast<std::chrono::microseconds>(
+                     std::chrono::seconds(1))
+                     .count());
+    auto start = std::chrono::high_resolution_clock::now();
+    microsecond_t elapsed{ 0 };
+
+    while(!window.closed() && running) {
+        elapsed += std::chrono::duration_cast<std::chrono::microseconds>(
+                       std::chrono::high_resolution_clock::now() - start)
+                       .count();
+        start = std::chrono::high_resolution_clock::now();
+
+        while((elapsed / double{ 1000 }) >= state.move_delay) {
+            running = move_snake(state);
+            elapsed -= state.move_delay * 1000;
+        }
+
         draw_game_state(window, state);
         window.draw();
     }
