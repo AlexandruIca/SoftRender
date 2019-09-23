@@ -120,7 +120,7 @@ auto draw_game_state(softrender::window_t& t_window,
                     color = softrender::blue;
                 }
 
-                auto rect = grid_to_screen_coords(x, y);
+                auto const rect = grid_to_screen_coords(x, y);
                 t_window.draw_rectangle(rect.pos, rect.w, rect.h, color);
 
                 break;
