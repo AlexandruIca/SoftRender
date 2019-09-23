@@ -35,6 +35,7 @@ jobs:
           cmake -DCMAKE_BUILD_TYPE=Debug \
                 -DSOFTRENDER_COVERAGE=ON \
                 -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DSOFTRENDER_MOCKING=ON \
                 -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
                 -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
@@ -72,6 +73,7 @@ jobs:
           export CXX=g++-9
           cmake -DCMAKE_BUILD_TYPE=Release \
                 -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
@@ -112,6 +114,7 @@ jobs:
           export CXX=clang++-9
           cmake -DCMAKE_BUILD_TYPE=Debug \
                 -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DSOFTRENDER_MOCKING=ON \
                 -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
                 -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
@@ -157,6 +160,7 @@ jobs:
           export CXX=clang++-9
           cmake -DCMAKE_BUILD_TYPE=Release \
                 -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
@@ -172,6 +176,7 @@ jobs:
           cmake -Ax64 ^
                 -DCMAKE_BUILD_TYPE=Debug ^
                 -DSOFTRENDER_BUILD_TESTS=ON ^
+                -DSOFTRENDER_BUILD_EXAMPLES=ON ^
                 -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
           cmake --build . --config Debug
         displayName: Build SoftRender and it's tests
@@ -187,6 +192,7 @@ jobs:
           cmake -Ax64 ^
                 -DCMAKE_BUILD_TYPE=Release ^
                 -DSOFTRENDER_BUILD_TESTS=ON ^
+                -DSOFTRENDER_BUILD_EXAMPLES=ON ^
                 -DCMAKE_TOOLCHAIN_FILE=%VCPKG_INSTALLATION_ROOT%\scripts\buildsystems\vcpkg.cmake ..
           cmake --build . --config Release
         displayName: Build SoftRender and it's tests
@@ -222,7 +228,7 @@ jobs:
           set -e
           mkdir build && cd build/
           cmake -DCMAKE_BUILD_TYPE=Debug \
-                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DUSE_VCPKG_ON_MACOS=ON \
                 -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Debug
@@ -246,6 +252,7 @@ jobs:
           mkdir build && cd build/
           cmake -DCMAKE_BUILD_TYPE=Release \
                 -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
                 -DUSE_VCPKG_ON_MACOS=ON \
                 -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake ..
           cmake --build . --config Release
