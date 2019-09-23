@@ -1,5 +1,7 @@
 option(NOT_USING_TRAVIS "Travis doesn't like -Werror" ON)
 
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
 set(SOFTRENDER_SRC_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/softrender.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/wavefront_reader.cpp
