@@ -10,8 +10,8 @@ for tests_dir in tests/CMakeFiles/*.dir; do
     popd
 done
 
-for tests_basic_wire_render_dir in tests/basic_wire_render/CMakeFiles/*.dir; do
-    pushd $tests_basic_wire_render_dir
+for subdirs in tests/*/CMakeFiles/*.dir; do
+    pushd $subdirs
     gcov-9 *.gcno
     popd
 done
