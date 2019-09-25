@@ -88,7 +88,7 @@ int main()
     }
 }
 ``` 
-You can also use a prederined color(see more in the 'namespace' documentation):
+You can also use a predefined color(see more in the 'namespace' documentation):
 ```cpp
 #include "softrender.hpp"
 
