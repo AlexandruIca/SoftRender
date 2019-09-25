@@ -10,17 +10,25 @@
 /// To get started using the library you first have to download it for your
 /// platform(
 <<<<<<< HEAD
-/// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/v0.2/SoftRender-0.2-Darwin.tar.gz
+<<<<<<< HEAD
+/// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.2-Darwin.tar.gz
 /// ),
-/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/v0.2/SoftRender-0.2-win64.zip
+/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.2-win64.zip
 /// ), or
-/// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/v0.2/SoftRender-0.2-Linux.tar.gz
+/// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.2-Linux.tar.gz
 =======
 /// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.2-Darwin.tar.gz
+=======
+/// [MacOS](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.3-Darwin.tar.gz
+>>>>>>> development
 /// ),
-/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.2-win64.zip
+/// [Windows](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.3-win64.zip
 /// ), or
+<<<<<<< HEAD
 /// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.2-Linux.tar.gz
+>>>>>>> development
+=======
+/// [Linux](https://github.com/AlexandruIca/SoftRender/releases/download/nightly/SoftRender-0.3-Linux.tar.gz
 >>>>>>> development
 /// )).
 /// After that you have to add the \p include folder to your compiler's path and

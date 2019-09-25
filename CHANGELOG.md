@@ -1,15 +1,12 @@
 ## API changes
 
-* Now the library can draw triangles.
-* Added function to get mouse position.
-* Added possibility to provide a callback for handling key and mouse events.
+* Now the library can draw rectangles.
 
-## Tests
+## Examples
 
-* Added test that draws a wavefront .obj model with lighting.
-* Added tests for event handling.
+* Added an examples/ directory to show the library in actual use.
 
 ## Next
 
-Make an examples/ directory that utilises the library to create various
-applications, most likely small games.
+* Focus on improving the renderer/adding thing to it, learn new stuff
+* Add more examples

@@ -325,12 +325,7 @@ auto window_t::initialize_sdl() -> void
 auto window_t::construct_canvas() -> void
 {
     m_canvas.resize(m_width * m_height);
-
-    for(int i = 0; i < m_height; ++i) {
-        for(int j = 0; j < m_width; ++j) {
-            this->operator()(i, j) = pixel_t{};
-        }
-    }
+    std::fill(m_canvas.begin(), m_canvas.end(), pixel_t{});
 }
 
 window_t::window_t()
@@ -374,6 +369,7 @@ auto window_t::draw() -> void
                m_running,
                m_key_callback,
                m_mouse_callback);
+    this->construct_canvas();
 }
 
 auto window_t::draw_point(int const t_i, int const t_j, pixel_t const& t_pixel)
@@ -465,6 +461,35 @@ auto window_t::draw_triangle(vec2i const& t_a,
                 continue;
             }
             this->draw_point(point_t{ point.x, point.y }, t_pixel);
+        }
+    }
+}
+
+auto window_t::draw_rectangle(point_t const& t_pos,
+                              int const t_width,
+                              int const t_height,
+                              pixel_t const& t_pixel) -> void
+{
+    if(t_pos.x > this->width() - 1) {
+        return;
+    }
+    if(t_pos.y > this->height() - 1) {
+        return;
+    }
+    if(t_pos.x + t_width < 0) {
+        return;
+    }
+    if(t_pos.y + t_height < 0) {
+        return;
+    }
+    int const startx = std::max(0, t_pos.x);
+    int const starty = std::max(0, t_pos.y);
+    int const endx = std::min(this->width() - 1, t_pos.x + t_width);
+    int const endy = std::min(this->height() - 1, t_pos.y + t_height);
+
+    for(int x = startx; x <= endx; ++x) {
+        for(int y = starty; y <= endy; ++y) {
+            m_canvas[this->from_coord2d_to_matrix({ x, y })] = t_pixel;
         }
     }
 }

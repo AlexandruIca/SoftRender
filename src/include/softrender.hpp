@@ -233,6 +233,15 @@ public:
                        pixel_t const& t_pixel = pixel_t{}) -> void;
 
     ///
+    /// \brief Draws a rectangle starting at (\p t_pos.x, \p t_pos.y) with
+    ///        width=\p t_width and height=\p t_height.
+    ///
+    auto draw_rectangle(point_t const& t_pos,
+                        int const t_width,
+                        int const t_height,
+                        pixel_t const& t_pixel = pixel_t{}) -> void;
+
+    ///
     /// \brief Returns true if the window will close.
     ///
     /// \ingroup unchecked_release

@@ -5,7 +5,7 @@ if(APPLE AND POLICY CMP0004)
   cmake_policy(SET CMP0004 OLD)
 endif()
 
-project(SoftRender LANGUAGES CXX VERSION 0.2)
+project(SoftRender LANGUAGES CXX VERSION 0.3)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 include(SetCXXStandard)
@@ -34,6 +34,13 @@ option(SOFTRENDER_BUILD_TESTS "Build all the tests that come with the library"
 
 if(${SOFTRENDER_BUILD_TESTS})
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tests/)
+endif()
+
+option(SOFTRENDER_BUILD_EXAMPLES "Build the examples that come with the library"
+       OFF)
+
+if(${SOFTRENDER_BUILD_EXAMPLES})
+  add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/examples/)
 endif()
 
 option(SOFTRENDER_BUILD_DOCS

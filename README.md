@@ -11,6 +11,8 @@ renderer to learn more about graphics programming.
 You can check the documentation [here](https://alexandruica.github.io/SoftRender/)
 though you won't see too much right now since the project is very young.
 
+Check out the [examples](examples/) directory to see the library in use.
+
 # Building
 
 ## Windows & GNU/Linux

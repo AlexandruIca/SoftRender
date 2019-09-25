@@ -206,6 +206,7 @@
     <member refid="group__unchecked__release_1gaae8983a3ab7afde5a377b9678792609e" kind="function"><name>draw_point</name></member>
     <member refid="classsoftrender_1_1window__t_1abddb4a5d68408821b74b3e82224e1519" kind="function"><name>draw_line</name></member>
     <member refid="classsoftrender_1_1window__t_1af2db0ac4c66c549d1c45d0fabb82687b" kind="function"><name>draw_triangle</name></member>
+    <member refid="classsoftrender_1_1window__t_1a167b8035b5acbfd780abe1dac0f6a039" kind="function"><name>draw_rectangle</name></member>
     <member refid="group__unchecked__release_1ga10483a01c01a3ab63b9fbc78ddb05f60" kind="function"><name>closed</name></member>
     <member refid="group__unchecked__release_1gaa689741a240fbc6a257b63ed24350dcc" kind="function"><name>operator()</name></member>
     <member refid="group__unchecked__release_1ga84f3a1118e6eeb9b4aaff801ccc8874f" kind="function"><name>operator()</name></member>

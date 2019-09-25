@@ -57,6 +57,18 @@ int main()
     }
 }
 ```
+To draw a rectangle:
+```cpp
+using namespace softrender;
+
+window.draw_rectangle({ 20, 30 }, 200, 300, { 255, 255, 255 });
+```
+And to draw the most important primitive, the backbone of the library:
+```cpp
+using namespace softrender;
+
+window.draw_triangle({ 200, 200 }, { 100, 100 }, { 600, 600 }, { 255, 255, 255 });
+```
 
 You can also not specify a color for drawing if you don't want to, the default
 will be white:
@@ -75,8 +87,7 @@ int main()
         window.draw();
     }
 }
-```
-
+``` 
 You can also use a prederined color(see more in the 'namespace' documentation):
 ```cpp
 #include "softrender.hpp"
