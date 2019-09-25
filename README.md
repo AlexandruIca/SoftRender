@@ -27,6 +27,7 @@ Then use CMake to build the library(choose what you want to turn ON/OFF):
 $ mkdir build && cd build
 
 $ cmake -DSOFTRENDER_BUILD_TESTS=ON \
+        -DSOFTRENDER_BUILD_EXAMPLES=ON \
         -DSOFTRENDER_BUILD_DOCS=OFF \
         -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 
@@ -42,6 +43,7 @@ $ brew install sdl2
 $ mkdir build && cd build
 
 $ cmake -DSOFTRENDER_BUILD_TESTS=ON \
+        -DSOFTRENDER_BUILD_EXAMPLES=ON \
         -DSOFTRENDER_BUILD_DOCS=OFF ..
 
 $ cmake --build .
