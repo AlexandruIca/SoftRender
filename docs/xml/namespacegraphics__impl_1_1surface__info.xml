@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="namespacegraphics__impl_1_1surface__info" kind="namespace" language="C++">
     <compoundname>graphics_impl::surface_info</compoundname>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a1a3307198e0347dffb6a28d95507943b" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a1a3307198e0347dffb6a28d95507943b" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
         <definition>constexpr Uint32 graphics_impl::surface_info::rmask</definition>
         <argsstring></argsstring>
@@ -15,9 +15,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="91" column="18" bodyfile="src/softrender.cpp" bodystart="91" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="91" column="1" bodyfile="src/softrender.cpp" bodystart="91" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a2ae79467b272af4d0066f9b1ae0751bb" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a2ae79467b272af4d0066f9b1ae0751bb" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
         <definition>constexpr Uint32 graphics_impl::surface_info::gmask</definition>
         <argsstring></argsstring>
@@ -29,9 +29,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="92" column="18" bodyfile="src/softrender.cpp" bodystart="92" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="92" column="1" bodyfile="src/softrender.cpp" bodystart="92" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a930bfc5f6df08c71161b9501af9bfb0e" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1a930bfc5f6df08c71161b9501af9bfb0e" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
         <definition>constexpr Uint32 graphics_impl::surface_info::bmask</definition>
         <argsstring></argsstring>
@@ -43,9 +43,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="93" column="18" bodyfile="src/softrender.cpp" bodystart="93" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="93" column="1" bodyfile="src/softrender.cpp" bodystart="93" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" prot="public" static="no" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="namespacegraphics__impl_1_1surface__info_1aa13ffb0b3a2af610dbe22af53f52d2ea" prot="public" static="no" mutable="no">
         <type>constexpr Uint32</type>
         <definition>constexpr Uint32 graphics_impl::surface_info::amask</definition>
         <argsstring></argsstring>
@@ -57,13 +57,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/softrender.cpp" line="94" column="18" bodyfile="src/softrender.cpp" bodystart="94" bodyend="-1"/>
+        <location file="src/softrender.cpp" line="94" column="1" bodyfile="src/softrender.cpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/softrender.cpp" line="88" column="22"/>
+    <location file="src/softrender.cpp" line="88" column="1"/>
   </compounddef>
 </doxygen>

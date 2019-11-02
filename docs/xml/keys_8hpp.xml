@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="keys_8hpp" kind="file" language="C++">
     <compoundname>keys.hpp</compoundname>
     <includedby refid="keys_8cpp" local="yes">src/keys.cpp</includedby>
     <includedby refid="softrender_8hpp" local="yes">src/include/softrender.hpp</includedby>
     <invincdepgraph>
-      <node id="2">
-        <label>src/keys.cpp</label>
-        <link refid="keys_8cpp"/>
+      <node id="5">
+        <label>src/include/keys.hpp</label>
+        <link refid="keys_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="4">
+      <node id="7">
+        <label>src/include/softrender.hpp</label>
+        <link refid="softrender_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>src/softrender.cpp</label>
         <link refid="softrender_8cpp"/>
       </node>
-      <node id="3">
-        <label>src/include/softrender.hpp</label>
-        <link refid="softrender_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>src/include/keys.hpp</label>
-        <link refid="keys_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
+      <node id="6">
+        <label>src/keys.cpp</label>
+        <link refid="keys_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structsoftrender_1_1key" prot="public">softrender::key</innerclass>

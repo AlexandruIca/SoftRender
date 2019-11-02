@@ -5,3 +5,5 @@ compile_commands.json
 .ccls-cache
 
 m.math.cache
+
+src/include/docs.hpp
