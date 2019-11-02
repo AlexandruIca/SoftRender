@@ -5,7 +5,10 @@ if(APPLE AND POLICY CMP0004)
   cmake_policy(SET CMP0004 OLD)
 endif()
 
-project(SoftRender LANGUAGES CXX VERSION 0.4)
+project(
+  SoftRender
+  LANGUAGES CXX
+  VERSION 0.4)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 include(SetCXXStandard)
@@ -36,8 +39,8 @@ if(${SOFTRENDER_BUILD_TESTS})
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tests/)
 endif()
 
-option(SOFTRENDER_BUILD_EXAMPLES "Build the examples that come with the library"
-       OFF)
+option(SOFTRENDER_BUILD_EXAMPLES
+       "Build the examples that come with the library" OFF)
 
 if(${SOFTRENDER_BUILD_EXAMPLES})
   add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/examples/)
@@ -50,15 +53,12 @@ if(${SOFTRENDER_BUILD_DOCS})
   find_package(Doxygen)
 
   if(DOXYGEN_FOUND)
-    add_custom_target(documentation ALL
-                      COMMAND ${CMAKE_COMMAND}
-                              -E
-                              echo
-                              "Building documentation..."
-                      COMMAND ${DOXYGEN_EXECUTABLE}
-                              ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile
-                      WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-                      VERBATIM)
+    add_custom_target(
+      documentation ALL
+      COMMAND ${CMAKE_COMMAND} -E echo "Building documentation..."
+      COMMAND ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile
+      WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+      VERBATIM)
   else()
     message("You need doxygen to build the documentation!")
   endif()
@@ -70,9 +70,7 @@ option(SOFTRENDER_BUILD_DOCS_MCSS
 if(${SOFTRENDER_BUILD_DOCS_MCSS})
   add_custom_target(
     documentation_mcss ALL
-    COMMAND ${CMAKE_COMMAND}
-            -E
-            echo
+    COMMAND ${CMAKE_COMMAND} -E echo
             "Building documentation with doxygen-mcss..."
     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/../m.css/documentation/doxygen.py
             ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile-mcss
