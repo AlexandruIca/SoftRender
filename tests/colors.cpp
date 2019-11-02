@@ -6,12 +6,12 @@ auto main(int, char*[]) -> int
 {
     using namespace softrender;
 
-    std::array color = { colors::amber,  colors::black,  colors::blue,
-                         colors::brown,  colors::cyan,   colors::green,
-                         colors::grey,   colors::indigo, colors::lime,
-                         colors::orange, colors::pink,   colors::purple,
-                         colors::red,    colors::teal,   colors::white,
-                         colors::yellow };
+    std::array<pixel_t, 16> color = {
+        colors::amber, colors::black,  colors::blue,  colors::brown,
+        colors::cyan,  colors::green,  colors::grey,  colors::indigo,
+        colors::lime,  colors::orange, colors::pink,  colors::purple,
+        colors::red,   colors::teal,   colors::white, colors::yellow
+    };
 
     window_t window{ 1280, 720 };
 
