@@ -212,7 +212,7 @@ jobs:
             assetUploadMode: 'replace'
     - job: MacOS_Debug
       pool:
-          vmImage: 'macOS-latest'
+          vmImage: 'macOS-10.13'
       steps:
       - script: |
           set -e
@@ -235,7 +235,7 @@ jobs:
         displayName: Build SoftRender and it's tests
     - job: MacOS_Release
       pool:
-          vmImage: 'macOS-latest'
+          vmImage: 'macOS-10.13'
       steps:
       - script: |
           set -e
