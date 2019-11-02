@@ -46,7 +46,10 @@
         <h1>
           Download &amp; Setup
         </h1>
-<p>To get started using the library you first have to download it for your platform(</p>
+<p>To get started using the library you first have to download it for your platform( <a href="https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.3-Darwin.tar.gz">MacOS</a>, <a href="https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.3-win64.zip">Windows</a>, or <a href="https://github.com/AlexandruIca/SoftRender/releases/download/v0.3/SoftRender-0.3-Linux.tar.gz">Linux</a>). After that you have to add the <code>include</code> folder to your compiler&#x27;s path and the <code>lib</code> folder to your compiler&#x27;s link path and link with either the static or shared version, whatever you choose. If you use CMake:</p><pre class="m-code"><span class="n">link_directories</span><span class="p">(</span> <span class="err">$</span><span class="p">{</span><span class="n">PATH_TO_SOFTRENDER</span><span class="p">}</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span> <span class="p">)</span>
+<span class="n">add_executable</span><span class="p">(</span> <span class="n">my_exec</span> <span class="err">$</span><span class="p">{</span><span class="n">YOUR_SOURCES</span><span class="p">}</span> <span class="p">)</span>
+<span class="n">target_include_directories</span><span class="p">(</span> <span class="n">my_exec</span> <span class="n">PRIVATE</span> <span class="err">$</span><span class="p">{</span><span class="n">PATH_TO_SOFTRENDER</span><span class="p">}</span><span class="o">/</span><span class="n">include</span><span class="o">/</span> <span class="p">)</span>
+<span class="n">target_link_libraries</span><span class="p">(</span> <span class="n">my_exec</span> <span class="n">PRIVATE</span> <span class="n">SoftRender</span> <span class="p">)</span> <span class="err">#</span> <span class="n">Or</span> <span class="n">SoftRender</span><span class="o">-</span><span class="n">shared</span></pre>
       </div>
     </div>
   </div>
