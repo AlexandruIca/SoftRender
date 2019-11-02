@@ -5,19 +5,19 @@
     <includes local="yes">SDL.h</includes>
     <includes refid="keys_8hpp" local="yes">keys.hpp</includes>
     <incdepgraph>
-      <node id="40">
+      <node id="38">
         <label>SDL.h</label>
       </node>
-      <node id="41">
+      <node id="39">
         <label>keys.hpp</label>
         <link refid="keys_8hpp"/>
       </node>
-      <node id="39">
+      <node id="37">
         <label>src/keys.cpp</label>
         <link refid="keys_8cpp"/>
-        <childnode refid="40" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
       </node>
     </incdepgraph>

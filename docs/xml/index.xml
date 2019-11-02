@@ -264,8 +264,6 @@
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="docs_8hpp" kind="file"><name>docs.hpp</name>
-  </compound>
   <compound refid="keys_8hpp" kind="file"><name>keys.hpp</name>
   </compound>
   <compound refid="mouse__button_8hpp" kind="file"><name>mouse_button.hpp</name>
@@ -298,8 +296,6 @@
     <member refid="group__canvas__manipulation_1ga5f2be04888560de972a8faf3257c361e" kind="function"><name>from_coord2d_to_matrix</name></member>
     <member refid="group__canvas__manipulation_1ga11392099f8c0ae8d55ffdd9f8306dbe4" kind="function"><name>canvas</name></member>
     <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
-  </compound>
-  <compound refid="download_and_setup" kind="page"><name>download_and_setup</name>
   </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
   </compound>

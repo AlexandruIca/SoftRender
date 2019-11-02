@@ -5,25 +5,25 @@
     <includedby refid="mouse__button_8cpp" local="yes">src/mouse_button.cpp</includedby>
     <includedby refid="softrender_8hpp" local="yes">src/include/softrender.hpp</includedby>
     <invincdepgraph>
-      <node id="10">
+      <node id="8">
         <label>src/include/mouse_button.hpp</label>
         <link refid="mouse__button_8hpp"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="10">
         <label>src/include/softrender.hpp</label>
         <link refid="softrender_8hpp"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="11">
         <label>src/softrender.cpp</label>
         <link refid="softrender_8cpp"/>
       </node>
-      <node id="11">
+      <node id="9">
         <label>src/mouse_button.cpp</label>
         <link refid="mouse__button_8cpp"/>
       </node>
