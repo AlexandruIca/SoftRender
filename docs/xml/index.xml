@@ -1,102 +1,102 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
   <compound refid="structsoftrender_1_1key" kind="struct"><name>softrender::key</name>
-    <member refid="structsoftrender_1_1key_1afba18acb98f0d4eb20fbe2f3a9e68a24" kind="variable"><name>vk_unknown</name></member>
-    <member refid="structsoftrender_1_1key_1a0e293cf1a341fb51c6b766950abec577" kind="variable"><name>vk_return</name></member>
-    <member refid="structsoftrender_1_1key_1a01dc95b5ba1439c755a39990efb39dee" kind="variable"><name>vk_escape</name></member>
-    <member refid="structsoftrender_1_1key_1afa9f73913999158ebf12b1054dc5f952" kind="variable"><name>vk_backspace</name></member>
-    <member refid="structsoftrender_1_1key_1a84d457fa6243bbca145c7ce7a577208b" kind="variable"><name>vk_tab</name></member>
-    <member refid="structsoftrender_1_1key_1afef764701b03aa3fa3fd36f362f635bb" kind="variable"><name>vk_space</name></member>
-    <member refid="structsoftrender_1_1key_1a10371df949c6f4bedf9594e82916e533" kind="variable"><name>vk_exclaim</name></member>
-    <member refid="structsoftrender_1_1key_1a67ddaf24ecea77e2b0046cb71fd14877" kind="variable"><name>vk_quotedbl</name></member>
-    <member refid="structsoftrender_1_1key_1a8f4a790e38ccbd104cbab3c6d279a54d" kind="variable"><name>vk_hash</name></member>
-    <member refid="structsoftrender_1_1key_1ab8e3b9c67f7d8304cc40d2cbe0f3c158" kind="variable"><name>vk_percent</name></member>
-    <member refid="structsoftrender_1_1key_1a70dfe1dac2b6815aaab75b379bc57e65" kind="variable"><name>vk_dollar</name></member>
-    <member refid="structsoftrender_1_1key_1a21d72968b003397790bc3c97dede191f" kind="variable"><name>vk_ampersand</name></member>
-    <member refid="structsoftrender_1_1key_1a68be66f71294d8a0f9fc5732fdf0868b" kind="variable"><name>vk_quote</name></member>
-    <member refid="structsoftrender_1_1key_1ad9c4e77e1219fbcd4efbd473a0557fc7" kind="variable"><name>vk_leftparen</name></member>
-    <member refid="structsoftrender_1_1key_1ad1be905f1a9bb8da557521dc0468d9fa" kind="variable"><name>vk_rightparen</name></member>
-    <member refid="structsoftrender_1_1key_1a9142cae1b38f63c30d834b28134a360f" kind="variable"><name>vk_asterisk</name></member>
-    <member refid="structsoftrender_1_1key_1a784ddb4b7bca234eb971a58486388011" kind="variable"><name>vk_plus</name></member>
-    <member refid="structsoftrender_1_1key_1afad03a9a08a92f51e83bb7a776cbb962" kind="variable"><name>vk_comma</name></member>
-    <member refid="structsoftrender_1_1key_1a2261bb3335ee1f3d26d3368a453a35ba" kind="variable"><name>vk_minus</name></member>
-    <member refid="structsoftrender_1_1key_1a186bd5124cfb8c58de2966e7b3884786" kind="variable"><name>vk_period</name></member>
-    <member refid="structsoftrender_1_1key_1a0ca12da1cea0bc7e9869bd5486759d55" kind="variable"><name>vk_slash</name></member>
-    <member refid="structsoftrender_1_1key_1a80242a967170681d833ae7ee761b1bb2" kind="variable"><name>vk_0</name></member>
-    <member refid="structsoftrender_1_1key_1a35542ca1bb1f880870966c580c0f5161" kind="variable"><name>vk_1</name></member>
-    <member refid="structsoftrender_1_1key_1a994a7fba693a39e397695f126464a15b" kind="variable"><name>vk_2</name></member>
-    <member refid="structsoftrender_1_1key_1a03bb99c02a81447f6cc6e582df56f885" kind="variable"><name>vk_3</name></member>
-    <member refid="structsoftrender_1_1key_1af81bcb656e92815a8d1bbde3a3316532" kind="variable"><name>vk_4</name></member>
-    <member refid="structsoftrender_1_1key_1ae8486c67e4e3c3464a58ae7c07e3655e" kind="variable"><name>vk_5</name></member>
-    <member refid="structsoftrender_1_1key_1a3c78b81e29f9ccb8a1d09cfbca469c94" kind="variable"><name>vk_6</name></member>
-    <member refid="structsoftrender_1_1key_1a7ccd2ae25ff3bbf3f36ad33fc1b6aebb" kind="variable"><name>vk_7</name></member>
-    <member refid="structsoftrender_1_1key_1a1dd68b3412fe7209e622792f8d499b3d" kind="variable"><name>vk_8</name></member>
-    <member refid="structsoftrender_1_1key_1af4d29bfb26cee18cafab1f13fc785f6e" kind="variable"><name>vk_9</name></member>
-    <member refid="structsoftrender_1_1key_1a3b53a510c5cdcb4de81945b7432e107e" kind="variable"><name>vk_colon</name></member>
-    <member refid="structsoftrender_1_1key_1a7a32e9ae361a1c6fdaf4331876d35c90" kind="variable"><name>vk_semicolon</name></member>
-    <member refid="structsoftrender_1_1key_1a8d4e40672b9b8da5883bef71a1f4e010" kind="variable"><name>vk_less</name></member>
-    <member refid="structsoftrender_1_1key_1a73e3767ab35a3c1404c34e846ed446c3" kind="variable"><name>vk_equals</name></member>
-    <member refid="structsoftrender_1_1key_1a0a417010ae1d1efe315d40e8189654b5" kind="variable"><name>vk_greater</name></member>
-    <member refid="structsoftrender_1_1key_1a499da21533fcf1de44045cd3dbf2104d" kind="variable"><name>vk_question</name></member>
-    <member refid="structsoftrender_1_1key_1a8e02bb287de4aeb6d80cb2c6f4bd996d" kind="variable"><name>vk_at</name></member>
-    <member refid="structsoftrender_1_1key_1aa5c74e30644eea164f6df469a5f379e9" kind="variable"><name>vk_leftbracket</name></member>
-    <member refid="structsoftrender_1_1key_1a3a85ed33ff9158b4384ca962a44a5ce6" kind="variable"><name>vk_backslash</name></member>
-    <member refid="structsoftrender_1_1key_1a30ad865eeaf878c717a80a80f2aa8ead" kind="variable"><name>vk_rightbracket</name></member>
-    <member refid="structsoftrender_1_1key_1a71617a43610fb19872f237d659f8c135" kind="variable"><name>vk_caret</name></member>
-    <member refid="structsoftrender_1_1key_1a43f1c17358414547a58f45cda0839c1f" kind="variable"><name>vk_underscore</name></member>
-    <member refid="structsoftrender_1_1key_1a8ea5fc08008b26f32fde59df0fb73040" kind="variable"><name>vk_backquote</name></member>
-    <member refid="structsoftrender_1_1key_1a9dc8ca8dcc207edb60be20493acee77e" kind="variable"><name>vk_a</name></member>
-    <member refid="structsoftrender_1_1key_1a79bbb1378492b129658ba75ea0734c79" kind="variable"><name>vk_b</name></member>
-    <member refid="structsoftrender_1_1key_1adcbc7f3d706106cca0dc6c82f27a5a0f" kind="variable"><name>vk_c</name></member>
-    <member refid="structsoftrender_1_1key_1ac9673025f8338056d5a1eae4be74d98a" kind="variable"><name>vk_d</name></member>
-    <member refid="structsoftrender_1_1key_1a07b7d1a86bd6de404f6300cd434db42c" kind="variable"><name>vk_e</name></member>
-    <member refid="structsoftrender_1_1key_1ab8d7d17874789abcce612c374456f075" kind="variable"><name>vk_f</name></member>
-    <member refid="structsoftrender_1_1key_1a8db1bbfe7c6ac590ac968009e895c570" kind="variable"><name>vk_g</name></member>
-    <member refid="structsoftrender_1_1key_1a488513e965cdf8fc70878156473183e0" kind="variable"><name>vk_h</name></member>
-    <member refid="structsoftrender_1_1key_1a002ec399305f782873e6c3ef3b7b724a" kind="variable"><name>vk_i</name></member>
-    <member refid="structsoftrender_1_1key_1a26989bb9f138c8500845cf221217a54d" kind="variable"><name>vk_j</name></member>
-    <member refid="structsoftrender_1_1key_1ad19037abf7b796444269da7569019985" kind="variable"><name>vk_k</name></member>
-    <member refid="structsoftrender_1_1key_1a08c7a9ca85bec54ddaccc3cf8bd7e183" kind="variable"><name>vk_l</name></member>
-    <member refid="structsoftrender_1_1key_1a6506a3fcdc2a14d813b141d634f3cf45" kind="variable"><name>vk_m</name></member>
-    <member refid="structsoftrender_1_1key_1a62c42ec4322dd9ca848532cb1e9b5043" kind="variable"><name>vk_n</name></member>
-    <member refid="structsoftrender_1_1key_1ae8bc9e86edd30b3c123943719c80628a" kind="variable"><name>vk_o</name></member>
-    <member refid="structsoftrender_1_1key_1a59db512bc8c02fb7bf2051c51c06f681" kind="variable"><name>vk_p</name></member>
-    <member refid="structsoftrender_1_1key_1a5b976d2147e0e5c054c918cd8f4447a6" kind="variable"><name>vk_q</name></member>
-    <member refid="structsoftrender_1_1key_1aad6484150c190060e218615455e87ebf" kind="variable"><name>vk_r</name></member>
-    <member refid="structsoftrender_1_1key_1a609bed6f259811da8ac4229ffbd19e3f" kind="variable"><name>vk_s</name></member>
-    <member refid="structsoftrender_1_1key_1a9f99a527e472878d6a8f173b8dcfd095" kind="variable"><name>vk_t</name></member>
-    <member refid="structsoftrender_1_1key_1ad908b000388bfd91e545c0b506a887ba" kind="variable"><name>vk_u</name></member>
-    <member refid="structsoftrender_1_1key_1a8623ad55d2368b1627e6509ff42b3c8d" kind="variable"><name>vk_v</name></member>
-    <member refid="structsoftrender_1_1key_1a36f80f739a9ba9cbd87efb90d026ea34" kind="variable"><name>vk_w</name></member>
-    <member refid="structsoftrender_1_1key_1a4e9ddbcf8ede3f0d67a9e652b1ae315d" kind="variable"><name>vk_x</name></member>
-    <member refid="structsoftrender_1_1key_1a4f2866ccdd359c4edc98e00034184c81" kind="variable"><name>vk_y</name></member>
-    <member refid="structsoftrender_1_1key_1a2bb62078842c15e16dc527dbba022035" kind="variable"><name>vk_z</name></member>
-    <member refid="structsoftrender_1_1key_1ac447cfa07b5c6bd044d573247dcdd7ad" kind="variable"><name>vk_capslock</name></member>
-    <member refid="structsoftrender_1_1key_1a4cfeb4d9ae8c0d3d387ce80e7bec8511" kind="variable"><name>vk_f1</name></member>
-    <member refid="structsoftrender_1_1key_1ab010d5b42734ba74f5b0951110de1d58" kind="variable"><name>vk_f2</name></member>
-    <member refid="structsoftrender_1_1key_1a3edf9decae9b81c24be84f4cb22d2c55" kind="variable"><name>vk_f3</name></member>
-    <member refid="structsoftrender_1_1key_1ab3e8ff950b1909ffd5fcc38d4a43fddc" kind="variable"><name>vk_f4</name></member>
-    <member refid="structsoftrender_1_1key_1a371e3f6c000c42c2b59fe19e751ab13e" kind="variable"><name>vk_f5</name></member>
-    <member refid="structsoftrender_1_1key_1ad7de440b857eb8e801f5b9dade60a0c6" kind="variable"><name>vk_f6</name></member>
-    <member refid="structsoftrender_1_1key_1a276da20f7a48859493d724bfd80fa339" kind="variable"><name>vk_f7</name></member>
-    <member refid="structsoftrender_1_1key_1a8df3aa16a78acdd8b0fe365391b6eea4" kind="variable"><name>vk_f8</name></member>
-    <member refid="structsoftrender_1_1key_1a066fa36e39b3fdca2ca6378fab43c149" kind="variable"><name>vk_f9</name></member>
-    <member refid="structsoftrender_1_1key_1a563e818721ce75ff775dca2b9cc5d4e2" kind="variable"><name>vk_f10</name></member>
-    <member refid="structsoftrender_1_1key_1a3be77eb3762c9f0c778c10b6e69157af" kind="variable"><name>vk_f11</name></member>
-    <member refid="structsoftrender_1_1key_1a0b11cf6dd3f4e1ba7f52127e760670a0" kind="variable"><name>vk_f12</name></member>
-    <member refid="structsoftrender_1_1key_1a9532ea1a5b845adb1426db389105b034" kind="variable"><name>vk_printscreen</name></member>
-    <member refid="structsoftrender_1_1key_1ae3cb9749a64d7ae353a2a8dd6359cb0d" kind="variable"><name>vk_scrolllock</name></member>
-    <member refid="structsoftrender_1_1key_1a29ed497f2a8648c825b42ea86227c59d" kind="variable"><name>vk_pause</name></member>
-    <member refid="structsoftrender_1_1key_1a9d856b7a9a71f4dd52d4dadd563dce0c" kind="variable"><name>vk_insert</name></member>
-    <member refid="structsoftrender_1_1key_1af7631c7b3cf6f38ee2fe6e30886460d2" kind="variable"><name>vk_home</name></member>
-    <member refid="structsoftrender_1_1key_1a5cb3f572031802347bc7dbd54b4ba4fc" kind="variable"><name>vk_pageup</name></member>
-    <member refid="structsoftrender_1_1key_1a40bd7359115692454867910f7cf8fe16" kind="variable"><name>vk_delete</name></member>
-    <member refid="structsoftrender_1_1key_1a85ebe6ead94ded80cc1da27222e001ed" kind="variable"><name>vk_end</name></member>
-    <member refid="structsoftrender_1_1key_1a0bf381f8e0ab52b96b4a2d85fb5ab868" kind="variable"><name>vk_pagedown</name></member>
-    <member refid="structsoftrender_1_1key_1aa5e86b1730ad3dae3505d98afe987f78" kind="variable"><name>vk_right</name></member>
-    <member refid="structsoftrender_1_1key_1af51f7ed17efccdca2416d7669c46924d" kind="variable"><name>vk_left</name></member>
-    <member refid="structsoftrender_1_1key_1a756b8b2401d931f408e895b58e663791" kind="variable"><name>vk_down</name></member>
-    <member refid="structsoftrender_1_1key_1ab085aab5970648444aad7960efd13a1b" kind="variable"><name>vk_up</name></member>
+    <member refid="structsoftrender_1_1key_1a6e11a05ba1e6584f3a9f108859ca4cdf" kind="variable"><name>vk_unknown</name></member>
+    <member refid="structsoftrender_1_1key_1a368e466424eb199d485e4127b6437bd6" kind="variable"><name>vk_return</name></member>
+    <member refid="structsoftrender_1_1key_1a3385e3467d97079353fc65131f864856" kind="variable"><name>vk_escape</name></member>
+    <member refid="structsoftrender_1_1key_1a78fd7e6fd4a5bc4415dfb84c461f0816" kind="variable"><name>vk_backspace</name></member>
+    <member refid="structsoftrender_1_1key_1a63af7b2de9ed40805d716b9d4ef8a54e" kind="variable"><name>vk_tab</name></member>
+    <member refid="structsoftrender_1_1key_1aa901a8ca001d6be769ddad4d0d3d9c79" kind="variable"><name>vk_space</name></member>
+    <member refid="structsoftrender_1_1key_1a9694b2a10ffc5cea4d19f8d065cc4533" kind="variable"><name>vk_exclaim</name></member>
+    <member refid="structsoftrender_1_1key_1a57f8eee79a3dde60e9723c27a1f3a16f" kind="variable"><name>vk_quotedbl</name></member>
+    <member refid="structsoftrender_1_1key_1abcc940ffccc58d5d90a61178a9ce52c3" kind="variable"><name>vk_hash</name></member>
+    <member refid="structsoftrender_1_1key_1a1d81645993860c69449d25f593df434b" kind="variable"><name>vk_percent</name></member>
+    <member refid="structsoftrender_1_1key_1a9cfaa3ec40ab63bb3cd4fb8649c637ec" kind="variable"><name>vk_dollar</name></member>
+    <member refid="structsoftrender_1_1key_1a7a9ad9bca3277a691092d7887ad3aab5" kind="variable"><name>vk_ampersand</name></member>
+    <member refid="structsoftrender_1_1key_1ad6d6fbd97e9e5b9eb97c4dd5092eb511" kind="variable"><name>vk_quote</name></member>
+    <member refid="structsoftrender_1_1key_1ab45754a522d9835348301792834fbbd4" kind="variable"><name>vk_leftparen</name></member>
+    <member refid="structsoftrender_1_1key_1a90c70ad1849ca85c1425f660da52c2c0" kind="variable"><name>vk_rightparen</name></member>
+    <member refid="structsoftrender_1_1key_1a505da65f28d10545a1a50ae4661e42d3" kind="variable"><name>vk_asterisk</name></member>
+    <member refid="structsoftrender_1_1key_1a086742f8e52a2f01e4c7fcadae8e82aa" kind="variable"><name>vk_plus</name></member>
+    <member refid="structsoftrender_1_1key_1a0f3fbdeb7c2447c5c8aeeb6ba6e6bb0c" kind="variable"><name>vk_comma</name></member>
+    <member refid="structsoftrender_1_1key_1a2d2eafe948db7e131f974d8403bb0856" kind="variable"><name>vk_minus</name></member>
+    <member refid="structsoftrender_1_1key_1a60b713410c03aeaa8124565ec18b0af6" kind="variable"><name>vk_period</name></member>
+    <member refid="structsoftrender_1_1key_1a2df0b048346eb3e86387dc587da92fe7" kind="variable"><name>vk_slash</name></member>
+    <member refid="structsoftrender_1_1key_1a69427c2ded32768295dd1a67ce86b7a6" kind="variable"><name>vk_0</name></member>
+    <member refid="structsoftrender_1_1key_1a47356dba979d432194418de668adb3f6" kind="variable"><name>vk_1</name></member>
+    <member refid="structsoftrender_1_1key_1a25521705eef0fdce742caa9175265fcf" kind="variable"><name>vk_2</name></member>
+    <member refid="structsoftrender_1_1key_1a7bda27b47d82bb491e2e140420caa10b" kind="variable"><name>vk_3</name></member>
+    <member refid="structsoftrender_1_1key_1abdfd2637342f28130c8d1c0b48d15f57" kind="variable"><name>vk_4</name></member>
+    <member refid="structsoftrender_1_1key_1ae190453b5e8c974c355e9e829fe10bb9" kind="variable"><name>vk_5</name></member>
+    <member refid="structsoftrender_1_1key_1aadb0bc4cab7636c4c0e48c5cebceb27f" kind="variable"><name>vk_6</name></member>
+    <member refid="structsoftrender_1_1key_1ad317b048de43c767b580c9635ac43493" kind="variable"><name>vk_7</name></member>
+    <member refid="structsoftrender_1_1key_1ad36ee9ae34d47cef62aa46b7260548ab" kind="variable"><name>vk_8</name></member>
+    <member refid="structsoftrender_1_1key_1a384e51f7ff26a037d9f76db146960686" kind="variable"><name>vk_9</name></member>
+    <member refid="structsoftrender_1_1key_1a4d2fe666c50ad4bdfbc3181697b6fc32" kind="variable"><name>vk_colon</name></member>
+    <member refid="structsoftrender_1_1key_1aba59389408f49758afca5fa3420446bc" kind="variable"><name>vk_semicolon</name></member>
+    <member refid="structsoftrender_1_1key_1a2d3319dd3ab6fb83c91730f6b1f567cf" kind="variable"><name>vk_less</name></member>
+    <member refid="structsoftrender_1_1key_1a240c140d164de6db4dbf0072c0aaecd2" kind="variable"><name>vk_equals</name></member>
+    <member refid="structsoftrender_1_1key_1a10867b49aa277b4e6c4e6420e009fc38" kind="variable"><name>vk_greater</name></member>
+    <member refid="structsoftrender_1_1key_1a2d2ab11b8c2e27172bc521bb5999ee92" kind="variable"><name>vk_question</name></member>
+    <member refid="structsoftrender_1_1key_1a09dc37f9e3adee431cceccbaa0cec7b5" kind="variable"><name>vk_at</name></member>
+    <member refid="structsoftrender_1_1key_1a7469df359161b1c1719f921403656d8c" kind="variable"><name>vk_leftbracket</name></member>
+    <member refid="structsoftrender_1_1key_1a3e6fd2bdb92c51df69c9da553c509e1b" kind="variable"><name>vk_backslash</name></member>
+    <member refid="structsoftrender_1_1key_1a3db5e3bcea8b34fb62a16c3abff16703" kind="variable"><name>vk_rightbracket</name></member>
+    <member refid="structsoftrender_1_1key_1a6c5f0d6a6fc5d6f0ec937770706733b8" kind="variable"><name>vk_caret</name></member>
+    <member refid="structsoftrender_1_1key_1ad091f7a31bfa71325f1025352663dcc4" kind="variable"><name>vk_underscore</name></member>
+    <member refid="structsoftrender_1_1key_1ad08344a07886799838c1ceeef99d6887" kind="variable"><name>vk_backquote</name></member>
+    <member refid="structsoftrender_1_1key_1a4c1da0bb3469dee30265e37b59049e5d" kind="variable"><name>vk_a</name></member>
+    <member refid="structsoftrender_1_1key_1aeec7f86e46b0fbc7c8468ae0a6fad0e7" kind="variable"><name>vk_b</name></member>
+    <member refid="structsoftrender_1_1key_1ae51a243dc23ef50b745925fcd804ed0c" kind="variable"><name>vk_c</name></member>
+    <member refid="structsoftrender_1_1key_1a128c90cfdc5fcc13b4138f9c71c067dd" kind="variable"><name>vk_d</name></member>
+    <member refid="structsoftrender_1_1key_1a3b90aa19dee4e5ebfa236eccd18800af" kind="variable"><name>vk_e</name></member>
+    <member refid="structsoftrender_1_1key_1a3d6f9e1b9ed175147902570482c73fe5" kind="variable"><name>vk_f</name></member>
+    <member refid="structsoftrender_1_1key_1a27a6ab7db886bc9dfe87538da9394e98" kind="variable"><name>vk_g</name></member>
+    <member refid="structsoftrender_1_1key_1a025f5e6c9084d26fc7dc43abcab6cb8a" kind="variable"><name>vk_h</name></member>
+    <member refid="structsoftrender_1_1key_1a99d27a81d36ac2a22bd1f21fdaf92f8b" kind="variable"><name>vk_i</name></member>
+    <member refid="structsoftrender_1_1key_1aac01f16e8aa3c879e189fb7c883882f5" kind="variable"><name>vk_j</name></member>
+    <member refid="structsoftrender_1_1key_1a081883501a17205937f68ab76f98b323" kind="variable"><name>vk_k</name></member>
+    <member refid="structsoftrender_1_1key_1ab1957f022378117d095e68577d33929c" kind="variable"><name>vk_l</name></member>
+    <member refid="structsoftrender_1_1key_1a1693360a1aec7b4058d09c2470de655f" kind="variable"><name>vk_m</name></member>
+    <member refid="structsoftrender_1_1key_1a647f52de501c6e71270915c93b972811" kind="variable"><name>vk_n</name></member>
+    <member refid="structsoftrender_1_1key_1a9151ba720a38f17368a8b7f1a5a101a4" kind="variable"><name>vk_o</name></member>
+    <member refid="structsoftrender_1_1key_1aa80cea95f000177e0e4c9195539fa461" kind="variable"><name>vk_p</name></member>
+    <member refid="structsoftrender_1_1key_1a3674efa2897f965d8c032fe9c4618fb0" kind="variable"><name>vk_q</name></member>
+    <member refid="structsoftrender_1_1key_1a96a3f9d81ec24dd0c3c00753c4faef06" kind="variable"><name>vk_r</name></member>
+    <member refid="structsoftrender_1_1key_1ad2debabef6b914928c363db68e3b803e" kind="variable"><name>vk_s</name></member>
+    <member refid="structsoftrender_1_1key_1acb25e1407a4d8dda65cb269eb979c596" kind="variable"><name>vk_t</name></member>
+    <member refid="structsoftrender_1_1key_1a1805aba52f7896a9ca4ef596b65f4551" kind="variable"><name>vk_u</name></member>
+    <member refid="structsoftrender_1_1key_1aa5ae862316d2e02a1c59ab5e7d5b8319" kind="variable"><name>vk_v</name></member>
+    <member refid="structsoftrender_1_1key_1aa5ec483b3b6597d4a66956144e37b014" kind="variable"><name>vk_w</name></member>
+    <member refid="structsoftrender_1_1key_1ab193bdce6e97cf201c934658c973f15f" kind="variable"><name>vk_x</name></member>
+    <member refid="structsoftrender_1_1key_1a0f498f3d09b1d991842ccae5d7ec9ed2" kind="variable"><name>vk_y</name></member>
+    <member refid="structsoftrender_1_1key_1a541fae416b36e96b8c1691cf0da4f143" kind="variable"><name>vk_z</name></member>
+    <member refid="structsoftrender_1_1key_1aeea1cc138e058e18dc2bfd1a5176717b" kind="variable"><name>vk_capslock</name></member>
+    <member refid="structsoftrender_1_1key_1af9d6459538547fbd10adbcb74f998e42" kind="variable"><name>vk_f1</name></member>
+    <member refid="structsoftrender_1_1key_1a715c19d8ab2d0405b686867fdfe967c6" kind="variable"><name>vk_f2</name></member>
+    <member refid="structsoftrender_1_1key_1a76dd6c86be070d987d683d68ca65357d" kind="variable"><name>vk_f3</name></member>
+    <member refid="structsoftrender_1_1key_1a6d5332e094631c9be49f9ec826c0cad8" kind="variable"><name>vk_f4</name></member>
+    <member refid="structsoftrender_1_1key_1aa632bf0e0c6891ca7f6f3b5741ce45f0" kind="variable"><name>vk_f5</name></member>
+    <member refid="structsoftrender_1_1key_1ab2405594640e2d5e5b09f808c1055fb9" kind="variable"><name>vk_f6</name></member>
+    <member refid="structsoftrender_1_1key_1ade3383066160ec174518c68f473de773" kind="variable"><name>vk_f7</name></member>
+    <member refid="structsoftrender_1_1key_1ab007e346b68d9987974c0537f770edd6" kind="variable"><name>vk_f8</name></member>
+    <member refid="structsoftrender_1_1key_1a35a69f632f9c3964be500abdb25c540c" kind="variable"><name>vk_f9</name></member>
+    <member refid="structsoftrender_1_1key_1a061c396f848f3a2de7bd1de331e3d8f7" kind="variable"><name>vk_f10</name></member>
+    <member refid="structsoftrender_1_1key_1af61be4b2a8a549c12ec3fbd8d7a9c6f6" kind="variable"><name>vk_f11</name></member>
+    <member refid="structsoftrender_1_1key_1af243a8b5fae67496de37fb60a7475743" kind="variable"><name>vk_f12</name></member>
+    <member refid="structsoftrender_1_1key_1a704b6abc02a038031e1ce1969b5c9585" kind="variable"><name>vk_printscreen</name></member>
+    <member refid="structsoftrender_1_1key_1a73f1429afa897ec4d37e816d24ae1e6b" kind="variable"><name>vk_scrolllock</name></member>
+    <member refid="structsoftrender_1_1key_1a477cbe63d8f0b108516d5b5fc32b299c" kind="variable"><name>vk_pause</name></member>
+    <member refid="structsoftrender_1_1key_1a138687220d9c7d32e591aa40a23c607b" kind="variable"><name>vk_insert</name></member>
+    <member refid="structsoftrender_1_1key_1a0f70a6e802400ad042aae1373357c48f" kind="variable"><name>vk_home</name></member>
+    <member refid="structsoftrender_1_1key_1a76f7ea0d122a62ea6a8c3266b7f024d6" kind="variable"><name>vk_pageup</name></member>
+    <member refid="structsoftrender_1_1key_1ab79d8d0431e11cfda650b8f3e517a980" kind="variable"><name>vk_delete</name></member>
+    <member refid="structsoftrender_1_1key_1acd7294a09053eded8cb02b29cf9c2ff4" kind="variable"><name>vk_end</name></member>
+    <member refid="structsoftrender_1_1key_1a602c0eb8d9ca8e340a6df56df934e13f" kind="variable"><name>vk_pagedown</name></member>
+    <member refid="structsoftrender_1_1key_1a5a0fc2c182e7db10f8af3de192ab2e37" kind="variable"><name>vk_right</name></member>
+    <member refid="structsoftrender_1_1key_1aa0da700e663801c19f26fffb78e47f8e" kind="variable"><name>vk_left</name></member>
+    <member refid="structsoftrender_1_1key_1ae4c16cc33d05a3db1ecf4f7785eb93ba" kind="variable"><name>vk_down</name></member>
+    <member refid="structsoftrender_1_1key_1a1337901f8f784503aba2b0c0f63f9330" kind="variable"><name>vk_up</name></member>
   </compound>
   <compound refid="structsoftrender_1_1key__event__t" kind="struct"><name>softrender::key_event_t</name>
     <member refid="structsoftrender_1_1key__event__t_1a82218beaf12d87004f5eaabad866b63b" kind="variable"><name>keyc</name></member>
@@ -104,9 +104,9 @@
     <member refid="structsoftrender_1_1key__event__t_1a26128d37608791d48ffa3e56b3a05cf5" kind="variable"><name>released</name></member>
   </compound>
   <compound refid="structsoftrender_1_1mouse__button" kind="struct"><name>softrender::mouse_button</name>
-    <member refid="structsoftrender_1_1mouse__button_1aed7faa1174be5c7afc375ed6399fc9fa" kind="variable"><name>left</name></member>
-    <member refid="structsoftrender_1_1mouse__button_1a1dfb6771e5dd4d29856e6d1811d42f39" kind="variable"><name>right</name></member>
-    <member refid="structsoftrender_1_1mouse__button_1ae549e893682ba7a7c24e5f7597eb4c10" kind="variable"><name>middle</name></member>
+    <member refid="structsoftrender_1_1mouse__button_1a0c454e35e0a9358afacfbdd1e111697e" kind="variable"><name>left</name></member>
+    <member refid="structsoftrender_1_1mouse__button_1a65940c610551d7f8e310dd6666a031e7" kind="variable"><name>right</name></member>
+    <member refid="structsoftrender_1_1mouse__button_1aa8882daa283210737dbd9ab6f74caa36" kind="variable"><name>middle</name></member>
   </compound>
   <compound refid="structsoftrender_1_1mouse__event__t" kind="struct"><name>softrender::mouse_event_t</name>
     <member refid="structsoftrender_1_1mouse__event__t_1a1914cc544d5ebf05600432377bbfbc23" kind="variable"><name>position</name></member>
@@ -217,7 +217,7 @@
     <member refid="classsoftrender_1_1window__t_1a85ca28d29f0631c042b186a4a67f0edf" kind="function"><name>set_on_mouse_callback</name></member>
     <member refid="classsoftrender_1_1window__t_1abc44f15fabc28d3c8f98c4bee966ee9f" kind="function"><name>get_mouse_position</name></member>
   </compound>
-  <compound refid="namespace_0d2" kind="namespace"><name>@2</name>
+  <compound refid="namespace_0D2" kind="namespace"><name>@2</name>
   </compound>
   <compound refid="namespacegraphics__impl" kind="namespace"><name>graphics_impl</name>
     <member refid="namespacegraphics__impl_1a2221cb277b7503f71ec5b7f9d7a737b9" kind="function"><name>sdl_error</name></member>
@@ -240,43 +240,27 @@
     <member refid="namespacesoftrender_1a0f4ff27fc129e76f00dea07755b7099a" kind="typedef"><name>vec3i</name></member>
     <member refid="namespacesoftrender_1a9c075f6f6c3f4c5b00b7ba2def706d9a" kind="typedef"><name>vec3f</name></member>
     <member refid="namespacesoftrender_1a43d665a942e0b309fc1656eb173aa937" kind="typedef"><name>vec3d</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" kind="variable"><name>white</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" kind="variable"><name>red</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" kind="variable"><name>green</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" kind="variable"><name>blue</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" kind="variable"><name>cyan</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" kind="variable"><name>yellow</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" kind="variable"><name>lime</name></member>
-    <member refid="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" kind="variable"><name>teal</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" kind="variable"><name>purple</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" kind="variable"><name>pink</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" kind="variable"><name>indigo</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" kind="variable"><name>amber</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" kind="variable"><name>orange</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" kind="variable"><name>brown</name></member>
-    <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
     <member refid="namespacesoftrender_1a7cfd2dc2b780770d404c6fa17cfa4c08" kind="function"><name>error</name></member>
     <member refid="namespacesoftrender_1a92f0e1563392fa48b5b1ded3dd2511f7" kind="function"><name>swap</name></member>
     <member refid="namespacesoftrender_1a6cabb6b879b38a5518539aca7537b0ba" kind="function"><name>cross</name></member>
   </compound>
   <compound refid="namespacesoftrender_1_1colors" kind="namespace"><name>softrender::colors</name>
-    <member refid="namespacesoftrender_1_1colors_1a37d00fe2b5cd68551d3aa1494189b10f" kind="variable"><name>black</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a85f049c136a732d3243e145b48b20e6a" kind="variable"><name>white</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ad3e4c13b28602cefec19b9ec0a11348f" kind="variable"><name>red</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6b1cff41b1dc71b11847e318b846c3c6" kind="variable"><name>green</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6d2f298d0b4299a8d4dfe9d127289c93" kind="variable"><name>blue</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a2f3025d9f4c713c21d8369f1db3837ee" kind="variable"><name>cyan</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a47fca84942ef141f44ce3140ca08a4b1" kind="variable"><name>yellow</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a6ebde60731401ee19823f782882da25b" kind="variable"><name>lime</name></member>
-    <member refid="namespacesoftrender_1_1colors_1af9650f0bab5f8543502533c9c7517155" kind="variable"><name>teal</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a23de2a10748c9e308aac60758849fba0" kind="variable"><name>purple</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a91f152a7da05a3c961600fd78afa81e7" kind="variable"><name>pink</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ad65838b67e041925bce6d091e3dd21b3" kind="variable"><name>indigo</name></member>
-    <member refid="namespacesoftrender_1_1colors_1ae0d31bce1c2c6a12b055b75a4601e0d5" kind="variable"><name>amber</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a5cdc07a818f5cab5294dfeabe8606bd2" kind="variable"><name>orange</name></member>
-    <member refid="namespacesoftrender_1_1colors_1a5814b138ffc89ec65d75f0abd4a3c9aa" kind="variable"><name>brown</name></member>
-    <member refid="namespacesoftrender_1_1colors_1abf1cbd4e572f6ff7ca86946c647aa565" kind="variable"><name>grey</name></member>
+    <member refid="namespacesoftrender_1_1colors_1afab94f496015d118ead87ee74605259a" kind="variable"><name>black</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af5b2846dcc546807c6bacd38a1630d31" kind="variable"><name>white</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a5fb421730af4c2664a9af293fa9c0e4b" kind="variable"><name>red</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a7a19ec963dc1686ad9f2740cc342769f" kind="variable"><name>green</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a846ca7b3b602d95d4ae435eb42f6ddd2" kind="variable"><name>blue</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a7490530dc327e6a91109aa67d21afe00" kind="variable"><name>cyan</name></member>
+    <member refid="namespacesoftrender_1_1colors_1abe6b1de683d4f0906078166bc25a2367" kind="variable"><name>yellow</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a218c58e1a1d4cf54d424edf522d289eb" kind="variable"><name>lime</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a35e034557586c8ff57d826ba63e1b135" kind="variable"><name>teal</name></member>
+    <member refid="namespacesoftrender_1_1colors_1adb3b12eeb9dcf0fd8bb1d1775603b47f" kind="variable"><name>purple</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a0b5b7dc693f77f108fbc7c1be63da3b3" kind="variable"><name>pink</name></member>
+    <member refid="namespacesoftrender_1_1colors_1af9fa6e2185380a0191fb1c3f4d5090de" kind="variable"><name>indigo</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a9a94e94d0e6af1f8b27d9aa156e73975" kind="variable"><name>amber</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a81511496a5d68ede5fadb17335933a29" kind="variable"><name>orange</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a6f71390f48d91e820b2c0e5a2d8b4845" kind="variable"><name>brown</name></member>
+    <member refid="namespacesoftrender_1_1colors_1a0abce51fff6bbb2c4fc8eeccd58dd209" kind="variable"><name>grey</name></member>
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
@@ -316,8 +300,6 @@
     <member refid="group__canvas__manipulation_1ga7bd4008d77748aeb3ecf8715224b79b4" kind="function"><name>canvas</name></member>
   </compound>
   <compound refid="download_and_setup" kind="page"><name>download_and_setup</name>
-  </compound>
-  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
   </compound>
   <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>src/include</name>
   </compound>

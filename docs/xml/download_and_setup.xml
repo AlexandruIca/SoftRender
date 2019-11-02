@@ -1,12 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="download_and_setup" kind="page">
     <compoundname>download_and_setup</compoundname>
     <title>Download &amp; Setup</title>
-    <briefdescription>
-    </briefdescription>
     <detaileddescription>
-<para>To get started using the library you first have to download it for your platform( </para>
-    </detaileddescription>
+<para>To get started using the library you first have to download it for your platform( </para>    </detaileddescription>
   </compounddef>
 </doxygen>

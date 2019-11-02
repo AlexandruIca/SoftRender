@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structsoftrender_1_1vec2" kind="struct" language="C++" prot="public">
     <compoundname>softrender::vec2</compoundname>
     <includes local="no">vec.hpp</includes>
@@ -9,7 +9,7 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="structsoftrender_1_1vec2_1ab1ddb0ff29c296fc29187d7a63c0c0ac" prot="private" static="yes" constexpr="yes" mutable="no">
+      <memberdef kind="variable" id="structsoftrender_1_1vec2_1ab1ddb0ff29c296fc29187d7a63c0c0ac" prot="private" static="yes" mutable="no">
         <type>constexpr auto</type>
         <definition>constexpr auto softrender::vec2&lt; T &gt;::m_default_value</definition>
         <argsstring></argsstring>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="16" column="27" bodyfile="src/include/vec.hpp" bodystart="16" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="16" column="1" bodyfile="src/include/vec.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="19" column="7" bodyfile="src/include/vec.hpp" bodystart="19" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="19" column="1" bodyfile="src/include/vec.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1vec2_1a1943ea1df10a8d72a44128b09e225647" prot="public" static="no" mutable="no">
         <type>T</type>
@@ -51,11 +51,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="20" column="7" bodyfile="src/include/vec.hpp" bodystart="20" bodyend="-1"/>
+        <location file="src/include/vec.hpp" line="20" column="1" bodyfile="src/include/vec.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad1c4a3f2f351f672324f00d6d5425ff9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad1c4a3f2f351f672324f00d6d5425ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::vec2&lt; T &gt;::vec2</definition>
         <argsstring>() noexcept=default</argsstring>
@@ -66,9 +66,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="23" column="5"/>
+        <location file="src/include/vec.hpp" line="23" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad68f4ca290e10ce7de64f9ffeb857d31" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad68f4ca290e10ce7de64f9ffeb857d31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>softrender::vec2&lt; T &gt;::vec2</definition>
         <argsstring>(T const t_x, T const t_y) noexcept</argsstring>
@@ -87,9 +87,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="24" column="5" bodyfile="src/include/vec.hpp" bodystart="24" bodyend="28"/>
+        <location file="src/include/vec.hpp" line="24" column="1" bodyfile="src/include/vec.hpp" bodystart="24" bodyend="28"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1aba71a4cca32bb02c8b97efd7a5c14230" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1aba71a4cca32bb02c8b97efd7a5c14230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::vec2&lt; T &gt;::vec2</definition>
         <argsstring>(vec2 const &amp;) noexcept=default</argsstring>
@@ -103,9 +103,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="29" column="5"/>
+        <location file="src/include/vec.hpp" line="29" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1aa261d6fa7b423e62e49912d6995be51f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1aa261d6fa7b423e62e49912d6995be51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::vec2&lt; T &gt;::vec2</definition>
         <argsstring>(vec2 &amp;&amp;) noexcept=default</argsstring>
@@ -119,9 +119,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="30" column="5"/>
+        <location file="src/include/vec.hpp" line="30" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1ac7fbd388196b53895b5e8990335da7c2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1ac7fbd388196b53895b5e8990335da7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::vec2&lt; T &gt;::~vec2</definition>
         <argsstring>() noexcept=default</argsstring>
@@ -132,9 +132,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="31" column="5"/>
+        <location file="src/include/vec.hpp" line="31" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a2b81ec1fea6f672be69ccdc7e14402aa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a2b81ec1fea6f672be69ccdc7e14402aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator=</definition>
         <argsstring>(vec2 const &amp;) noexcept -&gt; vec2 &amp;=default</argsstring>
@@ -148,9 +148,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="33" column="10"/>
+        <location file="src/include/vec.hpp" line="33" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad86ffe0a246fad49269c9b83167e651a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1ad86ffe0a246fad49269c9b83167e651a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator=</definition>
         <argsstring>(vec2 &amp;&amp;) noexcept -&gt; vec2 &amp;=default</argsstring>
@@ -164,9 +164,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="34" column="10"/>
+        <location file="src/include/vec.hpp" line="34" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a1bd942a76b4fab4eb0f39e671d131928" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a1bd942a76b4fab4eb0f39e671d131928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator==</definition>
         <argsstring>(vec2 const &amp;t_other) noexcept -&gt; bool</argsstring>
@@ -181,9 +181,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="36" column="10" bodyfile="src/include/vec.hpp" bodystart="36" bodyend="39"/>
+        <location file="src/include/vec.hpp" line="36" column="1" bodyfile="src/include/vec.hpp" bodystart="36" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1abbf2d392ea6fdff67294d0b1b132af69" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1abbf2d392ea6fdff67294d0b1b132af69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator!=</definition>
         <argsstring>(vec2 const &amp;t_other) noexcept -&gt; bool</argsstring>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="40" column="10" bodyfile="src/include/vec.hpp" bodystart="40" bodyend="43"/>
+        <location file="src/include/vec.hpp" line="40" column="1" bodyfile="src/include/vec.hpp" bodystart="40" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec2_1a6084974f0a7a62584769cbf3df274532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="45" column="10" bodyfile="src/include/vec.hpp" bodystart="45" bodyend="60"/>
+        <location file="src/include/vec.hpp" line="45" column="1" bodyfile="src/include/vec.hpp" bodystart="45" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="structsoftrender_1_1vec2_1a041e15284411147337d01ad49b4eb5b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -232,9 +232,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="61" column="10" bodyfile="src/include/vec.hpp" bodystart="61" bodyend="76"/>
+        <location file="src/include/vec.hpp" line="61" column="1" bodyfile="src/include/vec.hpp" bodystart="61" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a2142556c569e3a8d05d76ca4edff33a4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a2142556c569e3a8d05d76ca4edff33a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator+</definition>
         <argsstring>(vec2 const &amp;t_other) const noexcept -&gt; vec2</argsstring>
@@ -249,9 +249,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="78" column="10" bodyfile="src/include/vec.hpp" bodystart="78" bodyend="81"/>
+        <location file="src/include/vec.hpp" line="78" column="1" bodyfile="src/include/vec.hpp" bodystart="78" bodyend="81"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a3a7a943bca0b410cd2febd4f9b1f3e18" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a3a7a943bca0b410cd2febd4f9b1f3e18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator-</definition>
         <argsstring>(vec2 const &amp;t_other) const noexcept -&gt; vec2</argsstring>
@@ -266,9 +266,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="82" column="10" bodyfile="src/include/vec.hpp" bodystart="82" bodyend="85"/>
+        <location file="src/include/vec.hpp" line="82" column="1" bodyfile="src/include/vec.hpp" bodystart="82" bodyend="85"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1aa7b2ad37a646ee477e4859c798c7127b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1aa7b2ad37a646ee477e4859c798c7127b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator*</definition>
         <argsstring>(int const t_factor) noexcept -&gt; vec2</argsstring>
@@ -283,9 +283,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="87" column="10" bodyfile="src/include/vec.hpp" bodystart="87" bodyend="91"/>
+        <location file="src/include/vec.hpp" line="87" column="1" bodyfile="src/include/vec.hpp" bodystart="87" bodyend="91"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a5d41e586ff0859ed52bc4ebe684c4cdc" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a5d41e586ff0859ed52bc4ebe684c4cdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator*</definition>
         <argsstring>(float const t_factor) noexcept -&gt; vec2</argsstring>
@@ -300,9 +300,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="92" column="10" bodyfile="src/include/vec.hpp" bodystart="92" bodyend="96"/>
+        <location file="src/include/vec.hpp" line="92" column="1" bodyfile="src/include/vec.hpp" bodystart="92" bodyend="96"/>
       </memberdef>
-      <memberdef kind="function" id="structsoftrender_1_1vec2_1a0e769656be6b21dbcc17468b03b9ae5e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="structsoftrender_1_1vec2_1a0e769656be6b21dbcc17468b03b9ae5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::vec2&lt; T &gt;::operator*</definition>
         <argsstring>(double const t_factor) noexcept -&gt; vec2</argsstring>
@@ -317,12 +317,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/vec.hpp" line="97" column="10" bodyfile="src/include/vec.hpp" bodystart="97" bodyend="101"/>
+        <location file="src/include/vec.hpp" line="97" column="1" bodyfile="src/include/vec.hpp" bodystart="97" bodyend="101"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Vector with coordinates <computeroutput>x</computeroutput> and <computeroutput>y</computeroutput>. </para>
-    </briefdescription>
+<para>Vector with coordinates <computeroutput>x</computeroutput> and <computeroutput>y</computeroutput>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="src/include/vec.hpp" line="14" column="1" bodyfile="src/include/vec.hpp" bodystart="13" bodyend="102"/>

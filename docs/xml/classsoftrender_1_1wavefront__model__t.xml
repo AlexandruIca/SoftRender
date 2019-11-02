@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classsoftrender_1_1wavefront__model__t" kind="class" language="C++" prot="public">
     <compoundname>softrender::wavefront_model_t</compoundname>
     <includes local="no">wavefront_reader.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="19" column="17" bodyfile="src/include/wavefront_reader.hpp" bodystart="19" bodyend="-1"/>
+        <location file="src/include/wavefront_reader.hpp" line="19" column="1" bodyfile="src/include/wavefront_reader.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classsoftrender_1_1wavefront__model__t_1addf81ca8fff08d886437ec64347e26de" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="20" column="17" bodyfile="src/include/wavefront_reader.hpp" bodystart="20" bodyend="-1"/>
+        <location file="src/include/wavefront_reader.hpp" line="20" column="1" bodyfile="src/include/wavefront_reader.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="22" column="10" bodyfile="src/wavefront_reader.cpp" bodystart="9" bodyend="59"/>
+        <location file="src/include/wavefront_reader.hpp" line="22" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="9" bodyend="59"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="25" column="5"/>
+        <location file="src/include/wavefront_reader.hpp" line="25" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1aefcd48050362972344222caa440f71b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -81,15 +81,13 @@
 <parametername>t_file_path</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A path to the &apos;.obj&apos; model. If the file is not found or the file is not valid a message will be shown on the screen. </para>
-</parameterdescription>
+<para>A path to the &apos;.obj&apos; model. If the file is not found or the file is not valid a message will be shown on the screen. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>
-        </detaileddescription>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="31" column="5" bodyfile="src/wavefront_reader.cpp" bodystart="61" bodyend="72"/>
+        <location file="src/include/wavefront_reader.hpp" line="31" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="61" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1ad6957d30e92ed0b99c5e8f4682f9cb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -105,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="32" column="5"/>
+        <location file="src/include/wavefront_reader.hpp" line="32" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a4b1d3b9edbec1b26ce0640e0d14b516b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -121,9 +119,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="33" column="5"/>
+        <location file="src/include/wavefront_reader.hpp" line="33" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1ae12818fb91f8360e515946a34369fb3f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1ae12818fb91f8360e515946a34369fb3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>softrender::wavefront_model_t::~wavefront_model_t</definition>
         <argsstring>() noexcept=default</argsstring>
@@ -134,9 +132,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="34" column="5"/>
+        <location file="src/include/wavefront_reader.hpp" line="34" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a08540ea6dcc56afe6a4c7d64c1aed312" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a08540ea6dcc56afe6a4c7d64c1aed312" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::wavefront_model_t::nverts</definition>
         <argsstring>() const noexcept -&gt; int</argsstring>
@@ -144,15 +142,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Number of vertices in the specified .obj file. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>Number of vertices in the specified .obj file. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="39" column="11" bodyfile="src/wavefront_reader.cpp" bodystart="74" bodyend="77"/>
+        <location file="src/include/wavefront_reader.hpp" line="39" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="74" bodyend="77"/>
       </memberdef>
-      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1ad9dbeb5164b7d3d4beaa2b70ac90707f" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1ad9dbeb5164b7d3d4beaa2b70ac90707f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::wavefront_model_t::nfaces</definition>
         <argsstring>() const noexcept -&gt; int</argsstring>
@@ -160,15 +156,13 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Number of faces. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>Number of faces. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="43" column="11" bodyfile="src/wavefront_reader.cpp" bodystart="79" bodyend="82"/>
+        <location file="src/include/wavefront_reader.hpp" line="43" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="79" bodyend="82"/>
       </memberdef>
-      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a13d2d73f8c1aa9c83e1b6bc93f3d75af" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a13d2d73f8c1aa9c83e1b6bc93f3d75af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto softrender::wavefront_model_t::vert</definition>
         <argsstring>(int const t_index) noexcept -&gt; vec3f</argsstring>
@@ -180,13 +174,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The vertex at index <computeroutput>t_index</computeroutput>. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>The vertex at index <computeroutput>t_index</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="47" column="11" bodyfile="src/wavefront_reader.cpp" bodystart="84" bodyend="87"/>
+        <location file="src/include/wavefront_reader.hpp" line="47" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classsoftrender_1_1wavefront__model__t_1a60f70045dfd1135435764bff55448778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -200,18 +192,15 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The indexes of the vertices that make the face at index <computeroutput>t_index</computeroutput>. </para>
-</simplesect>
-</para>
-        </detaileddescription>
+<para><simplesect kind="return"><para>The indexes of the vertices that make the face at index <computeroutput>t_index</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/wavefront_reader.hpp" line="52" column="11" bodyfile="src/wavefront_reader.cpp" bodystart="89" bodyend="92"/>
+        <location file="src/include/wavefront_reader.hpp" line="52" column="1" bodyfile="src/wavefront_reader.cpp" bodystart="89" bodyend="92"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Helper for reading wavefront.obj models. </para>
-    </briefdescription>
+<para>Helper for reading wavefront.obj models. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="src/include/wavefront_reader.hpp" line="17" column="1" bodyfile="src/include/wavefront_reader.hpp" bodystart="16" bodyend="53"/>

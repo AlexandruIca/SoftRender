@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structsoftrender_1_1mouse__event__t" kind="struct" language="C++" prot="public">
     <compoundname>softrender::mouse_event_t</compoundname>
     <includes local="no">softrender.hpp</includes>
@@ -11,13 +11,12 @@
         <name>position</name>
         <initializer>{ 0, 0 }</initializer>
         <briefdescription>
-<para>Position of the mouse relative to window. </para>
-        </briefdescription>
+<para>Position of the mouse relative to window. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="135" column="13" bodyfile="src/include/softrender.hpp" bodystart="135" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="135" column="1" bodyfile="src/include/softrender.hpp" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1mouse__event__t_1a03276f9e194d01c2ae07e98e3a7b0120" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,13 +27,12 @@
         0
     }</initializer>
         <briefdescription>
-<para>The button which has been pressed/release, one of <ref refid="structsoftrender_1_1mouse__button" kindref="compound">mouse_button</ref>. </para>
-        </briefdescription>
+<para>The button which has been pressed/release, one of <ref refid="structsoftrender_1_1mouse__button" kindref="compound">mouse_button</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="136" column="9" bodyfile="src/include/softrender.hpp" bodystart="136" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="136" column="1" bodyfile="src/include/softrender.hpp" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsoftrender_1_1mouse__event__t_1a2dd63377cb30895b7cf27b7b2bb77e41" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -45,29 +43,27 @@
         true
     }</initializer>
         <briefdescription>
-<para>True if the button is pressed, false if it&apos;s released. </para>
-        </briefdescription>
+<para>True if the button is pressed, false if it&apos;s released. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/softrender.hpp" line="139" column="10" bodyfile="src/include/softrender.hpp" bodystart="139" bodyend="-1"/>
+        <location file="src/include/softrender.hpp" line="139" column="1" bodyfile="src/include/softrender.hpp" bodystart="139" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Describes what a mouse event contains. </para>
-    </briefdescription>
+<para>Describes what a mouse event contains. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
+      <node id="8">
         <label>softrender::point_t</label>
         <link refid="structsoftrender_1_1point__t"/>
       </node>
-      <node id="1">
+      <node id="7">
         <label>softrender::mouse_event_t</label>
         <link refid="structsoftrender_1_1mouse__event__t"/>
-        <childnode refid="2" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
       </node>

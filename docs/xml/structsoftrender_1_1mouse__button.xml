@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structsoftrender_1_1mouse__button" kind="struct" language="C++" prot="public">
     <compoundname>softrender::mouse_button</compoundname>
     <includes local="no">mouse_button.hpp</includes>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1aed7faa1174be5c7afc375ed6399fc9fa" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int softrender::mouse_button::left</definition>
+      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1a0c454e35e0a9358afacfbdd1e111697e" prot="public" static="yes" mutable="no">
+        <type>int const</type>
+        <definition>int const softrender::mouse_button::left</definition>
         <argsstring></argsstring>
         <name>left</name>
         <initializer>= SDL_BUTTON_LEFT</initializer>
@@ -16,11 +16,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/mouse_button.hpp" line="19" column="22" bodyfile="src/include/mouse_button.hpp" bodystart="19" bodyend="-1"/>
+        <location file="src/include/mouse_button.hpp" line="19" column="1" bodyfile="src/include/mouse_button.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1a1dfb6771e5dd4d29856e6d1811d42f39" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int softrender::mouse_button::right</definition>
+      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1a65940c610551d7f8e310dd6666a031e7" prot="public" static="yes" mutable="no">
+        <type>int const</type>
+        <definition>int const softrender::mouse_button::right</definition>
         <argsstring></argsstring>
         <name>right</name>
         <initializer>= SDL_BUTTON_RIGHT</initializer>
@@ -30,11 +30,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/mouse_button.hpp" line="20" column="22" bodyfile="src/include/mouse_button.hpp" bodystart="20" bodyend="-1"/>
+        <location file="src/include/mouse_button.hpp" line="20" column="1" bodyfile="src/include/mouse_button.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1ae549e893682ba7a7c24e5f7597eb4c10" prot="public" static="yes" mutable="no">
-        <type>const int</type>
-        <definition>const int softrender::mouse_button::middle</definition>
+      <memberdef kind="variable" id="structsoftrender_1_1mouse__button_1aa8882daa283210737dbd9ab6f74caa36" prot="public" static="yes" mutable="no">
+        <type>int const</type>
+        <definition>int const softrender::mouse_button::middle</definition>
         <argsstring></argsstring>
         <name>middle</name>
         <initializer>= SDL_BUTTON_MIDDLE</initializer>
@@ -44,20 +44,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/include/mouse_button.hpp" line="21" column="22" bodyfile="src/include/mouse_button.hpp" bodystart="21" bodyend="-1"/>
+        <location file="src/include/mouse_button.hpp" line="21" column="1" bodyfile="src/include/mouse_button.hpp" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Buttons for which presses/releases can be handled. </para>
-    </briefdescription>
+<para>Buttons for which presses/releases can be handled. </para>    </briefdescription>
     <detaileddescription>
-<para>It&apos;s a struct containing only static members for the same reason <ref refid="structsoftrender_1_1key" kindref="compound">key</ref> is. </para>
-    </detaileddescription>
+<para>It&apos;s a struct containing only static members for the same reason <ref refid="structsoftrender_1_1key" kindref="compound">key</ref> is. </para>    </detaileddescription>
     <location file="src/include/mouse_button.hpp" line="18" column="1" bodyfile="src/include/mouse_button.hpp" bodystart="17" bodyend="22"/>
     <listofallmembers>
-      <member refid="structsoftrender_1_1mouse__button_1aed7faa1174be5c7afc375ed6399fc9fa" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>left</name></member>
-      <member refid="structsoftrender_1_1mouse__button_1ae549e893682ba7a7c24e5f7597eb4c10" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>middle</name></member>
-      <member refid="structsoftrender_1_1mouse__button_1a1dfb6771e5dd4d29856e6d1811d42f39" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>right</name></member>
+      <member refid="structsoftrender_1_1mouse__button_1a0c454e35e0a9358afacfbdd1e111697e" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>left</name></member>
+      <member refid="structsoftrender_1_1mouse__button_1aa8882daa283210737dbd9ab6f74caa36" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>middle</name></member>
+      <member refid="structsoftrender_1_1mouse__button_1a65940c610551d7f8e310dd6666a031e7" prot="public" virt="non-virtual"><scope>softrender::mouse_button</scope><name>right</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
