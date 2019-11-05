@@ -91,6 +91,52 @@ jobs:
             tag: $(SOFTRENDER_VERSION)
             assets: build/*.gz
             assetUploadMode: 'replace'
+    - job: Linux_Debug_Clang9_Ubuntu1804
+      pool:
+          vmImage: 'ubuntu-18.04'
+      steps:
+      - script: |
+          set -e
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          echo "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main" | sudo tee -a /etc/apt/sources.list
+          echo "deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main" | sudo tee -a /etc/apt/sources.list
+          sudo apt update
+          sudo apt install -y g++-9 clang-9 clang++-9 clang-tidy-9 clang-format-9
+        displayName: Install clang-9 + tooling
+      - script: |
+          set -e
+          vcpkg install sdl2
+        displayName: Install SDL2
+      - script: |
+          set -e
+          mkdir build && cd build/
+          export CC=clang-9
+          export CXX=clang++-9
+          cmake -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
+                -DSOFTRENDER_MOCKING=ON \
+                -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
+                -DSOFTRENDER_USE_LEAK_SANITIZER=ON \
+                -DSOFTRENDER_USE_UNDEFINED_SANITIZER=ON \
+                -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+                -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+          mv compile_commands.json ..
+          cmake --build . --config Debug
+        displayName: Build SoftRender and it's tests
+      - script: |
+          set -e
+          cd build/tests/
+          ctest -V -j$(nproc)
+        displayName: Run the tests
+      - script: |
+          set -e
+          ./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9
+        displayName: Run clang-tidy
+      - script: |
+          set -e
+          ./scripts/run-clang-format.py --clang-format-executable=/usr/bin/clang-format-9 -r src/ tests/
+        displayName: Run clang-format
     - job: Linux_Debug_Clang9
       pool:
           vmImage: 'ubuntu-16.04'
