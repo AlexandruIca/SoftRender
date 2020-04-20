@@ -34,14 +34,6 @@ jobs:
           run: |
               $VCPKG_ROOT/vcpkg install sdl2:x64-linux
 
-        - name: Check for formatting
-          run: |
-              ./scripts/run-clang-format.py --clang-format-executable=/usr/bin/clang-format-9 -r src/ tests/ examples/
-
-        - name: Run clang-tidy
-          run: |
-              ./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9
-
         - name: Build project
           run: |
               export CC=clang-9
@@ -68,3 +60,12 @@ jobs:
           run: |
               cd build/tests/
               ctest -V -j$(nproc)
+
+        - name: Check for formatting
+          run: |
+              ./scripts/run-clang-format.py --clang-format-executable=/usr/bin/clang-format-9 -r src/ tests/ examples/
+
+        - name: Run clang-tidy
+          run: |
+              ./scripts/run-clang-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9
+
