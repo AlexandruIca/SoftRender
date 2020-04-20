@@ -10,25 +10,21 @@
     <includes refid="vec_8hpp" local="yes">vec.hpp</includes>
     <includedby refid="softrender_8cpp" local="yes">src/softrender.cpp</includedby>
     <incdepgraph>
+      <node id="18">
+        <label>vec.hpp</label>
+        <link refid="vec_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
       <node id="14">
         <label>functional</label>
       </node>
       <node id="19">
         <label>cmath</label>
       </node>
-      <node id="17">
-        <label>mouse_button.hpp</label>
-        <link refid="mouse__button_8hpp"/>
-      </node>
       <node id="16">
         <label>keys.hpp</label>
         <link refid="keys_8hpp"/>
-      </node>
-      <node id="18">
-        <label>vec.hpp</label>
-        <link refid="vec_8hpp"/>
-        <childnode refid="19" relation="include">
-        </childnode>
       </node>
       <node id="15">
         <label>vector</label>
@@ -51,6 +47,10 @@
       </node>
       <node id="13">
         <label>cstddef</label>
+      </node>
+      <node id="17">
+        <label>mouse_button.hpp</label>
+        <link refid="mouse__button_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>

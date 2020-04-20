@@ -5,6 +5,20 @@
     <includedby refid="mouse__button_8cpp" local="yes">src/mouse_button.cpp</includedby>
     <includedby refid="softrender_8hpp" local="yes">src/include/softrender.hpp</includedby>
     <invincdepgraph>
+      <node id="10">
+        <label>src/include/softrender.hpp</label>
+        <link refid="softrender_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/mouse_button.cpp</label>
+        <link refid="mouse__button_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/softrender.cpp</label>
+        <link refid="softrender_8cpp"/>
+      </node>
       <node id="8">
         <label>src/include/mouse_button.hpp</label>
         <link refid="mouse__button_8hpp"/>
@@ -12,20 +26,6 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-      </node>
-      <node id="10">
-        <label>src/include/softrender.hpp</label>
-        <link refid="softrender_8hpp"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>src/softrender.cpp</label>
-        <link refid="softrender_8cpp"/>
-      </node>
-      <node id="9">
-        <label>src/mouse_button.cpp</label>
-        <link refid="mouse__button_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structsoftrender_1_1mouse__button" prot="public">softrender::mouse_button</innerclass>

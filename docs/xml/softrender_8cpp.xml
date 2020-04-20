@@ -12,6 +12,12 @@
     <includes local="no">string</includes>
     <includes local="no">utility</includes>
     <incdepgraph>
+      <node id="52">
+        <label>vec.hpp</label>
+        <link refid="vec_8hpp"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
       <node id="48">
         <label>functional</label>
       </node>
@@ -24,10 +30,6 @@
       <node id="58">
         <label>stdexcept</label>
       </node>
-      <node id="51">
-        <label>mouse_button.hpp</label>
-        <link refid="mouse__button_8hpp"/>
-      </node>
       <node id="59">
         <label>string</label>
       </node>
@@ -35,14 +37,14 @@
         <label>keys.hpp</label>
         <link refid="keys_8hpp"/>
       </node>
-      <node id="52">
-        <label>vec.hpp</label>
-        <link refid="vec_8hpp"/>
-        <childnode refid="53" relation="include">
-        </childnode>
-      </node>
       <node id="49">
         <label>vector</label>
+      </node>
+      <node id="60">
+        <label>utility</label>
+      </node>
+      <node id="56">
+        <label>cstdlib</label>
       </node>
       <node id="46">
         <label>softrender.hpp</label>
@@ -59,12 +61,6 @@
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
-      </node>
-      <node id="60">
-        <label>utility</label>
-      </node>
-      <node id="56">
-        <label>cstdlib</label>
       </node>
       <node id="57">
         <label>iostream</label>
@@ -93,6 +89,10 @@
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
+      </node>
+      <node id="51">
+        <label>mouse_button.hpp</label>
+        <link refid="mouse__button_8hpp"/>
       </node>
       <node id="55">
         <label>algorithm</label>

@@ -1,0 +1,57 @@
+name: GCC-9
+
+on:
+    push:
+        branches: [ master, development ]
+        tags-ignore:
+            - 'v*'
+    pull_request:
+        branches: [ master, development ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+
+        - name: Install gcc-9, ninja, cmake
+          run: |
+              sudo apt install -y ninja-build cmake gcc-9 g++-9
+
+        - name: Install vcpkg
+          uses: lukka/run-vcpkg@v2
+          with:
+              setupOnly: true
+
+        - name: Install SDL2
+          run: |
+              $VCPKG_ROOT/vcpkg install sdl2:x64-linux
+
+        - name: Build project
+          run: |
+              export CC=gcc-9
+              export CXX=g++-9
+
+              cmake \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_COVERAGE=ON \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
+                -DSOFTRENDER_MOCKING=ON \
+                -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
+                -DSOFTRENDER_USE_UNDEFINED_SANITIZER=ON \
+                -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+                ..
+
+              cmake --build .
+
+        - name: Run tests
+          run: |
+              cd build/tests/
+              ctest -V -j$(nproc)
+
+        - name: Get code coverage
+          run: |
+              export CODECOV_TOKEN=c3ade3e3-5a6c-4f0a-814c-0538338d1116
+              cd build/
+              ../scripts/codecov-io-azure.sh

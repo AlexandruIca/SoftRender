@@ -8,6 +8,12 @@
     <includes refid="vec_8hpp" local="yes">vec.hpp</includes>
     <includedby refid="wavefront__reader_8cpp" local="yes">src/wavefront_reader.cpp</includedby>
     <incdepgraph>
+      <node id="33">
+        <label>vec.hpp</label>
+        <link refid="vec_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
       <node id="29">
         <label>src/include/wavefront_reader.hpp</label>
         <link refid="wavefront__reader_8hpp"/>
@@ -28,12 +34,6 @@
       </node>
       <node id="30">
         <label>fstream</label>
-      </node>
-      <node id="33">
-        <label>vec.hpp</label>
-        <link refid="vec_8hpp"/>
-        <childnode refid="34" relation="include">
-        </childnode>
       </node>
       <node id="32">
         <label>vector</label>
