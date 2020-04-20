@@ -23,7 +23,7 @@ jobs:
 
         - name: Fix permission denied
           run: |
-            chmod -R 777 .
+            sudo chmod -R 777 .
 
         - name: Install vcpkg
           uses: lukka/run-vcpkg@v2
