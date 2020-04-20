@@ -60,6 +60,8 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
                 ..
 
+              mv compile_commands.json ..
+
               cmake --build .
 
         - name: Run tests
