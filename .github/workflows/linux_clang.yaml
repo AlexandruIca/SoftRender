@@ -1,0 +1,68 @@
+name: Clang-9
+
+on:
+    push:
+        branches: [ master, development ]
+        tags-ignore:
+            - 'v*'
+    pull_request:
+        branches: [ master, development ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+
+        - name: Checkout submodules
+          uses: textbook/git-checkout-submodule-action@master
+
+        - name: Install clang-9, ninja, cmake
+          run: |
+              sudo apt install -y ninja-build cmake clang-9 clang++-9 clang-format-9 clang-tidy-9
+
+        - name: Fix permission denied
+          run: |
+            sudo chmod -R 777 .
+
+        - name: Install vcpkg
+          uses: lukka/run-vcpkg@v2
+          with:
+              setupOnly: true
+
+        - name: Install SDL2
+          run: |
+              $VCPKG_ROOT/vcpkg install sdl2:x64-linux
+
+        - name: Check for formatting
+          run: |
+              ./scripts/run-clang-format.py --clang-format-executable=/usr/bin/clang-format-9 -r src/ tests/ examples/
+
+        - name: Run clang-tidy
+          run: |
+              ./scripts/run-clant-tidy.py -clang-tidy-binary=/usr/bin/clang-tidy-9
+
+        - name: Build project
+          run: |
+              export CC=clang-9
+              export CXX=clang++-9
+
+              mkdir build && cd build/
+
+              cmake \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DSOFTRENDER_COVERAGE=OFF \
+                -DSOFTRENDER_BUILD_TESTS=ON \
+                -DSOFTRENDER_BUILD_EXAMPLES=ON \
+                -DSOFTRENDER_MOCKING=ON \
+                -DSOFTRENDER_USE_ADDRESS_SANITIZER=ON \
+                -DSOFTRENDER_USE_UNDEFINED_SANITIZER=ON \
+                -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+                ..
+
+              cmake --build .
+
+        - name: Run tests
+          run: |
+              cd build/tests/
+              ctest -V -j$(nproc)
