@@ -14,6 +14,9 @@ jobs:
         steps:
         - uses: actions/checkout@v2
 
+        - name: Checkout submodules
+          uses: textbook/git-checkout-submodule-action@master
+
         - name: Install gcc-9, ninja, cmake
           run: |
               sudo apt install -y ninja-build cmake gcc-9 g++-9
